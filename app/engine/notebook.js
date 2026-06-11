@@ -46,6 +46,7 @@ window.MedLing = window.MedLing || {};
         var r = os.put(rec);
         r.onsuccess = function () {
           if (ML.fsrs) ML.fsrs.enroll(rec); /* auto-create a review card */
+          if (ML.auth && ML.auth.syncNotebook) ML.auth.syncNotebook(rec); /* cloud sync if signed in (no-op in local mode) */
           toast('✓ Đã lưu vào Sổ tay');
           resolve(rec);
         };

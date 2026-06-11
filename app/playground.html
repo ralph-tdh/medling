@@ -40,19 +40,27 @@
   </div>
 
   <div class="sec">
-    <span class="ml-eyebrow">4 · AI Roleplay scaffold (must show LOCKED)</span>
+    <span class="ml-eyebrow">4 · Soft freemium gate (D32)</span>
+    <button class="ml-btn-ghost" id="show-gate" style="font-size:13px;padding:9px 14px">Mở cổng mềm 1A-06</button>
+  </div>
+
+  <div class="sec">
+    <span class="ml-eyebrow">5 · AI Roleplay scaffold (must show LOCKED)</span>
     <div id="rp"></div>
   </div>
 </div>
 
+<script defer src="engine/auth.js"></script>
 <script defer src="engine/notebook.js"></script>
 <script defer src="engine/fsrs.js"></script>
 <script defer src="engine/morphology.js"></script>
 <script defer src="engine/dialogue.js"></script>
+<script defer src="engine/softgate.js"></script>
 <script defer src="engine/roleplay.js"></script>
 <script>
 window.addEventListener('load', function () {
   var ML = window.MedLing;
+  console.log('auth mode:', ML.auth && ML.auth.mode());
 
   // 1) morpheme chips
   var words = [
@@ -107,7 +115,12 @@ window.addEventListener('load', function () {
     });
   };
 
-  // 4) roleplay must render LOCKED
+  // 4) soft gate
+  document.getElementById('show-gate').onclick = function () {
+    ML.softgate.show({ gateId: '1A-06-softgate', onContinue: function () { console.log('gate: continue'); } });
+  };
+
+  // 5) roleplay must render LOCKED
   ML.roleplay.mount(document.getElementById('rp'), { title_en: 'Triage intake' });
   console.log('roleplay enabled?', ML.roleplay.isEnabled());
 });
