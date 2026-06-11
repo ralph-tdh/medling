@@ -38,7 +38,7 @@
 
 | # | Decision | Status | Note |
 |---|---|---|---|
-| D26 | Framework for official build (vanilla vs Svelte vs React) | 🟡 draft | Ratify ONLY after branching-dialogue renderer built in vanilla (Wave B data point). Do not decide by anticipation. |
+| D26 | Framework for official build (vanilla vs Svelte vs React) | 🟡 data-in | Wave B built the branching-dialogue renderer in vanilla with local closure state — not painful (~190 lines, no global collisions). **Recommendation: lock A (keep vanilla).** Awaiting Ralph's ratification. Next stress test: composed dialogue+notebook+audio screen. |
 | D27 | Official build = new public repo `medling` (landing root + `app/` player + content at root); `med-eng-pb` frozen as pilot | 🔒 ratified 2026-06-11 (Ralph, option A) |
 | D28 | Brand = locked DNA (Explorer→Caregiver→Sage, earthy→forest, monogram M); visual direction = **Concept 2 "Atelier"** (quiet luxury: Newsreader/Inter, sage–stone–cream, hairline borders) | 🔒 ratified 2026-06-11 |
 | D29 | "Lột xác" feature scope: ladder tiers 1–2 live; tier 3 (AI roleplay) scaffolded behind feature flag OFF | 🔒 ratified 2026-06-11 |
