@@ -1,0 +1,19 @@
+{
+  "name": "MedLing — Medical English",
+  "short_name": "MedLing",
+  "description": "Medical English for Vietnamese healthcare professionals. Rooted in medicine, growing in English.",
+  "lang": "vi",
+  "start_url": "./",
+  "scope": "../",
+  "display": "standalone",
+  "background_color": "#FBF9F4",
+  "theme_color": "#FBF9F4",
+  "icons": [
+    {
+      "src": "../brand/logo/app-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
