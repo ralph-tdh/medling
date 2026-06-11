@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="MedLing favicon">
+  <rect width="32" height="32" rx="7" fill="#33473A"/>
+  <path d="M7 23 V 10 L 16 19 L 25 10 V 21 Q 25 23 27 23"
+        fill="none" stroke="#FBF9F4" stroke-width="3"
+        stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="16" cy="12.5" r="2.2" fill="#8DA088"/>
+</svg>

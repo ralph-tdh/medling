@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 48" role="img" aria-label="MedLing — heartbeat-vine motion mark">
+  <!-- Motion mark: ECG pulse that resolves into a leaf (for loaders / progress) -->
+  <path d="M6 28 H 30 L 38 14 L 50 38 L 58 20 L 64 28 H 84 Q 96 28 100 20"
+        fill="none" stroke="#4F6B57" stroke-width="4"
+        stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M100 20 C 96 12 100 5 108 4 C 110 12 107 18 100 20 Z" fill="#8DA088"/>
+</svg>
