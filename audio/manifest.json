@@ -1,0 +1,1007 @@
+{
+  "pb1_s1_pt": {
+    "voice": "en-US-JennyNeural",
+    "text": "Excuse me, where is the X-ray room?",
+    "path": "audio/pb1/pb1_s1_pt.mp3"
+  },
+  "pb1_s1_p0": {
+    "voice": "en-US-JennyNeural",
+    "text": "The X-ray room is on the second floor.",
+    "path": "audio/pb1/pb1_s1_p0.mp3"
+  },
+  "pb1_s1_p1": {
+    "voice": "en-US-JennyNeural",
+    "text": "Go straight, then turn left.",
+    "path": "audio/pb1/pb1_s1_p1.mp3"
+  },
+  "pb1_s1_p2": {
+    "voice": "en-US-JennyNeural",
+    "text": "Follow me, please.",
+    "path": "audio/pb1/pb1_s1_p2.mp3"
+  },
+  "pb1_s1_p3": {
+    "voice": "en-US-JennyNeural",
+    "text": "I'm not sure — let me find someone to help.",
+    "path": "audio/pb1/pb1_s1_p3.mp3"
+  },
+  "pb1_s1_v0": {
+    "voice": "en-US-JennyNeural",
+    "text": "elevator",
+    "path": "audio/pb1/pb1_s1_v0.mp3"
+  },
+  "pb1_s1_v1": {
+    "voice": "en-US-JennyNeural",
+    "text": "corridor",
+    "path": "audio/pb1/pb1_s1_v1.mp3"
+  },
+  "pb1_s1_v2": {
+    "voice": "en-US-JennyNeural",
+    "text": "waiting room",
+    "path": "audio/pb1/pb1_s1_v2.mp3"
+  },
+  "pb1_s1_v3": {
+    "voice": "en-US-JennyNeural",
+    "text": "reception",
+    "path": "audio/pb1/pb1_s1_v3.mp3"
+  },
+  "pb1_s1_v4": {
+    "voice": "en-US-JennyNeural",
+    "text": "ward",
+    "path": "audio/pb1/pb1_s1_v4.mp3"
+  },
+  "pb1_s1_v5": {
+    "voice": "en-US-JennyNeural",
+    "text": "restroom",
+    "path": "audio/pb1/pb1_s1_v5.mp3"
+  },
+  "pb1_s1_v6": {
+    "voice": "en-US-JennyNeural",
+    "text": "outpatient clinic",
+    "path": "audio/pb1/pb1_s1_v6.mp3"
+  },
+  "pb1_s2_pt": {
+    "voice": "en-US-MichelleNeural",
+    "text": "How long is the wait?",
+    "path": "audio/pb1/pb1_s2_pt.mp3"
+  },
+  "pb1_s2_p0": {
+    "voice": "en-US-MichelleNeural",
+    "text": "The wait is approximately 20 minutes.",
+    "path": "audio/pb1/pb1_s2_p0.mp3"
+  },
+  "pb1_s2_p1": {
+    "voice": "en-US-MichelleNeural",
+    "text": "The doctor is with another patient right now.",
+    "path": "audio/pb1/pb1_s2_p1.mp3"
+  },
+  "pb1_s2_p2": {
+    "voice": "en-US-MichelleNeural",
+    "text": "We're running a little behind schedule today.",
+    "path": "audio/pb1/pb1_s2_p2.mp3"
+  },
+  "pb1_s2_p3": {
+    "voice": "en-US-MichelleNeural",
+    "text": "Please have a seat — we'll call your name.",
+    "path": "audio/pb1/pb1_s2_p3.mp3"
+  },
+  "pb1_s2_p4": {
+    "voice": "en-US-MichelleNeural",
+    "text": "Let me check for you.",
+    "path": "audio/pb1/pb1_s2_p4.mp3"
+  },
+  "pb1_s2_v0": {
+    "voice": "en-US-MichelleNeural",
+    "text": "appointment",
+    "path": "audio/pb1/pb1_s2_v0.mp3"
+  },
+  "pb1_s2_v1": {
+    "voice": "en-US-MichelleNeural",
+    "text": "queue",
+    "path": "audio/pb1/pb1_s2_v1.mp3"
+  },
+  "pb1_s2_v2": {
+    "voice": "en-US-MichelleNeural",
+    "text": "registration desk",
+    "path": "audio/pb1/pb1_s2_v2.mp3"
+  },
+  "pb1_s2_v3": {
+    "voice": "en-US-MichelleNeural",
+    "text": "consultation room",
+    "path": "audio/pb1/pb1_s2_v3.mp3"
+  },
+  "pb1_s2_v4": {
+    "voice": "en-US-MichelleNeural",
+    "text": "schedule",
+    "path": "audio/pb1/pb1_s2_v4.mp3"
+  },
+  "pb1_s2_v5": {
+    "voice": "en-US-MichelleNeural",
+    "text": "check-in",
+    "path": "audio/pb1/pb1_s2_v5.mp3"
+  },
+  "pb1_s3_p0": {
+    "voice": "en-US-JennyNeural",
+    "text": "Excuse me, can I help you?",
+    "path": "audio/pb1/pb1_s3_p0.mp3"
+  },
+  "pb1_s3_p1": {
+    "voice": "en-US-JennyNeural",
+    "text": "Are you okay?",
+    "path": "audio/pb1/pb1_s3_p1.mp3"
+  },
+  "pb1_s3_p2": {
+    "voice": "en-US-JennyNeural",
+    "text": "Are you looking for something?",
+    "path": "audio/pb1/pb1_s3_p2.mp3"
+  },
+  "pb1_s3_p3": {
+    "voice": "en-US-JennyNeural",
+    "text": "Please come with me — I'll help you.",
+    "path": "audio/pb1/pb1_s3_p3.mp3"
+  },
+  "pb1_s3_p4": {
+    "voice": "en-US-JennyNeural",
+    "text": "Let me get a nurse for you right away.",
+    "path": "audio/pb1/pb1_s3_p4.mp3"
+  },
+  "pb1_s3_v0": {
+    "voice": "en-US-JennyNeural",
+    "text": "nurse station",
+    "path": "audio/pb1/pb1_s3_v0.mp3"
+  },
+  "pb1_s3_v1": {
+    "voice": "en-US-JennyNeural",
+    "text": "wheelchair",
+    "path": "audio/pb1/pb1_s3_v1.mp3"
+  },
+  "pb1_s3_v2": {
+    "voice": "en-US-JennyNeural",
+    "text": "distressed",
+    "path": "audio/pb1/pb1_s3_v2.mp3"
+  },
+  "pb1_s3_v3": {
+    "voice": "en-US-JennyNeural",
+    "text": "first aid",
+    "path": "audio/pb1/pb1_s3_v3.mp3"
+  },
+  "pb1_s3_v4": {
+    "voice": "en-US-JennyNeural",
+    "text": "emergency room",
+    "path": "audio/pb1/pb1_s3_v4.mp3"
+  },
+  "pb1_s3_v5": {
+    "voice": "en-US-JennyNeural",
+    "text": "escort",
+    "path": "audio/pb1/pb1_s3_v5.mp3"
+  },
+  "pb1_s4_pt": {
+    "voice": "en-US-GuyNeural",
+    "text": "What is this medication for?",
+    "path": "audio/pb1/pb1_s4_pt.mp3"
+  },
+  "pb1_s4_p0": {
+    "voice": "en-US-GuyNeural",
+    "text": "Let me find the pharmacist for you.",
+    "path": "audio/pb1/pb1_s4_p0.mp3"
+  },
+  "pb1_s4_p1": {
+    "voice": "en-US-GuyNeural",
+    "text": "I'd suggest asking the doctor directly.",
+    "path": "audio/pb1/pb1_s4_p1.mp3"
+  },
+  "pb1_s4_p2": {
+    "voice": "en-US-GuyNeural",
+    "text": "Let me check your records.",
+    "path": "audio/pb1/pb1_s4_p2.mp3"
+  },
+  "pb1_s4_p3": {
+    "voice": "en-US-GuyNeural",
+    "text": "Your appointment is on Monday — let me confirm.",
+    "path": "audio/pb1/pb1_s4_p3.mp3"
+  },
+  "pb1_s4_v0": {
+    "voice": "en-US-GuyNeural",
+    "text": "prescription",
+    "path": "audio/pb1/pb1_s4_v0.mp3"
+  },
+  "pb1_s4_v1": {
+    "voice": "en-US-GuyNeural",
+    "text": "dosage",
+    "path": "audio/pb1/pb1_s4_v1.mp3"
+  },
+  "pb1_s4_v2": {
+    "voice": "en-US-GuyNeural",
+    "text": "pharmacist",
+    "path": "audio/pb1/pb1_s4_v2.mp3"
+  },
+  "pb1_s4_v3": {
+    "voice": "en-US-GuyNeural",
+    "text": "refill",
+    "path": "audio/pb1/pb1_s4_v3.mp3"
+  },
+  "pb1_s4_v4": {
+    "voice": "en-US-GuyNeural",
+    "text": "follow-up",
+    "path": "audio/pb1/pb1_s4_v4.mp3"
+  },
+  "pb1_s4_v5": {
+    "voice": "en-US-GuyNeural",
+    "text": "discharge",
+    "path": "audio/pb1/pb1_s4_v5.mp3"
+  },
+  "pb1_q0": {
+    "voice": "en-CA-LiamNeural",
+    "text": "Patient: \"Where is the elevator?\" — Best response:",
+    "path": "audio/pb1/pb1_q0.mp3"
+  },
+  "pb1_q1": {
+    "voice": "en-CA-LiamNeural",
+    "text": "\"We're running a little behind schedule today\" means:",
+    "path": "audio/pb1/pb1_q1.mp3"
+  },
+  "pb1_q2": {
+    "voice": "en-CA-LiamNeural",
+    "text": "You see a patient in the hallway, looking worried. What should you say first?",
+    "path": "audio/pb1/pb1_q2.mp3"
+  },
+  "pb1_q3": {
+    "voice": "en-CA-LiamNeural",
+    "text": "Patient asks about their appointment but you're not managing their case. What do you say?",
+    "path": "audio/pb1/pb1_q3.mp3"
+  },
+  "pb1_q4": {
+    "voice": "en-CA-LiamNeural",
+    "text": "Which phrase do you use when you physically walk WITH the patient to show them the way?",
+    "path": "audio/pb1/pb1_q4.mp3"
+  },
+  "pb2_s1_pt": {
+    "voice": "en-US-JennyNeural",
+    "text": "\"Gastritis\" — what does this actually mean?",
+    "path": "audio/pb2/pb2_s1_pt.mp3"
+  },
+  "pb2_s1_p0": {
+    "voice": "en-US-JennyNeural",
+    "text": "The suffix \"-itis\" means inflammation.",
+    "path": "audio/pb2/pb2_s1_p0.mp3"
+  },
+  "pb2_s1_p1": {
+    "voice": "en-US-JennyNeural",
+    "text": "Gastritis means inflammation of the stomach.",
+    "path": "audio/pb2/pb2_s1_p1.mp3"
+  },
+  "pb2_s1_p2": {
+    "voice": "en-US-JennyNeural",
+    "text": "You may have heard of hepatitis — that's inflammation of the liver.",
+    "path": "audio/pb2/pb2_s1_p2.mp3"
+  },
+  "pb2_s1_p3": {
+    "voice": "en-US-JennyNeural",
+    "text": "Any word ending in \"-itis\" describes a type of inflammation.",
+    "path": "audio/pb2/pb2_s1_p3.mp3"
+  },
+  "pb2_s1_v0": {
+    "voice": "en-US-JennyNeural",
+    "text": "gastritis",
+    "path": "audio/pb2/pb2_s1_v0.mp3"
+  },
+  "pb2_s1_v1": {
+    "voice": "en-US-JennyNeural",
+    "text": "appendicitis",
+    "path": "audio/pb2/pb2_s1_v1.mp3"
+  },
+  "pb2_s1_v2": {
+    "voice": "en-US-JennyNeural",
+    "text": "hepatitis",
+    "path": "audio/pb2/pb2_s1_v2.mp3"
+  },
+  "pb2_s1_v3": {
+    "voice": "en-US-JennyNeural",
+    "text": "bronchitis",
+    "path": "audio/pb2/pb2_s1_v3.mp3"
+  },
+  "pb2_s1_v4": {
+    "voice": "en-US-JennyNeural",
+    "text": "arthritis",
+    "path": "audio/pb2/pb2_s1_v4.mp3"
+  },
+  "pb2_s1_v5": {
+    "voice": "en-US-JennyNeural",
+    "text": "dermatitis",
+    "path": "audio/pb2/pb2_s1_v5.mp3"
+  },
+  "pb2_s1_v6": {
+    "voice": "en-US-JennyNeural",
+    "text": "tonsillitis",
+    "path": "audio/pb2/pb2_s1_v6.mp3"
+  },
+  "pb2_s2_pt": {
+    "voice": "en-US-JennyNeural",
+    "text": "\"Tachycardia\" — what does that actually mean?",
+    "path": "audio/pb2/pb2_s2_pt.mp3"
+  },
+  "pb2_s2_p0": {
+    "voice": "en-US-JennyNeural",
+    "text": "The root \"cardio-\" or \"-cardia\" refers to the heart.",
+    "path": "audio/pb2/pb2_s2_p0.mp3"
+  },
+  "pb2_s2_p1": {
+    "voice": "en-US-JennyNeural",
+    "text": "Tachycardia means a fast heart rate — \"tachy-\" means fast.",
+    "path": "audio/pb2/pb2_s2_p1.mp3"
+  },
+  "pb2_s2_p2": {
+    "voice": "en-US-JennyNeural",
+    "text": "Bradycardia is the opposite — a slow heart rate.",
+    "path": "audio/pb2/pb2_s2_p2.mp3"
+  },
+  "pb2_s2_p3": {
+    "voice": "en-US-JennyNeural",
+    "text": "Cardiac arrest means the heart has stopped completely.",
+    "path": "audio/pb2/pb2_s2_p3.mp3"
+  },
+  "pb2_s2_v0": {
+    "voice": "en-US-JennyNeural",
+    "text": "cardiac",
+    "path": "audio/pb2/pb2_s2_v0.mp3"
+  },
+  "pb2_s2_v1": {
+    "voice": "en-US-JennyNeural",
+    "text": "tachycardia",
+    "path": "audio/pb2/pb2_s2_v1.mp3"
+  },
+  "pb2_s2_v2": {
+    "voice": "en-US-JennyNeural",
+    "text": "bradycardia",
+    "path": "audio/pb2/pb2_s2_v2.mp3"
+  },
+  "pb2_s2_v3": {
+    "voice": "en-US-JennyNeural",
+    "text": "cardiomegaly",
+    "path": "audio/pb2/pb2_s2_v3.mp3"
+  },
+  "pb2_s2_v4": {
+    "voice": "en-US-JennyNeural",
+    "text": "cardiologist",
+    "path": "audio/pb2/pb2_s2_v4.mp3"
+  },
+  "pb2_s2_v5": {
+    "voice": "en-US-JennyNeural",
+    "text": "myocardial",
+    "path": "audio/pb2/pb2_s2_v5.mp3"
+  },
+  "pb2_s2_v6": {
+    "voice": "en-US-JennyNeural",
+    "text": "palpitation",
+    "path": "audio/pb2/pb2_s2_v6.mp3"
+  },
+  "pb2_s3_pt": {
+    "voice": "en-US-GuyNeural",
+    "text": "\"Appendectomy\" — can you tell what will happen just from the name?",
+    "path": "audio/pb2/pb2_s3_pt.mp3"
+  },
+  "pb2_s3_p0": {
+    "voice": "en-US-GuyNeural",
+    "text": "The suffix \"-ectomy\" means surgical removal.",
+    "path": "audio/pb2/pb2_s3_p0.mp3"
+  },
+  "pb2_s3_p1": {
+    "voice": "en-US-GuyNeural",
+    "text": "An appendectomy is the removal of the appendix.",
+    "path": "audio/pb2/pb2_s3_p1.mp3"
+  },
+  "pb2_s3_p2": {
+    "voice": "en-US-GuyNeural",
+    "text": "A cholecystectomy removes the gallbladder — \"chole\" = bile, \"cyst\" = sac.",
+    "path": "audio/pb2/pb2_s3_p2.mp3"
+  },
+  "pb2_s3_p3": {
+    "voice": "en-US-GuyNeural",
+    "text": "Know the root, and you know exactly what is being removed.",
+    "path": "audio/pb2/pb2_s3_p3.mp3"
+  },
+  "pb2_s3_v0": {
+    "voice": "en-US-GuyNeural",
+    "text": "appendectomy",
+    "path": "audio/pb2/pb2_s3_v0.mp3"
+  },
+  "pb2_s3_v1": {
+    "voice": "en-US-GuyNeural",
+    "text": "cholecystectomy",
+    "path": "audio/pb2/pb2_s3_v1.mp3"
+  },
+  "pb2_s3_v2": {
+    "voice": "en-US-GuyNeural",
+    "text": "mastectomy",
+    "path": "audio/pb2/pb2_s3_v2.mp3"
+  },
+  "pb2_s3_v3": {
+    "voice": "en-US-GuyNeural",
+    "text": "tonsillectomy",
+    "path": "audio/pb2/pb2_s3_v3.mp3"
+  },
+  "pb2_s3_v4": {
+    "voice": "en-US-GuyNeural",
+    "text": "hysterectomy",
+    "path": "audio/pb2/pb2_s3_v4.mp3"
+  },
+  "pb2_s3_v5": {
+    "voice": "en-US-GuyNeural",
+    "text": "nephrectomy",
+    "path": "audio/pb2/pb2_s3_v5.mp3"
+  },
+  "pb2_s3_v6": {
+    "voice": "en-US-GuyNeural",
+    "text": "gastrectomy",
+    "path": "audio/pb2/pb2_s3_v6.mp3"
+  },
+  "pb2_s4_pt": {
+    "voice": "en-US-GuyNeural",
+    "text": "\"Referred to a gastroenterologist\" — who exactly is that?",
+    "path": "audio/pb2/pb2_s4_pt.mp3"
+  },
+  "pb2_s4_p0": {
+    "voice": "en-US-GuyNeural",
+    "text": "\"-ology\" means the study of — and \"-ologist\" is the specialist.",
+    "path": "audio/pb2/pb2_s4_p0.mp3"
+  },
+  "pb2_s4_p1": {
+    "voice": "en-US-GuyNeural",
+    "text": "A gastroenterologist specializes in the digestive system.",
+    "path": "audio/pb2/pb2_s4_p1.mp3"
+  },
+  "pb2_s4_p2": {
+    "voice": "en-US-GuyNeural",
+    "text": "\"Gastro-\" means stomach, and \"entero-\" means intestine.",
+    "path": "audio/pb2/pb2_s4_p2.mp3"
+  },
+  "pb2_s4_p3": {
+    "voice": "en-US-GuyNeural",
+    "text": "Know the root, and you know exactly which organ that specialist treats.",
+    "path": "audio/pb2/pb2_s4_p3.mp3"
+  },
+  "pb2_s4_v0": {
+    "voice": "en-US-GuyNeural",
+    "text": "cardiologist",
+    "path": "audio/pb2/pb2_s4_v0.mp3"
+  },
+  "pb2_s4_v1": {
+    "voice": "en-US-GuyNeural",
+    "text": "neurologist",
+    "path": "audio/pb2/pb2_s4_v1.mp3"
+  },
+  "pb2_s4_v2": {
+    "voice": "en-US-GuyNeural",
+    "text": "gastroenterologist",
+    "path": "audio/pb2/pb2_s4_v2.mp3"
+  },
+  "pb2_s4_v3": {
+    "voice": "en-US-GuyNeural",
+    "text": "hepatologist",
+    "path": "audio/pb2/pb2_s4_v3.mp3"
+  },
+  "pb2_s4_v4": {
+    "voice": "en-US-GuyNeural",
+    "text": "pulmonologist",
+    "path": "audio/pb2/pb2_s4_v4.mp3"
+  },
+  "pb2_s4_v5": {
+    "voice": "en-US-GuyNeural",
+    "text": "dermatologist",
+    "path": "audio/pb2/pb2_s4_v5.mp3"
+  },
+  "pb2_s4_v6": {
+    "voice": "en-US-GuyNeural",
+    "text": "oncologist",
+    "path": "audio/pb2/pb2_s4_v6.mp3"
+  },
+  "pb2_q0": {
+    "voice": "en-US-MichelleNeural",
+    "text": "What does the suffix \"-itis\" mean in medical English?",
+    "path": "audio/pb2/pb2_q0.mp3"
+  },
+  "pb2_q1": {
+    "voice": "en-US-MichelleNeural",
+    "text": "\"Tachy-\" as in \"tachycardia\" means:",
+    "path": "audio/pb2/pb2_q1.mp3"
+  },
+  "pb2_q2": {
+    "voice": "en-US-MichelleNeural",
+    "text": "A patient is scheduled for a \"nephrectomy.\" Which organ is involved?",
+    "path": "audio/pb2/pb2_q2.mp3"
+  },
+  "pb2_q3": {
+    "voice": "en-US-MichelleNeural",
+    "text": "Which of these words means \"inflammation of the liver\"?",
+    "path": "audio/pb2/pb2_q3.mp3"
+  },
+  "pb2_q4": {
+    "voice": "en-US-MichelleNeural",
+    "text": "A referral says \"see a pulmonologist.\" This doctor specializes in:",
+    "path": "audio/pb2/pb2_q4.mp3"
+  },
+  "pb3_s1_p0": {
+    "voice": "en-CA-LiamNeural",
+    "text": "Hello, I'm Dr. Minh. I'll be taking care of you today.",
+    "path": "audio/pb3/pb3_s1_p0.mp3"
+  },
+  "pb3_s1_p1": {
+    "voice": "en-CA-LiamNeural",
+    "text": "Good morning — my name is Dr. Lan from the internal medicine department.",
+    "path": "audio/pb3/pb3_s1_p1.mp3"
+  },
+  "pb3_s1_p2": {
+    "voice": "en-CA-LiamNeural",
+    "text": "Hi, I'm Dr. Nam, the resident on duty this morning. Nice to meet you.",
+    "path": "audio/pb3/pb3_s1_p2.mp3"
+  },
+  "pb3_s1_p3": {
+    "voice": "en-CA-LiamNeural",
+    "text": "Please don't worry — I'm Dr. Pham, and I'm here to help.",
+    "path": "audio/pb3/pb3_s1_p3.mp3"
+  },
+  "pb3_s1_v0": {
+    "voice": "en-CA-LiamNeural",
+    "text": "introduction",
+    "path": "audio/pb3/pb3_s1_v0.mp3"
+  },
+  "pb3_s1_v1": {
+    "voice": "en-CA-LiamNeural",
+    "text": "encounter",
+    "path": "audio/pb3/pb3_s1_v1.mp3"
+  },
+  "pb3_s1_v2": {
+    "voice": "en-CA-LiamNeural",
+    "text": "department",
+    "path": "audio/pb3/pb3_s1_v2.mp3"
+  },
+  "pb3_s1_v3": {
+    "voice": "en-CA-LiamNeural",
+    "text": "internal medicine",
+    "path": "audio/pb3/pb3_s1_v3.mp3"
+  },
+  "pb3_s1_v4": {
+    "voice": "en-CA-LiamNeural",
+    "text": "resident",
+    "path": "audio/pb3/pb3_s1_v4.mp3"
+  },
+  "pb3_s1_v5": {
+    "voice": "en-CA-LiamNeural",
+    "text": "on duty",
+    "path": "audio/pb3/pb3_s1_v5.mp3"
+  },
+  "pb3_s2_pt": {
+    "voice": "en-US-GuyNeural",
+    "text": "Well... I've been having some problems. I'm not really sure where to start.",
+    "path": "audio/pb3/pb3_s2_pt.mp3"
+  },
+  "pb3_s2_p0": {
+    "voice": "en-US-GuyNeural",
+    "text": "What brings you in today?",
+    "path": "audio/pb3/pb3_s2_p0.mp3"
+  },
+  "pb3_s2_p1": {
+    "voice": "en-US-GuyNeural",
+    "text": "How can I help you today?",
+    "path": "audio/pb3/pb3_s2_p1.mp3"
+  },
+  "pb3_s2_p2": {
+    "voice": "en-US-GuyNeural",
+    "text": "Take your time — what's been going on?",
+    "path": "audio/pb3/pb3_s2_p2.mp3"
+  },
+  "pb3_s2_p3": {
+    "voice": "en-US-GuyNeural",
+    "text": "What seems to be bothering you?",
+    "path": "audio/pb3/pb3_s2_p3.mp3"
+  },
+  "pb3_s2_v0": {
+    "voice": "en-US-GuyNeural",
+    "text": "chief complaint",
+    "path": "audio/pb3/pb3_s2_v0.mp3"
+  },
+  "pb3_s2_v1": {
+    "voice": "en-US-GuyNeural",
+    "text": "concern",
+    "path": "audio/pb3/pb3_s2_v1.mp3"
+  },
+  "pb3_s2_v2": {
+    "voice": "en-US-GuyNeural",
+    "text": "presenting problem",
+    "path": "audio/pb3/pb3_s2_v2.mp3"
+  },
+  "pb3_s2_v3": {
+    "voice": "en-US-GuyNeural",
+    "text": "open question",
+    "path": "audio/pb3/pb3_s2_v3.mp3"
+  },
+  "pb3_s2_v4": {
+    "voice": "en-US-GuyNeural",
+    "text": "consult",
+    "path": "audio/pb3/pb3_s2_v4.mp3"
+  },
+  "pb3_s3_pt": {
+    "voice": "en-CA-LiamNeural",
+    "text": "The pain started about three days ago. It sort of comes and goes... it's hard to describe, really.",
+    "path": "audio/pb3/pb3_s3_pt.mp3"
+  },
+  "pb3_s3_p0": {
+    "voice": "en-CA-LiamNeural",
+    "text": "Can you tell me more about that?",
+    "path": "audio/pb3/pb3_s3_p0.mp3"
+  },
+  "pb3_s3_p1": {
+    "voice": "en-CA-LiamNeural",
+    "text": "I see — and where exactly is the pain?",
+    "path": "audio/pb3/pb3_s3_p1.mp3"
+  },
+  "pb3_s3_p2": {
+    "voice": "en-CA-LiamNeural",
+    "text": "Go on — I'm listening.",
+    "path": "audio/pb3/pb3_s3_p2.mp3"
+  },
+  "pb3_s3_p3": {
+    "voice": "en-CA-LiamNeural",
+    "text": "When you say 'comes and goes' — how often does that happen?",
+    "path": "audio/pb3/pb3_s3_p3.mp3"
+  },
+  "pb3_s3_v0": {
+    "voice": "en-CA-LiamNeural",
+    "text": "symptom",
+    "path": "audio/pb3/pb3_s3_v0.mp3"
+  },
+  "pb3_s3_v1": {
+    "voice": "en-CA-LiamNeural",
+    "text": "onset",
+    "path": "audio/pb3/pb3_s3_v1.mp3"
+  },
+  "pb3_s3_v2": {
+    "voice": "en-CA-LiamNeural",
+    "text": "intermittent",
+    "path": "audio/pb3/pb3_s3_v2.mp3"
+  },
+  "pb3_s3_v3": {
+    "voice": "en-CA-LiamNeural",
+    "text": "describe",
+    "path": "audio/pb3/pb3_s3_v3.mp3"
+  },
+  "pb3_s3_v4": {
+    "voice": "en-CA-LiamNeural",
+    "text": "duration",
+    "path": "audio/pb3/pb3_s3_v4.mp3"
+  },
+  "pb3_s3_v5": {
+    "voice": "en-CA-LiamNeural",
+    "text": "elaborate",
+    "path": "audio/pb3/pb3_s3_v5.mp3"
+  },
+  "pb3_s4_pt": {
+    "voice": "en-US-MichelleNeural",
+    "text": "So... what are you going to do now? Is everything okay?",
+    "path": "audio/pb3/pb3_s4_pt.mp3"
+  },
+  "pb3_s4_p0": {
+    "voice": "en-US-MichelleNeural",
+    "text": "I'm going to examine you now. Is that okay?",
+    "path": "audio/pb3/pb3_s4_p0.mp3"
+  },
+  "pb3_s4_p1": {
+    "voice": "en-US-MichelleNeural",
+    "text": "First, I'll ask a few more questions, then do a physical exam.",
+    "path": "audio/pb3/pb3_s4_p1.mp3"
+  },
+  "pb3_s4_p2": {
+    "voice": "en-US-MichelleNeural",
+    "text": "Let's take it one step at a time — I'll check a few things first.",
+    "path": "audio/pb3/pb3_s4_p2.mp3"
+  },
+  "pb3_s4_p3": {
+    "voice": "en-US-MichelleNeural",
+    "text": "After the exam, we'll talk about what I found and the next steps.",
+    "path": "audio/pb3/pb3_s4_p3.mp3"
+  },
+  "pb3_s4_v0": {
+    "voice": "en-US-MichelleNeural",
+    "text": "physical examination",
+    "path": "audio/pb3/pb3_s4_v0.mp3"
+  },
+  "pb3_s4_v1": {
+    "voice": "en-US-MichelleNeural",
+    "text": "examine",
+    "path": "audio/pb3/pb3_s4_v1.mp3"
+  },
+  "pb3_s4_v2": {
+    "voice": "en-US-MichelleNeural",
+    "text": "assess",
+    "path": "audio/pb3/pb3_s4_v2.mp3"
+  },
+  "pb3_s4_v3": {
+    "voice": "en-US-MichelleNeural",
+    "text": "next steps",
+    "path": "audio/pb3/pb3_s4_v3.mp3"
+  },
+  "pb3_s4_v4": {
+    "voice": "en-US-MichelleNeural",
+    "text": "findings",
+    "path": "audio/pb3/pb3_s4_v4.mp3"
+  },
+  "pb3_s4_v5": {
+    "voice": "en-US-MichelleNeural",
+    "text": "explain",
+    "path": "audio/pb3/pb3_s4_v5.mp3"
+  },
+  "pb3_q0": {
+    "voice": "en-US-GuyNeural",
+    "text": "Which phrase correctly introduces yourself to a patient for the first time?",
+    "path": "audio/pb3/pb3_q0.mp3"
+  },
+  "pb3_q1": {
+    "voice": "en-US-GuyNeural",
+    "text": "Why is 'What brings you in today?' better than 'Do you have chest pain?'",
+    "path": "audio/pb3/pb3_q1.mp3"
+  },
+  "pb3_q2": {
+    "voice": "en-US-GuyNeural",
+    "text": "A patient stops talking mid-sentence, looking uncertain. Which response is best?",
+    "path": "audio/pb3/pb3_q2.mp3"
+  },
+  "pb3_q3": {
+    "voice": "en-US-GuyNeural",
+    "text": "After taking a history, the patient asks: 'What happens now?' Which reply is most appropriate?",
+    "path": "audio/pb3/pb3_q3.mp3"
+  },
+  "pb3_q4": {
+    "voice": "en-US-GuyNeural",
+    "text": "What is the clinical term for the main reason a patient visits a doctor today?",
+    "path": "audio/pb3/pb3_q4.mp3"
+  },
+  "pb4_s1_pt": {
+    "voice": "en-CA-LiamNeural",
+    "text": "So... what's my blood pressure?",
+    "path": "audio/pb4/pb4_s1_pt.mp3"
+  },
+  "pb4_s1_p0": {
+    "voice": "en-CA-LiamNeural",
+    "text": "Your blood pressure is 120 over 80.",
+    "path": "audio/pb4/pb4_s1_p0.mp3"
+  },
+  "pb4_s1_p1": {
+    "voice": "en-CA-LiamNeural",
+    "text": "That's within the normal range — nothing to worry about.",
+    "path": "audio/pb4/pb4_s1_p1.mp3"
+  },
+  "pb4_s1_p2": {
+    "voice": "en-CA-LiamNeural",
+    "text": "The top number is your systolic pressure, and the bottom is diastolic.",
+    "path": "audio/pb4/pb4_s1_p2.mp3"
+  },
+  "pb4_s1_p3": {
+    "voice": "en-CA-LiamNeural",
+    "text": "Your BP is a little high — I'll check it again in a few minutes.",
+    "path": "audio/pb4/pb4_s1_p3.mp3"
+  },
+  "pb4_s1_v0": {
+    "voice": "en-CA-LiamNeural",
+    "text": "blood pressure",
+    "path": "audio/pb4/pb4_s1_v0.mp3"
+  },
+  "pb4_s1_v1": {
+    "voice": "en-CA-LiamNeural",
+    "text": "systolic",
+    "path": "audio/pb4/pb4_s1_v1.mp3"
+  },
+  "pb4_s1_v2": {
+    "voice": "en-CA-LiamNeural",
+    "text": "diastolic",
+    "path": "audio/pb4/pb4_s1_v2.mp3"
+  },
+  "pb4_s1_v3": {
+    "voice": "en-CA-LiamNeural",
+    "text": "mmHg",
+    "path": "audio/pb4/pb4_s1_v3.mp3"
+  },
+  "pb4_s1_v4": {
+    "voice": "en-CA-LiamNeural",
+    "text": "normal range",
+    "path": "audio/pb4/pb4_s1_v4.mp3"
+  },
+  "pb4_s1_v5": {
+    "voice": "en-CA-LiamNeural",
+    "text": "reading",
+    "path": "audio/pb4/pb4_s1_v5.mp3"
+  },
+  "pb4_s2_pt": {
+    "voice": "en-US-JennyNeural",
+    "text": "Can you give me a quick update on the vitals?",
+    "path": "audio/pb4/pb4_s2_pt.mp3"
+  },
+  "pb4_s2_p0": {
+    "voice": "en-US-JennyNeural",
+    "text": "BP is 130 over 85, HR 88 beats per minute.",
+    "path": "audio/pb4/pb4_s2_p0.mp3"
+  },
+  "pb4_s2_p1": {
+    "voice": "en-US-JennyNeural",
+    "text": "Respiratory rate is 18 breaths per minute, temperature 37.0 degrees Celsius.",
+    "path": "audio/pb4/pb4_s2_p1.mp3"
+  },
+  "pb4_s2_p2": {
+    "voice": "en-US-JennyNeural",
+    "text": "SpO2 is 97 percent on room air.",
+    "path": "audio/pb4/pb4_s2_p2.mp3"
+  },
+  "pb4_s2_p3": {
+    "voice": "en-US-JennyNeural",
+    "text": "All vitals are stable — no acute concerns.",
+    "path": "audio/pb4/pb4_s2_p3.mp3"
+  },
+  "pb4_s2_v0": {
+    "voice": "en-US-JennyNeural",
+    "text": "vital signs",
+    "path": "audio/pb4/pb4_s2_v0.mp3"
+  },
+  "pb4_s2_v1": {
+    "voice": "en-US-JennyNeural",
+    "text": "heart rate",
+    "path": "audio/pb4/pb4_s2_v1.mp3"
+  },
+  "pb4_s2_v2": {
+    "voice": "en-US-JennyNeural",
+    "text": "respiratory rate",
+    "path": "audio/pb4/pb4_s2_v2.mp3"
+  },
+  "pb4_s2_v3": {
+    "voice": "en-US-JennyNeural",
+    "text": "beats per minute",
+    "path": "audio/pb4/pb4_s2_v3.mp3"
+  },
+  "pb4_s2_v4": {
+    "voice": "en-US-JennyNeural",
+    "text": "breaths per minute",
+    "path": "audio/pb4/pb4_s2_v4.mp3"
+  },
+  "pb4_s2_v5": {
+    "voice": "en-US-JennyNeural",
+    "text": "stable",
+    "path": "audio/pb4/pb4_s2_v5.mp3"
+  },
+  "pb4_s2_v6": {
+    "voice": "en-US-JennyNeural",
+    "text": "handover",
+    "path": "audio/pb4/pb4_s2_v6.mp3"
+  },
+  "pb4_s3_pt": {
+    "voice": "en-CA-LiamNeural",
+    "text": "Are those numbers okay? What do they mean?",
+    "path": "audio/pb4/pb4_s3_pt.mp3"
+  },
+  "pb4_s3_p0": {
+    "voice": "en-CA-LiamNeural",
+    "text": "Your oxygen saturation is 98 percent on room air — that's very good.",
+    "path": "audio/pb4/pb4_s3_p0.mp3"
+  },
+  "pb4_s3_p1": {
+    "voice": "en-CA-LiamNeural",
+    "text": "Your temperature is 37.0 degrees Celsius — perfectly normal.",
+    "path": "audio/pb4/pb4_s3_p1.mp3"
+  },
+  "pb4_s3_p2": {
+    "voice": "en-CA-LiamNeural",
+    "text": "SpO2 above 95 percent is what we want to see — yours is fine.",
+    "path": "audio/pb4/pb4_s3_p2.mp3"
+  },
+  "pb4_s3_p3": {
+    "voice": "en-CA-LiamNeural",
+    "text": "The temperature is slightly elevated at 38.1 — I'll keep monitoring.",
+    "path": "audio/pb4/pb4_s3_p3.mp3"
+  },
+  "pb4_s3_v0": {
+    "voice": "en-CA-LiamNeural",
+    "text": "oxygen saturation",
+    "path": "audio/pb4/pb4_s3_v0.mp3"
+  },
+  "pb4_s3_v1": {
+    "voice": "en-CA-LiamNeural",
+    "text": "SpO2",
+    "path": "audio/pb4/pb4_s3_v1.mp3"
+  },
+  "pb4_s3_v2": {
+    "voice": "en-CA-LiamNeural",
+    "text": "temperature",
+    "path": "audio/pb4/pb4_s3_v2.mp3"
+  },
+  "pb4_s3_v3": {
+    "voice": "en-CA-LiamNeural",
+    "text": "degrees Celsius",
+    "path": "audio/pb4/pb4_s3_v3.mp3"
+  },
+  "pb4_s3_v4": {
+    "voice": "en-CA-LiamNeural",
+    "text": "slightly elevated",
+    "path": "audio/pb4/pb4_s3_v4.mp3"
+  },
+  "pb4_s3_v5": {
+    "voice": "en-CA-LiamNeural",
+    "text": "within normal limits",
+    "path": "audio/pb4/pb4_s3_v5.mp3"
+  },
+  "pb4_s4_pt": {
+    "voice": "en-US-MichelleNeural",
+    "text": "That beeping machine — is something wrong with my heart?",
+    "path": "audio/pb4/pb4_s4_pt.mp3"
+  },
+  "pb4_s4_p0": {
+    "voice": "en-US-MichelleNeural",
+    "text": "Your heart rate is a little fast at 108 — that can happen when you're anxious or in pain.",
+    "path": "audio/pb4/pb4_s4_p0.mp3"
+  },
+  "pb4_s4_p1": {
+    "voice": "en-US-MichelleNeural",
+    "text": "The normal range is 60 to 100 beats per minute — yours is slightly above that.",
+    "path": "audio/pb4/pb4_s4_p1.mp3"
+  },
+  "pb4_s4_p2": {
+    "voice": "en-US-MichelleNeural",
+    "text": "I'll monitor it closely — please try to relax and take slow, deep breaths.",
+    "path": "audio/pb4/pb4_s4_p2.mp3"
+  },
+  "pb4_s4_p3": {
+    "voice": "en-US-MichelleNeural",
+    "text": "I'm going to let the doctor know about this reading.",
+    "path": "audio/pb4/pb4_s4_p3.mp3"
+  },
+  "pb4_s4_v0": {
+    "voice": "en-US-MichelleNeural",
+    "text": "pulse",
+    "path": "audio/pb4/pb4_s4_v0.mp3"
+  },
+  "pb4_s4_v1": {
+    "voice": "en-US-MichelleNeural",
+    "text": "tachycardia",
+    "path": "audio/pb4/pb4_s4_v1.mp3"
+  },
+  "pb4_s4_v2": {
+    "voice": "en-US-MichelleNeural",
+    "text": "within normal limits",
+    "path": "audio/pb4/pb4_s4_v2.mp3"
+  },
+  "pb4_s4_v3": {
+    "voice": "en-US-MichelleNeural",
+    "text": "slightly above",
+    "path": "audio/pb4/pb4_s4_v3.mp3"
+  },
+  "pb4_s4_v4": {
+    "voice": "en-US-MichelleNeural",
+    "text": "monitor",
+    "path": "audio/pb4/pb4_s4_v4.mp3"
+  },
+  "pb4_s4_v5": {
+    "voice": "en-US-MichelleNeural",
+    "text": "escalate",
+    "path": "audio/pb4/pb4_s4_v5.mp3"
+  },
+  "pb4_q0": {
+    "voice": "en-US-JennyNeural",
+    "text": "How do you correctly read '132/84 mmHg' aloud in clinical English?",
+    "path": "audio/pb4/pb4_q0.mp3"
+  },
+  "pb4_q1": {
+    "voice": "en-US-JennyNeural",
+    "text": "SpO2 is 93% on room air. Which response is most appropriate?",
+    "path": "audio/pb4/pb4_q1.mp3"
+  },
+  "pb4_q2": {
+    "voice": "en-US-JennyNeural",
+    "text": "A nurse says: 'RR is 22.' What does this mean?",
+    "path": "audio/pb4/pb4_q2.mp3"
+  },
+  "pb4_q3": {
+    "voice": "en-US-JennyNeural",
+    "text": "Which sentence uses the most appropriate register when explaining a normal temperature to a patient?",
+    "path": "audio/pb4/pb4_q3.mp3"
+  },
+  "pb4_q4": {
+    "voice": "en-US-JennyNeural",
+    "text": "A patient asks why you keep checking their blood pressure. What is the best explanation?",
+    "path": "audio/pb4/pb4_q4.mp3"
+  }
+}

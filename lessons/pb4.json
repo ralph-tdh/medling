@@ -1,0 +1,685 @@
+{
+  "meta": {
+    "id": "pb4",
+    "version": 1,
+    "title_en": "Vital Signs and Numbers",
+    "title_vi": "Các chỉ số sinh tồn và con số",
+    "level": 1,
+    "stage": "PB",
+    "cefr": "< A2",
+    "topic_tag": "vital-signs",
+    "hero_emoji": "📊",
+    "complete_en": "Lesson 4 complete!",
+    "complete_vi": "Bài 4 hoàn thành!",
+    "theme_color": "#854F0B",
+    "theme_light": "#FAEEDA",
+    "theme_shadow": "#5A3208"
+  },
+  "config": {},
+  "welcome": {
+    "scenario": [
+      {
+        "en": "You measure a patient's vital signs and write them down.",
+        "vi": "Bạn đo các chỉ số sinh tồn và ghi lại."
+      },
+      {
+        "en": "Now the patient asks what the numbers mean — and your colleague needs a quick verbal report.",
+        "vi": "Bệnh nhân hỏi các con số có nghĩa gì — và đồng nghiệp cần báo cáo nhanh bằng lời."
+      },
+      {
+        "en": "Can you say it all in English?",
+        "vi": "Bạn có thể nói tất cả bằng tiếng Anh không?",
+        "bold": true
+      }
+    ],
+    "can_do": [
+      {
+        "en": "Read blood pressure, heart rate, and temperature aloud in English",
+        "vi": "Đọc huyết áp, nhịp tim và nhiệt độ bằng tiếng Anh"
+      },
+      {
+        "en": "Report SpO2 and respiratory rate to a colleague",
+        "vi": "Báo SpO2 và nhịp thở cho đồng nghiệp"
+      },
+      {
+        "en": "Explain what 'within normal limits' means to a patient",
+        "vi": "Giải thích 'trong giới hạn bình thường' cho bệnh nhân"
+      },
+      {
+        "en": "Use the right words when a value is slightly outside normal range",
+        "vi": "Dùng đúng từ khi một chỉ số hơi ngoài giới hạn bình thường"
+      }
+    ],
+    "badges": [
+      {
+        "icon": "⏱️",
+        "label": "~15 min"
+      },
+      {
+        "icon": "🎯",
+        "label": "4 situations"
+      },
+      {
+        "icon": "📝",
+        "label": "5-Q quiz"
+      },
+      {
+        "icon": "🆓",
+        "label": "Free"
+      }
+    ]
+  },
+  "situations": [
+    {
+      "id": 1,
+      "emoji": "💓",
+      "tag": "Situation 1 / 4",
+      "en_tag": "Blood Pressure",
+      "en": "Reading blood pressure aloud",
+      "vi": "Đọc huyết áp thành lời",
+      "ctx_en": "You have just measured the patient's blood pressure. They ask you what the reading is.",
+      "ctx_vi": "Bạn vừa đo huyết áp bệnh nhân. Họ hỏi chỉ số là bao nhiêu.",
+      "pt": "So... what's my blood pressure?",
+      "pt_vi": "Vậy... huyết áp của tôi là bao nhiêu?",
+      "phrases": [
+        {
+          "en": "Your blood pressure is 120 over 80.",
+          "vi": "Huyết áp của bạn là 120 trên 80.",
+          "gl": {
+            "120 over 80": "120 trên 80 (cách đọc huyết áp)"
+          }
+        },
+        {
+          "en": "That's within the normal range — nothing to worry about.",
+          "vi": "Đây là trong giới hạn bình thường — không có gì đáng lo ngại.",
+          "gl": {
+            "within the normal range": "trong giới hạn bình thường"
+          }
+        },
+        {
+          "en": "The top number is your systolic pressure, and the bottom is diastolic.",
+          "vi": "Số trên là huyết áp tâm thu, số dưới là huyết áp tâm trương.",
+          "gl": {
+            "systolic": "tâm thu",
+            "diastolic": "tâm trương"
+          }
+        },
+        {
+          "en": "Your BP is a little high — I'll check it again in a few minutes.",
+          "vi": "Huyết áp của bạn hơi cao — tôi sẽ đo lại sau vài phút.",
+          "gl": {
+            "a little high": "hơi cao"
+          }
+        }
+      ],
+      "vocab": [
+        {
+          "en": "blood pressure",
+          "ipa": "blʌd ˈpreʃər",
+          "vi": "huyết áp"
+        },
+        {
+          "en": "systolic",
+          "ipa": "sɪˈstɒlɪk",
+          "vi": "tâm thu"
+        },
+        {
+          "en": "diastolic",
+          "ipa": "ˌdaɪəˈstɒlɪk",
+          "vi": "tâm trương"
+        },
+        {
+          "en": "mmHg",
+          "ipa": "ˈmɪlɪˌmiːtərz əv ˈmɜːkjʊri",
+          "vi": "milimét thuỷ ngân"
+        },
+        {
+          "en": "normal range",
+          "ipa": "ˈnɔːməl reɪndʒ",
+          "vi": "giới hạn bình thường"
+        },
+        {
+          "en": "reading",
+          "ipa": "ˈriːdɪŋ",
+          "vi": "chỉ số / kết quả đo"
+        }
+      ],
+      "pq_en": "A patient asks: 'What's my blood pressure?' The monitor shows 118/76. What do you say?",
+      "pq_vi": "Bệnh nhân hỏi: 'Huyết áp tôi bao nhiêu?' Máy hiển thị 118/76. Bạn nói gì?",
+      "opts": [
+        {
+          "t": "It's 118 slash 76.",
+          "ok": false,
+          "gl": {}
+        },
+        {
+          "t": "Your blood pressure is 118 over 76 — that's within the normal range.",
+          "ok": true,
+          "gl": {
+            "118 over 76": "118 trên 76",
+            "within the normal range": "trong giới hạn bình thường"
+          }
+        },
+        {
+          "t": "The numbers look fine, don't worry.",
+          "ok": false,
+          "gl": {}
+        },
+        {
+          "t": "BP is one-one-eight, seven-six.",
+          "ok": false,
+          "gl": {}
+        }
+      ],
+      "tip_en": "Say 'over' — not 'slash' — when reading BP aloud. '118 over 76' is standard clinical English. Always add context ('within normal range') so the patient understands.",
+      "tip_vi": "Đọc huyết áp dùng 'over', không nói 'slash'. '118 over 76' là cách nói chuẩn. Thêm ngữ cảnh ('trong giới hạn bình thường') để bệnh nhân hiểu.",
+      "role": "Any HCW",
+      "instruction": "Which is the best response?",
+      "instruction_vi": "Câu trả lời tốt nhất là gì?"
+    },
+    {
+      "id": 2,
+      "emoji": "🫀",
+      "tag": "Situation 2 / 4",
+      "en_tag": "Handover Report",
+      "en": "Reporting vitals to a colleague",
+      "vi": "Báo cáo chỉ số sinh tồn cho đồng nghiệp",
+      "ctx_en": "You are handing over a patient to the incoming nurse. You need to give a quick verbal summary of the vital signs.",
+      "ctx_vi": "Bạn đang bàn giao bệnh nhân cho điều dưỡng ca kế tiếp. Cần tóm tắt nhanh các chỉ số sinh tồn bằng lời.",
+      "pt": "Can you give me a quick update on the vitals?",
+      "pt_vi": "Bạn cập nhật nhanh các chỉ số sinh tồn cho tôi được không?",
+      "phrases": [
+        {
+          "en": "BP is 130 over 85, HR 88 beats per minute.",
+          "vi": "Huyết áp 130 trên 85, nhịp tim 88 lần mỗi phút.",
+          "gl": {
+            "beats per minute": "lần mỗi phút"
+          }
+        },
+        {
+          "en": "Respiratory rate is 18 breaths per minute, temperature 37.0 degrees Celsius.",
+          "vi": "Nhịp thở 18 lần mỗi phút, nhiệt độ 37.0 độ Celsius.",
+          "gl": {
+            "breaths per minute": "lần thở mỗi phút",
+            "degrees Celsius": "độ Celsius"
+          }
+        },
+        {
+          "en": "SpO2 is 97 percent on room air.",
+          "vi": "SpO2 là 97 phần trăm khi thở khí phòng.",
+          "gl": {
+            "on room air": "khi thở khí phòng (không thở oxy)"
+          }
+        },
+        {
+          "en": "All vitals are stable — no acute concerns.",
+          "vi": "Tất cả chỉ số sinh tồn ổn định — không có lo ngại cấp tính.",
+          "gl": {
+            "stable": "ổn định",
+            "acute concerns": "lo ngại cấp tính"
+          }
+        }
+      ],
+      "vocab": [
+        {
+          "en": "vital signs",
+          "ipa": "ˈvaɪtəl saɪnz",
+          "vi": "chỉ số sinh tồn"
+        },
+        {
+          "en": "heart rate",
+          "ipa": "hɑːt reɪt",
+          "vi": "nhịp tim"
+        },
+        {
+          "en": "respiratory rate",
+          "ipa": "rɪˈspɪrətəri reɪt",
+          "vi": "nhịp thở"
+        },
+        {
+          "en": "beats per minute",
+          "ipa": "biːts pər ˈmɪnɪt",
+          "vi": "lần mỗi phút (nhịp tim)"
+        },
+        {
+          "en": "breaths per minute",
+          "ipa": "breθs pər ˈmɪnɪt",
+          "vi": "lần mỗi phút (nhịp thở)"
+        },
+        {
+          "en": "stable",
+          "ipa": "ˈsteɪbəl",
+          "vi": "ổn định"
+        },
+        {
+          "en": "handover",
+          "ipa": "ˈhændˌoʊvər",
+          "vi": "bàn giao (ca trực)"
+        }
+      ],
+      "pq_en": "Your colleague asks for the heart rate. The monitor shows 76. What do you say?",
+      "pq_vi": "Đồng nghiệp hỏi nhịp tim. Máy hiển thị 76. Bạn nói gì?",
+      "opts": [
+        {
+          "t": "Heart rate is 76 beats per minute.",
+          "ok": true,
+          "gl": {
+            "beats per minute": "lần mỗi phút"
+          }
+        },
+        {
+          "t": "Pulse is 76 Celsius.",
+          "ok": false,
+          "gl": {}
+        },
+        {
+          "t": "HR equals seventy-six.",
+          "ok": false,
+          "gl": {}
+        },
+        {
+          "t": "The heart is beating at normal.",
+          "ok": false,
+          "gl": {}
+        }
+      ],
+      "tip_en": "'Heart rate is 76 beats per minute' is the full spoken form. In fast clinical handovers, 'HR 76' is also accepted — but always say the unit ('beats per minute') when speaking to a patient.",
+      "tip_vi": "'Heart rate is 76 beats per minute' là cách nói đầy đủ. Khi bàn giao nhanh, 'HR 76' được chấp nhận — nhưng với bệnh nhân, luôn nói đơn vị rõ ràng.",
+      "role": "Any HCW",
+      "instruction": "Which is the best response?",
+      "instruction_vi": "Câu trả lời tốt nhất là gì?"
+    },
+    {
+      "id": 3,
+      "emoji": "🌡️",
+      "tag": "Situation 3 / 4",
+      "en_tag": "SpO2 & Temperature",
+      "en": "Reporting SpO2 and temperature",
+      "vi": "Báo SpO2 và nhiệt độ",
+      "ctx_en": "You have just checked a patient's SpO2 and temperature. The patient asks if the results are normal.",
+      "ctx_vi": "Bạn vừa kiểm tra SpO2 và nhiệt độ của bệnh nhân. Họ hỏi kết quả có bình thường không.",
+      "pt": "Are those numbers okay? What do they mean?",
+      "pt_vi": "Các con số đó có ổn không? Chúng có nghĩa gì?",
+      "phrases": [
+        {
+          "en": "Your oxygen saturation is 98 percent on room air — that's very good.",
+          "vi": "Độ bão hoà oxy của bạn là 98 phần trăm khi thở khí phòng — rất tốt.",
+          "gl": {
+            "oxygen saturation": "độ bão hoà oxy",
+            "on room air": "khi thở khí phòng"
+          }
+        },
+        {
+          "en": "Your temperature is 37.0 degrees Celsius — perfectly normal.",
+          "vi": "Nhiệt độ của bạn là 37.0 độ Celsius — hoàn toàn bình thường.",
+          "gl": {
+            "degrees Celsius": "độ Celsius"
+          }
+        },
+        {
+          "en": "SpO2 above 95 percent is what we want to see — yours is fine.",
+          "vi": "SpO2 trên 95 phần trăm là mức chúng tôi muốn thấy — của bạn ổn.",
+          "gl": {
+            "SpO2": "độ bão hoà oxy mao mạch"
+          }
+        },
+        {
+          "en": "The temperature is slightly elevated at 38.1 — I'll keep monitoring.",
+          "vi": "Nhiệt độ hơi cao ở mức 38.1 — tôi sẽ tiếp tục theo dõi.",
+          "gl": {
+            "slightly elevated": "hơi cao",
+            "keep monitoring": "tiếp tục theo dõi"
+          }
+        }
+      ],
+      "vocab": [
+        {
+          "en": "oxygen saturation",
+          "ipa": "ˈɒksɪdʒən ˌsætʃəˈreɪʃən",
+          "vi": "độ bão hoà oxy"
+        },
+        {
+          "en": "SpO2",
+          "ipa": "es piː oʊ tuː",
+          "vi": "SpO2 (độ bão hoà oxy mao mạch)"
+        },
+        {
+          "en": "temperature",
+          "ipa": "ˈtemprɪtʃər",
+          "vi": "nhiệt độ"
+        },
+        {
+          "en": "degrees Celsius",
+          "ipa": "dɪˈɡriːz ˈselsiəs",
+          "vi": "độ Celsius"
+        },
+        {
+          "en": "slightly elevated",
+          "ipa": "ˈslaɪtli ˈelɪveɪtɪd",
+          "vi": "hơi tăng / hơi cao"
+        },
+        {
+          "en": "within normal limits",
+          "ipa": "wɪˈðɪn ˈnɔːməl ˈlɪmɪts",
+          "vi": "trong giới hạn bình thường"
+        }
+      ],
+      "pq_en": "SpO2 reads 94% on room air. What is the most appropriate response to the patient?",
+      "pq_vi": "SpO2 đọc được 94% khi thở khí phòng. Câu trả lời phù hợp nhất cho bệnh nhân là gì?",
+      "opts": [
+        {
+          "t": "Your oxygen level is perfect.",
+          "ok": false,
+          "gl": {}
+        },
+        {
+          "t": "94 percent — that's a bit low. I'm going to get some oxygen for you right away.",
+          "ok": true,
+          "gl": {
+            "a bit low": "hơi thấp",
+            "get some oxygen": "cho thở oxy"
+          }
+        },
+        {
+          "t": "SpO2 is 94, which is fine.",
+          "ok": false,
+          "gl": {}
+        },
+        {
+          "t": "I'm not sure what that means — let me call someone.",
+          "ok": false,
+          "gl": {}
+        }
+      ],
+      "tip_en": "SpO2 ≥95% on room air is normal in healthy adults. At 94%, the clinical standard is to act, not reassure. The correct answer shows both clear communication AND appropriate clinical response.",
+      "tip_vi": "SpO2 ≥95% khi thở khí phòng là bình thường ở người lớn khoẻ mạnh. Ở 94%, cần hành động, không được trấn an bệnh nhân. Câu đúng thể hiện cả giao tiếp rõ ràng lẫn phản ứng lâm sàng phù hợp.",
+      "role": "Any HCW",
+      "instruction": "Which is the best response?",
+      "instruction_vi": "Câu trả lời tốt nhất là gì?"
+    },
+    {
+      "id": 4,
+      "emoji": "📋",
+      "tag": "Situation 4 / 4",
+      "en_tag": "Reassurance & Escalation",
+      "en": "Explaining an abnormal value",
+      "vi": "Giải thích chỉ số bất thường",
+      "ctx_en": "A patient's heart rate is 108 bpm. They look worried. You need to explain the finding calmly and clearly.",
+      "ctx_vi": "Nhịp tim bệnh nhân là 108 lần/phút. Họ trông lo lắng. Bạn cần giải thích kết quả một cách bình tĩnh và rõ ràng.",
+      "pt": "That beeping machine — is something wrong with my heart?",
+      "pt_vi": "Cái máy kêu bíp bíp đó — tim tôi có vấn đề gì không?",
+      "phrases": [
+        {
+          "en": "Your heart rate is a little fast at 108 — that can happen when you're anxious or in pain.",
+          "vi": "Nhịp tim của bạn hơi nhanh ở mức 108 — điều đó có thể xảy ra khi bạn lo lắng hoặc đau.",
+          "gl": {
+            "a little fast": "hơi nhanh"
+          }
+        },
+        {
+          "en": "The normal range is 60 to 100 beats per minute — yours is slightly above that.",
+          "vi": "Giới hạn bình thường là 60 đến 100 lần mỗi phút — của bạn hơi cao hơn một chút.",
+          "gl": {
+            "slightly above": "hơi cao hơn một chút"
+          }
+        },
+        {
+          "en": "I'll monitor it closely — please try to relax and take slow, deep breaths.",
+          "vi": "Tôi sẽ theo dõi chặt — xin hãy thư giãn và thở chậm, sâu.",
+          "gl": {
+            "monitor closely": "theo dõi chặt"
+          }
+        },
+        {
+          "en": "I'm going to let the doctor know about this reading.",
+          "vi": "Tôi sẽ báo cho bác sĩ biết về chỉ số này.",
+          "gl": {
+            "let the doctor know": "báo cho bác sĩ biết"
+          }
+        }
+      ],
+      "vocab": [
+        {
+          "en": "pulse",
+          "ipa": "pʌls",
+          "vi": "mạch / nhịp đập"
+        },
+        {
+          "en": "tachycardia",
+          "ipa": "ˌtækɪˈkɑːdiə",
+          "vi": "nhịp tim nhanh"
+        },
+        {
+          "en": "within normal limits",
+          "ipa": "wɪˈðɪn ˈnɔːməl ˈlɪmɪts",
+          "vi": "trong giới hạn bình thường"
+        },
+        {
+          "en": "slightly above",
+          "ipa": "ˈslaɪtli əˈbʌv",
+          "vi": "hơi cao hơn"
+        },
+        {
+          "en": "monitor",
+          "ipa": "ˈmɒnɪtər",
+          "vi": "theo dõi / máy theo dõi"
+        },
+        {
+          "en": "escalate",
+          "ipa": "ˈeskəleɪt",
+          "vi": "báo cáo lên / leo thang xử lý"
+        }
+      ],
+      "pq_en": "HR is 108 bpm. The patient is worried. What is the best way to respond?",
+      "pq_vi": "Nhịp tim 108 lần/phút. Bệnh nhân đang lo lắng. Cách phản hồi tốt nhất là gì?",
+      "opts": [
+        {
+          "t": "108 is fine — don't worry at all.",
+          "ok": false,
+          "gl": {}
+        },
+        {
+          "t": "Your heart rate is a little fast, but I'm going to monitor you closely and let the doctor know.",
+          "ok": true,
+          "gl": {
+            "a little fast": "hơi nhanh",
+            "monitor closely": "theo dõi chặt"
+          }
+        },
+        {
+          "t": "You have tachycardia. This is a serious problem.",
+          "ok": false,
+          "gl": {}
+        },
+        {
+          "t": "I need to check the machine — it might be wrong.",
+          "ok": false,
+          "gl": {}
+        }
+      ],
+      "tip_en": "Option 3 is medically correct ('tachycardia') but uses clinical jargon that increases patient anxiety. Option 1 is falsely reassuring. Option 4 undermines trust. The correct answer balances honesty, plain language, and appropriate escalation.",
+      "tip_vi": "Đáp án 3 đúng về y khoa ('tachycardia') nhưng dùng thuật ngữ lâm sàng làm bệnh nhân thêm lo. Đáp án 1 trấn an sai. Đáp án 4 làm mất lòng tin. Câu đúng cân bằng sự thật, ngôn ngữ đơn giản và leo thang xử lý phù hợp.",
+      "role": "Any HCW",
+      "instruction": "Which is the best response?",
+      "instruction_vi": "Câu trả lời tốt nhất là gì?"
+    }
+  ],
+  "quiz": [
+    {
+      "en": "How do you correctly read '132/84 mmHg' aloud in clinical English?",
+      "vi": "Cách đọc '132/84 mmHg' đúng trong tiếng Anh lâm sàng là gì?",
+      "opts": [
+        {
+          "t": "132 slash 84 millimetres.",
+          "ok": false,
+          "gl": {}
+        },
+        {
+          "t": "132 over 84.",
+          "ok": true,
+          "gl": {
+            "over": "trên (cách đọc huyết áp)"
+          }
+        },
+        {
+          "t": "BP 132 by 84.",
+          "ok": false,
+          "gl": {}
+        },
+        {
+          "t": "One-three-two, eight-four.",
+          "ok": false,
+          "gl": {}
+        }
+      ],
+      "exp_en": "'Over' is the standard spoken form for blood pressure in English. 'Slash' and 'by' are not used clinically. Reading digits separately ('one-three-two') is informal and unclear.",
+      "exp_vi": "'Over' là cách đọc huyết áp chuẩn trong tiếng Anh. 'Slash' và 'by' không dùng trong lâm sàng. Đọc từng chữ số ('one-three-two') là không chính thức và thiếu rõ ràng."
+    },
+    {
+      "en": "SpO2 is 93% on room air. Which response is most appropriate?",
+      "vi": "SpO2 là 93% khi thở khí phòng. Phản hồi nào phù hợp nhất?",
+      "opts": [
+        {
+          "t": "SpO2 is 93 — within normal limits.",
+          "ok": false,
+          "gl": {}
+        },
+        {
+          "t": "Your oxygen level is fine.",
+          "ok": false,
+          "gl": {}
+        },
+        {
+          "t": "Oxygen saturation is 93 percent — that's a bit low. I'm going to give you some supplemental oxygen.",
+          "ok": true,
+          "gl": {
+            "supplemental oxygen": "oxy bổ sung"
+          }
+        },
+        {
+          "t": "93 percent is acceptable for your age.",
+          "ok": false,
+          "gl": {}
+        }
+      ],
+      "exp_en": "In a healthy adult, SpO2 below 95% on room air requires action, not reassurance. 'Supplemental oxygen' is the correct clinical term. Saying it's 'fine' or 'within normal limits' at 93% is clinically inaccurate.",
+      "exp_vi": "Ở người lớn khoẻ mạnh, SpO2 dưới 95% khi thở khí phòng cần can thiệp, không trấn an. 'Supplemental oxygen' là thuật ngữ lâm sàng đúng. Nói 'ổn' hay 'trong giới hạn bình thường' ở 93% là sai về lâm sàng."
+    },
+    {
+      "en": "A nurse says: 'RR is 22.' What does this mean?",
+      "vi": "Điều dưỡng nói: 'RR là 22.' Điều này có nghĩa là gì?",
+      "opts": [
+        {
+          "t": "The patient's heart rate is 22 beats per minute.",
+          "ok": false,
+          "gl": {}
+        },
+        {
+          "t": "The patient's respiratory rate is 22 breaths per minute.",
+          "ok": true,
+          "gl": {
+            "respiratory rate": "nhịp thở",
+            "breaths per minute": "lần thở mỗi phút"
+          }
+        },
+        {
+          "t": "The patient's blood pressure reading is 22.",
+          "ok": false,
+          "gl": {}
+        },
+        {
+          "t": "The patient's temperature is 22 degrees Celsius.",
+          "ok": false,
+          "gl": {}
+        }
+      ],
+      "exp_en": "RR = Respiratory Rate. The normal adult range is 12–20 breaths per minute. A rate of 22 is mildly elevated (tachypnoea) and should be monitored.",
+      "exp_vi": "RR = Respiratory Rate (nhịp thở). Giới hạn bình thường ở người lớn là 12–20 lần/phút. Nhịp thở 22 là hơi tăng (thở nhanh — tachypnoea) và cần theo dõi."
+    },
+    {
+      "en": "Which sentence uses the most appropriate register when explaining a normal temperature to a patient?",
+      "vi": "Câu nào dùng văn phong phù hợp nhất khi giải thích nhiệt độ bình thường cho bệnh nhân?",
+      "opts": [
+        {
+          "t": "Afebrile. Normal.",
+          "ok": false,
+          "gl": {}
+        },
+        {
+          "t": "Your temperature is 37.0 degrees Celsius — that's perfectly normal.",
+          "ok": true,
+          "gl": {
+            "perfectly normal": "hoàn toàn bình thường"
+          }
+        },
+        {
+          "t": "Temp 37.0, afebrile, no pyrexia noted.",
+          "ok": false,
+          "gl": {}
+        },
+        {
+          "t": "The thermometer says 37 degrees, which means no fever.",
+          "ok": false,
+          "gl": {}
+        }
+      ],
+      "exp_en": "Options 1 and 3 use clinical documentation language, inappropriate for patient communication. Option 4 is acceptable but informal. Option 2 uses plain English with precise numbers — the gold standard for patient-facing communication.",
+      "exp_vi": "Đáp án 1 và 3 dùng ngôn ngữ hồ sơ lâm sàng, không phù hợp khi nói chuyện với bệnh nhân. Đáp án 4 chấp nhận được nhưng quá thông thường. Đáp án 2 dùng tiếng Anh đơn giản với số liệu chính xác — đây là chuẩn giao tiếp với bệnh nhân."
+    },
+    {
+      "en": "A patient asks why you keep checking their blood pressure. What is the best explanation?",
+      "vi": "Bệnh nhân hỏi tại sao bạn cứ đo huyết áp liên tục. Giải thích tốt nhất là gì?",
+      "opts": [
+        {
+          "t": "It's protocol.",
+          "ok": false,
+          "gl": {}
+        },
+        {
+          "t": "We monitor your blood pressure regularly to make sure it stays within a safe range.",
+          "ok": true,
+          "gl": {
+            "monitor regularly": "theo dõi thường xuyên",
+            "within a safe range": "trong giới hạn an toàn"
+          }
+        },
+        {
+          "t": "Your BP was high earlier so we're watching it.",
+          "ok": false,
+          "gl": {}
+        },
+        {
+          "t": "The doctor told me to.",
+          "ok": false,
+          "gl": {}
+        }
+      ],
+      "exp_en": "Options 1 and 4 give no useful information. Option 3 may be accurate but lacks reassurance. Option 2 explains the reason clearly, uses 'within a safe range' (patient-friendly language), and gives the patient a sense of control and safety.",
+      "exp_vi": "Đáp án 1 và 4 không cung cấp thông tin hữu ích. Đáp án 3 có thể đúng nhưng thiếu trấn an. Đáp án 2 giải thích lý do rõ ràng, dùng 'within a safe range' (ngôn ngữ thân thiện với bệnh nhân) và giúp bệnh nhân cảm thấy an toàn và có kiểm soát."
+    }
+  ],
+  "done": {
+    "achievements": [
+      {
+        "emoji": "💓",
+        "en": "Read blood pressure, heart rate, and temperature aloud in English",
+        "vi": "Đọc huyết áp, nhịp tim và nhiệt độ bằng tiếng Anh"
+      },
+      {
+        "emoji": "📡",
+        "en": "Report SpO2 and respiratory rate to a colleague",
+        "vi": "Báo SpO2 và nhịp thở cho đồng nghiệp"
+      },
+      {
+        "emoji": "✅",
+        "en": "Explain 'within normal limits' to a patient",
+        "vi": "Giải thích 'trong giới hạn bình thường' cho bệnh nhân"
+      },
+      {
+        "emoji": "⚠️",
+        "en": "Use the right words when a value is slightly outside normal range",
+        "vi": "Dùng đúng từ khi chỉ số hơi ngoài giới hạn bình thường"
+      }
+    ]
+  }
+}

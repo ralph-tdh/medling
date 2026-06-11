@@ -1,0 +1,50 @@
+[
+  {
+    "id": "pb1",
+    "emoji": "🏥",
+    "title_en": "When a patient stops you in the hallway",
+    "title_vi": "Khi bệnh nhân bắt chuyện ngoài hành lang",
+    "stage": "PB",
+    "cefr": "< A2",
+    "duration": "~15 min",
+    "situations": 4,
+    "quiz": 5,
+    "tier": "free"
+  },
+  {
+    "id": "pb2",
+    "emoji": "🧠",
+    "title_en": "You Already Know Medical English",
+    "title_vi": "Bạn đã biết Medical English rồi",
+    "stage": "PB",
+    "cefr": "< A2",
+    "duration": "~15 min",
+    "situations": 4,
+    "quiz": 5,
+    "tier": "free"
+  },
+  {
+    "id": "pb3",
+    "emoji": "🩺",
+    "title_en": "First Clinical Encounter",
+    "title_vi": "Cuộc gặp gỡ lâm sàng đầu tiên",
+    "stage": "PB",
+    "cefr": "< A2",
+    "duration": "~15 min",
+    "situations": 4,
+    "quiz": 5,
+    "tier": "free"
+  },
+  {
+    "id": "pb4",
+    "emoji": "📊",
+    "title_en": "Vital Signs and Numbers",
+    "title_vi": "Các chỉ số sinh tồn và con số",
+    "stage": "PB",
+    "cefr": "< A2",
+    "duration": "~15 min",
+    "situations": 4,
+    "quiz": 5,
+    "tier": "free"
+  }
+]
