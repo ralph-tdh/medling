@@ -1,21 +1,26 @@
 # MedLing — Project Index (repo mirror)
 
 > Load this FIRST each session, then open only the 1–3 files you need.
-> Updated: 2026-06-11 (Wave 0). Drive copy syncs in Wave F.
+> Updated: 2026-06-12 (Waves 0–F complete; awaiting Gate 2 + Gate 5).
 
 ## Project tree (4 branches)
 
 ✓ done · ◐ in progress · ○ todo
 
 **MedLing**
-- **0 · Governance** — ✓ CLAUDE.md constitution · ✓ decision_log (D1–D31) · ✓ agent team (.claude/agents)
+- **0 · Governance** — ✓ CLAUDE.md constitution · ✓ decision_log (D1–D32) · ✓ agent team (14 in .claude/agents)
   · ✓ skills (.claude/skills) · ✓ spec `docs/specs/2026-06-11-medling-official-design.md`
-- **1 · Content engine** — ✓ PB1–PB4 imported · ○ morphology DB · ○ Stage 1A extraction → Gate 1 →
-  authoring → Gate 2 → 1A-01…10 (Wave E)
-- **2 · Product** — ✓ shell+JSON player at `app/` (paths verified) · ◐ brand (Wave A) ·
-  ○ engine v2 modules + dialogue + morph popup + notebook + PWA + FSRS + roleplay scaffold (Wave B) ·
-  ○ landing (Wave C) · ○ Supabase + soft gate (Wave D)
+- **1 · Content engine** — ✓ PB1–PB4 imported · ✓ morphology DB (`data/morphology.json`) ·
+  ✓ Stage 1A authored (10 drafts in `lessons/_drafts/`) + validator · ◐ **Gate 2 sign-off pending**
+  (`docs/reports/2026-06-12-gate2-packet-1a.md`) · 1B→3A scaffolded (`lessons/roadmap.json`)
+- **2 · Product** — ✓ shell+JSON player (Atelier restyle) · ✓ brand "Atelier" (`brand/`) ·
+  ✓ engine v2: branching dialogue + morph popup + notebook + PWA + FSRS + roleplay scaffold (flag OFF) ·
+  ✓ landing (`index.html`) · ✓ Supabase code + soft gate (`supabase/`, mocked until Gate 5)
 - **3 · Distribution** — Phase 3, untouched
+
+## Ship state (Gate 5 — Ralph)
+Built + committed locally on `master`. Not yet on GitHub. Runbook: `docs/DEPLOY.md`
+(create repo `medling` public → push → Pages → optional Supabase). Drafts ship after Gate 2.
 
 ## Where things live
 
