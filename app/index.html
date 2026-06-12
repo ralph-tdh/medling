@@ -147,7 +147,24 @@
     +'</button>';
   }
 
-  function renderPicker(lessons) {
+  function stageCard(s) {
+    var sc = STAGE_COLORS[s.stage] || 'var(--ml-moss)';
+    var building = s.status === 'building';
+    return '<div class="pk-card pk-coming" style="border-style:dashed">'
+      +'<div class="pk-emoji" style="background:'+sc+'14;border-color:'+sc+'50">'+s.emoji+'</div>'
+      +'<div class="pk-meta">'
+        +'<div class="pk-title">Stage '+s.stage+' — '+s.name_en+'</div>'
+        +'<div class="pk-vi">'+s.name_vi+'</div>'
+        +'<div class="pk-badges">'
+          +'<span class="pk-pill" style="color:'+sc+';border-color:'+sc+'60;background:'+sc+'10">'+s.lessons+' bài · '+s.cefr+'</span>'
+          +'<span class="pk-pill" style="color:'+(building?'var(--ml-warn)':'var(--ml-earth)')+';border-color:var(--ml-line);background:transparent">'
+            +(building ? '🔨 Đang xây' : '🔒 ' + (s.tier === 'premium' ? 'Premium · Sắp ra mắt' : 'Sắp ra mắt'))+'</span>'
+        +'</div>'
+      +'</div>'
+    +'</div>';
+  }
+
+  function renderPicker(lessons, roadmap) {
     var app = document.getElementById('app');
     /* Group by stage so the journey reads top-down: PB → 1A → … */
     var order = ['PB','1A','1B','2A','2B','3A','3B','4A','4B','5A','5B'];
@@ -161,6 +178,14 @@
     /* Lessons without a known stage fall through at the end */
     var rest = lessons.filter(function(l){ return order.indexOf(l.stage) === -1; });
     if (rest.length) body += '<div class="pk-stage-lab">More</div>' + rest.map(lessonCard).join('');
+    /* Coming-soon stages from roadmap.json (journey to 3A — D32) */
+    if (roadmap && roadmap.stages) {
+      var coming = roadmap.stages.filter(function(s){ return !groups[s.stage]; });
+      if (coming.length) {
+        body += '<div class="pk-stage-lab">Lộ trình — The road to L3</div>'
+          + coming.map(stageCard).join('');
+      }
+    }
 
     app.innerHTML = '<div style="height:4px;background:linear-gradient(90deg,#B5A98E,#8DA088,#4F6B57,#33473A)"></div>'
       +'<div class="pk-wrap su">'
@@ -205,10 +230,12 @@
     return;
   }
 
-  // 3) No param → show lesson picker
-  fetch('../lessons/index.json')
-    .then(function(r){ if(!r.ok) throw new Error('HTTP '+r.status); return r.json(); })
-    .then(function(lessons){ renderPicker(lessons); })
+  // 3) No param → show lesson picker (live lessons + coming-soon roadmap stages)
+  Promise.all([
+    fetch('../lessons/index.json').then(function(r){ if(!r.ok) throw new Error('HTTP '+r.status); return r.json(); }),
+    fetch('../lessons/roadmap.json').then(function(r){ return r.ok ? r.json() : null; }).catch(function(){ return null; })
+  ])
+    .then(function(res){ renderPicker(res[0], res[1]); })
     .catch(function(){
       // index.json not found — fallback: redirect to pb1
       loadLesson('pb1');

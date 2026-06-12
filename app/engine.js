@@ -188,6 +188,7 @@ function renderApp() {
   var html;
   if      (S.screen === 'welcome')   html = renderWelcome();
   else if (S.screen === 'sit')       html = renderSit();
+  else if (S.screen === 'dialogue')  html = renderDialogueScreen();
   else if (S.screen === 'quiz')      html = renderQuiz();
   else if (S.screen === 'flashcard') html = renderFlashcard();
   else if (S.screen === 'revquiz')   html = renderRevQuiz();
@@ -426,9 +427,44 @@ function nextSit() {
     S.si++; S.phase='learn'; S.pqSel=null;
     S.sOpts = shuffle(SITS[S.si].opts);
     goTo('sit');
+  } else if (L.dialogue && window.MedLing && window.MedLing.dialogue && !S.dlgDone) {
+    /* Branching dialogue step (tier-2 novel feature) — only when the lesson
+       provides one AND the module loaded (standalone w/o module skips to quiz). */
+    goTo('dialogue');
   } else {
     initQuiz();
   }
+}
+
+/* ── BRANCHING DIALOGUE (lesson-level, optional) ─────────────── */
+function renderDialogueScreen() {
+  /* Engine paints the frame; MedLing.dialogue manages its own state inside #dlg-mount. */
+  setTimeout(function () {
+    var mount = document.getElementById('dlg-mount');
+    if (!mount) return;
+    window.MedLing.dialogue.render(L.dialogue, mount, {
+      onDone: function () {
+        S.dlgDone = true;
+        var btn = document.getElementById('dlg-continue');
+        if (btn) btn.style.display = 'block';
+      }
+    });
+  }, 0);
+  return progBar(80)
+    +'<div class="su" style="max-width:460px;margin:0 auto;padding:16px 16px 28px">'
+      +'<div style="display:flex;gap:6px;margin-bottom:14px;flex-wrap:wrap">'
+        +'<span style="padding:3px 10px;border-radius:20px;border:1px solid var(--ml-sage);background:var(--ml-ok-bg);color:var(--ml-moss);font-size:11px;font-weight:600">💬 '
+          +esc((L.dialogue.title_en)||'Clinical Dialogue')+'</span>'
+      +'</div>'
+      +(L.dialogue.ctx_en
+        ? '<div style="background:#fff;border-radius:14px;padding:13px 15px;border:1px solid var(--ml-line);margin-bottom:12px">'
+          +'<div style="font-size:10px;text-transform:uppercase;letter-spacing:.09em;color:var(--ml-sage);font-weight:600;margin-bottom:6px">Scene — Bối cảnh</div>'
+          +'<div style="font-size:13px;color:var(--ml-ink);line-height:1.7">'+esc(L.dialogue.ctx_en)+'</div>'
+          +(L.dialogue.ctx_vi?'<div style="font-size:12px;color:var(--ml-earth);font-style:italic;line-height:1.6">'+esc(L.dialogue.ctx_vi)+'</div>':'')
+        +'</div>' : '')
+      +'<div id="dlg-mount"></div>'
+      +'<button id="dlg-continue" class="mbtn" style="background:var(--ml-forest);color:var(--ml-cream);display:none;margin-top:14px" onclick="initQuiz()">Start Quiz — Làm bài kiểm tra →</button>'
+    +'</div>';
 }
 
 /* ── QUIZ ─────────────────────────────────────────────────── */
