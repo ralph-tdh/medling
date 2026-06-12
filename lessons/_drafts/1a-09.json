@@ -1,0 +1,249 @@
+{
+  "_gate_status": "DRAFT — pending Gate 1 (Chabner body-system intro) + Gate 2 Ralph sign-off. Morphemes verified against data/morphology.json.",
+  "meta": {
+    "id": "1a-09",
+    "title_en": "Nerve, Muscle & Bone Families",
+    "title_vi": "Họ từ thần kinh, cơ & xương",
+    "level": 1, "stage": "1A", "cefr": "A2+",
+    "hero_emoji": "🦴",
+    "complete_en": "You can decode the musculoskeletal & nervous systems!",
+    "complete_vi": "Bạn giải mã được hệ cơ-xương & thần kinh!",
+    "tier": "free", "duration": "~15 min",
+    "theme_color": "#9AA989", "theme_light": "#EFF2EA", "theme_shadow": "#74906F"
+  },
+  "config": { "next": { "url": "?lesson=1a-10", "label": "Next: Anatomical Planes & Review", "label_vi": "Tiếp: Mặt phẳng giải phẫu & ôn tập", "free": true } },
+  "welcome": {
+    "scenario": [
+      { "en": "Four more high-value roots cover nerves, muscles and bones — the words behind most pain complaints.", "vi": "Bốn gốc giá trị cao nữa bao trùm thần kinh, cơ và xương — gốc của hầu hết than phiền đau.", "bold": true },
+      { "en": "neur/o (nerve), my/o (muscle), oste/o (bone), arthr/o (joint).", "vi": "neur/o (thần kinh), my/o (cơ), oste/o (xương), arthr/o (khớp)." },
+      { "en": "With these, '-algia' (pain) becomes a precise location, not just 'it hurts'.", "vi": "Có chúng, '-algia' (đau) thành vị trí chính xác, không chỉ 'đau thôi'." }
+    ],
+    "can_do": [
+      { "en": "Use neur/o, my/o, oste/o, arthr/o", "vi": "Dùng neur/o, my/o, oste/o, arthr/o" },
+      { "en": "Use -algia to name pain precisely", "vi": "Dùng -algia để gọi tên cơn đau chính xác" },
+      { "en": "Decode arthritis, neuralgia, myalgia", "vi": "Giải mã arthritis, neuralgia, myalgia" },
+      { "en": "Map a pain complaint to the right word", "vi": "Ánh xạ than phiền đau sang đúng từ" }
+    ],
+    "badges": [
+      { "icon": "🦴", "label": "Musculoskeletal & nerves" },
+      { "icon": "🌱", "label": "Stage 1A · Lesson 9" },
+      { "icon": "🆓", "label": "Free" }
+    ]
+  },
+  "situations": [
+    {
+      "tag": "Thần kinh", "en_tag": "Nerve", "emoji": "⚡",
+      "en": "neur/o — the nerves", "vi": "neur/o — thần kinh",
+      "ctx_en": "neur/o means nerve. neurology studies the nervous system; neuralgia is nerve pain; a neuropathy is nerve disease.",
+      "ctx_vi": "neur/o nghĩa là thần kinh. neurology nghiên cứu hệ thần kinh; neuralgia là đau dây thần kinh; neuropathy là bệnh thần kinh.",
+      "pt": "(A diabetic patient with tingling feet is told it may be 'neuropathy'.)",
+      "pt_vi": "(Bệnh nhân tiểu đường tê chân được báo có thể là 'neuropathy'.)",
+      "phrases": [
+        { "en": "neur/o means nerve.", "vi": "neur/o nghĩa là thần kinh.", "gl": { "nerve": "thần kinh" } },
+        { "en": "Neuralgia is nerve pain.", "vi": "Neuralgia là đau dây thần kinh.", "gl": { "pain": "đau" } },
+        { "en": "Neuropathy is disease of the nerves.", "vi": "Neuropathy là bệnh thần kinh.", "gl": { "disease": "bệnh lý" } }
+      ],
+      "vocab": [
+        { "en": "neur/o", "ipa": "ˈnjʊərəʊ", "vi": "thần kinh (gốc)" },
+        { "en": "neuralgia", "ipa": "njʊəˈrældʒə", "vi": "đau dây thần kinh" },
+        { "en": "neuropathy", "ipa": "njʊəˈrɒpəθi", "vi": "bệnh thần kinh" },
+        { "en": "neurology", "ipa": "njʊəˈrɒlədʒi", "vi": "khoa thần kinh" },
+        { "en": "nerve", "ipa": "nɜːv", "vi": "dây thần kinh" }
+      ],
+      "pq_en": "Disease of the nerves (no inflammation specified) is…",
+      "pq_vi": "Bệnh của dây thần kinh (không nêu viêm) là…",
+      "opts": [
+        { "t": "neuropathy (-pathy = disease)", "ok": true, "gl": { "disease": "bệnh lý" } },
+        { "t": "neuralgia (-algia = disease)", "ok": false, "gl": { "pain": "đau" } },
+        { "t": "neuritis (-itis = disease)", "ok": false, "gl": { "inflammation": "viêm" } }
+      ],
+      "tip_en": "-pathy = disease (general), -algia = pain, -itis = inflammation. Same root, precise suffix.",
+      "tip_vi": "-pathy = bệnh (chung), -algia = đau, -itis = viêm. Cùng gốc, hậu tố chính xác."
+    },
+    {
+      "tag": "Cơ", "en_tag": "Muscle", "emoji": "💪",
+      "en": "my/o — the muscle", "vi": "my/o — cơ",
+      "ctx_en": "my/o means muscle. myalgia is muscle pain; myopathy is muscle disease. You met it in 'myocardial' (heart muscle).",
+      "ctx_vi": "my/o nghĩa là cơ. myalgia là đau cơ; myopathy là bệnh cơ. Bạn đã gặp trong 'myocardial' (cơ tim).",
+      "pt": "(A patient with body aches from flu reports 'myalgia' on a form.)",
+      "pt_vi": "(Bệnh nhân đau nhức người do cúm ghi 'myalgia' trên phiếu.)",
+      "phrases": [
+        { "en": "my/o means muscle.", "vi": "my/o nghĩa là cơ.", "gl": { "muscle": "cơ" } },
+        { "en": "Myalgia is muscle pain.", "vi": "Myalgia là đau cơ.", "gl": { "pain": "đau" } },
+        { "en": "You already saw it in 'myocardial' — heart muscle.", "vi": "Bạn đã thấy trong 'myocardial' — cơ tim.", "gl": { "heart muscle": "cơ tim" } }
+      ],
+      "vocab": [
+        { "en": "my/o", "ipa": "ˈmaɪəʊ", "vi": "cơ (gốc)" },
+        { "en": "myalgia", "ipa": "maɪˈældʒə", "vi": "đau cơ" },
+        { "en": "myopathy", "ipa": "maɪˈɒpəθi", "vi": "bệnh cơ" },
+        { "en": "myocardium", "ipa": "ˌmaɪəʊˈkɑːdiəm", "vi": "cơ tim" },
+        { "en": "muscle", "ipa": "ˈmʌsəl", "vi": "cơ" }
+      ],
+      "pq_en": "Muscle PAIN is called…",
+      "pq_vi": "ĐAU cơ gọi là…",
+      "opts": [
+        { "t": "myalgia (my/o + -algia)", "ok": true, "gl": { "pain": "đau" } },
+        { "t": "myopathy (my/o + -pathy)", "ok": false, "gl": { "disease": "bệnh" } },
+        { "t": "myitis (my/o + -itis)", "ok": false, "gl": { "inflammation": "viêm" } }
+      ],
+      "tip_en": "-algia = pain. my/o + -algia = muscle pain. neur/o + -algia = nerve pain.",
+      "tip_vi": "-algia = đau. my/o + -algia = đau cơ. neur/o + -algia = đau thần kinh."
+    },
+    {
+      "tag": "Xương & khớp", "en_tag": "Bone & joint", "emoji": "🦴",
+      "en": "oste/o (bone) and arthr/o (joint)", "vi": "oste/o (xương) và arthr/o (khớp)",
+      "ctx_en": "oste/o means bone; arthr/o means joint. osteoporosis is a bone-thinning condition; arthritis is joint inflammation.",
+      "ctx_vi": "oste/o nghĩa là xương; arthr/o nghĩa là khớp. osteoporosis là loãng xương; arthritis là viêm khớp.",
+      "pt": "(An older patient with joint pain asks the difference between 'osteoporosis' and 'arthritis'.)",
+      "pt_vi": "(Bệnh nhân lớn tuổi đau khớp hỏi khác nhau giữa 'osteoporosis' và 'arthritis'.)",
+      "phrases": [
+        { "en": "oste/o means bone; arthr/o means joint.", "vi": "oste/o là xương; arthr/o là khớp.", "gl": { "bone": "xương", "joint": "khớp" } },
+        { "en": "Arthritis is inflammation of a joint.", "vi": "Arthritis là viêm khớp.", "gl": { "inflammation": "viêm" } },
+        { "en": "Osteoporosis is an abnormal thinning of bone.", "vi": "Osteoporosis là tình trạng xương mỏng bất thường.", "gl": { "thinning": "mỏng đi" } }
+      ],
+      "vocab": [
+        { "en": "oste/o", "ipa": "ˈɒstiəʊ", "vi": "xương (gốc)" },
+        { "en": "arthr/o", "ipa": "ˈɑːθrəʊ", "vi": "khớp (gốc)" },
+        { "en": "osteoporosis", "ipa": "ˌɒstiəʊpəˈrəʊsɪs", "vi": "loãng xương" },
+        { "en": "arthritis", "ipa": "ɑːˈθraɪtɪs", "vi": "viêm khớp" },
+        { "en": "arthroscopy", "ipa": "ɑːˈθrɒskəpi", "vi": "nội soi khớp" }
+      ],
+      "pq_en": "Inflammation of a JOINT is…",
+      "pq_vi": "Viêm KHỚP là…",
+      "opts": [
+        { "t": "arthritis (arthr/o + -itis)", "ok": true, "gl": { "joint": "khớp" } },
+        { "t": "osteitis (oste/o + -itis)", "ok": false, "gl": { "bone": "xương" } },
+        { "t": "myalgia (my/o + -algia)", "ok": false, "gl": { "muscle": "cơ" } }
+      ],
+      "tip_en": "arthr/o = joint (think 'arthritis'). oste/o = bone. Don't swap them.",
+      "tip_vi": "arthr/o = khớp (nhớ 'arthritis'). oste/o = xương. Đừng đảo nhau."
+    },
+    {
+      "tag": "Soi khớp", "en_tag": "Combine it all", "emoji": "🔬",
+      "en": "Mix roots, prefixes & suffixes", "vi": "Trộn gốc, tiền tố & hậu tố",
+      "ctx_en": "Everything stacks: arthr/o (joint) + -scopy = arthroscopy (look in a joint); oste/o + arthr/o + -itis = osteoarthritis (bone-and-joint wear). Read the pieces.",
+      "ctx_vi": "Tất cả xếp chồng: arthr/o (khớp) + -scopy = arthroscopy (soi khớp); oste/o + arthr/o + -itis = osteoarthritis (thoái hóa xương-khớp). Đọc theo mảnh.",
+      "pt": "(A patient is booked for an 'arthroscopy' of the knee and asks what happens.)",
+      "pt_vi": "(Bệnh nhân được hẹn 'arthroscopy' khớp gối và hỏi sẽ làm gì.)",
+      "phrases": [
+        { "en": "An arthroscopy looks inside a joint with a camera.", "vi": "Arthroscopy soi bên trong khớp bằng camera.", "gl": { "joint": "khớp" } },
+        { "en": "Osteoarthritis is wear of bone and joint.", "vi": "Osteoarthritis là thoái hóa xương-khớp.", "gl": { "wear": "thoái hóa" } },
+        { "en": "Read suffix first: -scopy = look, then arthr/o = joint.", "vi": "Đọc hậu tố trước: -scopy = soi, rồi arthr/o = khớp.", "gl": {} }
+      ],
+      "vocab": [
+        { "en": "arthroscopy", "ipa": "ɑːˈθrɒskəpi", "vi": "nội soi khớp" },
+        { "en": "osteoarthritis", "ipa": "ˌɒstiəʊɑːˈθraɪtɪs", "vi": "thoái hóa khớp" },
+        { "en": "osteology", "ipa": "ˌɒstiˈɒlədʒi", "vi": "ngành học về xương" },
+        { "en": "orthopaedic", "ipa": "ˌɔːθəˈpiːdɪk", "vi": "chỉnh hình" },
+        { "en": "joint", "ipa": "dʒɔɪnt", "vi": "khớp" }
+      ],
+      "pq_en": "Looking inside a knee JOINT with a camera is an…",
+      "pq_vi": "Soi bên trong KHỚP gối bằng camera là…",
+      "opts": [
+        { "t": "arthroscopy (arthr/o + -scopy)", "ok": true, "gl": { "joint": "khớp" } },
+        { "t": "arthritis (arthr/o + -itis)", "ok": false, "gl": { "inflammation": "viêm" } },
+        { "t": "osteotomy (oste/o + -otomy)", "ok": false, "gl": { "incision": "rạch" } }
+      ],
+      "tip_en": "The -scopy you learned for stomachs and airways works on joints too.",
+      "tip_vi": "-scopy bạn học cho dạ dày và đường thở cũng dùng cho khớp."
+    }
+  ],
+  "dialogue": {
+    "title_en": "Mini dialogue: naming the pain",
+    "title_vi": "Hội thoại ngắn: gọi tên cơn đau",
+    "ctx_en": "A patient says 'everything aches' and you help name it precisely.",
+    "ctx_vi": "Bệnh nhân nói 'đau khắp người' và bạn giúp gọi tên chính xác.",
+    "speaker": "Patient", "speaker_emoji": "🧑",
+    "open": { "en": "My muscles ache all over and my knee joint hurts too. The notes say 'myalgia' and 'arthralgia'.", "vi": "Cơ tôi đau khắp người, khớp gối cũng đau. Giấy ghi 'myalgia' và 'arthralgia'." },
+    "turns": [
+      {
+        "id": "t1",
+        "prompt_en": "Explain the two words:",
+        "prompt_vi": "Giải thích hai từ:",
+        "choices": [
+          { "t": "Myalgia is muscle pain, arthralgia is joint pain — both just mean 'pain in...'.", "ok": true,
+            "feedback_en": "Right — my/o + -algia and arthr/o + -algia. Same suffix, different root.", "feedback_vi": "Đúng — my/o + -algia và arthr/o + -algia. Cùng hậu tố, khác gốc.", "next": "t2" },
+          { "t": "They both mean your bones are broken.", "ok": false,
+            "feedback_en": "-algia is pain, not a fracture; and neither root is bone (oste/o).", "feedback_vi": "-algia là đau, không phải gãy; và không gốc nào là xương (oste/o).", "next": "t2" }
+        ]
+      },
+      {
+        "id": "t2",
+        "prompt_en": "Patient: 'Is the joint one serious — will I need surgery?' You answer:",
+        "prompt_vi": "Bệnh nhân: 'Cái khớp có nặng không — phải mổ chứ?' Bạn đáp:",
+        "choices": [
+          { "t": "Not necessarily — '-algia' just names pain. They might first do an arthroscopy to look.", "ok": true,
+            "feedback_en": "Good — you distinguished pain (-algia) from a look (-scopy) and surgery (-ectomy).", "feedback_vi": "Tốt — bạn phân biệt đau (-algia), soi (-scopy) và mổ (-ectomy).", "next": "end" },
+          { "t": "Yes, -algia means they will operate immediately.", "ok": false,
+            "feedback_en": "-algia only means pain; it implies no procedure at all.", "feedback_vi": "-algia chỉ là đau; không hàm ý thủ thuật nào.", "next": "end" }
+        ]
+      }
+    ],
+    "close": { "en": "Precise words turn 'it all hurts' into a clear, actionable picture.", "vi": "Từ chính xác biến 'đau khắp' thành bức tranh rõ, có hướng xử lý." }
+  },
+  "quiz": [
+    {
+      "en": "'neur/o' means…",
+      "vi": "'neur/o' nghĩa là…",
+      "opts": [
+        { "t": "nerve", "ok": true, "gl": { "nerve": "thần kinh" } },
+        { "t": "muscle", "ok": false, "gl": { "muscle": "cơ" } },
+        { "t": "bone", "ok": false, "gl": { "bone": "xương" } }
+      ],
+      "exp_en": "neur/o = nerve (neuralgia = nerve pain; neuropathy = nerve disease).",
+      "exp_vi": "neur/o = thần kinh (neuralgia = đau thần kinh; neuropathy = bệnh thần kinh)."
+    },
+    {
+      "en": "'Myalgia' means…",
+      "vi": "'Myalgia' nghĩa là…",
+      "opts": [
+        { "t": "muscle pain", "ok": true, "gl": { "muscle": "cơ" } },
+        { "t": "joint inflammation", "ok": false, "gl": { "joint": "khớp" } },
+        { "t": "bone thinning", "ok": false, "gl": { "thinning": "loãng" } }
+      ],
+      "exp_en": "my/o (muscle) + -algia (pain) = muscle pain.",
+      "exp_vi": "my/o (cơ) + -algia (đau) = đau cơ."
+    },
+    {
+      "en": "'Arthritis' is inflammation of a…",
+      "vi": "'Arthritis' là viêm…",
+      "opts": [
+        { "t": "joint", "ok": true, "gl": { "joint": "khớp" } },
+        { "t": "bone", "ok": false, "gl": { "bone": "xương" } },
+        { "t": "nerve", "ok": false, "gl": { "nerve": "thần kinh" } }
+      ],
+      "exp_en": "arthr/o (joint) + -itis (inflammation) = joint inflammation.",
+      "exp_vi": "arthr/o (khớp) + -itis (viêm) = viêm khớp."
+    },
+    {
+      "en": "'oste/o' means…",
+      "vi": "'oste/o' nghĩa là…",
+      "opts": [
+        { "t": "bone", "ok": true, "gl": { "bone": "xương" } },
+        { "t": "joint", "ok": false, "gl": { "joint": "khớp" } },
+        { "t": "muscle", "ok": false, "gl": { "muscle": "cơ" } }
+      ],
+      "exp_en": "oste/o = bone (osteoporosis = bone thinning; osteology = study of bone).",
+      "exp_vi": "oste/o = xương (osteoporosis = loãng xương; osteology = ngành học xương)."
+    },
+    {
+      "en": "Decode: 'arthroscopy' is…",
+      "vi": "Giải mã: 'arthroscopy' là…",
+      "opts": [
+        { "t": "looking inside a joint", "ok": true, "gl": { "joint": "khớp" } },
+        { "t": "removing a joint", "ok": false, "gl": { "removing": "cắt bỏ" } },
+        { "t": "muscle pain", "ok": false, "gl": { "muscle pain": "đau cơ" } }
+      ],
+      "exp_en": "arthr/o (joint) + -scopy (visual exam) = joint examination.",
+      "exp_vi": "arthr/o (khớp) + -scopy (soi) = soi khớp."
+    }
+  ],
+  "done": {
+    "achievements": [
+      { "emoji": "⚡", "en": "Use neur/o for nerve", "vi": "Dùng neur/o cho thần kinh" },
+      { "emoji": "💪", "en": "Use my/o for muscle", "vi": "Dùng my/o cho cơ" },
+      { "emoji": "🦴", "en": "Use oste/o (bone) and arthr/o (joint)", "vi": "Dùng oste/o (xương) và arthr/o (khớp)" },
+      { "emoji": "🔬", "en": "Stack roots, prefixes & suffixes fluently", "vi": "Xếp gốc, tiền tố & hậu tố thành thạo" }
+    ]
+  }
+}

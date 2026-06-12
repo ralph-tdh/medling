@@ -1,0 +1,249 @@
+{
+  "_gate_status": "DRAFT — pending Gate 1 (Chabner ch.1 body-as-a-whole: planes & directions) + Gate 2 Ralph sign-off. Stage 1A capstone/review. Morphemes verified against data/morphology.json.",
+  "meta": {
+    "id": "1a-10",
+    "title_en": "Anatomical Planes & Stage Review",
+    "title_vi": "Mặt phẳng giải phẫu & ôn tập chặng",
+    "level": 1, "stage": "1A", "cefr": "A2+",
+    "hero_emoji": "🧭",
+    "complete_en": "Stage 1A complete — you can build & place medical words!",
+    "complete_vi": "Hoàn tất Chặng 1A — bạn ráp & định vị được thuật ngữ y khoa!",
+    "tier": "free", "duration": "~15 min",
+    "theme_color": "#9AA989", "theme_light": "#EFF2EA", "theme_shadow": "#74906F"
+  },
+  "config": { "next": { "url": "?lesson=1a-01", "label": "Review Stage 1A from the start", "label_vi": "Ôn lại Chặng 1A từ đầu", "free": true } },
+  "welcome": {
+    "scenario": [
+      { "en": "Last 1A lesson. First, the body's map words — then a review that ties the whole stage together.", "vi": "Bài 1A cuối. Trước hết là các từ bản đồ cơ thể — rồi ôn tập gói cả chặng lại.", "bold": true },
+      { "en": "Directions: anterior/posterior, superior/inferior, medial/lateral, proximal/distal.", "vi": "Hướng: anterior/posterior, superior/inferior, medial/lateral, proximal/distal." },
+      { "en": "These let you say exactly WHERE — essential for every clinical note.", "vi": "Chúng giúp nói chính xác Ở ĐÂU — thiết yếu cho mọi bệnh án." }
+    ],
+    "can_do": [
+      { "en": "Use anterior/posterior & superior/inferior", "vi": "Dùng anterior/posterior & superior/inferior" },
+      { "en": "Use medial/lateral & proximal/distal", "vi": "Dùng medial/lateral & proximal/distal" },
+      { "en": "Name the three anatomical planes", "vi": "Gọi tên ba mặt phẳng giải phẫu" },
+      { "en": "Recombine everything from Stage 1A", "vi": "Tổng hợp lại mọi thứ của Chặng 1A" }
+    ],
+    "badges": [
+      { "icon": "🧭", "label": "Anatomy directions" },
+      { "icon": "🏁", "label": "Stage 1A · Capstone" },
+      { "icon": "🆓", "label": "Free" }
+    ]
+  },
+  "situations": [
+    {
+      "tag": "Trước & sau", "en_tag": "Front & back", "emoji": "↔️",
+      "en": "anterior / posterior", "vi": "anterior / posterior",
+      "ctx_en": "anterior means front; posterior means back. The chest is anterior; the spine is posterior. (Ventral/dorsal are near-synonyms.)",
+      "ctx_vi": "anterior là phía trước; posterior là phía sau. Ngực ở anterior; cột sống ở posterior. (Ventral/dorsal gần đồng nghĩa.)",
+      "pt": "(A note says 'pain in the posterior chest'; a student locates it.)",
+      "pt_vi": "(Hồ sơ ghi 'đau posterior ngực'; sinh viên định vị.)",
+      "phrases": [
+        { "en": "anterior means front.", "vi": "anterior nghĩa là phía trước.", "gl": { "front": "phía trước" } },
+        { "en": "posterior means back.", "vi": "posterior nghĩa là phía sau.", "gl": { "back": "phía sau" } },
+        { "en": "The posterior chest is the back of the chest.", "vi": "Posterior chest là mặt sau của ngực.", "gl": { "chest": "ngực" } }
+      ],
+      "vocab": [
+        { "en": "anterior", "ipa": "ænˈtɪəriə", "vi": "phía trước" },
+        { "en": "posterior", "ipa": "pɒˈstɪəriə", "vi": "phía sau" },
+        { "en": "ventral", "ipa": "ˈventrəl", "vi": "mặt bụng (trước)" },
+        { "en": "dorsal", "ipa": "ˈdɔːsəl", "vi": "mặt lưng (sau)" },
+        { "en": "front", "ipa": "frʌnt", "vi": "phía trước" }
+      ],
+      "pq_en": "The spine is on the body's…",
+      "pq_vi": "Cột sống nằm ở mặt… của cơ thể",
+      "opts": [
+        { "t": "posterior (back) side", "ok": true, "gl": { "back": "phía sau" } },
+        { "t": "anterior (front) side", "ok": false, "gl": { "front": "phía trước" } },
+        { "t": "lateral (mid) side", "ok": false, "gl": { "side": "bên" } }
+      ],
+      "tip_en": "posTERIOR = the 'rear'. anterior = ahead/front. Pair them as opposites.",
+      "tip_vi": "posTERIOR = phía 'sau'. anterior = phía trước. Ghép chúng thành cặp đối."
+    },
+    {
+      "tag": "Trên & dưới", "en_tag": "Up & down", "emoji": "↕️",
+      "en": "superior / inferior", "vi": "superior / inferior",
+      "ctx_en": "superior means above/upper; inferior means below/lower. The head is superior to the chest; the feet are inferior.",
+      "ctx_vi": "superior nghĩa là trên; inferior nghĩa là dưới. Đầu ở superior so với ngực; bàn chân ở inferior.",
+      "pt": "(A report mentions the 'inferior' border of the liver.)",
+      "pt_vi": "(Báo cáo nhắc bờ 'inferior' của gan.)",
+      "phrases": [
+        { "en": "superior means upper / above.", "vi": "superior nghĩa là trên.", "gl": { "above": "trên" } },
+        { "en": "inferior means lower / below.", "vi": "inferior nghĩa là dưới.", "gl": { "below": "dưới" } },
+        { "en": "The heart is superior to the stomach.", "vi": "Tim ở trên dạ dày.", "gl": { "heart": "tim" } }
+      ],
+      "vocab": [
+        { "en": "superior", "ipa": "suːˈpɪəriə", "vi": "trên" },
+        { "en": "inferior", "ipa": "ɪnˈfɪəriə", "vi": "dưới" },
+        { "en": "superior border", "ipa": "suːˈpɪəriə ˈbɔːdə", "vi": "bờ trên" },
+        { "en": "inferior border", "ipa": "ɪnˈfɪəriə ˈbɔːdə", "vi": "bờ dưới" },
+        { "en": "border", "ipa": "ˈbɔːdə", "vi": "bờ" }
+      ],
+      "pq_en": "The head is ______ to the chest.",
+      "pq_vi": "Đầu nằm ______ so với ngực.",
+      "opts": [
+        { "t": "superior (above)", "ok": true, "gl": { "above": "trên" } },
+        { "t": "inferior (below)", "ok": false, "gl": { "below": "dưới" } },
+        { "t": "distal (far)", "ok": false, "gl": { "far": "xa" } }
+      ],
+      "tip_en": "superior = 'superior/higher rank' = upper. inferior = lower. Everyday English helps.",
+      "tip_vi": "superior = 'cấp trên' = ở trên. inferior = dưới. Tiếng Anh đời thường giúp nhớ."
+    },
+    {
+      "tag": "Giữa & bên, gần & xa", "en_tag": "Mid/side, near/far", "emoji": "🎯",
+      "en": "medial/lateral · proximal/distal", "vi": "medial/lateral · proximal/distal",
+      "ctx_en": "medial = toward the midline; lateral = toward the side. proximal = nearer the trunk; distal = farther away. The wrist is distal to the elbow.",
+      "ctx_vi": "medial = về phía đường giữa; lateral = về phía bên. proximal = gần thân hơn; distal = xa hơn. Cổ tay ở distal so với khuỷu.",
+      "pt": "(A note reads 'wound on the lateral, distal forearm'; locate it.)",
+      "pt_vi": "(Hồ sơ ghi 'vết thương ở lateral, distal cẳng tay'; định vị.)",
+      "phrases": [
+        { "en": "medial = toward the middle; lateral = toward the side.", "vi": "medial = về giữa; lateral = về bên.", "gl": { "middle": "giữa", "side": "bên" } },
+        { "en": "proximal = nearer the body; distal = farther from it.", "vi": "proximal = gần thân; distal = xa thân.", "gl": { "near": "gần", "far": "xa" } },
+        { "en": "The fingers are distal to the wrist.", "vi": "Ngón tay ở distal so với cổ tay.", "gl": { "wrist": "cổ tay" } }
+      ],
+      "vocab": [
+        { "en": "medial", "ipa": "ˈmiːdiəl", "vi": "phía trong (giữa)" },
+        { "en": "lateral", "ipa": "ˈlætərəl", "vi": "phía ngoài (bên)" },
+        { "en": "proximal", "ipa": "ˈprɒksɪməl", "vi": "gần (thân)" },
+        { "en": "distal", "ipa": "ˈdɪstəl", "vi": "xa (thân)" },
+        { "en": "midline", "ipa": "ˈmɪdlaɪn", "vi": "đường giữa" }
+      ],
+      "pq_en": "The wrist is ______ to the elbow.",
+      "pq_vi": "Cổ tay ở ______ so với khuỷu tay.",
+      "opts": [
+        { "t": "distal (farther from the trunk)", "ok": true, "gl": { "far": "xa" } },
+        { "t": "proximal (nearer the trunk)", "ok": false, "gl": { "near": "gần" } },
+        { "t": "medial (toward midline)", "ok": false, "gl": { "midline": "đường giữa" } }
+      ],
+      "tip_en": "proXIMal = proximity (near). DIStal = distant (far). Lateral = to the side.",
+      "tip_vi": "proXIMal = proximity (gần). DIStal = distant (xa). Lateral = ra bên."
+    },
+    {
+      "tag": "Ôn tập chặng", "en_tag": "Stage review", "emoji": "🏁",
+      "en": "Recombine all of Stage 1A", "vi": "Tổng hợp toàn bộ Chặng 1A",
+      "ctx_en": "You now hold the full toolkit: roots (organs), prefixes (position, number, speed, negation), suffixes (disease, procedure, exam), and direction words. Decode anything.",
+      "ctx_vi": "Bạn đã có đủ bộ công cụ: gốc (cơ quan), tiền tố (vị trí, số, tốc độ, phủ định), hậu tố (bệnh, thủ thuật, khám), và từ chỉ hướng. Giải mã được mọi thứ.",
+      "pt": "(Final challenge: decode 'pericarditis' using everything you've learned.)",
+      "pt_vi": "(Thử thách cuối: giải mã 'pericarditis' bằng tất cả đã học.)",
+      "phrases": [
+        { "en": "peri- (around) + cardi (heart) + -itis (inflammation).", "vi": "peri- (quanh) + cardi (tim) + -itis (viêm).", "gl": { "around": "quanh" } },
+        { "en": "Pericarditis is inflammation of the sac around the heart.", "vi": "Pericarditis là viêm màng quanh tim.", "gl": { "inflammation": "viêm" } },
+        { "en": "Three pieces, one precise diagnosis.", "vi": "Ba mảnh, một chẩn đoán chính xác.", "gl": {} }
+      ],
+      "vocab": [
+        { "en": "pericarditis", "ipa": "ˌperikɑːˈdaɪtɪs", "vi": "viêm màng ngoài tim" },
+        { "en": "hypothermia", "ipa": "ˌhaɪpəʊˈθɜːmiə", "vi": "hạ thân nhiệt" },
+        { "en": "osteoarthritis", "ipa": "ˌɒstiəʊɑːˈθraɪtɪs", "vi": "thoái hóa khớp" },
+        { "en": "tachypnea", "ipa": "ˌtækɪpˈniːə", "vi": "thở nhanh" },
+        { "en": "diagnosis", "ipa": "ˌdaɪəɡˈnəʊsɪs", "vi": "chẩn đoán" }
+      ],
+      "pq_en": "Decode 'pericarditis':",
+      "pq_vi": "Giải mã 'pericarditis':",
+      "opts": [
+        { "t": "inflammation of the sac around the heart", "ok": true, "gl": { "around": "quanh", "inflammation": "viêm" } },
+        { "t": "removal of the heart muscle", "ok": false, "gl": { "removal": "cắt bỏ" } },
+        { "t": "a slow heart rate", "ok": false, "gl": { "slow": "chậm" } }
+      ],
+      "tip_en": "peri- + cardi + -itis. You combined a prefix, root and suffix — Stage 1A in one word.",
+      "tip_vi": "peri- + cardi + -itis. Bạn ghép tiền tố, gốc và hậu tố — cả Chặng 1A trong một từ."
+    }
+  ],
+  "dialogue": {
+    "title_en": "Capstone dialogue: you're the decoder",
+    "title_vi": "Hội thoại tổng kết: bạn là người giải mã",
+    "ctx_en": "A patient brings a discharge summary full of terms and asks you to translate.",
+    "ctx_vi": "Bệnh nhân mang tờ tóm tắt ra viện đầy thuật ngữ và nhờ bạn dịch.",
+    "speaker": "Patient", "speaker_emoji": "🧑",
+    "open": { "en": "It says: 'mild hepatomegaly, no pericarditis, advised review for tachycardia'. I'm lost.", "vi": "Ghi: 'mild hepatomegaly, no pericarditis, advised review for tachycardia'. Tôi chịu thua." },
+    "turns": [
+      {
+        "id": "t1",
+        "prompt_en": "Decode 'hepatomegaly':",
+        "prompt_vi": "Giải mã 'hepatomegaly':",
+        "choices": [
+          { "t": "Your liver is slightly enlarged — hepat/o (liver) + -megaly (enlargement).", "ok": true,
+            "feedback_en": "Correct, and 'mild' keeps it calm. Clear translation.", "feedback_vi": "Đúng, và 'mild' giữ giọng nhẹ nhàng. Dịch rõ.", "next": "t2" },
+          { "t": "Your liver has been removed.", "ok": false,
+            "feedback_en": "-megaly is enlargement; removal would be -ectomy.", "feedback_vi": "-megaly là to ra; cắt bỏ mới là -ectomy.", "next": "t2" }
+        ]
+      },
+      {
+        "id": "t2",
+        "prompt_en": "Decode 'no pericarditis' and 'tachycardia':",
+        "prompt_vi": "Giải mã 'no pericarditis' và 'tachycardia':",
+        "choices": [
+          { "t": "No inflammation around the heart, but your heart rate runs fast — worth a check.", "ok": true,
+            "feedback_en": "Excellent — peri-/cardi/-itis and tachy-/cardia, all decoded in plain words.", "feedback_vi": "Xuất sắc — peri-/cardi/-itis và tachy-/cardia, dịch hết ra lời dễ hiểu.", "next": "end" },
+          { "t": "Your heart is inflamed and beating slowly.", "ok": false,
+            "feedback_en": "'No pericarditis' = NO inflammation; tachy- = fast, not slow.", "feedback_vi": "'No pericarditis' = KHÔNG viêm; tachy- = nhanh, không phải chậm.", "next": "end" }
+        ]
+      }
+    ],
+    "close": { "en": "You just read a real discharge summary. That's Stage 1A working in the wild.", "vi": "Bạn vừa đọc một tờ ra viện thật. Đó là Chặng 1A vận hành trong thực tế." }
+  },
+  "quiz": [
+    {
+      "en": "'anterior' means…",
+      "vi": "'anterior' nghĩa là…",
+      "opts": [
+        { "t": "front", "ok": true, "gl": { "front": "trước" } },
+        { "t": "back", "ok": false, "gl": { "back": "sau" } },
+        { "t": "below", "ok": false, "gl": { "below": "dưới" } }
+      ],
+      "exp_en": "anterior = front; posterior = back.",
+      "exp_vi": "anterior = trước; posterior = sau."
+    },
+    {
+      "en": "The wrist is ______ to the elbow.",
+      "vi": "Cổ tay ở ______ so với khuỷu.",
+      "opts": [
+        { "t": "distal", "ok": true, "gl": { "far": "xa" } },
+        { "t": "proximal", "ok": false, "gl": { "near": "gần" } },
+        { "t": "superior", "ok": false, "gl": { "above": "trên" } }
+      ],
+      "exp_en": "distal = farther from the trunk; the wrist is farther than the elbow.",
+      "exp_vi": "distal = xa thân hơn; cổ tay xa hơn khuỷu."
+    },
+    {
+      "en": "'medial' means toward the…",
+      "vi": "'medial' nghĩa là về phía…",
+      "opts": [
+        { "t": "midline", "ok": true, "gl": { "midline": "đường giữa" } },
+        { "t": "side", "ok": false, "gl": { "side": "bên" } },
+        { "t": "back", "ok": false, "gl": { "back": "sau" } }
+      ],
+      "exp_en": "medial = toward the midline; lateral = toward the side.",
+      "exp_vi": "medial = về đường giữa; lateral = ra bên."
+    },
+    {
+      "en": "Review: 'pericarditis' is…",
+      "vi": "Ôn: 'pericarditis' là…",
+      "opts": [
+        { "t": "inflammation around the heart", "ok": true, "gl": { "around": "quanh" } },
+        { "t": "a fast heart rate", "ok": false, "gl": { "fast": "nhanh" } },
+        { "t": "an enlarged heart", "ok": false, "gl": { "enlarged": "to ra" } }
+      ],
+      "exp_en": "peri- (around) + cardi (heart) + -itis (inflammation).",
+      "exp_vi": "peri- (quanh) + cardi (tim) + -itis (viêm)."
+    },
+    {
+      "en": "Review: which word means 'slow breathing'?",
+      "vi": "Ôn: từ nào nghĩa là 'thở chậm'?",
+      "opts": [
+        { "t": "bradypnea", "ok": true, "gl": { "slow": "chậm" } },
+        { "t": "tachypnea", "ok": false, "gl": { "fast": "nhanh" } },
+        { "t": "apnea", "ok": false, "gl": { "absent": "ngưng" } }
+      ],
+      "exp_en": "brady- (slow) + -pnea (breathing) = slow breathing.",
+      "exp_vi": "brady- (chậm) + -pnea (thở) = thở chậm."
+    }
+  ],
+  "done": {
+    "achievements": [
+      { "emoji": "🧭", "en": "Use anterior/posterior, superior/inferior", "vi": "Dùng anterior/posterior, superior/inferior" },
+      { "emoji": "🎯", "en": "Use medial/lateral, proximal/distal", "vi": "Dùng medial/lateral, proximal/distal" },
+      { "emoji": "🧱", "en": "Recombine roots, affixes & directions", "vi": "Tổng hợp gốc, phụ tố & từ chỉ hướng" },
+      { "emoji": "🏁", "en": "Complete Stage 1A — decode real chart terms", "vi": "Hoàn tất Chặng 1A — giải mã thuật ngữ hồ sơ thật" }
+    ]
+  }
+}

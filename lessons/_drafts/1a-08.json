@@ -1,0 +1,249 @@
+{
+  "_gate_status": "DRAFT — pending Gate 1 (Chabner body-system intro) + Gate 2 Ralph sign-off. Morphemes verified against data/morphology.json.",
+  "meta": {
+    "id": "1a-08",
+    "title_en": "The Digestive Word Family",
+    "title_vi": "Họ từ tiêu hóa",
+    "level": 1, "stage": "1A", "cefr": "A2+",
+    "hero_emoji": "🩻",
+    "complete_en": "You can read GI terms with confidence!",
+    "complete_vi": "Bạn đọc thuật ngữ tiêu hóa tự tin rồi!",
+    "tier": "free", "duration": "~15 min",
+    "theme_color": "#9AA989", "theme_light": "#EFF2EA", "theme_shadow": "#74906F"
+  },
+  "config": { "next": { "url": "?lesson=1a-09", "label": "Next: Nerve, Muscle & Bone", "label_vi": "Tiếp: Thần kinh, cơ & xương", "free": true } },
+  "welcome": {
+    "scenario": [
+      { "en": "The digestive (GI) family uses three friendly roots you've already met in passing.", "vi": "Họ tiêu hóa (GI) dùng ba gốc quen bạn đã gặp thoáng qua.", "bold": true },
+      { "en": "gastr/o (stomach), enter/o (intestine), hepat/o (liver).", "vi": "gastr/o (dạ dày), enter/o (ruột), hepat/o (gan)." },
+      { "en": "Combine two roots and you get words like 'gastroenterology'.", "vi": "Ghép hai gốc, bạn có từ như 'gastroenterology'." }
+    ],
+    "can_do": [
+      { "en": "Use gastr/o, enter/o, hepat/o correctly", "vi": "Dùng gastr/o, enter/o, hepat/o đúng" },
+      { "en": "Combine two roots in one word", "vi": "Ghép hai gốc trong một từ" },
+      { "en": "Read GI diagnoses and procedures", "vi": "Đọc chẩn đoán & thủ thuật tiêu hóa" },
+      { "en": "Explain a GI referral to a patient", "vi": "Giải thích giấy chuyển khoa tiêu hóa" }
+    ],
+    "badges": [
+      { "icon": "🩻", "label": "Digestive (GI)" },
+      { "icon": "🌱", "label": "Stage 1A · Lesson 8" },
+      { "icon": "🆓", "label": "Free" }
+    ]
+  },
+  "situations": [
+    {
+      "tag": "Dạ dày", "en_tag": "Stomach", "emoji": "🫃",
+      "en": "gastr/o — the stomach", "vi": "gastr/o — dạ dày",
+      "ctx_en": "gastr/o means stomach. gastritis is inflammation of the stomach; a gastroscopy looks inside it.",
+      "ctx_vi": "gastr/o nghĩa là dạ dày. gastritis là viêm dạ dày; gastroscopy soi bên trong.",
+      "pt": "(A patient with stomach pain is booked for a 'gastroscopy' and asks what it is.)",
+      "pt_vi": "(Bệnh nhân đau dạ dày được hẹn 'gastroscopy' và hỏi đó là gì.)",
+      "phrases": [
+        { "en": "gastr/o means stomach.", "vi": "gastr/o nghĩa là dạ dày.", "gl": { "stomach": "dạ dày" } },
+        { "en": "Gastritis is inflammation of the stomach.", "vi": "Gastritis là viêm dạ dày.", "gl": { "inflammation": "viêm" } },
+        { "en": "A gastroscopy examines the stomach lining.", "vi": "Gastroscopy soi niêm mạc dạ dày.", "gl": { "lining": "niêm mạc" } }
+      ],
+      "vocab": [
+        { "en": "gastr/o", "ipa": "ˈɡæstrəʊ", "vi": "dạ dày (gốc)" },
+        { "en": "gastritis", "ipa": "ɡæˈstraɪtɪs", "vi": "viêm dạ dày" },
+        { "en": "gastroscopy", "ipa": "ɡæˈstrɒskəpi", "vi": "nội soi dạ dày" },
+        { "en": "gastrectomy", "ipa": "ɡæˈstrektəmi", "vi": "cắt dạ dày" },
+        { "en": "stomach", "ipa": "ˈstʌmək", "vi": "dạ dày" }
+      ],
+      "pq_en": "Removal of part of the stomach is a…",
+      "pq_vi": "Cắt một phần dạ dày là…",
+      "opts": [
+        { "t": "gastrectomy (-ectomy = removal)", "ok": true, "gl": { "removal": "cắt bỏ" } },
+        { "t": "gastroscopy (-scopy = removal)", "ok": false, "gl": { "examination": "soi" } },
+        { "t": "gastritis (-itis = removal)", "ok": false, "gl": { "inflammation": "viêm" } }
+      ],
+      "tip_en": "Every suffix from Lessons 2–3 attaches to gastr/o the same way.",
+      "tip_vi": "Mọi hậu tố Bài 2–3 gắn vào gastr/o theo cùng một cách."
+    },
+    {
+      "tag": "Ruột", "en_tag": "Intestine", "emoji": "🌀",
+      "en": "enter/o — the intestine", "vi": "enter/o — ruột",
+      "ctx_en": "enter/o means intestine. enteritis is inflammation of the intestine; gastroenteritis affects both stomach and intestine.",
+      "ctx_vi": "enter/o nghĩa là ruột. enteritis là viêm ruột; gastroenteritis ảnh hưởng cả dạ dày lẫn ruột.",
+      "pt": "(A patient with vomiting and diarrhoea is told they have 'gastroenteritis'.)",
+      "pt_vi": "(Bệnh nhân nôn và tiêu chảy được báo bị 'gastroenteritis'.)",
+      "phrases": [
+        { "en": "enter/o means intestine.", "vi": "enter/o nghĩa là ruột.", "gl": { "intestine": "ruột" } },
+        { "en": "Gastroenteritis is inflammation of the stomach and intestine.", "vi": "Gastroenteritis là viêm dạ dày-ruột.", "gl": { "inflammation": "viêm" } },
+        { "en": "It often causes vomiting and diarrhoea.", "vi": "Nó thường gây nôn và tiêu chảy.", "gl": { "vomiting": "nôn", "diarrhoea": "tiêu chảy" } }
+      ],
+      "vocab": [
+        { "en": "enter/o", "ipa": "ˈentərəʊ", "vi": "ruột (gốc)" },
+        { "en": "enteritis", "ipa": "ˌentəˈraɪtɪs", "vi": "viêm ruột" },
+        { "en": "gastroenteritis", "ipa": "ˌɡæstrəʊˌentəˈraɪtɪs", "vi": "viêm dạ dày-ruột" },
+        { "en": "intestine", "ipa": "ɪnˈtestɪn", "vi": "ruột" },
+        { "en": "diarrhoea", "ipa": "ˌdaɪəˈrɪə", "vi": "tiêu chảy" }
+      ],
+      "pq_en": "'Gastroenteritis' affects the…",
+      "pq_vi": "'Gastroenteritis' ảnh hưởng…",
+      "opts": [
+        { "t": "stomach AND intestine (gastr/o + enter/o)", "ok": true, "gl": { "intestine": "ruột" } },
+        { "t": "liver only (hepat/o)", "ok": false, "gl": { "liver": "gan" } },
+        { "t": "stomach only (gastr/o)", "ok": false, "gl": { "stomach": "dạ dày" } }
+      ],
+      "tip_en": "Two roots in one word: gastr/o + enter/o, joined by the combining vowel o.",
+      "tip_vi": "Hai gốc trong một từ: gastr/o + enter/o, nối bằng nguyên âm o."
+    },
+    {
+      "tag": "Gan", "en_tag": "Liver", "emoji": "🟤",
+      "en": "hepat/o — the liver", "vi": "hepat/o — gan",
+      "ctx_en": "hepat/o means liver. hepatitis is inflammation of the liver; hepatomegaly is an enlarged liver; a hepatologist specialises in liver disease.",
+      "ctx_vi": "hepat/o nghĩa là gan. hepatitis là viêm gan; hepatomegaly là gan to; hepatologist là bác sĩ chuyên về gan.",
+      "pt": "(A patient with a liver result asks what 'hepatomegaly' on the report means.)",
+      "pt_vi": "(Bệnh nhân có kết quả gan hỏi 'hepatomegaly' nghĩa là gì.)",
+      "phrases": [
+        { "en": "hepat/o means liver.", "vi": "hepat/o nghĩa là gan.", "gl": { "liver": "gan" } },
+        { "en": "Hepatitis is inflammation of the liver.", "vi": "Hepatitis là viêm gan.", "gl": { "inflammation": "viêm" } },
+        { "en": "Hepatomegaly is an enlarged liver.", "vi": "Hepatomegaly là gan to.", "gl": { "enlarged": "to ra" } }
+      ],
+      "vocab": [
+        { "en": "hepat/o", "ipa": "hɪˈpætəʊ", "vi": "gan (gốc)" },
+        { "en": "hepatitis", "ipa": "ˌhepəˈtaɪtɪs", "vi": "viêm gan" },
+        { "en": "hepatomegaly", "ipa": "ˌhepətəʊˈmeɡəli", "vi": "gan to" },
+        { "en": "hepatologist", "ipa": "ˌhepəˈtɒlədʒɪst", "vi": "bác sĩ gan" },
+        { "en": "liver", "ipa": "ˈlɪvə", "vi": "gan" }
+      ],
+      "pq_en": "'Hepatomegaly' means the liver is…",
+      "pq_vi": "'Hepatomegaly' nghĩa là gan…",
+      "opts": [
+        { "t": "enlarged (-megaly = enlargement)", "ok": true, "gl": { "enlarged": "to ra" } },
+        { "t": "inflamed (-megaly = inflammation)", "ok": false, "gl": { "inflamed": "viêm" } },
+        { "t": "removed (-megaly = removal)", "ok": false, "gl": { "removed": "cắt bỏ" } }
+      ],
+      "tip_en": "-megaly (from Lesson 6's cardiomegaly) works on any organ: hepat/o + -megaly.",
+      "tip_vi": "-megaly (từ cardiomegaly Bài 6) dùng cho mọi cơ quan: hepat/o + -megaly."
+    },
+    {
+      "tag": "Chuyên khoa", "en_tag": "The specialty", "emoji": "👨‍⚕️",
+      "en": "gastroenterology — three pieces", "vi": "gastroenterology — ba mảnh",
+      "ctx_en": "Put it together: gastr/o (stomach) + enter/o (intestine) + -logy (study of) = gastroenterology, the GI specialty. A gastroenterologist is the doctor.",
+      "ctx_vi": "Ghép lại: gastr/o (dạ dày) + enter/o (ruột) + -logy (ngành học) = gastroenterology, chuyên khoa tiêu hóa. Gastroenterologist là bác sĩ.",
+      "pt": "(A patient is referred to a 'gastroenterologist' and asks what that doctor treats.)",
+      "pt_vi": "(Bệnh nhân được chuyển 'gastroenterologist' và hỏi bác sĩ đó chữa gì.)",
+      "phrases": [
+        { "en": "Gastroenterology studies the digestive system.", "vi": "Gastroenterology nghiên cứu hệ tiêu hóa.", "gl": { "digestive system": "hệ tiêu hóa" } },
+        { "en": "A gastroenterologist treats stomach and intestine problems.", "vi": "Gastroenterologist chữa bệnh dạ dày và ruột.", "gl": { "treats": "chữa" } },
+        { "en": "Read it in pieces: gastr/o + enter/o + -logy.", "vi": "Đọc theo mảnh: gastr/o + enter/o + -logy.", "gl": {} }
+      ],
+      "vocab": [
+        { "en": "gastroenterology", "ipa": "ˌɡæstrəʊˌentəˈrɒlədʒi", "vi": "khoa tiêu hóa" },
+        { "en": "gastroenterologist", "ipa": "ˌɡæstrəʊˌentəˈrɒlədʒɪst", "vi": "bác sĩ tiêu hóa" },
+        { "en": "digestive", "ipa": "daɪˈdʒestɪv", "vi": "tiêu hóa" },
+        { "en": "endoscopy", "ipa": "enˈdɒskəpi", "vi": "nội soi" },
+        { "en": "colonoscopy", "ipa": "ˌkəʊləˈnɒskəpi", "vi": "nội soi đại tràng" }
+      ],
+      "pq_en": "A 'gastroenterologist' specialises in the…",
+      "pq_vi": "'Gastroenterologist' chuyên về…",
+      "opts": [
+        { "t": "digestive system (stomach + intestine)", "ok": true, "gl": { "digestive": "tiêu hóa" } },
+        { "t": "heart and vessels", "ok": false, "gl": { "heart": "tim" } },
+        { "t": "lungs and airways", "ok": false, "gl": { "lungs": "phổi" } }
+      ],
+      "tip_en": "Long words are just short pieces glued together. Read each piece and it's easy.",
+      "tip_vi": "Từ dài chỉ là các mảnh ngắn ghép lại. Đọc từng mảnh là dễ ngay."
+    }
+  ],
+  "dialogue": {
+    "title_en": "Mini dialogue: the GI referral",
+    "title_vi": "Hội thoại ngắn: chuyển khoa tiêu hóa",
+    "ctx_en": "A patient with stomach pain is referred and confused by the long words.",
+    "ctx_vi": "Bệnh nhân đau dạ dày được chuyển khoa, bối rối vì từ dài.",
+    "speaker": "Patient", "speaker_emoji": "🧑",
+    "open": { "en": "They're sending me to a 'gastroenterologist' for a 'gastroscopy' — sounds frightening.", "vi": "Họ chuyển tôi tới 'gastroenterologist' để làm 'gastroscopy' — nghe đáng sợ quá." },
+    "turns": [
+      {
+        "id": "t1",
+        "prompt_en": "Break the words down to reassure them:",
+        "prompt_vi": "Tách từ ra để trấn an:",
+        "choices": [
+          { "t": "It's a stomach-and-gut doctor, and a gastroscopy just looks inside with a small camera.", "ok": true,
+            "feedback_en": "Excellent — you decoded gastr/o + enter/o + -logist, and -scopy as 'look'.", "feedback_vi": "Tuyệt — bạn giải mã gastr/o + enter/o + -logist, và -scopy là 'soi'.", "next": "t2" },
+          { "t": "It's a major operation on your whole digestive tract.", "ok": false,
+            "feedback_en": "-scopy is a look, not surgery. Don't escalate fear.", "feedback_vi": "-scopy là soi, không phải mổ. Đừng làm tăng nỗi sợ.", "next": "t2" }
+        ]
+      },
+      {
+        "id": "t2",
+        "prompt_en": "Patient: 'Will it hurt like an operation?' You answer:",
+        "prompt_vi": "Bệnh nhân: 'Có đau như mổ không?' Bạn đáp:",
+        "choices": [
+          { "t": "No — '-scopy' means examining, not cutting; it's much gentler than surgery.", "ok": true,
+            "feedback_en": "Right — you separated -scopy (look) from -ectomy/-otomy (cut). Reassuring.", "feedback_vi": "Đúng — bạn tách -scopy (soi) khỏi -ectomy/-otomy (cắt). Rất trấn an.", "next": "end" },
+          { "t": "Yes, they'll remove part of your stomach.", "ok": false,
+            "feedback_en": "That's -ectomy. -scopy is only an examination.", "feedback_vi": "Đó là -ectomy. -scopy chỉ là soi khám.", "next": "end" }
+        ]
+      }
+    ],
+    "close": { "en": "Decoding long GI words turns patient fear into understanding.", "vi": "Giải mã từ tiêu hóa dài biến nỗi sợ thành sự thấu hiểu." }
+  },
+  "quiz": [
+    {
+      "en": "'gastr/o' means…",
+      "vi": "'gastr/o' nghĩa là…",
+      "opts": [
+        { "t": "stomach", "ok": true, "gl": { "stomach": "dạ dày" } },
+        { "t": "intestine", "ok": false, "gl": { "intestine": "ruột" } },
+        { "t": "liver", "ok": false, "gl": { "liver": "gan" } }
+      ],
+      "exp_en": "gastr/o = stomach (gastritis, gastroscopy, gastrectomy).",
+      "exp_vi": "gastr/o = dạ dày (gastritis, gastroscopy, gastrectomy)."
+    },
+    {
+      "en": "'enter/o' means…",
+      "vi": "'enter/o' nghĩa là…",
+      "opts": [
+        { "t": "intestine", "ok": true, "gl": { "intestine": "ruột" } },
+        { "t": "stomach", "ok": false, "gl": { "stomach": "dạ dày" } },
+        { "t": "liver", "ok": false, "gl": { "liver": "gan" } }
+      ],
+      "exp_en": "enter/o = intestine (enteritis; gastroenteritis = stomach + intestine).",
+      "exp_vi": "enter/o = ruột (enteritis; gastroenteritis = dạ dày + ruột)."
+    },
+    {
+      "en": "'Hepatomegaly' means the liver is…",
+      "vi": "'Hepatomegaly' nghĩa là gan…",
+      "opts": [
+        { "t": "enlarged", "ok": true, "gl": { "enlarged": "to ra" } },
+        { "t": "inflamed", "ok": false, "gl": { "inflamed": "viêm" } },
+        { "t": "removed", "ok": false, "gl": { "removed": "cắt bỏ" } }
+      ],
+      "exp_en": "hepat/o (liver) + -megaly (enlargement) = enlarged liver.",
+      "exp_vi": "hepat/o (gan) + -megaly (to ra) = gan to."
+    },
+    {
+      "en": "A 'gastroenterologist' treats the…",
+      "vi": "'Gastroenterologist' chữa…",
+      "opts": [
+        { "t": "digestive system", "ok": true, "gl": { "digestive": "tiêu hóa" } },
+        { "t": "respiratory system", "ok": false, "gl": { "respiratory": "hô hấp" } },
+        { "t": "nervous system", "ok": false, "gl": { "nervous": "thần kinh" } }
+      ],
+      "exp_en": "gastr/o + enter/o + -logist = stomach-and-intestine specialist.",
+      "exp_vi": "gastr/o + enter/o + -logist = bác sĩ dạ dày-ruột."
+    },
+    {
+      "en": "Decode: 'hepatitis' is…",
+      "vi": "Giải mã: 'hepatitis' là…",
+      "opts": [
+        { "t": "inflammation of the liver", "ok": true, "gl": { "liver": "gan" } },
+        { "t": "enlargement of the liver", "ok": false, "gl": { "enlargement": "to ra" } },
+        { "t": "removal of the liver", "ok": false, "gl": { "removal": "cắt bỏ" } }
+      ],
+      "exp_en": "hepat/o (liver) + -itis (inflammation) = liver inflammation.",
+      "exp_vi": "hepat/o (gan) + -itis (viêm) = viêm gan."
+    }
+  ],
+  "done": {
+    "achievements": [
+      { "emoji": "🫃", "en": "Use gastr/o for stomach", "vi": "Dùng gastr/o cho dạ dày" },
+      { "emoji": "🌀", "en": "Use enter/o for intestine", "vi": "Dùng enter/o cho ruột" },
+      { "emoji": "🟤", "en": "Use hepat/o for liver", "vi": "Dùng hepat/o cho gan" },
+      { "emoji": "👨‍⚕️", "en": "Read a long GI word by its pieces", "vi": "Đọc từ tiêu hóa dài theo từng mảnh" }
+    ]
+  }
+}

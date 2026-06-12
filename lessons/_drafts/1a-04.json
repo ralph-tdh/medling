@@ -1,0 +1,249 @@
+{
+  "_gate_status": "DRAFT — pending Gate 1 (Chabner ch.3 prefixes) + Gate 2 Ralph sign-off. Morphemes verified against data/morphology.json.",
+  "meta": {
+    "id": "1a-04",
+    "title_en": "Prefixes of Position",
+    "title_vi": "Tiền tố chỉ vị trí",
+    "level": 1, "stage": "1A", "cefr": "A2+",
+    "hero_emoji": "🧭",
+    "complete_en": "You can place a word in the body!",
+    "complete_vi": "Bạn đã định vị được từ trong cơ thể!",
+    "tier": "free", "duration": "~15 min",
+    "theme_color": "#9AA989", "theme_light": "#EFF2EA", "theme_shadow": "#74906F"
+  },
+  "config": { "next": { "url": "?lesson=1a-05", "label": "Next: Prefixes of Number & Speed", "label_vi": "Tiếp: Tiền tố số lượng & tốc độ", "free": true } },
+  "welcome": {
+    "scenario": [
+      { "en": "The prefix sits in front and tells you WHERE or HOW MUCH.", "vi": "Tiền tố đứng trước, cho biết Ở ĐÂU hoặc BAO NHIÊU.", "bold": true },
+      { "en": "This lesson covers position: above, below, around, within, between.", "vi": "Bài này về vị trí: trên, dưới, quanh, trong, giữa." },
+      { "en": "Same root, different prefix — completely different place.", "vi": "Cùng gốc, khác tiền tố — vị trí khác hẳn." }
+    ],
+    "can_do": [
+      { "en": "Use hypo-/hyper- for below/above", "vi": "Dùng hypo-/hyper- cho dưới/trên" },
+      { "en": "Use peri-, endo-, epi- for around/within/upon", "vi": "Dùng peri-, endo-, epi- cho quanh/trong/trên" },
+      { "en": "Use sub-, intra-, inter- correctly", "vi": "Dùng sub-, intra-, inter- đúng chỗ" },
+      { "en": "Read where a problem is from its prefix", "vi": "Đọc vị trí vấn đề từ tiền tố" }
+    ],
+    "badges": [
+      { "icon": "🧭", "label": "Position prefixes" },
+      { "icon": "🌱", "label": "Stage 1A · Lesson 4" },
+      { "icon": "🆓", "label": "Free" }
+    ]
+  },
+  "situations": [
+    {
+      "tag": "Trên & dưới", "en_tag": "Above & below", "emoji": "↕️",
+      "en": "hyper- (above) vs hypo- (below)", "vi": "hyper- (trên) và hypo- (dưới)",
+      "ctx_en": "hyper- means excessive/above normal; hypo- means deficient/below normal. hypertension is high blood pressure; hypotension is low.",
+      "ctx_vi": "hyper- nghĩa là tăng/trên mức; hypo- nghĩa là giảm/dưới mức. hypertension là huyết áp cao; hypotension là thấp.",
+      "pt": "(A patient confuses 'hypertension' and 'hypotension' on their report.)",
+      "pt_vi": "(Bệnh nhân lẫn 'hypertension' với 'hypotension' trên kết quả.)",
+      "phrases": [
+        { "en": "hyper- means above or excessive.", "vi": "hyper- nghĩa là trên mức/quá mức.", "gl": { "excessive": "quá mức" } },
+        { "en": "hypo- means below or deficient.", "vi": "hypo- nghĩa là dưới mức/thiếu.", "gl": { "deficient": "thiếu" } },
+        { "en": "Hypertension is high blood pressure.", "vi": "Hypertension là huyết áp cao.", "gl": { "blood pressure": "huyết áp" } }
+      ],
+      "vocab": [
+        { "en": "hyper-", "ipa": "ˈhaɪpə", "vi": "trên, quá mức" },
+        { "en": "hypo-", "ipa": "ˈhaɪpəʊ", "vi": "dưới, thiếu" },
+        { "en": "hypertension", "ipa": "ˌhaɪpəˈtenʃən", "vi": "tăng huyết áp" },
+        { "en": "hypotension", "ipa": "ˌhaɪpəʊˈtenʃən", "vi": "tụt huyết áp" },
+        { "en": "hyperglycaemia", "ipa": "ˌhaɪpəɡlaɪˈsiːmiə", "vi": "tăng đường huyết" }
+      ],
+      "pq_en": "A patient's blood sugar is too LOW. Which word fits?",
+      "pq_vi": "Đường huyết bệnh nhân quá THẤP. Từ nào đúng?",
+      "opts": [
+        { "t": "hypoglycaemia (hypo- = below)", "ok": true, "gl": { "below": "dưới mức" } },
+        { "t": "hyperglycaemia (hyper- = below)", "ok": false, "gl": { "above": "trên mức" } },
+        { "t": "periglycaemia (peri- = below)", "ok": false, "gl": { "around": "quanh" } }
+      ],
+      "tip_en": "hypO = below (think O for 'low'). hypER = highER. The vowel hints the direction.",
+      "tip_vi": "hypO = dưới (chữ O như 'low'). hypER = cao hER. Nguyên âm gợi hướng."
+    },
+    {
+      "tag": "Quanh & trong", "en_tag": "Around & within", "emoji": "⭕",
+      "en": "peri- (around), endo- (within)", "vi": "peri- (quanh), endo- (trong)",
+      "ctx_en": "peri- means around; endo- means within/inner. The pericardium is the sac AROUND the heart; the endocardium lines it WITHIN.",
+      "ctx_vi": "peri- nghĩa là quanh; endo- nghĩa là trong/nội. Pericardium là túi BAO QUANH tim; endocardium lót MẶT TRONG tim.",
+      "pt": "(A student asks why the heart has both a 'peri-' and an 'endo-' layer.)",
+      "pt_vi": "(Sinh viên hỏi sao tim có cả lớp 'peri-' lẫn 'endo-'.)",
+      "phrases": [
+        { "en": "peri- means around.", "vi": "peri- nghĩa là quanh.", "gl": { "around": "quanh" } },
+        { "en": "endo- means within or inner.", "vi": "endo- nghĩa là trong/nội.", "gl": { "within": "bên trong" } },
+        { "en": "The pericardium surrounds the heart.", "vi": "Pericardium bao quanh tim.", "gl": { "surrounds": "bao quanh" } }
+      ],
+      "vocab": [
+        { "en": "peri-", "ipa": "ˈperi", "vi": "quanh" },
+        { "en": "endo-", "ipa": "ˈendəʊ", "vi": "trong, nội" },
+        { "en": "pericardium", "ipa": "ˌperiˈkɑːdiəm", "vi": "màng ngoài tim" },
+        { "en": "endocardium", "ipa": "ˌendəʊˈkɑːdiəm", "vi": "màng trong tim" },
+        { "en": "endoscopy", "ipa": "enˈdɒskəpi", "vi": "nội soi" }
+      ],
+      "pq_en": "The layer AROUND the heart is the…",
+      "pq_vi": "Lớp BAO QUANH tim là…",
+      "opts": [
+        { "t": "pericardium (peri- = around)", "ok": true, "gl": { "around": "quanh" } },
+        { "t": "endocardium (endo- = around)", "ok": false, "gl": { "within": "trong" } },
+        { "t": "epicardium (epi- = below)", "ok": false, "gl": { "upon": "trên" } }
+      ],
+      "tip_en": "peri- = perimeter (the boundary around). endo- = endpoint inside.",
+      "tip_vi": "peri- = perimeter (đường biên quanh). endo- = bên trong."
+    },
+    {
+      "tag": "Trên bề mặt", "en_tag": "Upon & under", "emoji": "🔼",
+      "en": "epi- (upon) and sub- (under)", "vi": "epi- (trên) và sub- (dưới)",
+      "ctx_en": "epi- means upon/above a surface; sub- means under/below. The epidermis is the outer skin layer; a subcutaneous injection goes under the skin.",
+      "ctx_vi": "epi- nghĩa là trên bề mặt; sub- nghĩa là dưới. Epidermis là lớp da ngoài; tiêm subcutaneous là tiêm dưới da.",
+      "pt": "(A nurse asks where a 'subcutaneous' injection should go.)",
+      "pt_vi": "(Điều dưỡng hỏi tiêm 'subcutaneous' vào đâu.)",
+      "phrases": [
+        { "en": "epi- means upon or on top of.", "vi": "epi- nghĩa là trên/trên bề mặt.", "gl": { "upon": "trên" } },
+        { "en": "sub- means under or below.", "vi": "sub- nghĩa là dưới.", "gl": { "under": "dưới" } },
+        { "en": "A subcutaneous injection goes under the skin.", "vi": "Tiêm subcutaneous là tiêm dưới da.", "gl": { "injection": "mũi tiêm", "skin": "da" } }
+      ],
+      "vocab": [
+        { "en": "epi-", "ipa": "ˈepi", "vi": "trên" },
+        { "en": "sub-", "ipa": "sʌb", "vi": "dưới" },
+        { "en": "epidermis", "ipa": "ˌepɪˈdɜːmɪs", "vi": "biểu bì (da ngoài)" },
+        { "en": "subcutaneous", "ipa": "ˌsʌbkjuːˈteɪniəs", "vi": "dưới da" },
+        { "en": "injection", "ipa": "ɪnˈdʒekʃən", "vi": "mũi tiêm" }
+      ],
+      "pq_en": "'Epidermis' is the skin layer that is…",
+      "pq_vi": "'Epidermis' là lớp da…",
+      "opts": [
+        { "t": "on top (epi- = upon)", "ok": true, "gl": { "on top": "trên cùng" } },
+        { "t": "under everything (epi- = under)", "ok": false, "gl": { "under": "dưới" } },
+        { "t": "around the body (epi- = around)", "ok": false, "gl": { "around": "quanh" } }
+      ],
+      "tip_en": "epi- sits on top (epicentre is above). sub- is below (submarine goes under).",
+      "tip_vi": "epi- ở trên (epicentre ở phía trên). sub- ở dưới (submarine lặn dưới)."
+    },
+    {
+      "tag": "Trong & giữa", "en_tag": "Within & between", "emoji": "↔️",
+      "en": "intra- (within) vs inter- (between)", "vi": "intra- (trong) và inter- (giữa)",
+      "ctx_en": "One letter again: intra- = within a structure; inter- = between structures. An intravenous line is WITHIN a vein; intercostal muscles sit BETWEEN the ribs.",
+      "ctx_vi": "Lại một chữ: intra- = trong một cấu trúc; inter- = giữa các cấu trúc. Đường intravenous nằm TRONG tĩnh mạch; cơ intercostal nằm GIỮA các xương sườn.",
+      "pt": "(A colleague asks if 'IV' means 'within' or 'between' the vein.)",
+      "pt_vi": "(Đồng nghiệp hỏi 'IV' là 'trong' hay 'giữa' tĩnh mạch.)",
+      "phrases": [
+        { "en": "intra- means within.", "vi": "intra- nghĩa là trong.", "gl": { "within": "bên trong" } },
+        { "en": "inter- means between.", "vi": "inter- nghĩa là giữa.", "gl": { "between": "giữa" } },
+        { "en": "An intravenous drip goes within a vein.", "vi": "Truyền intravenous là vào trong tĩnh mạch.", "gl": { "vein": "tĩnh mạch" } }
+      ],
+      "vocab": [
+        { "en": "intra-", "ipa": "ˈɪntrə", "vi": "trong" },
+        { "en": "inter-", "ipa": "ˈɪntə", "vi": "giữa" },
+        { "en": "intravenous", "ipa": "ˌɪntrəˈviːnəs", "vi": "trong tĩnh mạch (IV)" },
+        { "en": "intercostal", "ipa": "ˌɪntəˈkɒstəl", "vi": "giữa các sườn" },
+        { "en": "vein", "ipa": "veɪn", "vi": "tĩnh mạch" }
+      ],
+      "pq_en": "Muscles BETWEEN the ribs are called…",
+      "pq_vi": "Cơ nằm GIỮA các xương sườn gọi là…",
+      "opts": [
+        { "t": "intercostal (inter- = between)", "ok": true, "gl": { "between": "giữa" } },
+        { "t": "intracostal (intra- = between)", "ok": false, "gl": { "within": "trong" } },
+        { "t": "subcostal (sub- = between)", "ok": false, "gl": { "under": "dưới" } }
+      ],
+      "tip_en": "inteR = between (R for 'paiR', two things). intrA = within A single thing.",
+      "tip_vi": "inteR = giữa (R như 'paiR', hai vật). intrA = trong MỘT vật."
+    }
+  ],
+  "dialogue": {
+    "title_en": "Mini dialogue: reading a result",
+    "title_vi": "Hội thoại ngắn: đọc kết quả",
+    "ctx_en": "A patient reads 'hypotension noted' and worries it means high pressure.",
+    "ctx_vi": "Bệnh nhân đọc 'hypotension noted' và lo đó là huyết áp cao.",
+    "speaker": "Patient", "speaker_emoji": "🧑",
+    "open": { "en": "It says 'hypotension' — that's high blood pressure, right? Should I be worried?", "vi": "Ghi 'hypotension' — là huyết áp cao đúng không bác sĩ? Tôi có nên lo?" },
+    "turns": [
+      {
+        "id": "t1",
+        "prompt_en": "Correct them using the prefix:",
+        "prompt_vi": "Đính chính bằng tiền tố:",
+        "choices": [
+          { "t": "Actually 'hypo-' means below — it's LOW blood pressure.", "ok": true,
+            "feedback_en": "Right — hypo- = below. Clear, gentle correction.", "feedback_vi": "Đúng — hypo- = dưới mức. Đính chính nhẹ nhàng, rõ.", "next": "t2" },
+          { "t": "Yes, hypo- means high, so it's high pressure.", "ok": false,
+            "feedback_en": "hypo- means BELOW, not high. hyper- is high.", "feedback_vi": "hypo- nghĩa là DƯỚI, không phải cao. hyper- mới là cao.", "next": "t2" }
+        ]
+      },
+      {
+        "id": "t2",
+        "prompt_en": "Patient: 'So what's the opposite word?' You answer:",
+        "prompt_vi": "Bệnh nhân: 'Vậy từ ngược lại là gì?' Bạn đáp:",
+        "choices": [
+          { "t": "High pressure is 'hypertension' — hyper- means above.", "ok": true,
+            "feedback_en": "Perfect contrast: hypo- below vs hyper- above.", "feedback_vi": "Tương phản chuẩn: hypo- dưới và hyper- trên.", "next": "end" },
+          { "t": "There isn't one — it's the same word.", "ok": false,
+            "feedback_en": "The prefix flips the meaning: hyper- is the opposite of hypo-.", "feedback_vi": "Tiền tố đảo nghĩa: hyper- ngược với hypo-.", "next": "end" }
+        ]
+      }
+    ],
+    "close": { "en": "Position prefixes turn a scary report into a clear picture.", "vi": "Tiền tố vị trí biến kết quả đáng sợ thành bức tranh rõ ràng." }
+  },
+  "quiz": [
+    {
+      "en": "'hypo-' means…",
+      "vi": "'hypo-' nghĩa là…",
+      "opts": [
+        { "t": "below / deficient", "ok": true, "gl": { "deficient": "thiếu" } },
+        { "t": "above / excessive", "ok": false, "gl": { "excessive": "quá mức" } },
+        { "t": "around", "ok": false, "gl": { "around": "quanh" } }
+      ],
+      "exp_en": "hypo- = below (hypotension = low BP; hypoglycaemia = low sugar).",
+      "exp_vi": "hypo- = dưới (hypotension = HA thấp; hypoglycaemia = đường thấp)."
+    },
+    {
+      "en": "The sac AROUND the heart is the…",
+      "vi": "Túi BAO QUANH tim là…",
+      "opts": [
+        { "t": "pericardium", "ok": true, "gl": { "around": "quanh" } },
+        { "t": "endocardium", "ok": false, "gl": { "within": "trong" } },
+        { "t": "myocardium", "ok": false, "gl": { "muscle": "cơ" } }
+      ],
+      "exp_en": "peri- (around) + cardi (heart) = the sac around the heart.",
+      "exp_vi": "peri- (quanh) + cardi (tim) = túi bao quanh tim."
+    },
+    {
+      "en": "A 'subcutaneous' injection goes…",
+      "vi": "Tiêm 'subcutaneous' vào…",
+      "opts": [
+        { "t": "under the skin", "ok": true, "gl": { "skin": "da" } },
+        { "t": "on top of the skin", "ok": false, "gl": { "on top": "trên" } },
+        { "t": "between the ribs", "ok": false, "gl": { "ribs": "xương sườn" } }
+      ],
+      "exp_en": "sub- (under) + cutaneous (skin) = beneath the skin.",
+      "exp_vi": "sub- (dưới) + cutaneous (da) = dưới da."
+    },
+    {
+      "en": "'Intravenous' means within a…",
+      "vi": "'Intravenous' nghĩa là trong…",
+      "opts": [
+        { "t": "vein", "ok": true, "gl": { "vein": "tĩnh mạch" } },
+        { "t": "muscle", "ok": false, "gl": { "muscle": "cơ" } },
+        { "t": "bone", "ok": false, "gl": { "bone": "xương" } }
+      ],
+      "exp_en": "intra- (within) + ven (vein) = inside the vein (an IV line).",
+      "exp_vi": "intra- (trong) + ven (tĩnh mạch) = trong tĩnh mạch (đường IV)."
+    },
+    {
+      "en": "Decode: muscles BETWEEN the ribs are…",
+      "vi": "Giải mã: cơ GIỮA các sườn là…",
+      "opts": [
+        { "t": "intercostal", "ok": true, "gl": { "between": "giữa" } },
+        { "t": "intracostal", "ok": false, "gl": { "within": "trong" } },
+        { "t": "epicostal", "ok": false, "gl": { "upon": "trên" } }
+      ],
+      "exp_en": "inter- (between) + costal (ribs) = between the ribs.",
+      "exp_vi": "inter- (giữa) + costal (sườn) = giữa các xương sườn."
+    }
+  ],
+  "done": {
+    "achievements": [
+      { "emoji": "↕️", "en": "Use hypo-/hyper- for below/above", "vi": "Dùng hypo-/hyper- cho dưới/trên" },
+      { "emoji": "⭕", "en": "Use peri-/endo-/epi- for around/within/upon", "vi": "Dùng peri-/endo-/epi- cho quanh/trong/trên" },
+      { "emoji": "↔️", "en": "Tell intra- (within) from inter- (between)", "vi": "Phân biệt intra- (trong) với inter- (giữa)" },
+      { "emoji": "🧭", "en": "Read where a problem is from its prefix", "vi": "Đọc vị trí vấn đề từ tiền tố" }
+    ]
+  }
+}

@@ -1,0 +1,254 @@
+{
+  "_gate_status": "DRAFT — pending Gate 1 source verification (Chabner ch.1) + Gate 2 Ralph sign-off. Do NOT move to lessons/ until signed. See docs/reports/2026-06-12-gate2-packet-1a-pilot.md",
+  "meta": {
+    "id": "1a-01",
+    "title_en": "How Medical Words Are Built",
+    "title_vi": "Thuật ngữ y khoa được ráp như thế nào",
+    "level": 1, "stage": "1A", "cefr": "A2+",
+    "hero_emoji": "🧩",
+    "complete_en": "You can now decode medical words!",
+    "complete_vi": "Bạn đã biết giải mã thuật ngữ y khoa!",
+    "tier": "free", "duration": "~15 min",
+    "theme_color": "#9AA989", "theme_light": "#EFF2EA", "theme_shadow": "#74906F"
+  },
+  "config": { "next": { "url": "?lesson=1a-02", "label": "Next: Suffixes That Diagnose", "label_vi": "Tiếp: Hậu tố chẩn đoán", "free": true } },
+  "welcome": {
+    "scenario": [
+      { "en": "Medical English looks hard — until you see the pattern.", "vi": "Tiếng Anh y khoa trông khó — cho tới khi bạn thấy quy luật.", "bold": true },
+      { "en": "Most medical words are built from three Lego pieces: a root, a prefix, and a suffix.", "vi": "Phần lớn thuật ngữ được ráp từ ba mảnh Lego: gốc từ, tiền tố và hậu tố." },
+      { "en": "Learn one piece, unlock a whole family of words.", "vi": "Học một mảnh, mở khóa cả một họ từ." }
+    ],
+    "can_do": [
+      { "en": "Split any medical word into root / prefix / suffix", "vi": "Tách một thuật ngữ thành gốc / tiền tố / hậu tố" },
+      { "en": "Use the combining vowel -o- correctly", "vi": "Dùng nguyên âm nối -o- đúng chỗ" },
+      { "en": "Decode words you have never seen before", "vi": "Giải mã từ chưa từng gặp" },
+      { "en": "Build words from cardi/o, gastr/o, hepat/o", "vi": "Ráp từ với cardi/o, gastr/o, hepat/o" }
+    ],
+    "badges": [
+      { "icon": "🧩", "label": "Word building" },
+      { "icon": "🌱", "label": "Stage 1A · Lesson 1" },
+      { "icon": "🆓", "label": "Free" }
+    ]
+  },
+  "situations": [
+    {
+      "tag": "Mảnh ghép 1", "en_tag": "The root", "emoji": "🌳",
+      "en": "The root — the body part", "vi": "Gốc từ — bộ phận cơ thể",
+      "ctx_en": "The root carries the core meaning, usually a body part or organ. In 'cardiology', the root 'cardi' means heart.",
+      "ctx_vi": "Gốc từ mang nghĩa lõi, thường là một bộ phận hay cơ quan. Trong 'cardiology', gốc 'cardi' nghĩa là tim.",
+      "pt": "(Your study partner asks: 'cardiology', 'cardiac', 'carditis'… why do they all start the same?)",
+      "pt_vi": "(Bạn học hỏi: 'cardiology', 'cardiac', 'carditis'… sao đều mở đầu giống nhau?)",
+      "phrases": [
+        { "en": "The root 'cardi' means heart.", "vi": "Gốc 'cardi' nghĩa là tim.", "gl": { "root": "gốc từ", "heart": "tim" } },
+        { "en": "Every word in this family is about the heart.", "vi": "Mọi từ trong họ này đều nói về tim.", "gl": { "family": "họ từ" } },
+        { "en": "Find the root first, then decode the rest.", "vi": "Tìm gốc từ trước, rồi giải mã phần còn lại.", "gl": { "decode": "giải mã" } }
+      ],
+      "vocab": [
+        { "en": "cardi/o", "ipa": "ˈkɑːdiəʊ", "vi": "tim (gốc từ)" },
+        { "en": "gastr/o", "ipa": "ˈɡæstrəʊ", "vi": "dạ dày (gốc từ)" },
+        { "en": "hepat/o", "ipa": "hɪˈpætəʊ", "vi": "gan (gốc từ)" },
+        { "en": "neur/o", "ipa": "ˈnjʊərəʊ", "vi": "thần kinh (gốc từ)" },
+        { "en": "oste/o", "ipa": "ˈɒstiəʊ", "vi": "xương (gốc từ)" },
+        { "en": "root", "ipa": "ruːt", "vi": "gốc từ" }
+      ],
+      "pq_en": "In the word 'gastrology', which part is the root?",
+      "pq_vi": "Trong từ 'gastrology', phần nào là gốc từ?",
+      "opts": [
+        { "t": "gastr — it names the body part (stomach)", "ok": true, "gl": { "stomach": "dạ dày" } },
+        { "t": "-logy — it comes at the end", "ok": false, "gl": { "end": "cuối từ" } },
+        { "t": "o — it sits in the middle", "ok": false, "gl": { "middle": "giữa từ" } }
+      ],
+      "tip_en": "The root almost always names a body part or organ. Spot it and you know what the word is ABOUT.",
+      "tip_vi": "Gốc từ hầu như luôn chỉ bộ phận cơ thể. Nhận ra nó là biết từ đang nói VỀ cái gì."
+    },
+    {
+      "tag": "Mảnh ghép 2", "en_tag": "The suffix", "emoji": "🔚",
+      "en": "The suffix — what's happening", "vi": "Hậu tố — chuyện gì đang xảy ra",
+      "ctx_en": "The suffix ends the word and tells you what is happening: a disease, a procedure, or a specialty.",
+      "ctx_vi": "Hậu tố đứng cuối từ, cho biết chuyện gì đang xảy ra: bệnh lý, thủ thuật, hay chuyên khoa.",
+      "pt": "(A patient sees 'carditis' in their notes and asks what it means.)",
+      "pt_vi": "(Bệnh nhân thấy chữ 'carditis' trong hồ sơ và hỏi nghĩa là gì.)",
+      "phrases": [
+        { "en": "-logy means 'the study of'.", "vi": "-logy nghĩa là 'ngành học về'.", "gl": { "study": "ngành học" } },
+        { "en": "-itis means inflammation.", "vi": "-itis nghĩa là viêm.", "gl": { "inflammation": "viêm" } },
+        { "en": "The suffix tells you what is happening to that body part.", "vi": "Hậu tố cho biết bộ phận đó đang gặp chuyện gì.", "gl": { "suffix": "hậu tố" } }
+      ],
+      "vocab": [
+        { "en": "-logy", "ipa": "lədʒi", "vi": "ngành học về" },
+        { "en": "-logist", "ipa": "lədʒɪst", "vi": "bác sĩ chuyên khoa" },
+        { "en": "-itis", "ipa": "aɪtɪs", "vi": "viêm" },
+        { "en": "-ic / -ac", "ipa": "ɪk", "vi": "thuộc về (tính từ)" },
+        { "en": "suffix", "ipa": "ˈsʌfɪks", "vi": "hậu tố" }
+      ],
+      "pq_en": "A patient asks: 'What does carditis mean?' What is the best simple answer?",
+      "pq_vi": "Bệnh nhân hỏi: 'Carditis nghĩa là gì?' Câu trả lời đơn giản nhất?",
+      "opts": [
+        { "t": "It means inflammation of the heart.", "ok": true, "gl": { "inflammation": "viêm" } },
+        { "t": "It means a heart doctor.", "ok": false, "gl": { "doctor": "bác sĩ" } },
+        { "t": "It means a heart operation.", "ok": false, "gl": { "operation": "phẫu thuật" } }
+      ],
+      "tip_en": "cardi (heart) + -itis (inflammation) = carditis. Root tells you WHERE, suffix tells you WHAT.",
+      "tip_vi": "cardi (tim) + -itis (viêm) = carditis. Gốc nói Ở ĐÂU, hậu tố nói CHUYỆN GÌ."
+    },
+    {
+      "tag": "Mảnh ghép 3", "en_tag": "The combining vowel", "emoji": "🔗",
+      "en": "The -o- that glues words together", "vi": "Chữ -o- dán các mảnh lại",
+      "ctx_en": "Between root and suffix you often see an 'o'. It is just a connector that makes the word easy to say — it has no meaning.",
+      "ctx_vi": "Giữa gốc từ và hậu tố thường có chữ 'o'. Nó chỉ là cầu nối cho dễ đọc — không mang nghĩa.",
+      "pt": "(Why is it 'cardiOlogy' but 'carditis' — where did the 'o' go?)",
+      "pt_vi": "(Sao lại là 'cardiOlogy' nhưng 'carditis' — chữ 'o' biến đâu mất?)",
+      "phrases": [
+        { "en": "Use the combining vowel when the suffix starts with a consonant.", "vi": "Dùng nguyên âm nối khi hậu tố bắt đầu bằng phụ âm.", "gl": { "consonant": "phụ âm" } },
+        { "en": "Drop it when the suffix starts with a vowel.", "vi": "Bỏ nó khi hậu tố bắt đầu bằng nguyên âm.", "gl": { "vowel": "nguyên âm" } },
+        { "en": "cardi + o + logy, but cardi + itis.", "vi": "cardi + o + logy, nhưng cardi + itis.", "gl": {} }
+      ],
+      "vocab": [
+        { "en": "combining vowel", "ipa": "kəmˈbaɪnɪŋ ˈvaʊəl", "vi": "nguyên âm nối" },
+        { "en": "consonant", "ipa": "ˈkɒnsənənt", "vi": "phụ âm" },
+        { "en": "vowel", "ipa": "ˈvaʊəl", "vi": "nguyên âm" },
+        { "en": "cardiology", "ipa": "ˌkɑːdiˈɒlədʒi", "vi": "khoa tim mạch" },
+        { "en": "carditis", "ipa": "kɑːˈdaɪtɪs", "vi": "viêm tim" }
+      ],
+      "pq_en": "Which is the correctly built word for 'study of the stomach'?",
+      "pq_vi": "Từ nào ráp ĐÚNG cho 'ngành học về dạ dày'?",
+      "opts": [
+        { "t": "gastrology (gastr + o + logy)", "ok": true, "gl": { "stomach": "dạ dày" } },
+        { "t": "gastrlogy (gastr + logy)", "ok": false, "gl": {} },
+        { "t": "gastroitis (gastr + o + itis)", "ok": false, "gl": { "inflammation": "viêm" } }
+      ],
+      "tip_en": "-logy starts with a consonant → keep the o. -itis starts with a vowel → drop the o.",
+      "tip_vi": "-logy bắt đầu bằng phụ âm → giữ o. -itis bắt đầu bằng nguyên âm → bỏ o."
+    },
+    {
+      "tag": "Ráp từ", "en_tag": "Decode practice", "emoji": "🔍",
+      "en": "Decode a word you've never seen", "vi": "Giải mã từ chưa từng gặp",
+      "ctx_en": "Now use all three pieces. Read from the suffix back to the root: hepatitis = -itis (inflammation) + hepat (liver) → inflammation of the liver.",
+      "ctx_vi": "Giờ dùng cả ba mảnh. Đọc từ hậu tố ngược về gốc: hepatitis = -itis (viêm) + hepat (gan) → viêm gan.",
+      "pt": "(On the ward you see a new word in the chart: 'neurology'.)",
+      "pt_vi": "(Trong khoa, bạn thấy từ mới trong hồ sơ: 'neurology'.)",
+      "phrases": [
+        { "en": "Read the suffix first, then the root.", "vi": "Đọc hậu tố trước, rồi tới gốc từ.", "gl": { "suffix": "hậu tố", "root": "gốc từ" } },
+        { "en": "Hepatitis means inflammation of the liver.", "vi": "Hepatitis nghĩa là viêm gan.", "gl": { "liver": "gan" } },
+        { "en": "A neurologist is a doctor who studies the nervous system.", "vi": "Neurologist là bác sĩ chuyên về hệ thần kinh.", "gl": { "nervous system": "hệ thần kinh" } }
+      ],
+      "vocab": [
+        { "en": "hepatitis", "ipa": "ˌhepəˈtaɪtɪs", "vi": "viêm gan" },
+        { "en": "neurology", "ipa": "njʊəˈrɒlədʒi", "vi": "khoa thần kinh" },
+        { "en": "gastritis", "ipa": "ɡæˈstraɪtɪs", "vi": "viêm dạ dày" },
+        { "en": "osteology", "ipa": "ˌɒstiˈɒlədʒi", "vi": "ngành học về xương" },
+        { "en": "cardiologist", "ipa": "ˌkɑːdiˈɒlədʒɪst", "vi": "bác sĩ tim mạch" }
+      ],
+      "pq_en": "Using the pattern, what does 'osteitis' mean?",
+      "pq_vi": "Theo quy luật, 'osteitis' nghĩa là gì?",
+      "opts": [
+        { "t": "Inflammation of bone", "ok": true, "gl": { "bone": "xương" } },
+        { "t": "The study of bones", "ok": false, "gl": { "study": "ngành học" } },
+        { "t": "A bone doctor", "ok": false, "gl": { "doctor": "bác sĩ" } }
+      ],
+      "tip_en": "You just decoded a word you may never have seen. This pattern unlocks hundreds more.",
+      "tip_vi": "Bạn vừa giải mã một từ có thể chưa từng gặp. Quy luật này mở khóa hàng trăm từ nữa."
+    }
+  ],
+  "dialogue": {
+    "title_en": "Mini dialogue: explaining a term",
+    "title_vi": "Hội thoại ngắn: giải thích thuật ngữ",
+    "ctx_en": "A worried patient reads their referral letter and asks you about a word.",
+    "ctx_vi": "Bệnh nhân lo lắng đọc giấy chuyển viện và hỏi bạn về một từ.",
+    "speaker": "Patient", "speaker_emoji": "🧑",
+    "open": { "en": "Doctor, it says here I need to see a 'gastroenterologist'… is that serious?", "vi": "Bác sĩ ơi, giấy ghi tôi cần gặp 'gastroenterologist'… có nghiêm trọng không?" },
+    "turns": [
+      {
+        "id": "t1",
+        "prompt_en": "How do you respond?",
+        "prompt_vi": "Bạn đáp thế nào?",
+        "choices": [
+          { "t": "It just means a stomach and intestine specialist — a digestive system doctor.", "ok": true,
+            "feedback_en": "Clear lay explanation — you decoded gastr/o + enter/o + -logist into plain language.",
+            "feedback_vi": "Giải thích bình dân, rõ ràng — bạn đã giải mã thuật ngữ thành lời dễ hiểu.", "next": "t2" },
+          { "t": "It is a gastroenterologist. You will be fine.", "ok": false,
+            "feedback_en": "Repeating the term doesn't help a worried patient. Translate it into everyday words.",
+            "feedback_vi": "Lặp lại thuật ngữ không giúp bệnh nhân đang lo. Hãy dịch sang từ ngữ đời thường.", "next": "t2" }
+        ]
+      },
+      {
+        "id": "t2",
+        "prompt_en": "The patient relaxes and asks: 'So it's not surgery?' You say:",
+        "prompt_vi": "Bệnh nhân nhẹ nhõm, hỏi: 'Vậy không phải mổ hả bác sĩ?' Bạn nói:",
+        "choices": [
+          { "t": "No — '-logist' means a specialist who examines and advises, not surgery.", "ok": true,
+            "feedback_en": "You used the suffix itself to reassure — excellent use of word-building.",
+            "feedback_vi": "Bạn dùng chính hậu tố để trấn an — vận dụng ráp từ rất tốt.", "next": "end" },
+          { "t": "Maybe. We will see.", "ok": false,
+            "feedback_en": "Vague answers increase anxiety. The suffix gives you a precise, reassuring answer.",
+            "feedback_vi": "Trả lời mơ hồ làm tăng lo lắng. Hậu tố cho bạn câu trả lời chính xác để trấn an.", "next": "end" }
+        ]
+      }
+    ],
+    "close": { "en": "Word-building is not just vocabulary — it's a communication tool.", "vi": "Ráp từ không chỉ là từ vựng — nó là công cụ giao tiếp." }
+  },
+  "quiz": [
+    {
+      "en": "Which three pieces build most medical words?",
+      "vi": "Ba mảnh nào ráp nên phần lớn thuật ngữ y khoa?",
+      "opts": [
+        { "t": "Root, prefix, suffix", "ok": true, "gl": { "root": "gốc từ" } },
+        { "t": "Noun, verb, adjective", "ok": false, "gl": { "noun": "danh từ" } },
+        { "t": "Subject, verb, object", "ok": false, "gl": { "subject": "chủ ngữ" } }
+      ],
+      "exp_en": "Root (body part) + prefix (modifier in front) + suffix (what's happening).",
+      "exp_vi": "Gốc (bộ phận) + tiền tố (bổ nghĩa phía trước) + hậu tố (chuyện gì xảy ra)."
+    },
+    {
+      "en": "In 'hepatology', what does the root 'hepat' mean?",
+      "vi": "Trong 'hepatology', gốc 'hepat' nghĩa là gì?",
+      "opts": [
+        { "t": "Liver", "ok": true, "gl": { "liver": "gan" } },
+        { "t": "Heart", "ok": false, "gl": { "heart": "tim" } },
+        { "t": "Kidney", "ok": false, "gl": { "kidney": "thận" } }
+      ],
+      "exp_en": "hepat = liver → hepatology is the study of the liver.",
+      "exp_vi": "hepat = gan → hepatology là ngành học về gan."
+    },
+    {
+      "en": "Why is there no 'o' in 'gastritis'?",
+      "vi": "Vì sao 'gastritis' không có chữ 'o'?",
+      "opts": [
+        { "t": "Because -itis starts with a vowel", "ok": true, "gl": { "vowel": "nguyên âm" } },
+        { "t": "Because the word is too long", "ok": false, "gl": {} },
+        { "t": "Because gastr cannot take an o", "ok": false, "gl": {} }
+      ],
+      "exp_en": "The combining vowel is dropped before a suffix that starts with a vowel: gastr + itis.",
+      "exp_vi": "Nguyên âm nối bị bỏ trước hậu tố bắt đầu bằng nguyên âm: gastr + itis."
+    },
+    {
+      "en": "A 'neurologist' is…",
+      "vi": "'Neurologist' là…",
+      "opts": [
+        { "t": "A nervous-system specialist", "ok": true, "gl": { "nervous system": "hệ thần kinh" } },
+        { "t": "Inflammation of a nerve", "ok": false, "gl": { "inflammation": "viêm" } },
+        { "t": "The study of bones", "ok": false, "gl": { "bone": "xương" } }
+      ],
+      "exp_en": "neur (nerve) + -logist (specialist) = nervous-system specialist.",
+      "exp_vi": "neur (thần kinh) + -logist (chuyên gia) = bác sĩ chuyên khoa thần kinh."
+    },
+    {
+      "en": "Decode a NEW word: 'osteology' means…",
+      "vi": "Giải mã từ MỚI: 'osteology' nghĩa là…",
+      "opts": [
+        { "t": "The study of bones", "ok": true, "gl": { "bone": "xương" } },
+        { "t": "Inflammation of bone", "ok": false, "gl": { "inflammation": "viêm" } },
+        { "t": "A bone operation", "ok": false, "gl": { "operation": "phẫu thuật" } }
+      ],
+      "exp_en": "oste (bone) + o + -logy (study of). You decoded it from the pieces — that's the skill.",
+      "exp_vi": "oste (xương) + o + -logy (ngành học). Bạn giải mã từ các mảnh — chính là kỹ năng cần học."
+    }
+  ],
+  "done": {
+    "achievements": [
+      { "emoji": "🧩", "en": "Split medical words into root / prefix / suffix", "vi": "Tách thuật ngữ thành gốc / tiền tố / hậu tố" },
+      { "emoji": "🔗", "en": "Use the combining vowel -o- correctly", "vi": "Dùng nguyên âm nối -o- đúng chỗ" },
+      { "emoji": "🔍", "en": "Decode unseen words from their pieces", "vi": "Giải mã từ mới từ các mảnh ghép" },
+      { "emoji": "💬", "en": "Explain a medical term to a patient in plain English", "vi": "Giải thích thuật ngữ cho bệnh nhân bằng lời dễ hiểu" }
+    ]
+  }
+}

@@ -1,0 +1,255 @@
+{
+  "_gate_status": "DRAFT — pending Gate 1 source verification (Chabner ch.1-2) + Gate 2 Ralph sign-off. Do NOT move to lessons/ until signed. See docs/reports/2026-06-12-gate2-packet-1a-pilot.md",
+  "meta": {
+    "id": "1a-02",
+    "title_en": "Suffixes That Diagnose",
+    "title_vi": "Những hậu tố chẩn đoán",
+    "level": 1, "stage": "1A", "cefr": "A2+",
+    "hero_emoji": "🩻",
+    "complete_en": "Five suffixes, hundreds of diagnoses unlocked!",
+    "complete_vi": "Năm hậu tố, mở khóa hàng trăm chẩn đoán!",
+    "tier": "free", "duration": "~15 min",
+    "theme_color": "#9AA989", "theme_light": "#EFF2EA", "theme_shadow": "#74906F"
+  },
+  "config": { "next": { "url": "?lesson=1a-03", "label": "Next: Suffixes That Treat", "label_vi": "Tiếp: Hậu tố điều trị", "free": true } },
+  "welcome": {
+    "scenario": [
+      { "en": "Every diagnosis hides its meaning in the suffix.", "vi": "Mỗi chẩn đoán giấu nghĩa của nó trong hậu tố.", "bold": true },
+      { "en": "-itis, -osis, -emia, -algia, -megaly — five endings you will meet every single day.", "vi": "-itis, -osis, -emia, -algia, -megaly — năm đuôi từ bạn sẽ gặp mỗi ngày." },
+      { "en": "Master them and half the chart reads itself.", "vi": "Nắm vững chúng, nửa bệnh án tự nó hiện nghĩa." }
+    ],
+    "can_do": [
+      { "en": "Recognize the five core diagnostic suffixes", "vi": "Nhận diện 5 hậu tố chẩn đoán cốt lõi" },
+      { "en": "Tell -itis (inflammation) from -osis (abnormal condition)", "vi": "Phân biệt -itis (viêm) với -osis (tình trạng bất thường)" },
+      { "en": "Read blood conditions ending in -emia", "vi": "Đọc các tình trạng máu kết thúc bằng -emia" },
+      { "en": "Describe pain and enlargement with -algia and -megaly", "vi": "Mô tả đau và phì đại với -algia và -megaly" }
+    ],
+    "badges": [
+      { "icon": "🩻", "label": "Diagnosis suffixes" },
+      { "icon": "🌱", "label": "Stage 1A · Lesson 2" },
+      { "icon": "🆓", "label": "Free" }
+    ]
+  },
+  "situations": [
+    {
+      "tag": "Viêm", "en_tag": "-itis", "emoji": "🔥",
+      "en": "-itis — inflammation", "vi": "-itis — viêm",
+      "ctx_en": "The most common diagnostic suffix. Attach it to a body-part root and you name an inflammation.",
+      "ctx_vi": "Hậu tố chẩn đoán phổ biến nhất. Gắn vào gốc chỉ bộ phận là thành tên một bệnh viêm.",
+      "pt": "\"My throat has been burning for two days, doctor.\"",
+      "pt_vi": "\"Cổ họng tôi rát hai ngày nay rồi bác sĩ.\"",
+      "phrases": [
+        { "en": "The suffix -itis means inflammation.", "vi": "Hậu tố -itis nghĩa là viêm.", "gl": { "inflammation": "viêm" } },
+        { "en": "Gastritis is inflammation of the stomach.", "vi": "Gastritis là viêm dạ dày.", "gl": { "stomach": "dạ dày" } },
+        { "en": "Inflamed tissue is usually red, hot, swollen and painful.", "vi": "Mô viêm thường đỏ, nóng, sưng, đau.", "gl": { "swollen": "sưng" } }
+      ],
+      "vocab": [
+        { "en": "-itis", "ipa": "aɪtɪs", "vi": "viêm" },
+        { "en": "gastritis", "ipa": "ɡæˈstraɪtɪs", "vi": "viêm dạ dày" },
+        { "en": "hepatitis", "ipa": "ˌhepəˈtaɪtɪs", "vi": "viêm gan" },
+        { "en": "arthritis", "ipa": "ɑːˈθraɪtɪs", "vi": "viêm khớp" },
+        { "en": "dermatitis", "ipa": "ˌdɜːməˈtaɪtɪs", "vi": "viêm da" },
+        { "en": "inflammation", "ipa": "ˌɪnfləˈmeɪʃn", "vi": "tình trạng viêm" }
+      ],
+      "pq_en": "A patient's chart says 'arthritis'. Which body part is inflamed?",
+      "pq_vi": "Hồ sơ ghi 'arthritis'. Bộ phận nào đang viêm?",
+      "opts": [
+        { "t": "The joints (arthr = joint)", "ok": true, "gl": { "joint": "khớp" } },
+        { "t": "The skin (derm = skin)", "ok": false, "gl": { "skin": "da" } },
+        { "t": "The liver (hepat = liver)", "ok": false, "gl": { "liver": "gan" } }
+      ],
+      "tip_en": "Root first, then -itis: arthr (joint) + -itis = joint inflammation.",
+      "tip_vi": "Gốc trước, -itis sau: arthr (khớp) + -itis = viêm khớp."
+    },
+    {
+      "tag": "Bất thường", "en_tag": "-osis", "emoji": "📈",
+      "en": "-osis — abnormal condition", "vi": "-osis — tình trạng bất thường",
+      "ctx_en": "-osis flags an abnormal condition or increase — usually WITHOUT inflammation. Compare: dermatitis (inflamed skin) vs dermatosis (any abnormal skin condition).",
+      "ctx_vi": "-osis chỉ một tình trạng bất thường hoặc gia tăng — thường KHÔNG viêm. So sánh: dermatitis (viêm da) với dermatosis (bất kỳ bệnh da bất thường nào).",
+      "pt": "(A senior writes 'osteoporosis' — the student asks how it differs from 'osteitis'.)",
+      "pt_vi": "(Đàn anh ghi 'osteoporosis' — sinh viên hỏi khác 'osteitis' chỗ nào.)",
+      "phrases": [
+        { "en": "-osis means an abnormal condition.", "vi": "-osis nghĩa là tình trạng bất thường.", "gl": { "abnormal": "bất thường" } },
+        { "en": "It is usually not an inflammation.", "vi": "Nó thường không phải tình trạng viêm.", "gl": {} },
+        { "en": "Osteoporosis is a condition of porous, fragile bone.", "vi": "Osteoporosis là tình trạng xương xốp, giòn.", "gl": { "fragile": "giòn, dễ gãy" } }
+      ],
+      "vocab": [
+        { "en": "-osis", "ipa": "əʊsɪs", "vi": "tình trạng bất thường" },
+        { "en": "osteoporosis", "ipa": "ˌɒstiəʊpəˈrəʊsɪs", "vi": "loãng xương" },
+        { "en": "fibrosis", "ipa": "faɪˈbrəʊsɪs", "vi": "xơ hóa" },
+        { "en": "necrosis", "ipa": "neˈkrəʊsɪs", "vi": "hoại tử" },
+        { "en": "condition", "ipa": "kənˈdɪʃn", "vi": "tình trạng" }
+      ],
+      "pq_en": "Which pair is matched correctly?",
+      "pq_vi": "Cặp nào ghép ĐÚNG?",
+      "opts": [
+        { "t": "-itis = inflammation · -osis = abnormal condition", "ok": true, "gl": { "inflammation": "viêm" } },
+        { "t": "-itis = abnormal condition · -osis = inflammation", "ok": false, "gl": {} },
+        { "t": "Both mean inflammation", "ok": false, "gl": {} }
+      ],
+      "tip_en": "When you see -osis, think 'something abnormal is going on' — not necessarily inflamed.",
+      "tip_vi": "Thấy -osis, hãy nghĩ 'có gì đó bất thường' — chưa chắc là viêm."
+    },
+    {
+      "tag": "Máu", "en_tag": "-emia", "emoji": "🩸",
+      "en": "-emia — blood condition", "vi": "-emia — tình trạng máu",
+      "ctx_en": "-emia means 'condition of the blood'. an- (without) + -emia = anemia, a lack of healthy red blood cells.",
+      "ctx_vi": "-emia nghĩa là 'tình trạng của máu'. an- (thiếu) + -emia = anemia, thiếu hồng cầu khỏe mạnh.",
+      "pt": "\"The blood test shows you have anemia — that's why you feel tired.\"",
+      "pt_vi": "\"Xét nghiệm máu cho thấy chị bị thiếu máu — vì vậy chị thấy mệt.\"",
+      "phrases": [
+        { "en": "-emia points to the blood.", "vi": "-emia chỉ về máu.", "gl": { "blood": "máu" } },
+        { "en": "Anemia means the blood lacks healthy red cells.", "vi": "Anemia nghĩa là máu thiếu hồng cầu khỏe mạnh.", "gl": { "red cells": "hồng cầu" } },
+        { "en": "Notice the prefix: an- means without.", "vi": "Chú ý tiền tố: an- nghĩa là thiếu/không có.", "gl": { "prefix": "tiền tố" } }
+      ],
+      "vocab": [
+        { "en": "-emia", "ipa": "iːmiə", "vi": "tình trạng máu" },
+        { "en": "anemia", "ipa": "əˈniːmiə", "vi": "thiếu máu" },
+        { "en": "leukemia", "ipa": "luːˈkiːmiə", "vi": "bệnh bạch cầu" },
+        { "en": "blood test", "ipa": "blʌd test", "vi": "xét nghiệm máu" },
+        { "en": "red blood cell", "ipa": "red blʌd sel", "vi": "hồng cầu" }
+      ],
+      "pq_en": "The suffix in 'leukemia' tells you the disease involves…",
+      "pq_vi": "Hậu tố trong 'leukemia' cho biết bệnh liên quan tới…",
+      "opts": [
+        { "t": "The blood", "ok": true, "gl": { "blood": "máu" } },
+        { "t": "The bones", "ok": false, "gl": { "bone": "xương" } },
+        { "t": "The skin", "ok": false, "gl": { "skin": "da" } }
+      ],
+      "tip_en": "leuk (white) + -emia (blood condition): a disease of the white blood cells.",
+      "tip_vi": "leuk (trắng) + -emia (tình trạng máu): bệnh của bạch cầu."
+    },
+    {
+      "tag": "Đau & to", "en_tag": "-algia · -megaly", "emoji": "⚡",
+      "en": "-algia (pain) & -megaly (enlargement)", "vi": "-algia (đau) & -megaly (phì đại)",
+      "ctx_en": "Two suffixes for what you feel and what you find: -algia names pain; -megaly names abnormal enlargement found on exam or imaging.",
+      "ctx_vi": "Hai hậu tố cho điều bệnh nhân cảm nhận và điều bạn thăm khám thấy: -algia gọi tên cơn đau; -megaly gọi tên sự phì đại bất thường.",
+      "pt": "\"I have this aching pain in my muscles all over, doctor.\"",
+      "pt_vi": "\"Tôi đau nhức cơ khắp người bác sĩ ạ.\"",
+      "phrases": [
+        { "en": "-algia means pain.", "vi": "-algia nghĩa là đau.", "gl": { "pain": "đau" } },
+        { "en": "Myalgia is muscle pain.", "vi": "Myalgia là đau cơ.", "gl": { "muscle": "cơ" } },
+        { "en": "Hepatomegaly means the liver is enlarged.", "vi": "Hepatomegaly nghĩa là gan to.", "gl": { "enlarged": "phì đại, to ra" } }
+      ],
+      "vocab": [
+        { "en": "-algia", "ipa": "ældʒə", "vi": "đau" },
+        { "en": "myalgia", "ipa": "maɪˈældʒə", "vi": "đau cơ" },
+        { "en": "neuralgia", "ipa": "njʊəˈrældʒə", "vi": "đau dây thần kinh" },
+        { "en": "-megaly", "ipa": "meɡəli", "vi": "phì đại" },
+        { "en": "hepatomegaly", "ipa": "ˌhepətəʊˈmeɡəli", "vi": "gan to" },
+        { "en": "enlargement", "ipa": "ɪnˈlɑːdʒmənt", "vi": "sự phì đại" }
+      ],
+      "pq_en": "On exam you feel an enlarged liver. The correct term to record is…",
+      "pq_vi": "Thăm khám thấy gan to. Thuật ngữ đúng để ghi nhận là…",
+      "opts": [
+        { "t": "Hepatomegaly", "ok": true, "gl": { "enlarged liver": "gan to" } },
+        { "t": "Hepatalgia", "ok": false, "gl": { "pain": "đau" } },
+        { "t": "Hepatitis", "ok": false, "gl": { "inflammation": "viêm" } }
+      ],
+      "tip_en": "Pain you HEAR from the patient (-algia); enlargement you FIND on exam (-megaly).",
+      "tip_vi": "Đau là điều bạn NGHE bệnh nhân kể (-algia); phì đại là điều bạn KHÁM thấy (-megaly)."
+    }
+  ],
+  "dialogue": {
+    "title_en": "Mini dialogue: the worried chart-reader",
+    "title_vi": "Hội thoại ngắn: bệnh nhân đọc hồ sơ",
+    "ctx_en": "A patient googled their lab report and is alarmed by the word 'gastritis'.",
+    "ctx_vi": "Bệnh nhân tự tra Google kết quả và hoảng vì chữ 'gastritis'.",
+    "speaker": "Patient", "speaker_emoji": "😟",
+    "open": { "en": "Doctor, the report says GASTRITIS. Is it cancer? Please be honest with me!", "vi": "Bác sĩ, kết quả ghi GASTRITIS. Có phải ung thư không? Xin nói thật với tôi!" },
+    "turns": [
+      {
+        "id": "t1",
+        "prompt_en": "How do you respond first?",
+        "prompt_vi": "Bạn đáp lại thế nào trước tiên?",
+        "choices": [
+          { "t": "I understand your concern. Gastritis is not cancer — it means the stomach lining is inflamed.", "ok": true,
+            "feedback_en": "You acknowledged the emotion first, then decoded the term — textbook communication.",
+            "feedback_vi": "Bạn trấn an cảm xúc trước, rồi giải mã thuật ngữ — giao tiếp chuẩn mực.", "next": "t2" },
+          { "t": "Don't google your results. It causes problems.", "ok": false,
+            "feedback_en": "Scolding shuts the patient down and doesn't answer the fear. Decode the word for them.",
+            "feedback_vi": "Trách móc khiến bệnh nhân khép lại và nỗi sợ vẫn còn đó. Hãy giải mã từ ngữ cho họ.", "next": "t2" }
+        ]
+      },
+      {
+        "id": "t2",
+        "prompt_en": "The patient asks: 'Inflamed? Is that dangerous?' You explain:",
+        "prompt_vi": "Bệnh nhân hỏi: 'Viêm? Có nguy hiểm không?' Bạn giải thích:",
+        "choices": [
+          { "t": "It's irritation of the stomach lining — common, and usually treatable with medication and diet.", "ok": true,
+            "feedback_en": "Plain-language reassurance with a clear next step. The suffix gave you the precise meaning.",
+            "feedback_vi": "Trấn an bằng ngôn ngữ dễ hiểu kèm hướng xử trí. Hậu tố cho bạn nghĩa chính xác.", "next": "end" },
+          { "t": "Inflammation can be many things. We can't say yet.", "ok": false,
+            "feedback_en": "Technically true but unhelpfully vague — it amplifies anxiety instead of resolving it.",
+            "feedback_vi": "Đúng về kỹ thuật nhưng mơ hồ — làm tăng thay vì giải tỏa lo lắng.", "next": "end" }
+        ]
+      }
+    ],
+    "close": { "en": "One suffix, decoded calmly, turned panic into a plan.", "vi": "Một hậu tố, giải mã bình tĩnh, biến hoảng loạn thành kế hoạch." }
+  },
+  "quiz": [
+    {
+      "en": "Which suffix means inflammation?",
+      "vi": "Hậu tố nào nghĩa là viêm?",
+      "opts": [
+        { "t": "-itis", "ok": true, "gl": { "inflammation": "viêm" } },
+        { "t": "-osis", "ok": false, "gl": { "abnormal": "bất thường" } },
+        { "t": "-megaly", "ok": false, "gl": { "enlargement": "phì đại" } }
+      ],
+      "exp_en": "-itis = inflammation: gastritis, hepatitis, arthritis.",
+      "exp_vi": "-itis = viêm: gastritis (viêm dạ dày), hepatitis (viêm gan), arthritis (viêm khớp)."
+    },
+    {
+      "en": "'Fibrosis' describes…",
+      "vi": "'Fibrosis' mô tả…",
+      "opts": [
+        { "t": "An abnormal condition (scarring of tissue)", "ok": true, "gl": { "scarring": "xơ/sẹo hóa" } },
+        { "t": "An inflammation", "ok": false, "gl": { "inflammation": "viêm" } },
+        { "t": "A blood condition", "ok": false, "gl": { "blood": "máu" } }
+      ],
+      "exp_en": "-osis = abnormal condition; fibrosis = abnormal fibrous (scar) tissue formation.",
+      "exp_vi": "-osis = tình trạng bất thường; fibrosis = mô xơ hình thành bất thường."
+    },
+    {
+      "en": "A tired patient's test shows 'anemia'. The suffix tells you the problem is in…",
+      "vi": "Bệnh nhân mệt mỏi có kết quả 'anemia'. Hậu tố cho biết vấn đề nằm ở…",
+      "opts": [
+        { "t": "The blood", "ok": true, "gl": { "blood": "máu" } },
+        { "t": "The muscles", "ok": false, "gl": { "muscle": "cơ" } },
+        { "t": "The joints", "ok": false, "gl": { "joint": "khớp" } }
+      ],
+      "exp_en": "-emia = blood condition; an- = without → lacking healthy red blood cells.",
+      "exp_vi": "-emia = tình trạng máu; an- = thiếu → thiếu hồng cầu khỏe mạnh."
+    },
+    {
+      "en": "'Neuralgia' means…",
+      "vi": "'Neuralgia' nghĩa là…",
+      "opts": [
+        { "t": "Nerve pain", "ok": true, "gl": { "nerve": "thần kinh", "pain": "đau" } },
+        { "t": "Nerve inflammation", "ok": false, "gl": { "inflammation": "viêm" } },
+        { "t": "An enlarged nerve", "ok": false, "gl": { "enlarged": "phì đại" } }
+      ],
+      "exp_en": "neur (nerve) + -algia (pain). Nerve inflammation would be neuritis.",
+      "exp_vi": "neur (thần kinh) + -algia (đau). Viêm dây thần kinh là neuritis."
+    },
+    {
+      "en": "You palpate an enlarged spleen (splen = spleen). The term is…",
+      "vi": "Bạn sờ thấy lách to (splen = lách). Thuật ngữ là…",
+      "opts": [
+        { "t": "Splenomegaly", "ok": true, "gl": { "spleen": "lách" } },
+        { "t": "Splenitis", "ok": false, "gl": { "inflammation": "viêm" } },
+        { "t": "Splenalgia", "ok": false, "gl": { "pain": "đau" } }
+      ],
+      "exp_en": "splen + o + -megaly = enlarged spleen. You built a word you were never taught.",
+      "exp_vi": "splen + o + -megaly = lách to. Bạn vừa ráp một từ chưa từng được dạy."
+    }
+  ],
+  "done": {
+    "achievements": [
+      { "emoji": "🔥", "en": "Name inflammations with -itis", "vi": "Gọi tên các bệnh viêm với -itis" },
+      { "emoji": "📈", "en": "Flag abnormal conditions with -osis", "vi": "Nhận diện tình trạng bất thường với -osis" },
+      { "emoji": "🩸", "en": "Read blood conditions with -emia", "vi": "Đọc tình trạng máu với -emia" },
+      { "emoji": "⚡", "en": "Record pain (-algia) and enlargement (-megaly) precisely", "vi": "Ghi nhận đau (-algia) và phì đại (-megaly) chính xác" }
+    ]
+  }
+}

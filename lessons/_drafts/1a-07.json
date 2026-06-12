@@ -1,0 +1,249 @@
+{
+  "_gate_status": "DRAFT — pending Gate 1 (Chabner body-system intro) + Gate 2 Ralph sign-off. Morphemes verified against data/morphology.json.",
+  "meta": {
+    "id": "1a-07",
+    "title_en": "The Respiratory Word Family",
+    "title_vi": "Họ từ hô hấp",
+    "level": 1, "stage": "1A", "cefr": "A2+",
+    "hero_emoji": "🫁",
+    "complete_en": "You can decode breathing words!",
+    "complete_vi": "Bạn đã giải mã được các từ về hô hấp!",
+    "tier": "free", "duration": "~15 min",
+    "theme_color": "#9AA989", "theme_light": "#EFF2EA", "theme_shadow": "#74906F"
+  },
+  "config": { "next": { "url": "?lesson=1a-08", "label": "Next: The Digestive Word Family", "label_vi": "Tiếp: Họ từ tiêu hóa", "free": true } },
+  "welcome": {
+    "scenario": [
+      { "en": "Same pattern, new system. The respiratory family is built on two vessel-like roots and one key suffix.", "vi": "Cùng quy luật, hệ mới. Họ hô hấp dựng trên hai gốc và một hậu tố then chốt.", "bold": true },
+      { "en": "pneum/o and pulmon/o both mean lung; thorac/o means chest; -pnea means breathing.", "vi": "pneum/o và pulmon/o đều nghĩa là phổi; thorac/o nghĩa là ngực; -pnea nghĩa là sự thở." },
+      { "en": "Master these and breathing diagnoses read themselves.", "vi": "Nắm chúng, các chẩn đoán hô hấp tự giải mã." }
+    ],
+    "can_do": [
+      { "en": "Use pneum/o and pulmon/o for lung", "vi": "Dùng pneum/o và pulmon/o cho phổi" },
+      { "en": "Use thorac/o for chest", "vi": "Dùng thorac/o cho ngực" },
+      { "en": "Read -pnea breathing words (dyspnea, apnea)", "vi": "Đọc từ -pnea (dyspnea, apnea)" },
+      { "en": "Decode a respiratory diagnosis", "vi": "Giải mã chẩn đoán hô hấp" }
+    ],
+    "badges": [
+      { "icon": "🫁", "label": "Respiratory" },
+      { "icon": "🌱", "label": "Stage 1A · Lesson 7" },
+      { "icon": "🆓", "label": "Free" }
+    ]
+  },
+  "situations": [
+    {
+      "tag": "Phổi", "en_tag": "Lung roots", "emoji": "🫁",
+      "en": "pneum/o and pulmon/o", "vi": "pneum/o và pulmon/o",
+      "ctx_en": "Two roots for lung: pneum/o (Greek) and pulmon/o (Latin). pneumonia is lung infection; pulmonary means relating to the lungs.",
+      "ctx_vi": "Hai gốc cho phổi: pneum/o (Hy) và pulmon/o (La). pneumonia là nhiễm trùng phổi; pulmonary nghĩa là thuộc về phổi.",
+      "pt": "(A patient asks why 'pneumonia' and 'pulmonary' look so different but both mean lung.)",
+      "pt_vi": "(Bệnh nhân hỏi sao 'pneumonia' và 'pulmonary' khác nhau mà đều chỉ phổi.)",
+      "phrases": [
+        { "en": "pneum/o and pulmon/o both mean lung.", "vi": "pneum/o và pulmon/o đều nghĩa là phổi.", "gl": { "lung": "phổi" } },
+        { "en": "Pneumonia is an infection of the lung.", "vi": "Pneumonia là nhiễm trùng phổi.", "gl": { "infection": "nhiễm trùng" } },
+        { "en": "Pulmonary means relating to the lungs.", "vi": "Pulmonary nghĩa là thuộc về phổi.", "gl": { "relating to": "thuộc về" } }
+      ],
+      "vocab": [
+        { "en": "pneum/o", "ipa": "ˈnjuːməʊ", "vi": "phổi, khí (gốc Hy)" },
+        { "en": "pulmon/o", "ipa": "ˈpʌlmənəʊ", "vi": "phổi (gốc La)" },
+        { "en": "pneumonia", "ipa": "njuːˈməʊniə", "vi": "viêm phổi" },
+        { "en": "pulmonary", "ipa": "ˈpʌlmənəri", "vi": "thuộc phổi" },
+        { "en": "lung", "ipa": "lʌŋ", "vi": "phổi" }
+      ],
+      "pq_en": "'Pulmonary oedema' is fluid relating to the…",
+      "pq_vi": "'Pulmonary oedema' là dịch liên quan đến…",
+      "opts": [
+        { "t": "lungs (pulmon/o = lung)", "ok": true, "gl": { "lung": "phổi" } },
+        { "t": "heart (pulmon/o = heart)", "ok": false, "gl": { "heart": "tim" } },
+        { "t": "chest wall (pulmon/o = chest)", "ok": false, "gl": { "chest": "ngực" } }
+      ],
+      "tip_en": "Greek pneum/o for disease names, Latin pulmon/o for 'relating to'. Both = lung.",
+      "tip_vi": "pneum/o (Hy) cho tên bệnh, pulmon/o (La) cho 'thuộc về'. Cả hai = phổi."
+    },
+    {
+      "tag": "Ngực", "en_tag": "Chest", "emoji": "🎽",
+      "en": "thorac/o — the chest", "vi": "thorac/o — ngực",
+      "ctx_en": "thorac/o means chest. A thoracotomy is a surgical incision into the chest; thoracic means relating to the chest.",
+      "ctx_vi": "thorac/o nghĩa là ngực. Thoracotomy là rạch mở ngực; thoracic nghĩa là thuộc ngực.",
+      "pt": "(A patient hears they need a 'thoracotomy' and asks where the cut will be.)",
+      "pt_vi": "(Bệnh nhân nghe cần 'thoracotomy' và hỏi sẽ rạch ở đâu.)",
+      "phrases": [
+        { "en": "thorac/o means chest.", "vi": "thorac/o nghĩa là ngực.", "gl": { "chest": "ngực" } },
+        { "en": "A thoracotomy is an incision into the chest.", "vi": "Thoracotomy là rạch mở ngực.", "gl": { "incision": "vết rạch" } },
+        { "en": "Thoracic surgery operates on the chest.", "vi": "Phẫu thuật thoracic mổ vùng ngực.", "gl": { "surgery": "phẫu thuật" } }
+      ],
+      "vocab": [
+        { "en": "thorac/o", "ipa": "ˈθɔːrəkəʊ", "vi": "ngực (gốc)" },
+        { "en": "thoracotomy", "ipa": "ˌθɔːrəˈkɒtəmi", "vi": "mở ngực" },
+        { "en": "thoracic", "ipa": "θɔːˈræsɪk", "vi": "thuộc ngực" },
+        { "en": "pneumothorax", "ipa": "ˌnjuːməʊˈθɔːræks", "vi": "tràn khí màng phổi" },
+        { "en": "chest", "ipa": "tʃest", "vi": "ngực" }
+      ],
+      "pq_en": "Air trapped in the chest cavity is a 'pneumothorax'. Which parts build it?",
+      "pq_vi": "Khí kẹt trong khoang ngực là 'pneumothorax'. Các phần nào ráp nên?",
+      "opts": [
+        { "t": "pneum/o (air) + thorax (chest)", "ok": true, "gl": { "air": "khí" } },
+        { "t": "pulmon/o (lung) + -itis (chest)", "ok": false, "gl": { "inflammation": "viêm" } },
+        { "t": "thorac/o (chest) + -ectomy (air)", "ok": false, "gl": { "removal": "cắt bỏ" } }
+      ],
+      "tip_en": "pneum/o also means 'air' — pneumothorax = air in the chest.",
+      "tip_vi": "pneum/o cũng nghĩa là 'khí' — pneumothorax = khí trong ngực."
+    },
+    {
+      "tag": "Sự thở", "en_tag": "Breathing suffix", "emoji": "💨",
+      "en": "-pnea — breathing", "vi": "-pnea — sự thở",
+      "ctx_en": "The suffix -pnea means breathing. With prefixes you've learned: dys- (difficult) → dyspnea; a- (without) → apnea; brady-/tachy- → slow/fast breathing.",
+      "ctx_vi": "Hậu tố -pnea nghĩa là sự thở. Ghép tiền tố đã học: dys- (khó) → dyspnea; a- (không) → apnea; brady-/tachy- → thở chậm/nhanh.",
+      "pt": "(A patient complains of 'shortness of breath'; the chart says 'dyspnea'.)",
+      "pt_vi": "(Bệnh nhân than 'khó thở'; hồ sơ ghi 'dyspnea'.)",
+      "phrases": [
+        { "en": "-pnea means breathing.", "vi": "-pnea nghĩa là sự thở.", "gl": { "breathing": "sự thở" } },
+        { "en": "Dyspnea is difficult or laboured breathing.", "vi": "Dyspnea là khó thở.", "gl": { "difficult": "khó" } },
+        { "en": "Dyspnea is the medical word for shortness of breath.", "vi": "Dyspnea là từ y khoa cho 'khó thở'.", "gl": { "shortness of breath": "khó thở" } }
+      ],
+      "vocab": [
+        { "en": "-pnea", "ipa": "pniːə", "vi": "sự thở" },
+        { "en": "dyspnea", "ipa": "dɪspˈniːə", "vi": "khó thở" },
+        { "en": "apnea", "ipa": "ˈæpniə", "vi": "ngưng thở" },
+        { "en": "tachypnea", "ipa": "ˌtækɪpˈniːə", "vi": "thở nhanh" },
+        { "en": "dys-", "ipa": "dɪs", "vi": "khó, bất thường" }
+      ],
+      "pq_en": "A patient with DIFFICULT breathing has…",
+      "pq_vi": "Bệnh nhân thở KHÓ KHĂN bị…",
+      "opts": [
+        { "t": "dyspnea (dys- = difficult)", "ok": true, "gl": { "difficult": "khó" } },
+        { "t": "apnea (a- = difficult)", "ok": false, "gl": { "without": "không có" } },
+        { "t": "tachypnea (tachy- = difficult)", "ok": false, "gl": { "fast": "nhanh" } }
+      ],
+      "tip_en": "dys- (difficult) + -pnea (breathing) = difficult breathing. Reuse Lesson 5 prefixes.",
+      "tip_vi": "dys- (khó) + -pnea (thở) = khó thở. Dùng lại tiền tố Bài 5."
+    },
+    {
+      "tag": "Ráp chẩn đoán", "en_tag": "Build diagnoses", "emoji": "🧱",
+      "en": "Put the family together", "vi": "Ghép cả họ từ lại",
+      "ctx_en": "Now read real terms: bronch/o (airway) + -itis = bronchitis; pneumon/o + -ia = pneumonia. Read suffix→root, add the prefix's nuance.",
+      "ctx_vi": "Giờ đọc từ thật: bronch/o (phế quản) + -itis = bronchitis; pneumon/o + -ia = pneumonia. Đọc hậu tố→gốc, thêm sắc thái của tiền tố.",
+      "pt": "(A chart lists 'bronchitis'; a student explains it to the patient.)",
+      "pt_vi": "(Hồ sơ ghi 'bronchitis'; sinh viên giải thích cho bệnh nhân.)",
+      "phrases": [
+        { "en": "bronch/o means the airway (bronchus).", "vi": "bronch/o nghĩa là phế quản.", "gl": { "airway": "đường thở" } },
+        { "en": "Bronchitis is inflammation of the airways.", "vi": "Bronchitis là viêm phế quản.", "gl": { "inflammation": "viêm" } },
+        { "en": "A bronchoscopy looks inside the airways.", "vi": "Bronchoscopy soi bên trong phế quản.", "gl": { "looks inside": "soi trong" } }
+      ],
+      "vocab": [
+        { "en": "bronch/o", "ipa": "ˈbrɒŋkəʊ", "vi": "phế quản (gốc)" },
+        { "en": "bronchitis", "ipa": "brɒŋˈkaɪtɪs", "vi": "viêm phế quản" },
+        { "en": "bronchoscopy", "ipa": "brɒŋˈkɒskəpi", "vi": "nội soi phế quản" },
+        { "en": "respiratory", "ipa": "rɪˈspɪrətəri", "vi": "hô hấp" },
+        { "en": "airway", "ipa": "ˈeəweɪ", "vi": "đường thở" }
+      ],
+      "pq_en": "Looking inside the airways with a camera is a…",
+      "pq_vi": "Soi bên trong phế quản bằng camera là…",
+      "opts": [
+        { "t": "bronchoscopy (-scopy = look inside)", "ok": true, "gl": { "look inside": "soi trong" } },
+        { "t": "bronchitis (-itis = look inside)", "ok": false, "gl": { "inflammation": "viêm" } },
+        { "t": "bronchectomy (-ectomy = look inside)", "ok": false, "gl": { "removal": "cắt bỏ" } }
+      ],
+      "tip_en": "Lesson 3's -scopy works on every system. bronch/o + -scopy = airway look.",
+      "tip_vi": "-scopy của Bài 3 dùng cho mọi hệ. bronch/o + -scopy = soi đường thở."
+    }
+  ],
+  "dialogue": {
+    "title_en": "Mini dialogue: shortness of breath",
+    "title_vi": "Hội thoại ngắn: khó thở",
+    "ctx_en": "A patient's note says 'dyspnea on exertion'; they're frightened by the word.",
+    "ctx_vi": "Hồ sơ ghi 'dyspnea on exertion'; bệnh nhân sợ vì từ lạ.",
+    "speaker": "Patient", "speaker_emoji": "🧑",
+    "open": { "en": "The doctor wrote 'dyspnea' — that sounds serious. What is it?", "vi": "Bác sĩ ghi 'dyspnea' — nghe nghiêm trọng. Là gì vậy?" },
+    "turns": [
+      {
+        "id": "t1",
+        "prompt_en": "Translate it plainly:",
+        "prompt_vi": "Dịch ra bình dân:",
+        "choices": [
+          { "t": "It just means shortness of breath — dys- (difficult) + -pnea (breathing).", "ok": true,
+            "feedback_en": "Perfect — you decoded a scary word into everyday language.", "feedback_vi": "Tuyệt — bạn dịch từ đáng sợ thành lời đời thường.", "next": "t2" },
+          { "t": "It means your lungs have stopped working.", "ok": false,
+            "feedback_en": "dys- is 'difficult', not 'stopped' (that's a-/apnea). Don't over-alarm.", "feedback_vi": "dys- là 'khó', không phải 'ngưng' (đó là a-/apnea). Đừng làm bệnh nhân hoảng.", "next": "t2" }
+        ]
+      },
+      {
+        "id": "t2",
+        "prompt_en": "Patient: 'And 'on exertion'?' You add:",
+        "prompt_vi": "Bệnh nhân: 'Còn 'on exertion'?' Bạn nói thêm:",
+        "choices": [
+          { "t": "It means the breathlessness comes on with effort, like climbing stairs.", "ok": true,
+            "feedback_en": "Clear everyday framing — good clinical communication.", "feedback_vi": "Diễn đạt đời thường, rõ — giao tiếp lâm sàng tốt.", "next": "end" },
+          { "t": "It means it happens only when you sleep.", "ok": false,
+            "feedback_en": "'On exertion' = with effort/activity, not during sleep.", "feedback_vi": "'On exertion' = khi gắng sức, không phải lúc ngủ.", "next": "end" }
+        ]
+      }
+    ],
+    "close": { "en": "The same -pnea suffix appears across every breathing complaint.", "vi": "Cùng hậu tố -pnea xuất hiện trong mọi than phiền về hô hấp." }
+  },
+  "quiz": [
+    {
+      "en": "'Pneumonia' is an infection of the…",
+      "vi": "'Pneumonia' là nhiễm trùng…",
+      "opts": [
+        { "t": "lung", "ok": true, "gl": { "lung": "phổi" } },
+        { "t": "chest wall", "ok": false, "gl": { "chest wall": "thành ngực" } },
+        { "t": "heart", "ok": false, "gl": { "heart": "tim" } }
+      ],
+      "exp_en": "pneumon/o (lung) + -ia = a lung condition (infection).",
+      "exp_vi": "pneumon/o (phổi) + -ia = tình trạng phổi (nhiễm trùng)."
+    },
+    {
+      "en": "'thorac/o' means…",
+      "vi": "'thorac/o' nghĩa là…",
+      "opts": [
+        { "t": "chest", "ok": true, "gl": { "chest": "ngực" } },
+        { "t": "lung", "ok": false, "gl": { "lung": "phổi" } },
+        { "t": "airway", "ok": false, "gl": { "airway": "đường thở" } }
+      ],
+      "exp_en": "thorac/o = chest (thoracotomy = chest incision; thoracic = of the chest).",
+      "exp_vi": "thorac/o = ngực (thoracotomy = mở ngực; thoracic = thuộc ngực)."
+    },
+    {
+      "en": "'-pnea' means…",
+      "vi": "'-pnea' nghĩa là…",
+      "opts": [
+        { "t": "breathing", "ok": true, "gl": { "breathing": "sự thở" } },
+        { "t": "blood", "ok": false, "gl": { "blood": "máu" } },
+        { "t": "pain", "ok": false, "gl": { "pain": "đau" } }
+      ],
+      "exp_en": "-pnea = breathing (dyspnea = difficult, apnea = absent, tachypnea = fast).",
+      "exp_vi": "-pnea = sự thở (dyspnea = khó, apnea = ngưng, tachypnea = nhanh)."
+    },
+    {
+      "en": "'Dyspnea' means breathing that is…",
+      "vi": "'Dyspnea' là kiểu thở…",
+      "opts": [
+        { "t": "difficult / laboured", "ok": true, "gl": { "laboured": "gắng sức" } },
+        { "t": "absent", "ok": false, "gl": { "absent": "vắng" } },
+        { "t": "normal", "ok": false, "gl": { "normal": "bình thường" } }
+      ],
+      "exp_en": "dys- (difficult) + -pnea (breathing) = shortness of breath.",
+      "exp_vi": "dys- (khó) + -pnea (thở) = khó thở."
+    },
+    {
+      "en": "Decode: 'bronchoscopy' is…",
+      "vi": "Giải mã: 'bronchoscopy' là…",
+      "opts": [
+        { "t": "looking inside the airways", "ok": true, "gl": { "airways": "đường thở" } },
+        { "t": "removing an airway", "ok": false, "gl": { "removing": "cắt bỏ" } },
+        { "t": "inflammation of the lung", "ok": false, "gl": { "inflammation": "viêm" } }
+      ],
+      "exp_en": "bronch/o (airway) + -scopy (visual exam) = airway examination.",
+      "exp_vi": "bronch/o (phế quản) + -scopy (soi) = soi đường thở."
+    }
+  ],
+  "done": {
+    "achievements": [
+      { "emoji": "🫁", "en": "Use pneum/o & pulmon/o for lung", "vi": "Dùng pneum/o & pulmon/o cho phổi" },
+      { "emoji": "🎽", "en": "Use thorac/o for chest", "vi": "Dùng thorac/o cho ngực" },
+      { "emoji": "💨", "en": "Read -pnea breathing words", "vi": "Đọc các từ -pnea về thở" },
+      { "emoji": "🧱", "en": "Decode a respiratory diagnosis", "vi": "Giải mã chẩn đoán hô hấp" }
+    ]
+  }
+}

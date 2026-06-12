@@ -1,0 +1,249 @@
+{
+  "_gate_status": "DRAFT — pending Gate 1 (Chabner ch.3 prefixes) + Gate 2 Ralph sign-off. Morphemes verified against data/morphology.json.",
+  "meta": {
+    "id": "1a-05",
+    "title_en": "Prefixes of Number, Speed & Negation",
+    "title_vi": "Tiền tố số lượng, tốc độ & phủ định",
+    "level": 1, "stage": "1A", "cefr": "A2+",
+    "hero_emoji": "🔢",
+    "complete_en": "You've finished the affix toolkit!",
+    "complete_vi": "Bạn đã hoàn tất bộ công cụ tiền/hậu tố!",
+    "tier": "free", "duration": "~15 min",
+    "theme_color": "#9AA989", "theme_light": "#EFF2EA", "theme_shadow": "#74906F"
+  },
+  "config": { "next": { "url": "?lesson=1a-06", "label": "Next: The Cardiovascular Word Family", "label_vi": "Tiếp: Họ từ tim mạch", "free": true } },
+  "welcome": {
+    "scenario": [
+      { "en": "Last set of prefixes — these tell you how fast, how many, or whether something is missing.", "vi": "Nhóm tiền tố cuối — chúng cho biết nhanh chậm, bao nhiêu, hay có thiếu hụt không.", "bold": true },
+      { "en": "brady- slow, tachy- fast, poly- many, a-/an- without, anti- against.", "vi": "brady- chậm, tachy- nhanh, poly- nhiều, a-/an- không có, anti- chống lại." },
+      { "en": "After this you'll have the full toolkit to attack the body-system families.", "vi": "Sau bài này bạn có đủ công cụ để chinh phục các họ từ hệ cơ quan." }
+    ],
+    "can_do": [
+      { "en": "Use brady-/tachy- for slow/fast", "vi": "Dùng brady-/tachy- cho chậm/nhanh" },
+      { "en": "Use poly- for many/much", "vi": "Dùng poly- cho nhiều" },
+      { "en": "Use a-/an- for without/absence", "vi": "Dùng a-/an- cho thiếu/vắng" },
+      { "en": "Use anti- for against", "vi": "Dùng anti- cho chống lại" }
+    ],
+    "badges": [
+      { "icon": "🔢", "label": "Number & speed" },
+      { "icon": "🌱", "label": "Stage 1A · Lesson 5" },
+      { "icon": "🆓", "label": "Free" }
+    ]
+  },
+  "situations": [
+    {
+      "tag": "Nhanh & chậm", "en_tag": "Fast & slow", "emoji": "⏱️",
+      "en": "tachy- (fast) vs brady- (slow)", "vi": "tachy- (nhanh) và brady- (chậm)",
+      "ctx_en": "tachy- means fast/rapid; brady- means slow. tachycardia is a fast heart; bradycardia is a slow heart.",
+      "ctx_vi": "tachy- nghĩa là nhanh; brady- nghĩa là chậm. tachycardia là tim đập nhanh; bradycardia là tim đập chậm.",
+      "pt": "(A monitor alarms 'tachycardia' and a junior asks what it signals.)",
+      "pt_vi": "(Máy báo 'tachycardia', bác sĩ trẻ hỏi đó là dấu hiệu gì.)",
+      "phrases": [
+        { "en": "tachy- means fast.", "vi": "tachy- nghĩa là nhanh.", "gl": { "fast": "nhanh" } },
+        { "en": "brady- means slow.", "vi": "brady- nghĩa là chậm.", "gl": { "slow": "chậm" } },
+        { "en": "Tachycardia is a rapid heart rate.", "vi": "Tachycardia là nhịp tim nhanh.", "gl": { "heart rate": "nhịp tim" } }
+      ],
+      "vocab": [
+        { "en": "tachy-", "ipa": "ˈtæki", "vi": "nhanh" },
+        { "en": "brady-", "ipa": "ˈbreɪdi", "vi": "chậm" },
+        { "en": "tachycardia", "ipa": "ˌtækiˈkɑːdiə", "vi": "nhịp tim nhanh" },
+        { "en": "bradycardia", "ipa": "ˌbreɪdiˈkɑːdiə", "vi": "nhịp tim chậm" },
+        { "en": "heart rate", "ipa": "ˈhɑːt reɪt", "vi": "nhịp tim" }
+      ],
+      "pq_en": "A heart beating too SLOWLY is called…",
+      "pq_vi": "Tim đập quá CHẬM gọi là…",
+      "opts": [
+        { "t": "bradycardia (brady- = slow)", "ok": true, "gl": { "slow": "chậm" } },
+        { "t": "tachycardia (tachy- = slow)", "ok": false, "gl": { "fast": "nhanh" } },
+        { "t": "polycardia (poly- = slow)", "ok": false, "gl": { "many": "nhiều" } }
+      ],
+      "tip_en": "tachy- like 'tachometer' (speed). brady- is the slow one.",
+      "tip_vi": "tachy- như 'tachometer' (đo tốc độ). brady- là cái chậm."
+    },
+    {
+      "tag": "Nhiều", "en_tag": "Many", "emoji": "➕",
+      "en": "poly- — many or much", "vi": "poly- — nhiều",
+      "ctx_en": "poly- means many or much. polyuria is producing much urine; a patient on many drugs has polypharmacy.",
+      "ctx_vi": "poly- nghĩa là nhiều. polyuria là tiểu nhiều; bệnh nhân dùng nhiều thuốc là polypharmacy.",
+      "pt": "(A diabetic patient reports 'polyuria' and asks what it means.)",
+      "pt_vi": "(Bệnh nhân tiểu đường nói có 'polyuria' và hỏi nghĩa là gì.)",
+      "phrases": [
+        { "en": "poly- means many or much.", "vi": "poly- nghĩa là nhiều.", "gl": { "much": "nhiều" } },
+        { "en": "Polyuria means passing a lot of urine.", "vi": "Polyuria là tiểu nhiều.", "gl": { "urine": "nước tiểu" } },
+        { "en": "Polypharmacy is the use of many medicines.", "vi": "Polypharmacy là dùng nhiều thuốc.", "gl": { "medicines": "thuốc" } }
+      ],
+      "vocab": [
+        { "en": "poly-", "ipa": "ˈpɒli", "vi": "nhiều" },
+        { "en": "polyuria", "ipa": "ˌpɒliˈjʊəriə", "vi": "tiểu nhiều" },
+        { "en": "polypharmacy", "ipa": "ˌpɒliˈfɑːməsi", "vi": "dùng nhiều thuốc" },
+        { "en": "urine", "ipa": "ˈjʊərɪn", "vi": "nước tiểu" },
+        { "en": "much", "ipa": "mʌtʃ", "vi": "nhiều" }
+      ],
+      "pq_en": "'Polyuria' describes a patient who…",
+      "pq_vi": "'Polyuria' mô tả bệnh nhân…",
+      "opts": [
+        { "t": "passes a large amount of urine", "ok": true, "gl": { "urine": "nước tiểu" } },
+        { "t": "passes no urine at all", "ok": false, "gl": { "none": "không có" } },
+        { "t": "has a fast heart rate", "ok": false, "gl": { "heart rate": "nhịp tim" } }
+      ],
+      "tip_en": "poly- = plenty. -uria = urine condition. Together: lots of urine.",
+      "tip_vi": "poly- = nhiều. -uria = tình trạng nước tiểu. Cộng lại: tiểu nhiều."
+    },
+    {
+      "tag": "Thiếu vắng", "en_tag": "Without", "emoji": "🚫",
+      "en": "a-/an- — without, absence", "vi": "a-/an- — không có, thiếu",
+      "ctx_en": "a- (or an- before a vowel) means without/absence. apnea is absence of breathing; anaemia is a lack of healthy red cells.",
+      "ctx_vi": "a- (hoặc an- trước nguyên âm) nghĩa là không có/thiếu. apnea là ngưng thở; anaemia là thiếu hồng cầu khỏe mạnh.",
+      "pt": "(A parent is told their baby had an 'apnea' episode overnight.)",
+      "pt_vi": "(Cha mẹ được báo bé có cơn 'apnea' trong đêm.)",
+      "phrases": [
+        { "en": "a-/an- means without or absence of.", "vi": "a-/an- nghĩa là không có/thiếu.", "gl": { "absence": "sự thiếu vắng" } },
+        { "en": "Apnea is the absence of breathing.", "vi": "Apnea là ngưng thở.", "gl": { "breathing": "sự thở" } },
+        { "en": "Use 'an-' before a vowel.", "vi": "Dùng 'an-' trước nguyên âm.", "gl": { "vowel": "nguyên âm" } }
+      ],
+      "vocab": [
+        { "en": "a- / an-", "ipa": "eɪ", "vi": "không, thiếu" },
+        { "en": "apnea", "ipa": "ˈæpniə", "vi": "ngưng thở" },
+        { "en": "anaemia", "ipa": "əˈniːmiə", "vi": "thiếu máu" },
+        { "en": "absence", "ipa": "ˈæbsəns", "vi": "sự thiếu vắng" },
+        { "en": "without", "ipa": "wɪˈðaʊt", "vi": "không có" }
+      ],
+      "pq_en": "'Apnea' means…",
+      "pq_vi": "'Apnea' nghĩa là…",
+      "opts": [
+        { "t": "absence of breathing", "ok": true, "gl": { "breathing": "sự thở" } },
+        { "t": "fast breathing", "ok": false, "gl": { "fast": "nhanh" } },
+        { "t": "painful breathing", "ok": false, "gl": { "painful": "đau" } }
+      ],
+      "tip_en": "a-/an- cancels the root. a + pnea (breathing) = no breathing.",
+      "tip_vi": "a-/an- triệt tiêu gốc. a + pnea (thở) = không thở."
+    },
+    {
+      "tag": "Chống lại", "en_tag": "Against", "emoji": "🛡️",
+      "en": "anti- — against", "vi": "anti- — chống lại",
+      "ctx_en": "anti- means against. An antibiotic works against bacteria; an antipyretic works against fever.",
+      "ctx_vi": "anti- nghĩa là chống lại. Antibiotic chống vi khuẩn; antipyretic chống sốt.",
+      "pt": "(A patient asks why they get an 'antipyretic' for a high temperature.)",
+      "pt_vi": "(Bệnh nhân hỏi vì sao dùng 'antipyretic' khi sốt cao.)",
+      "phrases": [
+        { "en": "anti- means against.", "vi": "anti- nghĩa là chống lại.", "gl": { "against": "chống lại" } },
+        { "en": "An antibiotic fights bacteria.", "vi": "Antibiotic chống vi khuẩn.", "gl": { "bacteria": "vi khuẩn" } },
+        { "en": "An antipyretic brings down a fever.", "vi": "Antipyretic hạ sốt.", "gl": { "fever": "sốt" } }
+      ],
+      "vocab": [
+        { "en": "anti-", "ipa": "ˈænti", "vi": "chống lại" },
+        { "en": "antibiotic", "ipa": "ˌæntibaɪˈɒtɪk", "vi": "kháng sinh" },
+        { "en": "antipyretic", "ipa": "ˌæntipaɪˈretɪk", "vi": "thuốc hạ sốt" },
+        { "en": "bacteria", "ipa": "bækˈtɪəriə", "vi": "vi khuẩn" },
+        { "en": "fever", "ipa": "ˈfiːvə", "vi": "sốt" }
+      ],
+      "pq_en": "A medicine that works AGAINST a fever is an…",
+      "pq_vi": "Thuốc CHỐNG lại cơn sốt là…",
+      "opts": [
+        { "t": "antipyretic (anti- = against)", "ok": true, "gl": { "fever": "sốt" } },
+        { "t": "polypyretic (poly- = against)", "ok": false, "gl": { "many": "nhiều" } },
+        { "t": "bradypyretic (brady- = against)", "ok": false, "gl": { "slow": "chậm" } }
+      ],
+      "tip_en": "anti- = anti-everything you fight: -biotic (life/bacteria), -pyretic (fever).",
+      "tip_vi": "anti- = chống thứ bạn đối phó: -biotic (vi khuẩn), -pyretic (sốt)."
+    }
+  ],
+  "dialogue": {
+    "title_en": "Mini dialogue: reassuring with prefixes",
+    "title_vi": "Hội thoại ngắn: trấn an bằng tiền tố",
+    "ctx_en": "A patient's discharge note says 'mild bradycardia, asymptomatic'.",
+    "ctx_vi": "Giấy ra viện ghi 'mild bradycardia, asymptomatic'.",
+    "speaker": "Patient", "speaker_emoji": "🧑",
+    "open": { "en": "It says 'bradycardia' and 'asymptomatic' — is my heart racing dangerously?", "vi": "Ghi 'bradycardia' và 'asymptomatic' — tim tôi đập nhanh nguy hiểm hả bác sĩ?" },
+    "turns": [
+      {
+        "id": "t1",
+        "prompt_en": "Clarify 'bradycardia':",
+        "prompt_vi": "Làm rõ 'bradycardia':",
+        "choices": [
+          { "t": "'brady-' means slow, so your heart is beating a bit slowly, not fast.", "ok": true,
+            "feedback_en": "Correct — brady- = slow. You reversed their fear precisely.", "feedback_vi": "Đúng — brady- = chậm. Bạn xoá đúng nỗi lo của họ.", "next": "t2" },
+          { "t": "Yes, 'brady-' means fast — it is racing.", "ok": false,
+            "feedback_en": "brady- means SLOW; tachy- is fast. Mind the prefix.", "feedback_vi": "brady- là CHẬM; tachy- mới là nhanh. Để ý tiền tố.", "next": "t2" }
+        ]
+      },
+      {
+        "id": "t2",
+        "prompt_en": "Explain 'asymptomatic':",
+        "prompt_vi": "Giải thích 'asymptomatic':",
+        "choices": [
+          { "t": "'a-' means without — you have no symptoms from it.", "ok": true,
+            "feedback_en": "Excellent — a- = without. Clear, calming explanation.", "feedback_vi": "Tuyệt — a- = không có. Giải thích rõ, trấn an.", "next": "end" },
+          { "t": "It means you have many symptoms.", "ok": false,
+            "feedback_en": "a- means WITHOUT, so asymptomatic = no symptoms.", "feedback_vi": "a- nghĩa là KHÔNG, nên asymptomatic = không triệu chứng.", "next": "end" }
+        ]
+      }
+    ],
+    "close": { "en": "Two prefixes turned a scary note into 'slow but harmless'.", "vi": "Hai tiền tố biến tờ giấy đáng sợ thành 'chậm nhưng vô hại'." }
+  },
+  "quiz": [
+    {
+      "en": "'tachy-' means…",
+      "vi": "'tachy-' nghĩa là…",
+      "opts": [
+        { "t": "fast", "ok": true, "gl": { "fast": "nhanh" } },
+        { "t": "slow", "ok": false, "gl": { "slow": "chậm" } },
+        { "t": "many", "ok": false, "gl": { "many": "nhiều" } }
+      ],
+      "exp_en": "tachy- = fast (tachycardia = fast heart rate).",
+      "exp_vi": "tachy- = nhanh (tachycardia = nhịp tim nhanh)."
+    },
+    {
+      "en": "'poly-' means…",
+      "vi": "'poly-' nghĩa là…",
+      "opts": [
+        { "t": "many / much", "ok": true, "gl": { "many": "nhiều" } },
+        { "t": "without", "ok": false, "gl": { "without": "không có" } },
+        { "t": "against", "ok": false, "gl": { "against": "chống" } }
+      ],
+      "exp_en": "poly- = many (polyuria = much urine; polypharmacy = many drugs).",
+      "exp_vi": "poly- = nhiều (polyuria = tiểu nhiều; polypharmacy = nhiều thuốc)."
+    },
+    {
+      "en": "'Apnea' means…",
+      "vi": "'Apnea' nghĩa là…",
+      "opts": [
+        { "t": "absence of breathing", "ok": true, "gl": { "absence": "thiếu vắng" } },
+        { "t": "rapid breathing", "ok": false, "gl": { "rapid": "nhanh" } },
+        { "t": "much breathing", "ok": false, "gl": { "much": "nhiều" } }
+      ],
+      "exp_en": "a- (without) + -pnea (breathing) = no breathing.",
+      "exp_vi": "a- (không) + -pnea (thở) = không thở."
+    },
+    {
+      "en": "An 'antibiotic' works…",
+      "vi": "'Antibiotic' hoạt động…",
+      "opts": [
+        { "t": "against bacteria", "ok": true, "gl": { "bacteria": "vi khuẩn" } },
+        { "t": "for bacteria", "ok": false, "gl": { "for": "ủng hộ" } },
+        { "t": "slowing the heart", "ok": false, "gl": { "heart": "tim" } }
+      ],
+      "exp_en": "anti- (against) + biotic (life/bacteria) = works against bacteria.",
+      "exp_vi": "anti- (chống) + biotic (vi khuẩn) = chống vi khuẩn."
+    },
+    {
+      "en": "Decode: 'bradypnea' means breathing that is…",
+      "vi": "Giải mã: 'bradypnea' là kiểu thở…",
+      "opts": [
+        { "t": "slow", "ok": true, "gl": { "slow": "chậm" } },
+        { "t": "fast", "ok": false, "gl": { "fast": "nhanh" } },
+        { "t": "absent", "ok": false, "gl": { "absent": "vắng" } }
+      ],
+      "exp_en": "brady- (slow) + -pnea (breathing) = abnormally slow breathing.",
+      "exp_vi": "brady- (chậm) + -pnea (thở) = thở chậm bất thường."
+    }
+  ],
+  "done": {
+    "achievements": [
+      { "emoji": "⏱️", "en": "Use tachy-/brady- for fast/slow", "vi": "Dùng tachy-/brady- cho nhanh/chậm" },
+      { "emoji": "➕", "en": "Use poly- for many/much", "vi": "Dùng poly- cho nhiều" },
+      { "emoji": "🚫", "en": "Use a-/an- for absence", "vi": "Dùng a-/an- cho thiếu vắng" },
+      { "emoji": "🛡️", "en": "Use anti- for against", "vi": "Dùng anti- cho chống lại" }
+    ]
+  }
+}

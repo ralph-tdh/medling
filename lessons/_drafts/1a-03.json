@@ -1,0 +1,249 @@
+{
+  "_gate_status": "DRAFT — pending Gate 1 (Chabner ch.2 suffixes) + Gate 2 Ralph sign-off. Do NOT move to lessons/ until signed. Morphemes verified against data/morphology.json.",
+  "meta": {
+    "id": "1a-03",
+    "title_en": "Suffixes That Treat & Examine",
+    "title_vi": "Hậu tố về điều trị & thăm khám",
+    "level": 1, "stage": "1A", "cefr": "A2+",
+    "hero_emoji": "🔧",
+    "complete_en": "You can name procedures from their suffix!",
+    "complete_vi": "Bạn đã đọc được thủ thuật từ hậu tố!",
+    "tier": "free", "duration": "~15 min",
+    "theme_color": "#9AA989", "theme_light": "#EFF2EA", "theme_shadow": "#74906F"
+  },
+  "config": { "next": { "url": "?lesson=1a-04", "label": "Next: Prefixes of Position", "label_vi": "Tiếp: Tiền tố vị trí", "free": true } },
+  "welcome": {
+    "scenario": [
+      { "en": "In Lesson 2 you learned suffixes that name a disease. Now meet the suffixes that name an action.", "vi": "Bài 2 bạn học hậu tố gọi tên bệnh. Giờ gặp các hậu tố gọi tên hành động.", "bold": true },
+      { "en": "These tell you what the team DID: cut, remove, open, repair, look, or record.", "vi": "Chúng cho biết ê-kíp ĐÃ LÀM gì: cắt, lấy bỏ, mở, sửa, soi, hay ghi hình." },
+      { "en": "Read an operation report and you'll know the procedure from one ending.", "vi": "Đọc tường trình mổ, bạn sẽ biết thủ thuật chỉ từ một đuôi từ." }
+    ],
+    "can_do": [
+      { "en": "Tell a removal (-ectomy) from an incision (-otomy)", "vi": "Phân biệt cắt bỏ (-ectomy) với rạch mở (-otomy)" },
+      { "en": "Recognise an examination suffix (-scopy, -gram)", "vi": "Nhận ra hậu tố thăm khám (-scopy, -gram)" },
+      { "en": "Decode a surgery word you've never seen", "vi": "Giải mã từ phẫu thuật chưa từng gặp" },
+      { "en": "Explain a procedure name to a patient simply", "vi": "Giải thích tên thủ thuật cho bệnh nhân dễ hiểu" }
+    ],
+    "badges": [
+      { "icon": "🔧", "label": "Procedure suffixes" },
+      { "icon": "🌱", "label": "Stage 1A · Lesson 3" },
+      { "icon": "🆓", "label": "Free" }
+    ]
+  },
+  "situations": [
+    {
+      "tag": "Lấy bỏ", "en_tag": "Removal", "emoji": "✂️",
+      "en": "-ectomy — taking something out", "vi": "-ectomy — lấy bỏ ra",
+      "ctx_en": "The suffix -ectomy means surgical removal. appendectomy = removal of the appendix.",
+      "ctx_vi": "Hậu tố -ectomy nghĩa là cắt bỏ bằng phẫu thuật. appendectomy = cắt ruột thừa.",
+      "pt": "(A patient asks what 'tonsillectomy' on their child's chart means.)",
+      "pt_vi": "(Phụ huynh hỏi 'tonsillectomy' trong hồ sơ con họ nghĩa là gì.)",
+      "phrases": [
+        { "en": "-ectomy means surgical removal.", "vi": "-ectomy nghĩa là cắt bỏ (phẫu thuật).", "gl": { "removal": "cắt bỏ" } },
+        { "en": "An appendectomy removes the appendix.", "vi": "Appendectomy là cắt ruột thừa.", "gl": { "appendix": "ruột thừa" } },
+        { "en": "The surgeon will perform the removal under anaesthesia.", "vi": "Bác sĩ sẽ thực hiện ca cắt bỏ dưới gây mê.", "gl": { "perform": "thực hiện", "anaesthesia": "gây mê" } }
+      ],
+      "vocab": [
+        { "en": "-ectomy", "ipa": "ektəmi", "vi": "cắt bỏ (phẫu thuật)" },
+        { "en": "appendectomy", "ipa": "ˌæpənˈdektəmi", "vi": "cắt ruột thừa" },
+        { "en": "tonsillectomy", "ipa": "ˌtɒnsɪˈlektəmi", "vi": "cắt amidan" },
+        { "en": "surgeon", "ipa": "ˈsɜːdʒən", "vi": "bác sĩ phẫu thuật" },
+        { "en": "perform", "ipa": "pəˈfɔːm", "vi": "thực hiện" }
+      ],
+      "pq_en": "A 'gastrectomy' is a procedure that…",
+      "pq_vi": "'Gastrectomy' là thủ thuật…",
+      "opts": [
+        { "t": "removes part or all of the stomach", "ok": true, "gl": { "stomach": "dạ dày" } },
+        { "t": "makes a cut into the stomach", "ok": false, "gl": { "cut": "vết rạch" } },
+        { "t": "looks inside the stomach", "ok": false, "gl": { "looks": "nhìn vào" } }
+      ],
+      "tip_en": "gastr (stomach) + -ectomy (removal) = removing the stomach. -ectomy always = take OUT.",
+      "tip_vi": "gastr (dạ dày) + -ectomy (cắt bỏ) = cắt dạ dày. -ectomy luôn = lấy RA."
+    },
+    {
+      "tag": "Rạch & mở", "en_tag": "Incision & opening", "emoji": "🔪",
+      "en": "-otomy vs -ostomy", "vi": "-otomy và -ostomy",
+      "ctx_en": "-otomy means cutting into (an incision). -ostomy means making a new permanent opening. One letter changes the meaning.",
+      "ctx_vi": "-otomy nghĩa là rạch vào. -ostomy nghĩa là tạo một lỗ thông mới (lâu dài). Chỉ một chữ thay đổi cả nghĩa.",
+      "pt": "(A colleague mixes up 'tracheotomy' and 'colostomy' and asks you to clarify.)",
+      "pt_vi": "(Đồng nghiệp lẫn 'tracheotomy' với 'colostomy', nhờ bạn làm rõ.)",
+      "phrases": [
+        { "en": "-otomy is a cut; -ostomy is a new opening.", "vi": "-otomy là vết rạch; -ostomy là lỗ thông mới.", "gl": { "opening": "lỗ thông" } },
+        { "en": "A tracheotomy is an incision into the windpipe.", "vi": "Tracheotomy là rạch khí quản.", "gl": { "windpipe": "khí quản" } },
+        { "en": "A colostomy creates an opening from the colon.", "vi": "Colostomy tạo lỗ thông từ đại tràng.", "gl": { "colon": "đại tràng" } }
+      ],
+      "vocab": [
+        { "en": "-otomy", "ipa": "ɒtəmi", "vi": "rạch, mở" },
+        { "en": "-ostomy", "ipa": "ɒstəmi", "vi": "tạo lỗ thông" },
+        { "en": "tracheotomy", "ipa": "ˌtreɪkiˈɒtəmi", "vi": "mở khí quản" },
+        { "en": "colostomy", "ipa": "kəˈlɒstəmi", "vi": "mở thông đại tràng" },
+        { "en": "incision", "ipa": "ɪnˈsɪʒən", "vi": "vết rạch" }
+      ],
+      "pq_en": "Which suffix means 'make a new lasting opening'?",
+      "pq_vi": "Hậu tố nào nghĩa là 'tạo lỗ thông mới, lâu dài'?",
+      "opts": [
+        { "t": "-ostomy", "ok": true, "gl": { "opening": "lỗ thông" } },
+        { "t": "-otomy", "ok": false, "gl": { "incision": "vết rạch" } },
+        { "t": "-ectomy", "ok": false, "gl": { "removal": "cắt bỏ" } }
+      ],
+      "tip_en": "Hear the extra 's': -oStomy = Stoma = a new opening. -otomy is just a cut.",
+      "tip_vi": "Nghe thêm chữ 's': -oStomy = Stoma = lỗ thông mới. -otomy chỉ là vết rạch."
+    },
+    {
+      "tag": "Sửa chữa", "en_tag": "Repair", "emoji": "🩹",
+      "en": "-plasty — surgical repair", "vi": "-plasty — tạo hình, sửa chữa",
+      "ctx_en": "-plasty means surgical repair or reshaping. angioplasty repairs/widens a blood vessel.",
+      "ctx_vi": "-plasty nghĩa là phẫu thuật tạo hình/sửa chữa. angioplasty nong/sửa mạch máu.",
+      "pt": "(A patient with chest pain is told they may need an 'angioplasty'.)",
+      "pt_vi": "(Bệnh nhân đau ngực được báo có thể cần 'angioplasty'.)",
+      "phrases": [
+        { "en": "-plasty means surgical repair or reshaping.", "vi": "-plasty nghĩa là tạo hình/sửa bằng phẫu thuật.", "gl": { "repair": "sửa chữa" } },
+        { "en": "Angioplasty widens a narrowed vessel.", "vi": "Angioplasty nong rộng mạch bị hẹp.", "gl": { "vessel": "mạch máu", "narrowed": "bị hẹp" } },
+        { "en": "It restores normal blood flow.", "vi": "Nó phục hồi dòng máu bình thường.", "gl": { "blood flow": "dòng máu" } }
+      ],
+      "vocab": [
+        { "en": "-plasty", "ipa": "plæsti", "vi": "tạo hình (phẫu thuật)" },
+        { "en": "angioplasty", "ipa": "ˈændʒiəʊˌplæsti", "vi": "nong mạch" },
+        { "en": "vessel", "ipa": "ˈvesəl", "vi": "mạch máu" },
+        { "en": "repair", "ipa": "rɪˈpeə", "vi": "sửa chữa" },
+        { "en": "restore", "ipa": "rɪˈstɔː", "vi": "phục hồi" }
+      ],
+      "pq_en": "'-plasty' tells you the procedure will…",
+      "pq_vi": "'-plasty' cho biết thủ thuật sẽ…",
+      "opts": [
+        { "t": "repair or reshape a structure", "ok": true, "gl": { "reshape": "tạo lại hình" } },
+        { "t": "remove a structure completely", "ok": false, "gl": { "remove": "lấy bỏ" } },
+        { "t": "only take a picture of it", "ok": false, "gl": { "picture": "hình ảnh" } }
+      ],
+      "tip_en": "Think 'plastic' (mouldable). -plasty = reshape/repair, not remove.",
+      "tip_vi": "Nhớ 'plastic' (uốn nắn được). -plasty = tạo hình/sửa, không phải lấy bỏ."
+    },
+    {
+      "tag": "Nhìn & ghi", "en_tag": "Examine & record", "emoji": "📷",
+      "en": "-scopy and -gram", "vi": "-scopy và -gram",
+      "ctx_en": "-scopy = visual examination with a scope. -gram = the record or image produced. endoscopy looks inside; an electrocardiogram (ECG) is the heart's record.",
+      "ctx_vi": "-scopy = soi nhìn bằng ống soi. -gram = bản ghi/hình ảnh thu được. endoscopy soi bên trong; electrocardiogram (ECG) là bản ghi của tim.",
+      "pt": "(A patient asks the difference between a 'colonoscopy' and a 'mammogram'.)",
+      "pt_vi": "(Bệnh nhân hỏi khác nhau giữa 'colonoscopy' và 'mammogram'.)",
+      "phrases": [
+        { "en": "-scopy means looking inside with a camera.", "vi": "-scopy nghĩa là soi nhìn bằng camera.", "gl": { "inside": "bên trong" } },
+        { "en": "-gram is the image or recording you get.", "vi": "-gram là hình ảnh/bản ghi thu được.", "gl": { "recording": "bản ghi" } },
+        { "en": "A colonoscopy examines the colon.", "vi": "Colonoscopy soi đại tràng.", "gl": { "colon": "đại tràng" } }
+      ],
+      "vocab": [
+        { "en": "-scopy", "ipa": "skəpi", "vi": "nội soi" },
+        { "en": "-gram", "ipa": "ɡræm", "vi": "bản ghi, hình ảnh" },
+        { "en": "endoscopy", "ipa": "enˈdɒskəpi", "vi": "nội soi" },
+        { "en": "colonoscopy", "ipa": "ˌkəʊləˈnɒskəpi", "vi": "nội soi đại tràng" },
+        { "en": "electrocardiogram", "ipa": "ɪˌlektrəʊˈkɑːdiəɡræm", "vi": "điện tâm đồ" }
+      ],
+      "pq_en": "Your patient needs a picture of the heart's rhythm. Which word fits?",
+      "pq_vi": "Bệnh nhân cần bản ghi nhịp tim. Từ nào đúng?",
+      "opts": [
+        { "t": "electrocardiogram — a -gram is a record", "ok": true, "gl": { "record": "bản ghi" } },
+        { "t": "cardioscopy — a -scopy is a record", "ok": false, "gl": { "examination": "thăm khám" } },
+        { "t": "cardiectomy — removal of the heart", "ok": false, "gl": { "removal": "cắt bỏ" } }
+      ],
+      "tip_en": "-scopy = the looking (live). -gram = the result you can keep and show.",
+      "tip_vi": "-scopy = lúc soi (trực tiếp). -gram = kết quả giữ lại và xem được."
+    }
+  ],
+  "dialogue": {
+    "title_en": "Mini dialogue: which procedure?",
+    "title_vi": "Hội thoại ngắn: thủ thuật nào?",
+    "ctx_en": "A patient is anxious after reading 'cholecystectomy' on a consent form.",
+    "ctx_vi": "Bệnh nhân lo lắng sau khi đọc 'cholecystectomy' trên giấy đồng thuận.",
+    "speaker": "Patient", "speaker_emoji": "🧑",
+    "open": { "en": "It says 'cholecystectomy' — are they cutting me open to look, or taking something out?", "vi": "Giấy ghi 'cholecystectomy' — họ mổ ra để nhìn, hay lấy gì đó ra vậy bác sĩ?" },
+    "turns": [
+      {
+        "id": "t1",
+        "prompt_en": "How do you answer using the suffix?",
+        "prompt_vi": "Bạn trả lời thế nào, dựa vào hậu tố?",
+        "choices": [
+          { "t": "The ending '-ectomy' means removal — they will take out the gallbladder.", "ok": true,
+            "feedback_en": "Correct and reassuring — you used -ectomy to give a precise answer.", "feedback_vi": "Đúng và trấn an — bạn dùng -ectomy để trả lời chính xác.", "next": "t2" },
+          { "t": "I think they're just going to look inside.", "ok": false,
+            "feedback_en": "'-ectomy' is removal, not examination (-scopy). Trust the suffix.", "feedback_vi": "'-ectomy' là cắt bỏ, không phải soi (-scopy). Hãy tin vào hậu tố.", "next": "t2" }
+        ]
+      },
+      {
+        "id": "t2",
+        "prompt_en": "Patient: 'Will there be a camera too?' You explain a related word:",
+        "prompt_vi": "Bệnh nhân: 'Có dùng camera không?' Bạn giải thích từ liên quan:",
+        "choices": [
+          { "t": "Often a laparoscopy (-scopy = camera view) guides the removal.", "ok": true,
+            "feedback_en": "Great — you linked -scopy (look) with -ectomy (remove) clearly.", "feedback_vi": "Tốt — bạn nối -scopy (soi) với -ectomy (cắt) rõ ràng.", "next": "end" },
+          { "t": "No, a -gram will remove it.", "ok": false,
+            "feedback_en": "-gram is a record/image, it doesn't remove anything.", "feedback_vi": "-gram là bản ghi/hình ảnh, không lấy bỏ gì cả.", "next": "end" }
+        ]
+      }
+    ],
+    "close": { "en": "One suffix can answer a frightened patient precisely.", "vi": "Một hậu tố có thể trả lời chính xác cho bệnh nhân đang sợ." }
+  },
+  "quiz": [
+    {
+      "en": "Which suffix means 'surgical removal'?",
+      "vi": "Hậu tố nào nghĩa là 'cắt bỏ phẫu thuật'?",
+      "opts": [
+        { "t": "-ectomy", "ok": true, "gl": { "removal": "cắt bỏ" } },
+        { "t": "-otomy", "ok": false, "gl": { "incision": "rạch" } },
+        { "t": "-scopy", "ok": false, "gl": { "examination": "soi" } }
+      ],
+      "exp_en": "-ectomy = surgical removal (appendectomy, gastrectomy).",
+      "exp_vi": "-ectomy = cắt bỏ phẫu thuật (appendectomy, gastrectomy)."
+    },
+    {
+      "en": "A 'tracheotomy' is…",
+      "vi": "'Tracheotomy' là…",
+      "opts": [
+        { "t": "an incision into the windpipe", "ok": true, "gl": { "windpipe": "khí quản" } },
+        { "t": "removal of the windpipe", "ok": false, "gl": { "removal": "cắt bỏ" } },
+        { "t": "a permanent opening from the colon", "ok": false, "gl": { "colon": "đại tràng" } }
+      ],
+      "exp_en": "trache (windpipe) + -otomy (incision) = a cut into the trachea.",
+      "exp_vi": "trache (khí quản) + -otomy (rạch) = rạch vào khí quản."
+    },
+    {
+      "en": "Which pair is matched correctly?",
+      "vi": "Cặp nào ghép ĐÚNG?",
+      "opts": [
+        { "t": "-scopy = visual exam, -gram = the record", "ok": true, "gl": { "record": "bản ghi" } },
+        { "t": "-scopy = removal, -gram = repair", "ok": false, "gl": { "repair": "sửa" } },
+        { "t": "-scopy = incision, -gram = opening", "ok": false, "gl": { "opening": "lỗ thông" } }
+      ],
+      "exp_en": "-scopy looks (endoscopy); -gram is the image kept (electrocardiogram).",
+      "exp_vi": "-scopy là soi (endoscopy); -gram là hình giữ lại (electrocardiogram)."
+    },
+    {
+      "en": "'-plasty' tells you the surgeon will…",
+      "vi": "'-plasty' cho biết bác sĩ sẽ…",
+      "opts": [
+        { "t": "repair or reshape", "ok": true, "gl": { "reshape": "tạo hình" } },
+        { "t": "remove completely", "ok": false, "gl": { "remove": "lấy bỏ" } },
+        { "t": "only record an image", "ok": false, "gl": { "image": "hình ảnh" } }
+      ],
+      "exp_en": "-plasty = surgical repair/reshaping (angioplasty widens a vessel).",
+      "exp_vi": "-plasty = tạo hình/sửa (angioplasty nong mạch)."
+    },
+    {
+      "en": "Decode a NEW word: 'nephrectomy' means…",
+      "vi": "Giải mã từ MỚI: 'nephrectomy' nghĩa là…",
+      "opts": [
+        { "t": "removal of a kidney", "ok": true, "gl": { "kidney": "thận" } },
+        { "t": "examining a kidney", "ok": false, "gl": { "examining": "soi" } },
+        { "t": "repairing a kidney", "ok": false, "gl": { "repair": "sửa" } }
+      ],
+      "exp_en": "nephr (kidney) + -ectomy (removal). You decoded surgery from the suffix.",
+      "exp_vi": "nephr (thận) + -ectomy (cắt bỏ). Bạn giải mã ca mổ từ hậu tố."
+    }
+  ],
+  "done": {
+    "achievements": [
+      { "emoji": "✂️", "en": "Tell removal (-ectomy) from incision (-otomy)", "vi": "Phân biệt cắt bỏ (-ectomy) với rạch (-otomy)" },
+      { "emoji": "🩹", "en": "Recognise repair (-plasty)", "vi": "Nhận ra tạo hình (-plasty)" },
+      { "emoji": "📷", "en": "Match -scopy (look) with -gram (record)", "vi": "Ghép -scopy (soi) với -gram (bản ghi)" },
+      { "emoji": "💬", "en": "Explain a procedure name to a worried patient", "vi": "Giải thích tên thủ thuật cho bệnh nhân đang lo" }
+    ]
+  }
+}

@@ -1,0 +1,250 @@
+{
+  "_gate_status": "DRAFT — pending Gate 1 (Chabner ch.4 + body-system intro) + Gate 2 Ralph sign-off. Morphemes verified against data/morphology.json. NOTE: soft_gate flag triggers MedLing.softgate at lesson end (D32/D4 aha-moment).",
+  "meta": {
+    "id": "1a-06",
+    "title_en": "The Cardiovascular Word Family",
+    "title_vi": "Họ từ tim mạch",
+    "level": 1, "stage": "1A", "cefr": "A2+",
+    "hero_emoji": "🫀",
+    "complete_en": "You built a whole word family from one root!",
+    "complete_vi": "Bạn đã ráp cả họ từ chỉ từ một gốc!",
+    "tier": "free", "duration": "~15 min",
+    "theme_color": "#9AA989", "theme_light": "#EFF2EA", "theme_shadow": "#74906F",
+    "soft_gate": { "id": "1A-06-softgate", "after": "done" }
+  },
+  "config": { "next": { "url": "?lesson=1a-07", "label": "Next: The Respiratory Word Family", "label_vi": "Tiếp: Họ từ hô hấp", "free": true } },
+  "welcome": {
+    "scenario": [
+      { "en": "Here's the payoff: take ONE root and the affixes you've learned, and a whole family of real clinical words appears.", "vi": "Đây là phần thưởng: lấy MỘT gốc cùng các phụ tố đã học, cả một họ từ lâm sàng thật hiện ra.", "bold": true },
+      { "en": "We'll build the cardiovascular family around cardi/o (heart) and vas/o, angi/o (vessel).", "vi": "Ta sẽ ráp họ tim mạch quanh cardi/o (tim) và vas/o, angi/o (mạch máu)." },
+      { "en": "This is the moment word-building becomes real clinical English.", "vi": "Đây là lúc kỹ năng ráp từ trở thành tiếng Anh lâm sàng thực thụ." }
+    ],
+    "can_do": [
+      { "en": "Build cardiology, carditis, cardiomegaly from cardi/o", "vi": "Ráp cardiology, carditis, cardiomegaly từ cardi/o" },
+      { "en": "Use vas/o and angi/o for blood vessels", "vi": "Dùng vas/o và angi/o cho mạch máu" },
+      { "en": "Decode a cardiac diagnosis from its parts", "vi": "Giải mã chẩn đoán tim từ các thành phần" },
+      { "en": "Explain a cardiology term to a patient", "vi": "Giải thích thuật ngữ tim mạch cho bệnh nhân" }
+    ],
+    "badges": [
+      { "icon": "🫀", "label": "Cardiovascular" },
+      { "icon": "🌱", "label": "Stage 1A · Lesson 6" },
+      { "icon": "🆓", "label": "Free" }
+    ]
+  },
+  "situations": [
+    {
+      "tag": "Gốc tim", "en_tag": "The heart root", "emoji": "❤️",
+      "en": "cardi/o builds the family", "vi": "cardi/o dựng nên họ từ",
+      "ctx_en": "From cardi/o (heart) you can build a specialty (cardiology), a disease (carditis), and an enlargement (cardiomegaly) — just by swapping the suffix.",
+      "ctx_vi": "Từ cardi/o (tim) bạn ráp được chuyên khoa (cardiology), bệnh (carditis), và sự to ra (cardiomegaly) — chỉ bằng cách đổi hậu tố.",
+      "pt": "(A patient is referred to 'cardiology' and asks what that department does.)",
+      "pt_vi": "(Bệnh nhân được chuyển 'cardiology' và hỏi khoa đó làm gì.)",
+      "phrases": [
+        { "en": "Cardiology is the study of the heart.", "vi": "Cardiology là chuyên khoa về tim.", "gl": { "study": "chuyên khoa" } },
+        { "en": "Carditis is inflammation of the heart.", "vi": "Carditis là viêm tim.", "gl": { "inflammation": "viêm" } },
+        { "en": "Cardiomegaly is enlargement of the heart.", "vi": "Cardiomegaly là tim to.", "gl": { "enlargement": "sự to ra" } }
+      ],
+      "vocab": [
+        { "en": "cardi/o", "ipa": "ˈkɑːdiəʊ", "vi": "tim (gốc)" },
+        { "en": "cardiology", "ipa": "ˌkɑːdiˈɒlədʒi", "vi": "khoa tim mạch" },
+        { "en": "carditis", "ipa": "kɑːˈdaɪtɪs", "vi": "viêm tim" },
+        { "en": "cardiomegaly", "ipa": "ˌkɑːdiəʊˈmeɡəli", "vi": "tim to" },
+        { "en": "cardiologist", "ipa": "ˌkɑːdiˈɒlədʒɪst", "vi": "bác sĩ tim mạch" }
+      ],
+      "pq_en": "An enlarged heart on a scan is reported as…",
+      "pq_vi": "Tim to trên phim được ghi là…",
+      "opts": [
+        { "t": "cardiomegaly (-megaly = enlargement)", "ok": true, "gl": { "enlargement": "to ra" } },
+        { "t": "carditis (-itis = enlargement)", "ok": false, "gl": { "inflammation": "viêm" } },
+        { "t": "cardiology (-logy = enlargement)", "ok": false, "gl": { "study": "ngành học" } }
+      ],
+      "tip_en": "Same root cardi/o, three suffixes, three meanings. That's the whole game.",
+      "tip_vi": "Cùng gốc cardi/o, ba hậu tố, ba nghĩa. Toàn bộ luật chơi là vậy."
+    },
+    {
+      "tag": "Mạch máu", "en_tag": "The vessels", "emoji": "🩸",
+      "en": "vas/o and angi/o — vessels", "vi": "vas/o và angi/o — mạch máu",
+      "ctx_en": "Two roots mean blood vessel: vas/o (Latin) and angi/o (Greek). vasodilation widens vessels; angioplasty repairs them; an angiogram images them.",
+      "ctx_vi": "Hai gốc đều nghĩa là mạch máu: vas/o (Latinh) và angi/o (Hy Lạp). vasodilation giãn mạch; angioplasty sửa mạch; angiogram chụp mạch.",
+      "pt": "(A patient asks the difference between an 'angiogram' and an 'angioplasty'.)",
+      "pt_vi": "(Bệnh nhân hỏi khác nhau giữa 'angiogram' và 'angioplasty'.)",
+      "phrases": [
+        { "en": "vas/o and angi/o both mean vessel.", "vi": "vas/o và angi/o đều nghĩa là mạch máu.", "gl": { "vessel": "mạch máu" } },
+        { "en": "Vasodilation widens the vessels.", "vi": "Vasodilation làm giãn mạch.", "gl": { "widens": "làm rộng" } },
+        { "en": "An angiogram is an image of the vessels.", "vi": "Angiogram là hình chụp mạch máu.", "gl": { "image": "hình ảnh" } }
+      ],
+      "vocab": [
+        { "en": "vas/o", "ipa": "ˈveɪzəʊ", "vi": "mạch máu (gốc La)" },
+        { "en": "angi/o", "ipa": "ˈændʒiəʊ", "vi": "mạch máu (gốc Hy)" },
+        { "en": "vasodilation", "ipa": "ˌveɪzəʊdaɪˈleɪʃən", "vi": "giãn mạch" },
+        { "en": "angiogram", "ipa": "ˈændʒiəʊɡræm", "vi": "phim chụp mạch" },
+        { "en": "angioplasty", "ipa": "ˈændʒiəʊˌplæsti", "vi": "nong mạch" }
+      ],
+      "pq_en": "An IMAGE of the blood vessels is an…",
+      "pq_vi": "HÌNH CHỤP mạch máu là…",
+      "opts": [
+        { "t": "angiogram (-gram = record/image)", "ok": true, "gl": { "image": "hình ảnh" } },
+        { "t": "angioplasty (-plasty = image)", "ok": false, "gl": { "repair": "sửa" } },
+        { "t": "angiectomy (-ectomy = image)", "ok": false, "gl": { "removal": "cắt bỏ" } }
+      ],
+      "tip_en": "Reuse Lesson 3: -gram = the record. angi/o (vessel) + -gram = vessel image.",
+      "tip_vi": "Dùng lại Bài 3: -gram = bản ghi. angi/o (mạch) + -gram = hình mạch máu."
+    },
+    {
+      "tag": "Ráp chẩn đoán", "en_tag": "Build a diagnosis", "emoji": "🧱",
+      "en": "Combine prefix + root + suffix", "vi": "Ghép tiền tố + gốc + hậu tố",
+      "ctx_en": "Now stack everything: tachy- (fast) + cardi (heart) = tachycardia; brady- + cardi = bradycardia. The prefix adds the 'how', the suffix the 'what'.",
+      "ctx_vi": "Giờ xếp chồng tất cả: tachy- (nhanh) + cardi (tim) = tachycardia; brady- + cardi = bradycardia. Tiền tố thêm 'thế nào', hậu tố thêm 'cái gì'.",
+      "pt": "(The monitor shows a fast rhythm; a student must name it correctly.)",
+      "pt_vi": "(Máy hiện nhịp nhanh; sinh viên phải gọi tên đúng.)",
+      "phrases": [
+        { "en": "tachy- + cardia = a fast heart rate.", "vi": "tachy- + cardia = nhịp tim nhanh.", "gl": { "fast": "nhanh" } },
+        { "en": "brady- + cardia = a slow heart rate.", "vi": "brady- + cardia = nhịp tim chậm.", "gl": { "slow": "chậm" } },
+        { "en": "The prefix gives the rate, the root gives the organ.", "vi": "Tiền tố cho biết nhịp, gốc cho biết cơ quan.", "gl": { "rate": "nhịp" } }
+      ],
+      "vocab": [
+        { "en": "tachycardia", "ipa": "ˌtækiˈkɑːdiə", "vi": "nhịp tim nhanh" },
+        { "en": "bradycardia", "ipa": "ˌbreɪdiˈkɑːdiə", "vi": "nhịp tim chậm" },
+        { "en": "-cardia", "ipa": "ˈkɑːdiə", "vi": "tình trạng nhịp tim" },
+        { "en": "rhythm", "ipa": "ˈrɪðəm", "vi": "nhịp" },
+        { "en": "rate", "ipa": "reɪt", "vi": "tần số, nhịp" }
+      ],
+      "pq_en": "Build the word for a fast heart rate:",
+      "pq_vi": "Ráp từ cho nhịp tim nhanh:",
+      "opts": [
+        { "t": "tachycardia (tachy- + cardia)", "ok": true, "gl": { "fast": "nhanh" } },
+        { "t": "bradycardia (brady- + cardia)", "ok": false, "gl": { "slow": "chậm" } },
+        { "t": "cardiomegaly (cardi + -megaly)", "ok": false, "gl": { "enlargement": "to ra" } }
+      ],
+      "tip_en": "You combined Lesson 5 (tachy-) with this root. Layers stack predictably.",
+      "tip_vi": "Bạn ghép Bài 5 (tachy-) với gốc này. Các lớp xếp chồng theo quy luật."
+    },
+    {
+      "tag": "Bệnh thật", "en_tag": "Real conditions", "emoji": "🏥",
+      "en": "Words you'll meet on the ward", "vi": "Những từ gặp trong khoa",
+      "ctx_en": "Cardiovascular = cardi/o (heart) + vascular (vessels). An ischaemic event reduces blood flow; an infarction is tissue death. These are the words on real charts.",
+      "ctx_vi": "Cardiovascular = cardi/o (tim) + vascular (mạch). Biến cố thiếu máu cục bộ làm giảm dòng máu; nhồi máu là chết mô. Đây là những từ trên hồ sơ thật.",
+      "pt": "(A chart reads 'myocardial infarction'; explain it in plain terms.)",
+      "pt_vi": "(Hồ sơ ghi 'myocardial infarction'; hãy giải thích bằng lời đơn giản.)",
+      "phrases": [
+        { "en": "Cardiovascular means heart and vessels together.", "vi": "Cardiovascular nghĩa là tim và mạch máu.", "gl": { "vessels": "mạch máu" } },
+        { "en": "Myocardial means relating to the heart muscle.", "vi": "Myocardial nghĩa là thuộc cơ tim.", "gl": { "muscle": "cơ" } },
+        { "en": "A myocardial infarction is a heart attack.", "vi": "Myocardial infarction là nhồi máu cơ tim.", "gl": { "heart attack": "cơn đau tim" } }
+      ],
+      "vocab": [
+        { "en": "cardiovascular", "ipa": "ˌkɑːdiəʊˈvæskjələ", "vi": "tim mạch" },
+        { "en": "myocardial", "ipa": "ˌmaɪəʊˈkɑːdiəl", "vi": "thuộc cơ tim" },
+        { "en": "infarction", "ipa": "ɪnˈfɑːkʃən", "vi": "nhồi máu (chết mô)" },
+        { "en": "ischaemia", "ipa": "ɪsˈkiːmiə", "vi": "thiếu máu cục bộ" },
+        { "en": "myocardium", "ipa": "ˌmaɪəʊˈkɑːdiəm", "vi": "cơ tim" }
+      ],
+      "pq_en": "'Myocardial' refers to the heart's…",
+      "pq_vi": "'Myocardial' chỉ phần… của tim",
+      "opts": [
+        { "t": "muscle (my/o = muscle)", "ok": true, "gl": { "muscle": "cơ" } },
+        { "t": "outer sac (peri- = muscle)", "ok": false, "gl": { "around": "quanh" } },
+        { "t": "inner lining (endo- = muscle)", "ok": false, "gl": { "within": "trong" } }
+      ],
+      "tip_en": "my/o (muscle) + cardi (heart) + -al (relating to) = relating to heart muscle.",
+      "tip_vi": "my/o (cơ) + cardi (tim) + -al (thuộc về) = thuộc cơ tim."
+    }
+  ],
+  "dialogue": {
+    "title_en": "Mini dialogue: the referral",
+    "title_vi": "Hội thoại ngắn: giấy chuyển khoa",
+    "ctx_en": "A patient is referred to cardiology after an abnormal ECG and is anxious.",
+    "ctx_vi": "Bệnh nhân được chuyển khoa tim sau ECG bất thường và đang lo lắng.",
+    "speaker": "Patient", "speaker_emoji": "🧑",
+    "open": { "en": "They're sending me to 'cardiology' and the note says 'tachycardia' — what does all this mean?", "vi": "Họ chuyển tôi qua 'cardiology', giấy ghi 'tachycardia' — mấy chữ này nghĩa là gì?" },
+    "turns": [
+      {
+        "id": "t1",
+        "prompt_en": "Explain 'cardiology' and 'tachycardia' plainly:",
+        "prompt_vi": "Giải thích 'cardiology' và 'tachycardia' bình dân:",
+        "choices": [
+          { "t": "Cardiology is the heart department, and tachycardia just means your heart is beating fast.", "ok": true,
+            "feedback_en": "Clear — you decoded both: cardi/o (heart) + -logy, and tachy- (fast) + -cardia.", "feedback_vi": "Rõ ràng — bạn giải mã cả hai: cardi/o (tim) + -logy, và tachy- (nhanh) + -cardia.", "next": "t2" },
+          { "t": "It's all very technical, the specialist will explain.", "ok": false,
+            "feedback_en": "You CAN explain it now — the word parts give a plain-language answer.", "feedback_vi": "Bạn CÓ THỂ giải thích ngay — các thành phần từ cho câu trả lời dễ hiểu.", "next": "t2" }
+        ]
+      },
+      {
+        "id": "t2",
+        "prompt_en": "Patient: 'Will they need to open me up?' Use a suffix to reassure:",
+        "prompt_vi": "Bệnh nhân: 'Có phải mổ không?' Dùng hậu tố để trấn an:",
+        "choices": [
+          { "t": "Likely just an angiogram first — '-gram' means an image, not surgery.", "ok": true,
+            "feedback_en": "Great reuse of -gram (image) to calm the patient before any procedure.", "feedback_vi": "Vận dụng tốt -gram (hình ảnh) để trấn an trước mọi thủ thuật.", "next": "end" },
+          { "t": "Yes, an angiogram cuts the vessel open.", "ok": false,
+            "feedback_en": "-gram is imaging. Cutting/repair would be -otomy/-plasty.", "feedback_vi": "-gram là chụp hình. Cắt/sửa mới là -otomy/-plasty.", "next": "end" }
+        ]
+      }
+    ],
+    "close": { "en": "From here, every body system is just a new root on the same pattern.", "vi": "Từ đây, mỗi hệ cơ quan chỉ là một gốc mới trên cùng quy luật." }
+  },
+  "quiz": [
+    {
+      "en": "'Cardiomegaly' means…",
+      "vi": "'Cardiomegaly' nghĩa là…",
+      "opts": [
+        { "t": "an enlarged heart", "ok": true, "gl": { "enlarged": "to ra" } },
+        { "t": "inflammation of the heart", "ok": false, "gl": { "inflammation": "viêm" } },
+        { "t": "the study of the heart", "ok": false, "gl": { "study": "ngành học" } }
+      ],
+      "exp_en": "cardi/o (heart) + -megaly (enlargement) = enlarged heart.",
+      "exp_vi": "cardi/o (tim) + -megaly (to ra) = tim to."
+    },
+    {
+      "en": "Both 'vas/o' and 'angi/o' mean…",
+      "vi": "Cả 'vas/o' và 'angi/o' đều nghĩa là…",
+      "opts": [
+        { "t": "vessel", "ok": true, "gl": { "vessel": "mạch máu" } },
+        { "t": "heart", "ok": false, "gl": { "heart": "tim" } },
+        { "t": "muscle", "ok": false, "gl": { "muscle": "cơ" } }
+      ],
+      "exp_en": "vas/o (Latin) and angi/o (Greek) both = blood vessel.",
+      "exp_vi": "vas/o (La) và angi/o (Hy) đều = mạch máu."
+    },
+    {
+      "en": "An 'angiogram' is…",
+      "vi": "'Angiogram' là…",
+      "opts": [
+        { "t": "an image of the vessels", "ok": true, "gl": { "image": "hình ảnh" } },
+        { "t": "removal of a vessel", "ok": false, "gl": { "removal": "cắt bỏ" } },
+        { "t": "a fast heartbeat", "ok": false, "gl": { "fast": "nhanh" } }
+      ],
+      "exp_en": "angi/o (vessel) + -gram (record/image) = vessel image.",
+      "exp_vi": "angi/o (mạch) + -gram (bản ghi/hình) = hình mạch máu."
+    },
+    {
+      "en": "Build it: a SLOW heart rate is…",
+      "vi": "Ráp từ: nhịp tim CHẬM là…",
+      "opts": [
+        { "t": "bradycardia", "ok": true, "gl": { "slow": "chậm" } },
+        { "t": "tachycardia", "ok": false, "gl": { "fast": "nhanh" } },
+        { "t": "cardiomegaly", "ok": false, "gl": { "enlargement": "to ra" } }
+      ],
+      "exp_en": "brady- (slow) + -cardia (heart condition) = slow heart rate.",
+      "exp_vi": "brady- (chậm) + -cardia (tình trạng tim) = nhịp tim chậm."
+    },
+    {
+      "en": "'Myocardial' relates to the heart's…",
+      "vi": "'Myocardial' liên quan đến… của tim",
+      "opts": [
+        { "t": "muscle", "ok": true, "gl": { "muscle": "cơ" } },
+        { "t": "outer sac", "ok": false, "gl": { "sac": "túi" } },
+        { "t": "valves", "ok": false, "gl": { "valves": "van" } }
+      ],
+      "exp_en": "my/o (muscle) + cardi (heart) + -al = relating to heart muscle.",
+      "exp_vi": "my/o (cơ) + cardi (tim) + -al = thuộc cơ tim."
+    }
+  ],
+  "done": {
+    "achievements": [
+      { "emoji": "🫀", "en": "Build the cardi/o word family", "vi": "Ráp họ từ cardi/o" },
+      { "emoji": "🩸", "en": "Use vas/o and angi/o for vessels", "vi": "Dùng vas/o và angi/o cho mạch máu" },
+      { "emoji": "🧱", "en": "Stack prefix + root + suffix into a diagnosis", "vi": "Xếp tiền tố + gốc + hậu tố thành chẩn đoán" },
+      { "emoji": "🏥", "en": "Decode real cardiovascular chart terms", "vi": "Giải mã thuật ngữ tim mạch trên hồ sơ thật" }
+    ]
+  }
+}
