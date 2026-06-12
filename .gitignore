@@ -6,3 +6,4 @@ Thumbs.db
 .env
 .env.*
 supabase/.temp/
+*.standalone.html
