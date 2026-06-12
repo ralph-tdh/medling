@@ -44,11 +44,11 @@
         { "en": "Find the root first, then decode the rest.", "vi": "Tìm gốc từ trước, rồi giải mã phần còn lại.", "gl": { "decode": "giải mã" } }
       ],
       "vocab": [
-        { "en": "cardi/o", "ipa": "ˈkɑːdiəʊ", "vi": "tim (gốc từ)" },
-        { "en": "gastr/o", "ipa": "ˈɡæstrəʊ", "vi": "dạ dày (gốc từ)" },
-        { "en": "hepat/o", "ipa": "hɪˈpætəʊ", "vi": "gan (gốc từ)" },
-        { "en": "neur/o", "ipa": "ˈnjʊərəʊ", "vi": "thần kinh (gốc từ)" },
-        { "en": "oste/o", "ipa": "ˈɒstiəʊ", "vi": "xương (gốc từ)" },
+        { "en": "cardi/o", "ipa": "ˈkɑːrdioʊ", "ipa_gb": "ˈkɑːdiəʊ", "vi": "tim (gốc từ)" },
+        { "en": "gastr/o", "ipa": "ˈɡæstroʊ", "ipa_gb": "ˈɡæstrəʊ", "vi": "dạ dày (gốc từ)" },
+        { "en": "hepat/o", "ipa": "hɪˈpætoʊ", "ipa_gb": "hɪˈpætəʊ", "vi": "gan (gốc từ)" },
+        { "en": "neur/o", "ipa": "ˈnʊroʊ", "ipa_gb": "ˈnjʊərəʊ", "vi": "thần kinh (gốc từ)" },
+        { "en": "oste/o", "ipa": "ˈɑːstioʊ", "ipa_gb": "ˈɒstiəʊ", "vi": "xương (gốc từ)" },
         { "en": "root", "ipa": "ruːt", "vi": "gốc từ" }
       ],
       "pq_en": "In the word 'gastrology', which part is the root?",
@@ -104,10 +104,10 @@
       ],
       "vocab": [
         { "en": "combining vowel", "ipa": "kəmˈbaɪnɪŋ ˈvaʊəl", "vi": "nguyên âm nối" },
-        { "en": "consonant", "ipa": "ˈkɒnsənənt", "vi": "phụ âm" },
+        { "en": "consonant", "ipa": "ˈkɑːnsənənt", "ipa_gb": "ˈkɒnsənənt", "vi": "phụ âm" },
         { "en": "vowel", "ipa": "ˈvaʊəl", "vi": "nguyên âm" },
-        { "en": "cardiology", "ipa": "ˌkɑːdiˈɒlədʒi", "vi": "khoa tim mạch" },
-        { "en": "carditis", "ipa": "kɑːˈdaɪtɪs", "vi": "viêm tim" }
+        { "en": "cardiology", "ipa": "ˌkɑːrdiˈɑːlədʒi", "ipa_gb": "ˌkɑːdiˈɒlədʒi", "vi": "khoa tim mạch" },
+        { "en": "carditis", "ipa": "kɑːrˈdaɪtɪs", "ipa_gb": "kɑːˈdaɪtɪs", "vi": "viêm tim" }
       ],
       "pq_en": "Which is the correctly built word for 'study of the stomach'?",
       "pq_vi": "Từ nào ráp ĐÚNG cho 'ngành học về dạ dày'?",
@@ -133,10 +133,10 @@
       ],
       "vocab": [
         { "en": "hepatitis", "ipa": "ˌhepəˈtaɪtɪs", "vi": "viêm gan" },
-        { "en": "neurology", "ipa": "njʊəˈrɒlədʒi", "vi": "khoa thần kinh" },
+        { "en": "neurology", "ipa": "nʊˈrɑːlədʒi", "ipa_gb": "njʊəˈrɒlədʒi", "vi": "khoa thần kinh" },
         { "en": "gastritis", "ipa": "ɡæˈstraɪtɪs", "vi": "viêm dạ dày" },
-        { "en": "osteology", "ipa": "ˌɒstiˈɒlədʒi", "vi": "ngành học về xương" },
-        { "en": "cardiologist", "ipa": "ˌkɑːdiˈɒlədʒɪst", "vi": "bác sĩ tim mạch" }
+        { "en": "osteology", "ipa": "ˌɑːstiˈɑːlədʒi", "ipa_gb": "ˌɒstiˈɒlədʒi", "vi": "ngành học về xương" },
+        { "en": "cardiologist", "ipa": "ˌkɑːrdiˈɑːlədʒɪst", "ipa_gb": "ˌkɑːdiˈɒlədʒɪst", "vi": "bác sĩ tim mạch" }
       ],
       "pq_en": "Using the pattern, what does 'osteitis' mean?",
       "pq_vi": "Theo quy luật, 'osteitis' nghĩa là gì?",

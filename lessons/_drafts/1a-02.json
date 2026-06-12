@@ -47,8 +47,8 @@
         { "en": "-itis", "ipa": "aɪtɪs", "vi": "viêm" },
         { "en": "gastritis", "ipa": "ɡæˈstraɪtɪs", "vi": "viêm dạ dày" },
         { "en": "hepatitis", "ipa": "ˌhepəˈtaɪtɪs", "vi": "viêm gan" },
-        { "en": "arthritis", "ipa": "ɑːˈθraɪtɪs", "vi": "viêm khớp" },
-        { "en": "dermatitis", "ipa": "ˌdɜːməˈtaɪtɪs", "vi": "viêm da" },
+        { "en": "arthritis", "ipa": "ɑːrˈθraɪtɪs", "ipa_gb": "ɑːˈθraɪtɪs", "vi": "viêm khớp" },
+        { "en": "dermatitis", "ipa": "ˌdɝːməˈtaɪtɪs", "ipa_gb": "ˌdɜːməˈtaɪtɪs", "vi": "viêm da" },
         { "en": "inflammation", "ipa": "ˌɪnfləˈmeɪʃn", "vi": "tình trạng viêm" }
       ],
       "pq_en": "A patient's chart says 'arthritis'. Which body part is inflamed?",
@@ -74,10 +74,10 @@
         { "en": "Osteoporosis is a condition of porous, fragile bone.", "vi": "Osteoporosis là tình trạng xương xốp, giòn.", "gl": { "fragile": "giòn, dễ gãy" } }
       ],
       "vocab": [
-        { "en": "-osis", "ipa": "əʊsɪs", "vi": "tình trạng bất thường" },
-        { "en": "osteoporosis", "ipa": "ˌɒstiəʊpəˈrəʊsɪs", "vi": "loãng xương" },
-        { "en": "fibrosis", "ipa": "faɪˈbrəʊsɪs", "vi": "xơ hóa" },
-        { "en": "necrosis", "ipa": "neˈkrəʊsɪs", "vi": "hoại tử" },
+        { "en": "-osis", "ipa": "oʊsɪs", "ipa_gb": "əʊsɪs", "vi": "tình trạng bất thường" },
+        { "en": "osteoporosis", "ipa": "ˌɑːstioʊpəˈroʊsɪs", "ipa_gb": "ˌɒstiəʊpəˈrəʊsɪs", "vi": "loãng xương" },
+        { "en": "fibrosis", "ipa": "faɪˈbroʊsɪs", "ipa_gb": "faɪˈbrəʊsɪs", "vi": "xơ hóa" },
+        { "en": "necrosis", "ipa": "neˈkroʊsɪs", "ipa_gb": "neˈkrəʊsɪs", "vi": "hoại tử" },
         { "en": "condition", "ipa": "kənˈdɪʃn", "vi": "tình trạng" }
       ],
       "pq_en": "Which pair is matched correctly?",
@@ -103,9 +103,9 @@
         { "en": "Notice the prefix: an- means without.", "vi": "Chú ý tiền tố: an- nghĩa là thiếu/không có.", "gl": { "prefix": "tiền tố" } }
       ],
       "vocab": [
-        { "en": "-emia", "ipa": "iːmiə", "vi": "tình trạng máu" },
-        { "en": "anemia", "ipa": "əˈniːmiə", "vi": "thiếu máu" },
-        { "en": "leukemia", "ipa": "luːˈkiːmiə", "vi": "bệnh bạch cầu" },
+        { "en": "-emia", "en_gb": "-aemia", "ipa": "iːmiə", "vi": "tình trạng máu" },
+        { "en": "anemia", "en_gb": "anaemia", "ipa": "əˈniːmiə", "vi": "thiếu máu" },
+        { "en": "leukemia", "en_gb": "leukaemia", "ipa": "luːˈkiːmiə", "vi": "bệnh bạch cầu" },
         { "en": "blood test", "ipa": "blʌd test", "vi": "xét nghiệm máu" },
         { "en": "red blood cell", "ipa": "red blʌd sel", "vi": "hồng cầu" }
       ],
@@ -134,10 +134,10 @@
       "vocab": [
         { "en": "-algia", "ipa": "ældʒə", "vi": "đau" },
         { "en": "myalgia", "ipa": "maɪˈældʒə", "vi": "đau cơ" },
-        { "en": "neuralgia", "ipa": "njʊəˈrældʒə", "vi": "đau dây thần kinh" },
+        { "en": "neuralgia", "ipa": "nʊˈrældʒə", "ipa_gb": "njʊəˈrældʒə", "vi": "đau dây thần kinh" },
         { "en": "-megaly", "ipa": "meɡəli", "vi": "phì đại" },
-        { "en": "hepatomegaly", "ipa": "ˌhepətəʊˈmeɡəli", "vi": "gan to" },
-        { "en": "enlargement", "ipa": "ɪnˈlɑːdʒmənt", "vi": "sự phì đại" }
+        { "en": "hepatomegaly", "ipa": "ˌhepətoʊˈmeɡəli", "ipa_gb": "ˌhepətəʊˈmeɡəli", "vi": "gan to" },
+        { "en": "enlargement", "ipa": "ɪnˈlɑːrdʒmənt", "ipa_gb": "ɪnˈlɑːdʒmənt", "vi": "sự phì đại" }
       ],
       "pq_en": "On exam you feel an enlarged liver. The correct term to record is…",
       "pq_vi": "Thăm khám thấy gan to. Thuật ngữ đúng để ghi nhận là…",

@@ -44,17 +44,17 @@
         { "en": "Hypertension is high blood pressure.", "vi": "Hypertension là huyết áp cao.", "gl": { "blood pressure": "huyết áp" } }
       ],
       "vocab": [
-        { "en": "hyper-", "ipa": "ˈhaɪpə", "vi": "trên, quá mức" },
-        { "en": "hypo-", "ipa": "ˈhaɪpəʊ", "vi": "dưới, thiếu" },
+        { "en": "hyper-", "ipa": "ˈhaɪpɚ", "ipa_gb": "ˈhaɪpə", "vi": "trên, quá mức" },
+        { "en": "hypo-", "ipa": "ˈhaɪpoʊ", "ipa_gb": "ˈhaɪpəʊ", "vi": "dưới, thiếu" },
         { "en": "hypertension", "ipa": "ˌhaɪpəˈtenʃən", "vi": "tăng huyết áp" },
-        { "en": "hypotension", "ipa": "ˌhaɪpəʊˈtenʃən", "vi": "tụt huyết áp" },
-        { "en": "hyperglycaemia", "ipa": "ˌhaɪpəɡlaɪˈsiːmiə", "vi": "tăng đường huyết" }
+        { "en": "hypotension", "ipa": "ˌhaɪpoʊˈtenʃən", "ipa_gb": "ˌhaɪpəʊˈtenʃən", "vi": "tụt huyết áp" },
+        { "en": "hyperglycemia", "en_gb": "hyperglycaemia", "ipa": "ˌhaɪpəɡlaɪˈsiːmiə", "vi": "tăng đường huyết" }
       ],
       "pq_en": "A patient's blood sugar is too LOW. Which word fits?",
       "pq_vi": "Đường huyết bệnh nhân quá THẤP. Từ nào đúng?",
       "opts": [
         { "t": "hypoglycaemia (hypo- = below)", "ok": true, "gl": { "below": "dưới mức" } },
-        { "t": "hyperglycaemia (hyper- = below)", "ok": false, "gl": { "above": "trên mức" } },
+        { "t": "hyperglycemia (hyper- = below)", "ok": false, "gl": { "above": "trên mức" } },
         { "t": "periglycaemia (peri- = below)", "ok": false, "gl": { "around": "quanh" } }
       ],
       "tip_en": "hypO = below (think O for 'low'). hypER = highER. The vowel hints the direction.",
@@ -74,10 +74,10 @@
       ],
       "vocab": [
         { "en": "peri-", "ipa": "ˈperi", "vi": "quanh" },
-        { "en": "endo-", "ipa": "ˈendəʊ", "vi": "trong, nội" },
-        { "en": "pericardium", "ipa": "ˌperiˈkɑːdiəm", "vi": "màng ngoài tim" },
-        { "en": "endocardium", "ipa": "ˌendəʊˈkɑːdiəm", "vi": "màng trong tim" },
-        { "en": "endoscopy", "ipa": "enˈdɒskəpi", "vi": "nội soi" }
+        { "en": "endo-", "ipa": "ˈendoʊ", "ipa_gb": "ˈendəʊ", "vi": "trong, nội" },
+        { "en": "pericardium", "ipa": "ˌperiˈkɑːrdiəm", "ipa_gb": "ˌperiˈkɑːdiəm", "vi": "màng ngoài tim" },
+        { "en": "endocardium", "ipa": "ˌendoʊˈkɑːrdiəm", "ipa_gb": "ˌendəʊˈkɑːdiəm", "vi": "màng trong tim" },
+        { "en": "endoscopy", "ipa": "enˈdɑːskəpi", "ipa_gb": "enˈdɒskəpi", "vi": "nội soi" }
       ],
       "pq_en": "The layer AROUND the heart is the…",
       "pq_vi": "Lớp BAO QUANH tim là…",
@@ -104,7 +104,7 @@
       "vocab": [
         { "en": "epi-", "ipa": "ˈepi", "vi": "trên" },
         { "en": "sub-", "ipa": "sʌb", "vi": "dưới" },
-        { "en": "epidermis", "ipa": "ˌepɪˈdɜːmɪs", "vi": "biểu bì (da ngoài)" },
+        { "en": "epidermis", "ipa": "ˌepɪˈdɝːmɪs", "ipa_gb": "ˌepɪˈdɜːmɪs", "vi": "biểu bì (da ngoài)" },
         { "en": "subcutaneous", "ipa": "ˌsʌbkjuːˈteɪniəs", "vi": "dưới da" },
         { "en": "injection", "ipa": "ɪnˈdʒekʃən", "vi": "mũi tiêm" }
       ],
@@ -132,9 +132,9 @@
       ],
       "vocab": [
         { "en": "intra-", "ipa": "ˈɪntrə", "vi": "trong" },
-        { "en": "inter-", "ipa": "ˈɪntə", "vi": "giữa" },
+        { "en": "inter-", "ipa": "ˈɪntɚ", "ipa_gb": "ˈɪntə", "vi": "giữa" },
         { "en": "intravenous", "ipa": "ˌɪntrəˈviːnəs", "vi": "trong tĩnh mạch (IV)" },
-        { "en": "intercostal", "ipa": "ˌɪntəˈkɒstəl", "vi": "giữa các sườn" },
+        { "en": "intercostal", "ipa": "ˌɪntəˈkɑːstəl", "ipa_gb": "ˌɪntəˈkɒstəl", "vi": "giữa các sườn" },
         { "en": "vein", "ipa": "veɪn", "vi": "tĩnh mạch" }
       ],
       "pq_en": "Muscles BETWEEN the ribs are called…",

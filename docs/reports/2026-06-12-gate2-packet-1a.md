@@ -7,8 +7,10 @@
 ## What's in front of you
 10 authored drafts in `lessons/_drafts/1a-01..10.json`, all passing the schema validator
 (`python scripts/validate_lessons.py` → 14/14, 0 issues). Flat schema, exactly one `ok:true`/opts,
-`gl` on every option, IPA without slashes, bilingual throughout. Verified in preview: full
-play-through of 1a-01 (4 situations → branching dialogue → quiz), Atelier styling, console clean.
+`gl` on every option, IPA without slashes, bilingual throughout. **Now US-primary with a GB accent
+toggle (D33)**: each vocab item carries US `ipa` (+ `ipa_gb` where it differs), spelling-different
+words carry `en` (US) + `en_gb`. Verified in preview on 1a-01: toggle defaults US, flips every chip's
+IPA to GB and back, audio stays US, choice persists across reload, console clean.
 
 ## Lessons & their source anchor (Gate 1 — verify against these)
 All morphemes were authored from `data/morphology.json`, itself drawn from standard Greek/Latin
@@ -29,17 +31,21 @@ fidelity to the source chapters** — this is the part only you can sign.
 | 10 | 1a-10 | Anatomical Planes & Stage Review | anterior/posterior, superior/inferior, medial/lateral, proximal/distal | Chabner ch.1 |
 
 ## Specific items I want your eyes on (fidelity-qa flags)
-1. **IPA transcriptions** — authored from general knowledge, not copied from a pronunciation DB.
-   Please spot-check the ones learners hear most: `cardiology /ˌkɑːdiˈɒlədʒi/`, `dyspnea /dɪspˈniːə/`,
-   `osteoarthritis /ˌɒstiəʊɑːˈθraɪtɪs/`. (Flagging because IPA is the most error-prone field.)
+1. **IPA — US primary + GB toggle (D33)** — authored from general knowledge, not a pronunciation DB.
+   **The US column is the new, most error-prone surface — please spot-check it.** High-frequency words
+   (US primary / GB reference): `cardiology` US `/ˌkɑːrdiˈɑːlədʒi/` · GB `/ˌkɑːdiˈɒlədʒi/`;
+   `dyspnea` `/dɪspˈniːə/` (same both); `osteoarthritis` US `/ˌɑːstioʊɑːrˈθraɪtɪs/` · GB `/ˌɒstiəʊɑːˈθraɪtɪs/`.
+   US systematically adds rhotic /r/, swaps /ɒ/→/ɑː/ and /əʊ/→/oʊ/, drops the yod (neuro `/ˈnʊroʊ/`),
+   and uses /ɚ/ for final -er/-or (fever `/ˈfiːvɚ/`).
 2. **VN medical glosses** — e.g. infarction = "nhồi máu (chết mô)", ischaemia = "thiếu máu cục bộ",
    osteoporosis = "loãng xương". Confirm these are the terms VN HCWs actually use.
 3. **Pedagogical simplifications** — 1a-06 calls myocardial infarction "a heart attack" in lay
    dialogue; 1a-03 says angioplasty "widens" a vessel. Accurate enough for A2 learners? Your call.
 4. **No clinical over-claim** — dialogues deliberately avoid diagnosis/advice; they model *language*,
    not medical decisions. Please confirm none crosses into giving medical advice.
-5. **British spellings** (anaemia, oedema, diarrhoea, haemorrhage) used consistently — matches the
-   en-GB voice pool. Confirm this is the house style you want.
+5. **US spelling is now primary (D33)** — anemia, edema, diarrhea, ischemia, orthopedic, leukemia —
+   matching the US/CA audio pool. GB spellings (anaemia, oedema, …) stay available via the in-lesson
+   **US·GB accent toggle** (`en_gb` field). Confirm US-primary is the house style you want.
 
 ## Sign-off options
 - **Approve all 10** → I move `_drafts/1a-*.json` to `lessons/`, register in `index.json`

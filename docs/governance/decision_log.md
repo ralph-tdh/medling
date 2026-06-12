@@ -38,13 +38,14 @@
 
 | # | Decision | Status | Note |
 |---|---|---|---|
-| D26 | Framework for official build (vanilla vs Svelte vs React) | 🟡 data-in | Wave B built the branching-dialogue renderer in vanilla with local closure state — not painful (~190 lines, no global collisions). **Recommendation: lock A (keep vanilla).** Awaiting Ralph's ratification. Next stress test: composed dialogue+notebook+audio screen. |
+| D26 | Framework for official build = **vanilla HTML/JS** (option A) | 🔒 ratified 2026-06-12 (Ralph) | Wave B built the branching-dialogue renderer in vanilla with local closure state — not painful (~190 lines, no global collisions). No framework migration; D20 split-at-1000-lines rule governs scaling. Closes the D23 ladder's framework question. |
 | D27 | Official build = new public repo `medling` (landing root + `app/` player + content at root); `med-eng-pb` frozen as pilot | 🔒 ratified 2026-06-11 (Ralph, option A) |
 | D28 | Brand = locked DNA (Explorer→Caregiver→Sage, earthy→forest, monogram M); visual direction = **Concept 2 "Atelier"** (quiet luxury: Newsreader/Inter, sage–stone–cream, hairline borders) | 🔒 ratified 2026-06-11 |
 | D29 | "Lột xác" feature scope: ladder tiers 1–2 live; tier 3 (AI roleplay) scaffolded behind feature flag OFF | 🔒 ratified 2026-06-11 |
 | D30 | Backend in scope: Supabase schema + auth + soft gate (full Phase 1); Supabase project creation = Gate 5 (Ralph) | 🔒 ratified 2026-06-11 |
 | D31 | Agent team operationalized as Claude Code subagents per tree v2, with adaptations logged in `docs/reports/2026-06-11-wave0-report.md` (BA + Spec-Owner absorbed by orchestrator/product-lead; brand-designer added) | 🔒 ratified 2026-06-11 (plan approval) |
 | D32 | Program target extended to **end of Stage 3A** via "dây chuyền + pilot 1A": Stage 1A authored fully through gates now; 1B→3A fully scaffolded (lesson map, extraction backlog, picker tiers, production line) but mass-authored only AFTER 1A Gate-2 sign-off + learner validation (keeps D11). Paid-tier content (1B+) never ships client-side public — Supabase-served per D21. | 🔒 ratified 2026-06-11 |
+| D33 | **US English is primary** for displayed spelling + IPA (VN HCWs learn US; audio pool is already en-US/CA). GB kept as a reference via a global accent toggle (default US): vocab `ipa`=US + optional `ipa_gb`, spelling-different words get `en`=US + `en_gb`. Audio stays US in both modes (no GB pool — would reopen D22). Prose normalised to US. Spec `docs/specs/2026-06-12-us-gb-accent-toggle-design.md`. | 🔒 ratified 2026-06-12 (Ralph, "quất") |
 
 ## Deferred (DD) — unchanged from Drive
 DD1 YouTube format (P3) · DD2 funnel direction (P3) · DD3 VND pricing (pre-launch) ·

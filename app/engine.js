@@ -110,6 +110,29 @@ function toggleSpeed() {
   btn.style.color       = isSlow ? '#33473A' : '#7A7461';
 }
 
+/* ── ACCENT (US primary, GB reference) — D33 ──────────────────
+   Visible spelling/IPA follow the toggle; audio clips stay US.   */
+var _accent = (function(){
+  try { return localStorage.getItem('medling.accent') === 'gb' ? 'gb' : 'us'; }
+  catch (e) { return 'us'; }
+})();
+function vIpa(v) { return (_accent === 'gb' && v.ipa_gb) ? v.ipa_gb : v.ipa; }
+function vEn(v)  { return (_accent === 'gb' && v.en_gb)  ? v.en_gb  : v.en;  }
+function toggleAccent() {
+  _accent = _accent === 'gb' ? 'us' : 'gb';
+  try { localStorage.setItem('medling.accent', _accent); } catch (e) {}
+  renderApp();
+}
+function accentPillHTML() {
+  var us = _accent === 'us';
+  var seg = function(on, label){
+    return '<span style="padding:3px 9px;background:'+(on?'#5E7268':'transparent')+';color:'+(on?'#fff':'#7A7461')+'">'+label+'</span>';
+  };
+  return '<span onclick="toggleAccent()" role="button" aria-label="Toggle US or GB accent" title="US / GB" '
+    +'style="display:inline-flex;border:1px solid #C9C2AE;border-radius:20px;overflow:hidden;font-size:11px;font-weight:600;cursor:pointer;user-select:none;-webkit-user-select:none">'
+    +seg(us,'US')+seg(!us,'GB')+'</span>';
+}
+
 /* ── STATE ────────────────────────────────────────────────── */
 var S = {
   screen: 'welcome',
@@ -332,8 +355,8 @@ function renderSit() {
         +'onmouseup="this.style.transform=\'\';this.style.boxShadow=\'none\'" '
         +'ontouchstart="this.style.transform=\'translate(1px,1px)\';this.style.boxShadow=\'none\'" '
         +'ontouchend="this.style.transform=\'\';this.style.boxShadow=\'none\'">'
-        +'<span style="font-size:8.5px;color:#7A7461;font-family:var(--ml-font-mono);line-height:1.2">/'+esc(v.ipa)+'/</span>'
-        +'<span style="font-size:12px;font-weight:600;color:'+th.c+';line-height:1.3">'+esc(v.en)+'</span>'
+        +'<span style="font-size:8.5px;color:#7A7461;font-family:var(--ml-font-mono);line-height:1.2">/'+esc(vIpa(v))+'/</span>'
+        +'<span style="font-size:12px;font-weight:600;color:'+th.c+';line-height:1.3">'+esc(vEn(v))+'</span>'
         +'<span style="font-size:10px;color:'+th.c+'CC;font-weight:600;line-height:1.2;font-style:italic">'+esc(v.vi)+'</span>'
         +'<span style="font-size:9px;margin-top:3px;line-height:1;color:'+th.c+'99">🔊</span>'
       +'</button>';
@@ -356,7 +379,9 @@ function renderSit() {
       +'<div style="background:'+th.bg+';border-radius:16px;padding:14px 16px;border:1px solid '+th.sh+';box-shadow:none;margin-bottom:16px">'
         +'<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">'
           +'<div style="font-size:10px;text-transform:uppercase;letter-spacing:.09em;color:'+th.c+';font-weight:600">Additional vocab — Từ vựng bổ sung</div>'
-          +'<button id="speed-toggle" onclick="toggleSpeed()" style="font-size:11px;font-weight:600;padding:3px 10px;border-radius:20px;border:1px solid #C9C2AE;background:#f0f0f0;color:#777;cursor:pointer;-webkit-appearance:none;appearance:none;box-shadow:none;transition:all .15s;white-space:nowrap">🔊 Normal</button>'
+          +'<div style="display:flex;align-items:center;gap:7px">'+accentPillHTML()
+            +'<button id="speed-toggle" onclick="toggleSpeed()" style="font-size:11px;font-weight:600;padding:3px 10px;border-radius:20px;border:1px solid #C9C2AE;background:#f0f0f0;color:#777;cursor:pointer;-webkit-appearance:none;appearance:none;box-shadow:none;transition:all .15s;white-space:nowrap">🔊 Normal</button>'
+          +'</div>'
         +'</div>'
         +'<div style="display:flex;flex-wrap:wrap;gap:7px">'+chips+'</div>'
       +'</div>'
@@ -714,11 +739,11 @@ function renderFlashcard() {
 
   var cardHtml = S.fcFlipped
     ? '<div class="pop" style="background:#ECEFEA;border-radius:20px;border:1px solid #5E7268;box-shadow:none;padding:32px 20px;text-align:center;margin-bottom:12px">'
-        +'<div style="font-size:13px;font-family:var(--ml-font-mono);color:#5E7268;font-weight:600;margin-bottom:6px">/'+esc(v.ipa)+'/</div>'
-        +'<div class="hf" style="font-size:30px;font-weight:600;color:#1E2B23;margin-bottom:10px">'+esc(v.en)+'</div>'
+        +'<div style="font-size:13px;font-family:var(--ml-font-mono);color:#5E7268;font-weight:600;margin-bottom:6px">/'+esc(vIpa(v))+'/</div>'
+        +'<div class="hf" style="font-size:30px;font-weight:600;color:#1E2B23;margin-bottom:10px">'+esc(vEn(v))+'</div>'
         +'<div style="height:1.5px;background:#5E726830;margin-bottom:12px"></div>'
         +'<div style="font-size:22px;font-weight:600;color:#4F6B57;margin-bottom:14px">'+esc(v.vi)+'</div>'
-        +'<button onclick="speakWith(this.dataset.w,this.dataset.clip)" data-w="'+esc(v.en)+'" data-clip="'+esc(v._clip||'')+'" style="padding:5px 16px;border-radius:20px;border:1px solid #5E7268;background:#fff;color:#5E7268;font-size:13px;font-weight:600;cursor:pointer;-webkit-appearance:none;appearance:none">🔊 '+esc(v.en)+'</button>'
+        +'<button onclick="speakWith(this.dataset.w,this.dataset.clip)" data-w="'+esc(v.en)+'" data-clip="'+esc(v._clip||'')+'" style="padding:5px 16px;border-radius:20px;border:1px solid #5E7268;background:#fff;color:#5E7268;font-size:13px;font-weight:600;cursor:pointer;-webkit-appearance:none;appearance:none">🔊 '+esc(vEn(v))+'</button>'
       +'</div>'
       +'<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px" class="pop">'
         +'<button onclick="fcAgain()" class="mbtn" style="background:#F6EAE4;color:#7A3B27;border-color:#A3563C;box-shadow:none">✗ Again</button>'
@@ -757,18 +782,19 @@ function buildRevisionQuiz(n) {
   var pool = shuffle(all);
   return pool.slice(0, n).map(function(v) {
     var wrongs = shuffle(all.filter(function(x){ return x.en !== v.en; })).slice(0, 3);
+    var en = vEn(v), ipa = vIpa(v);
     return {
-      q_en: 'What does "' + v.en + '" mean?',
-      q_vi: '"' + v.en + '" nghĩa là gì?',
-      word: v.en, ipa: v.ipa,
+      q_en: 'What does "' + en + '" mean?',
+      q_vi: '"' + en + '" nghĩa là gì?',
+      word: en, ipa: ipa,
       opts: shuffle([
         {t: v.vi,         ok: true  },
         {t: wrongs[0].vi, ok: false },
         {t: wrongs[1].vi, ok: false },
         {t: wrongs[2].vi, ok: false }
       ]),
-      exp_en: '"' + v.en + '" /' + v.ipa + '/ = ' + v.vi,
-      exp_vi: 'Phát âm: /' + v.ipa + '/'
+      exp_en: '"' + en + '" /' + ipa + '/ = ' + v.vi,
+      exp_vi: 'Phát âm: /' + ipa + '/'
     };
   });
 }

@@ -44,14 +44,14 @@
         { "en": "Pulmonary means relating to the lungs.", "vi": "Pulmonary nghĩa là thuộc về phổi.", "gl": { "relating to": "thuộc về" } }
       ],
       "vocab": [
-        { "en": "pneum/o", "ipa": "ˈnjuːməʊ", "vi": "phổi, khí (gốc Hy)" },
-        { "en": "pulmon/o", "ipa": "ˈpʌlmənəʊ", "vi": "phổi (gốc La)" },
-        { "en": "pneumonia", "ipa": "njuːˈməʊniə", "vi": "viêm phổi" },
+        { "en": "pneum/o", "ipa": "ˈnuːmoʊ", "ipa_gb": "ˈnjuːməʊ", "vi": "phổi, khí (gốc Hy)" },
+        { "en": "pulmon/o", "ipa": "ˈpʌlmənoʊ", "ipa_gb": "ˈpʌlmənəʊ", "vi": "phổi (gốc La)" },
+        { "en": "pneumonia", "ipa": "nuːˈmoʊniə", "ipa_gb": "njuːˈməʊniə", "vi": "viêm phổi" },
         { "en": "pulmonary", "ipa": "ˈpʌlmənəri", "vi": "thuộc phổi" },
         { "en": "lung", "ipa": "lʌŋ", "vi": "phổi" }
       ],
-      "pq_en": "'Pulmonary oedema' is fluid relating to the…",
-      "pq_vi": "'Pulmonary oedema' là dịch liên quan đến…",
+      "pq_en": "'Pulmonary edema' is fluid relating to the…",
+      "pq_vi": "'Pulmonary edema' là dịch liên quan đến…",
       "opts": [
         { "t": "lungs (pulmon/o = lung)", "ok": true, "gl": { "lung": "phổi" } },
         { "t": "heart (pulmon/o = heart)", "ok": false, "gl": { "heart": "tim" } },
@@ -73,10 +73,10 @@
         { "en": "Thoracic surgery operates on the chest.", "vi": "Phẫu thuật thoracic mổ vùng ngực.", "gl": { "surgery": "phẫu thuật" } }
       ],
       "vocab": [
-        { "en": "thorac/o", "ipa": "ˈθɔːrəkəʊ", "vi": "ngực (gốc)" },
-        { "en": "thoracotomy", "ipa": "ˌθɔːrəˈkɒtəmi", "vi": "mở ngực" },
+        { "en": "thorac/o", "ipa": "ˈθɔːrəkoʊ", "ipa_gb": "ˈθɔːrəkəʊ", "vi": "ngực (gốc)" },
+        { "en": "thoracotomy", "ipa": "ˌθɔːrəˈkɑːtəmi", "ipa_gb": "ˌθɔːrəˈkɒtəmi", "vi": "mở ngực" },
         { "en": "thoracic", "ipa": "θɔːˈræsɪk", "vi": "thuộc ngực" },
-        { "en": "pneumothorax", "ipa": "ˌnjuːməʊˈθɔːræks", "vi": "tràn khí màng phổi" },
+        { "en": "pneumothorax", "ipa": "ˌnuːmoʊˈθɔːræks", "ipa_gb": "ˌnjuːməʊˈθɔːræks", "vi": "tràn khí màng phổi" },
         { "en": "chest", "ipa": "tʃest", "vi": "ngực" }
       ],
       "pq_en": "Air trapped in the chest cavity is a 'pneumothorax'. Which parts build it?",
@@ -131,11 +131,11 @@
         { "en": "A bronchoscopy looks inside the airways.", "vi": "Bronchoscopy soi bên trong phế quản.", "gl": { "looks inside": "soi trong" } }
       ],
       "vocab": [
-        { "en": "bronch/o", "ipa": "ˈbrɒŋkəʊ", "vi": "phế quản (gốc)" },
-        { "en": "bronchitis", "ipa": "brɒŋˈkaɪtɪs", "vi": "viêm phế quản" },
-        { "en": "bronchoscopy", "ipa": "brɒŋˈkɒskəpi", "vi": "nội soi phế quản" },
+        { "en": "bronch/o", "ipa": "ˈbrɑːŋkoʊ", "ipa_gb": "ˈbrɒŋkəʊ", "vi": "phế quản (gốc)" },
+        { "en": "bronchitis", "ipa": "brɑːŋˈkaɪtɪs", "ipa_gb": "brɒŋˈkaɪtɪs", "vi": "viêm phế quản" },
+        { "en": "bronchoscopy", "ipa": "brɑːŋˈkɑːskəpi", "ipa_gb": "brɒŋˈkɒskəpi", "vi": "nội soi phế quản" },
         { "en": "respiratory", "ipa": "rɪˈspɪrətəri", "vi": "hô hấp" },
-        { "en": "airway", "ipa": "ˈeəweɪ", "vi": "đường thở" }
+        { "en": "airway", "ipa": "ˈerweɪ", "ipa_gb": "ˈeəweɪ", "vi": "đường thở" }
       ],
       "pq_en": "Looking inside the airways with a camera is a…",
       "pq_vi": "Soi bên trong phế quản bằng camera là…",

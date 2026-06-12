@@ -46,9 +46,9 @@
       "vocab": [
         { "en": "tachy-", "ipa": "ˈtæki", "vi": "nhanh" },
         { "en": "brady-", "ipa": "ˈbreɪdi", "vi": "chậm" },
-        { "en": "tachycardia", "ipa": "ˌtækiˈkɑːdiə", "vi": "nhịp tim nhanh" },
-        { "en": "bradycardia", "ipa": "ˌbreɪdiˈkɑːdiə", "vi": "nhịp tim chậm" },
-        { "en": "heart rate", "ipa": "ˈhɑːt reɪt", "vi": "nhịp tim" }
+        { "en": "tachycardia", "ipa": "ˌtækiˈkɑːrdiə", "ipa_gb": "ˌtækiˈkɑːdiə", "vi": "nhịp tim nhanh" },
+        { "en": "bradycardia", "ipa": "ˌbreɪdiˈkɑːrdiə", "ipa_gb": "ˌbreɪdiˈkɑːdiə", "vi": "nhịp tim chậm" },
+        { "en": "heart rate", "ipa": "ˈhɑːrt reɪt", "ipa_gb": "ˈhɑːt reɪt", "vi": "nhịp tim" }
       ],
       "pq_en": "A heart beating too SLOWLY is called…",
       "pq_vi": "Tim đập quá CHẬM gọi là…",
@@ -73,10 +73,10 @@
         { "en": "Polypharmacy is the use of many medicines.", "vi": "Polypharmacy là dùng nhiều thuốc.", "gl": { "medicines": "thuốc" } }
       ],
       "vocab": [
-        { "en": "poly-", "ipa": "ˈpɒli", "vi": "nhiều" },
-        { "en": "polyuria", "ipa": "ˌpɒliˈjʊəriə", "vi": "tiểu nhiều" },
-        { "en": "polypharmacy", "ipa": "ˌpɒliˈfɑːməsi", "vi": "dùng nhiều thuốc" },
-        { "en": "urine", "ipa": "ˈjʊərɪn", "vi": "nước tiểu" },
+        { "en": "poly-", "ipa": "ˈpɑːli", "ipa_gb": "ˈpɒli", "vi": "nhiều" },
+        { "en": "polyuria", "ipa": "ˌpɑːliˈjʊriə", "ipa_gb": "ˌpɒliˈjʊəriə", "vi": "tiểu nhiều" },
+        { "en": "polypharmacy", "ipa": "ˌpɑːliˈfɑːrməsi", "ipa_gb": "ˌpɒliˈfɑːməsi", "vi": "dùng nhiều thuốc" },
+        { "en": "urine", "ipa": "ˈjʊrɪn", "ipa_gb": "ˈjʊərɪn", "vi": "nước tiểu" },
         { "en": "much", "ipa": "mʌtʃ", "vi": "nhiều" }
       ],
       "pq_en": "'Polyuria' describes a patient who…",
@@ -92,8 +92,8 @@
     {
       "tag": "Thiếu vắng", "en_tag": "Without", "emoji": "🚫",
       "en": "a-/an- — without, absence", "vi": "a-/an- — không có, thiếu",
-      "ctx_en": "a- (or an- before a vowel) means without/absence. apnea is absence of breathing; anaemia is a lack of healthy red cells.",
-      "ctx_vi": "a- (hoặc an- trước nguyên âm) nghĩa là không có/thiếu. apnea là ngưng thở; anaemia là thiếu hồng cầu khỏe mạnh.",
+      "ctx_en": "a- (or an- before a vowel) means without/absence. apnea is absence of breathing; anemia is a lack of healthy red cells.",
+      "ctx_vi": "a- (hoặc an- trước nguyên âm) nghĩa là không có/thiếu. apnea là ngưng thở; anemia là thiếu hồng cầu khỏe mạnh.",
       "pt": "(A parent is told their baby had an 'apnea' episode overnight.)",
       "pt_vi": "(Cha mẹ được báo bé có cơn 'apnea' trong đêm.)",
       "phrases": [
@@ -104,7 +104,7 @@
       "vocab": [
         { "en": "a- / an-", "ipa": "eɪ", "vi": "không, thiếu" },
         { "en": "apnea", "ipa": "ˈæpniə", "vi": "ngưng thở" },
-        { "en": "anaemia", "ipa": "əˈniːmiə", "vi": "thiếu máu" },
+        { "en": "anemia", "en_gb": "anaemia", "ipa": "əˈniːmiə", "vi": "thiếu máu" },
         { "en": "absence", "ipa": "ˈæbsəns", "vi": "sự thiếu vắng" },
         { "en": "without", "ipa": "wɪˈðaʊt", "vi": "không có" }
       ],
@@ -132,10 +132,10 @@
       ],
       "vocab": [
         { "en": "anti-", "ipa": "ˈænti", "vi": "chống lại" },
-        { "en": "antibiotic", "ipa": "ˌæntibaɪˈɒtɪk", "vi": "kháng sinh" },
+        { "en": "antibiotic", "ipa": "ˌæntibaɪˈɑːtɪk", "ipa_gb": "ˌæntibaɪˈɒtɪk", "vi": "kháng sinh" },
         { "en": "antipyretic", "ipa": "ˌæntipaɪˈretɪk", "vi": "thuốc hạ sốt" },
-        { "en": "bacteria", "ipa": "bækˈtɪəriə", "vi": "vi khuẩn" },
-        { "en": "fever", "ipa": "ˈfiːvə", "vi": "sốt" }
+        { "en": "bacteria", "ipa": "bækˈtɪriə", "ipa_gb": "bækˈtɪəriə", "vi": "vi khuẩn" },
+        { "en": "fever", "ipa": "ˈfiːvɚ", "ipa_gb": "ˈfiːvə", "vi": "sốt" }
       ],
       "pq_en": "A medicine that works AGAINST a fever is an…",
       "pq_vi": "Thuốc CHỐNG lại cơn sốt là…",

@@ -19,6 +19,10 @@
   1B→3A scaffolded (roadmap + picker coming-soon). **Gate 2 packet awaiting Ralph** (D32).
 - ✅ Wave F: full QA (HTTP/JSON/regression all green), build.js standalone regression fixed,
   deploy runbook (`docs/DEPLOY.md`).
+- ✅ Post-F (2026-06-12): D26 ratified (vanilla). **D33 US/GB accent toggle** — engine `vIpa`/`vEn`
+  + US·GB pill (default US, persisted), validator accepts `ipa_gb`/`en_gb`, 10× 1A drafts re-authored
+  US-primary (GB retained). Verified in preview. Spec `docs/specs/2026-06-12-us-gb-accent-toggle-design.md`.
+  Gate 2 packet updated with the US IPA column — **still awaiting Ralph's sign-off**.
 
 ## Blocked on Ralph (human gates)
 - **Gate 2**: sign off Stage 1A — `docs/reports/2026-06-12-gate2-packet-1a.md`. Then drafts move to `lessons/`.
@@ -32,7 +36,8 @@
 - Validate with real learners before scaling.
 - Premium must be server-side (Supabase RLS) when real (D21); soft gate is for intent measurement only.
 - Lesson content = faithful to source textbooks; Gate 2 sign-off by Ralph before ship.
-- D26 (framework) is decided by branching-dialogue build experience, not anticipation.
+- US English is primary for spelling + IPA (D33); GB only as accent-toggle reference; audio stays US.
+- D26 ratified 2026-06-12: framework = **vanilla** (option A). No framework migration.
 
 ## Human gates pending
 - Wave A: brand choice.

@@ -45,11 +45,11 @@
         { "en": "Cardiomegaly is enlargement of the heart.", "vi": "Cardiomegaly là tim to.", "gl": { "enlargement": "sự to ra" } }
       ],
       "vocab": [
-        { "en": "cardi/o", "ipa": "ˈkɑːdiəʊ", "vi": "tim (gốc)" },
-        { "en": "cardiology", "ipa": "ˌkɑːdiˈɒlədʒi", "vi": "khoa tim mạch" },
-        { "en": "carditis", "ipa": "kɑːˈdaɪtɪs", "vi": "viêm tim" },
-        { "en": "cardiomegaly", "ipa": "ˌkɑːdiəʊˈmeɡəli", "vi": "tim to" },
-        { "en": "cardiologist", "ipa": "ˌkɑːdiˈɒlədʒɪst", "vi": "bác sĩ tim mạch" }
+        { "en": "cardi/o", "ipa": "ˈkɑːrdioʊ", "ipa_gb": "ˈkɑːdiəʊ", "vi": "tim (gốc)" },
+        { "en": "cardiology", "ipa": "ˌkɑːrdiˈɑːlədʒi", "ipa_gb": "ˌkɑːdiˈɒlədʒi", "vi": "khoa tim mạch" },
+        { "en": "carditis", "ipa": "kɑːrˈdaɪtɪs", "ipa_gb": "kɑːˈdaɪtɪs", "vi": "viêm tim" },
+        { "en": "cardiomegaly", "ipa": "ˌkɑːrdioʊˈmeɡəli", "ipa_gb": "ˌkɑːdiəʊˈmeɡəli", "vi": "tim to" },
+        { "en": "cardiologist", "ipa": "ˌkɑːrdiˈɑːlədʒɪst", "ipa_gb": "ˌkɑːdiˈɒlədʒɪst", "vi": "bác sĩ tim mạch" }
       ],
       "pq_en": "An enlarged heart on a scan is reported as…",
       "pq_vi": "Tim to trên phim được ghi là…",
@@ -74,11 +74,11 @@
         { "en": "An angiogram is an image of the vessels.", "vi": "Angiogram là hình chụp mạch máu.", "gl": { "image": "hình ảnh" } }
       ],
       "vocab": [
-        { "en": "vas/o", "ipa": "ˈveɪzəʊ", "vi": "mạch máu (gốc La)" },
-        { "en": "angi/o", "ipa": "ˈændʒiəʊ", "vi": "mạch máu (gốc Hy)" },
-        { "en": "vasodilation", "ipa": "ˌveɪzəʊdaɪˈleɪʃən", "vi": "giãn mạch" },
-        { "en": "angiogram", "ipa": "ˈændʒiəʊɡræm", "vi": "phim chụp mạch" },
-        { "en": "angioplasty", "ipa": "ˈændʒiəʊˌplæsti", "vi": "nong mạch" }
+        { "en": "vas/o", "ipa": "ˈveɪzoʊ", "ipa_gb": "ˈveɪzəʊ", "vi": "mạch máu (gốc La)" },
+        { "en": "angi/o", "ipa": "ˈændʒioʊ", "ipa_gb": "ˈændʒiəʊ", "vi": "mạch máu (gốc Hy)" },
+        { "en": "vasodilation", "ipa": "ˌveɪzoʊdaɪˈleɪʃən", "ipa_gb": "ˌveɪzəʊdaɪˈleɪʃən", "vi": "giãn mạch" },
+        { "en": "angiogram", "ipa": "ˈændʒioʊɡræm", "ipa_gb": "ˈændʒiəʊɡræm", "vi": "phim chụp mạch" },
+        { "en": "angioplasty", "ipa": "ˈændʒioʊˌplæsti", "ipa_gb": "ˈændʒiəʊˌplæsti", "vi": "nong mạch" }
       ],
       "pq_en": "An IMAGE of the blood vessels is an…",
       "pq_vi": "HÌNH CHỤP mạch máu là…",
@@ -103,9 +103,9 @@
         { "en": "The prefix gives the rate, the root gives the organ.", "vi": "Tiền tố cho biết nhịp, gốc cho biết cơ quan.", "gl": { "rate": "nhịp" } }
       ],
       "vocab": [
-        { "en": "tachycardia", "ipa": "ˌtækiˈkɑːdiə", "vi": "nhịp tim nhanh" },
-        { "en": "bradycardia", "ipa": "ˌbreɪdiˈkɑːdiə", "vi": "nhịp tim chậm" },
-        { "en": "-cardia", "ipa": "ˈkɑːdiə", "vi": "tình trạng nhịp tim" },
+        { "en": "tachycardia", "ipa": "ˌtækiˈkɑːrdiə", "ipa_gb": "ˌtækiˈkɑːdiə", "vi": "nhịp tim nhanh" },
+        { "en": "bradycardia", "ipa": "ˌbreɪdiˈkɑːrdiə", "ipa_gb": "ˌbreɪdiˈkɑːdiə", "vi": "nhịp tim chậm" },
+        { "en": "-cardia", "ipa": "ˈkɑːrdiə", "ipa_gb": "ˈkɑːdiə", "vi": "tình trạng nhịp tim" },
         { "en": "rhythm", "ipa": "ˈrɪðəm", "vi": "nhịp" },
         { "en": "rate", "ipa": "reɪt", "vi": "tần số, nhịp" }
       ],
@@ -132,11 +132,11 @@
         { "en": "A myocardial infarction is a heart attack.", "vi": "Myocardial infarction là nhồi máu cơ tim.", "gl": { "heart attack": "cơn đau tim" } }
       ],
       "vocab": [
-        { "en": "cardiovascular", "ipa": "ˌkɑːdiəʊˈvæskjələ", "vi": "tim mạch" },
-        { "en": "myocardial", "ipa": "ˌmaɪəʊˈkɑːdiəl", "vi": "thuộc cơ tim" },
-        { "en": "infarction", "ipa": "ɪnˈfɑːkʃən", "vi": "nhồi máu (chết mô)" },
-        { "en": "ischaemia", "ipa": "ɪsˈkiːmiə", "vi": "thiếu máu cục bộ" },
-        { "en": "myocardium", "ipa": "ˌmaɪəʊˈkɑːdiəm", "vi": "cơ tim" }
+        { "en": "cardiovascular", "ipa": "ˌkɑːrdioʊˈvæskjəlɚ", "ipa_gb": "ˌkɑːdiəʊˈvæskjələ", "vi": "tim mạch" },
+        { "en": "myocardial", "ipa": "ˌmaɪoʊˈkɑːrdiəl", "ipa_gb": "ˌmaɪəʊˈkɑːdiəl", "vi": "thuộc cơ tim" },
+        { "en": "infarction", "ipa": "ɪnˈfɑːrkʃən", "ipa_gb": "ɪnˈfɑːkʃən", "vi": "nhồi máu (chết mô)" },
+        { "en": "ischemia", "en_gb": "ischaemia", "ipa": "ɪsˈkiːmiə", "vi": "thiếu máu cục bộ" },
+        { "en": "myocardium", "ipa": "ˌmaɪoʊˈkɑːrdiəm", "ipa_gb": "ˌmaɪəʊˈkɑːdiəm", "vi": "cơ tim" }
       ],
       "pq_en": "'Myocardial' refers to the heart's…",
       "pq_vi": "'Myocardial' chỉ phần… của tim",

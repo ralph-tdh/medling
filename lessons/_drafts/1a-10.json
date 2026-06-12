@@ -44,10 +44,10 @@
         { "en": "The posterior chest is the back of the chest.", "vi": "Posterior chest là mặt sau của ngực.", "gl": { "chest": "ngực" } }
       ],
       "vocab": [
-        { "en": "anterior", "ipa": "ænˈtɪəriə", "vi": "phía trước" },
-        { "en": "posterior", "ipa": "pɒˈstɪəriə", "vi": "phía sau" },
+        { "en": "anterior", "ipa": "ænˈtɪriɚ", "ipa_gb": "ænˈtɪəriə", "vi": "phía trước" },
+        { "en": "posterior", "ipa": "pɑːˈstɪriɚ", "ipa_gb": "pɒˈstɪəriə", "vi": "phía sau" },
         { "en": "ventral", "ipa": "ˈventrəl", "vi": "mặt bụng (trước)" },
-        { "en": "dorsal", "ipa": "ˈdɔːsəl", "vi": "mặt lưng (sau)" },
+        { "en": "dorsal", "ipa": "ˈdɔːrsəl", "ipa_gb": "ˈdɔːsəl", "vi": "mặt lưng (sau)" },
         { "en": "front", "ipa": "frʌnt", "vi": "phía trước" }
       ],
       "pq_en": "The spine is on the body's…",
@@ -73,11 +73,11 @@
         { "en": "The heart is superior to the stomach.", "vi": "Tim ở trên dạ dày.", "gl": { "heart": "tim" } }
       ],
       "vocab": [
-        { "en": "superior", "ipa": "suːˈpɪəriə", "vi": "trên" },
-        { "en": "inferior", "ipa": "ɪnˈfɪəriə", "vi": "dưới" },
-        { "en": "superior border", "ipa": "suːˈpɪəriə ˈbɔːdə", "vi": "bờ trên" },
-        { "en": "inferior border", "ipa": "ɪnˈfɪəriə ˈbɔːdə", "vi": "bờ dưới" },
-        { "en": "border", "ipa": "ˈbɔːdə", "vi": "bờ" }
+        { "en": "superior", "ipa": "suːˈpɪriɚ", "ipa_gb": "suːˈpɪəriə", "vi": "trên" },
+        { "en": "inferior", "ipa": "ɪnˈfɪriɚ", "ipa_gb": "ɪnˈfɪəriə", "vi": "dưới" },
+        { "en": "superior border", "ipa": "suːˈpɪriɚ ˈbɔːrdɚ", "ipa_gb": "suːˈpɪəriə ˈbɔːdə", "vi": "bờ trên" },
+        { "en": "inferior border", "ipa": "ɪnˈfɪriɚ ˈbɔːrdɚ", "ipa_gb": "ɪnˈfɪəriə ˈbɔːdə", "vi": "bờ dưới" },
+        { "en": "border", "ipa": "ˈbɔːrdɚ", "ipa_gb": "ˈbɔːdə", "vi": "bờ" }
       ],
       "pq_en": "The head is ______ to the chest.",
       "pq_vi": "Đầu nằm ______ so với ngực.",
@@ -104,7 +104,7 @@
       "vocab": [
         { "en": "medial", "ipa": "ˈmiːdiəl", "vi": "phía trong (giữa)" },
         { "en": "lateral", "ipa": "ˈlætərəl", "vi": "phía ngoài (bên)" },
-        { "en": "proximal", "ipa": "ˈprɒksɪməl", "vi": "gần (thân)" },
+        { "en": "proximal", "ipa": "ˈprɑːksɪməl", "ipa_gb": "ˈprɒksɪməl", "vi": "gần (thân)" },
         { "en": "distal", "ipa": "ˈdɪstəl", "vi": "xa (thân)" },
         { "en": "midline", "ipa": "ˈmɪdlaɪn", "vi": "đường giữa" }
       ],
@@ -131,11 +131,11 @@
         { "en": "Three pieces, one precise diagnosis.", "vi": "Ba mảnh, một chẩn đoán chính xác.", "gl": {} }
       ],
       "vocab": [
-        { "en": "pericarditis", "ipa": "ˌperikɑːˈdaɪtɪs", "vi": "viêm màng ngoài tim" },
-        { "en": "hypothermia", "ipa": "ˌhaɪpəʊˈθɜːmiə", "vi": "hạ thân nhiệt" },
-        { "en": "osteoarthritis", "ipa": "ˌɒstiəʊɑːˈθraɪtɪs", "vi": "thoái hóa khớp" },
+        { "en": "pericarditis", "ipa": "ˌperikɑːrˈdaɪtɪs", "ipa_gb": "ˌperikɑːˈdaɪtɪs", "vi": "viêm màng ngoài tim" },
+        { "en": "hypothermia", "ipa": "ˌhaɪpoʊˈθɝːmiə", "ipa_gb": "ˌhaɪpəʊˈθɜːmiə", "vi": "hạ thân nhiệt" },
+        { "en": "osteoarthritis", "ipa": "ˌɑːstioʊɑːrˈθraɪtɪs", "ipa_gb": "ˌɒstiəʊɑːˈθraɪtɪs", "vi": "thoái hóa khớp" },
         { "en": "tachypnea", "ipa": "ˌtækɪpˈniːə", "vi": "thở nhanh" },
-        { "en": "diagnosis", "ipa": "ˌdaɪəɡˈnəʊsɪs", "vi": "chẩn đoán" }
+        { "en": "diagnosis", "ipa": "ˌdaɪəɡˈnoʊsɪs", "ipa_gb": "ˌdaɪəɡˈnəʊsɪs", "vi": "chẩn đoán" }
       ],
       "pq_en": "Decode 'pericarditis':",
       "pq_vi": "Giải mã 'pericarditis':",

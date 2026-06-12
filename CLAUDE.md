@@ -25,6 +25,9 @@ multipliers, not colleagues — they propose, Ralph decides.
 - Flat JSON schema is canonical: `pq_en`, `opts`, `tip_en` live directly on situation objects —
   never nested `practice_q` (D15). IPA without slashes. Exactly one `ok:true` per opts array.
   `gl` gloss on every option.
+- **US English primary (D33)**: vocab `ipa` = US, optional `ipa_gb` = GB (add only where they differ);
+  spelling-different words add `en_gb` and keep US in `en`. A global US·GB accent toggle (default US)
+  swaps displayed vocab IPA/spelling; **audio stays US** in both modes. Prose uses US spelling.
 - Audio: edge-tts free voice pool ONLY (10 voices, never `*MultilingualNeural`) (D22).
   Clip naming: `{id}_s{sid}_pt|p{i}|v{i}.mp3`, `{id}_q{i}.mp3`. Voice seeded by section_id.
   New lesson → CI generates MP3s → then set `AUDIO_ENABLED`. Never skip the audio pipeline.

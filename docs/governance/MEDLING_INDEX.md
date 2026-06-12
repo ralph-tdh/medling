@@ -1,7 +1,7 @@
 # MedLing — Project Index (repo mirror)
 
 > Load this FIRST each session, then open only the 1–3 files you need.
-> Updated: 2026-06-12 (Waves 0–F complete; awaiting Gate 2 + Gate 5).
+> Updated: 2026-06-12 (Waves 0–F complete; D26 ratified vanilla; D33 US/GB accent toggle done; awaiting Gate 2 + Gate 5).
 
 ## Project tree (4 branches)
 
@@ -14,7 +14,8 @@
   ✓ Stage 1A authored (10 drafts in `lessons/_drafts/`) + validator · ◐ **Gate 2 sign-off pending**
   (`docs/reports/2026-06-12-gate2-packet-1a.md`) · 1B→3A scaffolded (`lessons/roadmap.json`)
 - **2 · Product** — ✓ shell+JSON player (Atelier restyle) · ✓ brand "Atelier" (`brand/`) ·
-  ✓ engine v2: branching dialogue + morph popup + notebook + PWA + FSRS + roleplay scaffold (flag OFF) ·
+  ✓ engine v2: branching dialogue + morph popup + notebook + PWA + FSRS + roleplay scaffold (flag OFF)
+  + US·GB accent toggle (D33, default US) ·
   ✓ landing (`index.html`) · ✓ Supabase code + soft gate (`supabase/`, mocked until Gate 5)
 - **3 · Distribution** — Phase 3, untouched
 

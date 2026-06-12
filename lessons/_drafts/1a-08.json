@@ -44,9 +44,9 @@
         { "en": "A gastroscopy examines the stomach lining.", "vi": "Gastroscopy soi niêm mạc dạ dày.", "gl": { "lining": "niêm mạc" } }
       ],
       "vocab": [
-        { "en": "gastr/o", "ipa": "ˈɡæstrəʊ", "vi": "dạ dày (gốc)" },
+        { "en": "gastr/o", "ipa": "ˈɡæstroʊ", "ipa_gb": "ˈɡæstrəʊ", "vi": "dạ dày (gốc)" },
         { "en": "gastritis", "ipa": "ɡæˈstraɪtɪs", "vi": "viêm dạ dày" },
-        { "en": "gastroscopy", "ipa": "ɡæˈstrɒskəpi", "vi": "nội soi dạ dày" },
+        { "en": "gastroscopy", "ipa": "ɡæˈstrɑːskəpi", "ipa_gb": "ɡæˈstrɒskəpi", "vi": "nội soi dạ dày" },
         { "en": "gastrectomy", "ipa": "ɡæˈstrektəmi", "vi": "cắt dạ dày" },
         { "en": "stomach", "ipa": "ˈstʌmək", "vi": "dạ dày" }
       ],
@@ -65,19 +65,19 @@
       "en": "enter/o — the intestine", "vi": "enter/o — ruột",
       "ctx_en": "enter/o means intestine. enteritis is inflammation of the intestine; gastroenteritis affects both stomach and intestine.",
       "ctx_vi": "enter/o nghĩa là ruột. enteritis là viêm ruột; gastroenteritis ảnh hưởng cả dạ dày lẫn ruột.",
-      "pt": "(A patient with vomiting and diarrhoea is told they have 'gastroenteritis'.)",
+      "pt": "(A patient with vomiting and diarrhea is told they have 'gastroenteritis'.)",
       "pt_vi": "(Bệnh nhân nôn và tiêu chảy được báo bị 'gastroenteritis'.)",
       "phrases": [
         { "en": "enter/o means intestine.", "vi": "enter/o nghĩa là ruột.", "gl": { "intestine": "ruột" } },
         { "en": "Gastroenteritis is inflammation of the stomach and intestine.", "vi": "Gastroenteritis là viêm dạ dày-ruột.", "gl": { "inflammation": "viêm" } },
-        { "en": "It often causes vomiting and diarrhoea.", "vi": "Nó thường gây nôn và tiêu chảy.", "gl": { "vomiting": "nôn", "diarrhoea": "tiêu chảy" } }
+        { "en": "It often causes vomiting and diarrhea.", "vi": "Nó thường gây nôn và tiêu chảy.", "gl": { "vomiting": "nôn", "diarrhea": "tiêu chảy" } }
       ],
       "vocab": [
-        { "en": "enter/o", "ipa": "ˈentərəʊ", "vi": "ruột (gốc)" },
+        { "en": "enter/o", "ipa": "ˈentəroʊ", "ipa_gb": "ˈentərəʊ", "vi": "ruột (gốc)" },
         { "en": "enteritis", "ipa": "ˌentəˈraɪtɪs", "vi": "viêm ruột" },
-        { "en": "gastroenteritis", "ipa": "ˌɡæstrəʊˌentəˈraɪtɪs", "vi": "viêm dạ dày-ruột" },
+        { "en": "gastroenteritis", "ipa": "ˌɡæstroʊˌentəˈraɪtɪs", "ipa_gb": "ˌɡæstrəʊˌentəˈraɪtɪs", "vi": "viêm dạ dày-ruột" },
         { "en": "intestine", "ipa": "ɪnˈtestɪn", "vi": "ruột" },
-        { "en": "diarrhoea", "ipa": "ˌdaɪəˈrɪə", "vi": "tiêu chảy" }
+        { "en": "diarrhea", "en_gb": "diarrhoea", "ipa": "ˌdaɪəˈriːə", "ipa_gb": "ˌdaɪəˈrɪə", "vi": "tiêu chảy" }
       ],
       "pq_en": "'Gastroenteritis' affects the…",
       "pq_vi": "'Gastroenteritis' ảnh hưởng…",
@@ -102,11 +102,11 @@
         { "en": "Hepatomegaly is an enlarged liver.", "vi": "Hepatomegaly là gan to.", "gl": { "enlarged": "to ra" } }
       ],
       "vocab": [
-        { "en": "hepat/o", "ipa": "hɪˈpætəʊ", "vi": "gan (gốc)" },
+        { "en": "hepat/o", "ipa": "hɪˈpætoʊ", "ipa_gb": "hɪˈpætəʊ", "vi": "gan (gốc)" },
         { "en": "hepatitis", "ipa": "ˌhepəˈtaɪtɪs", "vi": "viêm gan" },
-        { "en": "hepatomegaly", "ipa": "ˌhepətəʊˈmeɡəli", "vi": "gan to" },
-        { "en": "hepatologist", "ipa": "ˌhepəˈtɒlədʒɪst", "vi": "bác sĩ gan" },
-        { "en": "liver", "ipa": "ˈlɪvə", "vi": "gan" }
+        { "en": "hepatomegaly", "ipa": "ˌhepətoʊˈmeɡəli", "ipa_gb": "ˌhepətəʊˈmeɡəli", "vi": "gan to" },
+        { "en": "hepatologist", "ipa": "ˌhepəˈtɑːlədʒɪst", "ipa_gb": "ˌhepəˈtɒlədʒɪst", "vi": "bác sĩ gan" },
+        { "en": "liver", "ipa": "ˈlɪvɚ", "ipa_gb": "ˈlɪvə", "vi": "gan" }
       ],
       "pq_en": "'Hepatomegaly' means the liver is…",
       "pq_vi": "'Hepatomegaly' nghĩa là gan…",
@@ -131,11 +131,11 @@
         { "en": "Read it in pieces: gastr/o + enter/o + -logy.", "vi": "Đọc theo mảnh: gastr/o + enter/o + -logy.", "gl": {} }
       ],
       "vocab": [
-        { "en": "gastroenterology", "ipa": "ˌɡæstrəʊˌentəˈrɒlədʒi", "vi": "khoa tiêu hóa" },
-        { "en": "gastroenterologist", "ipa": "ˌɡæstrəʊˌentəˈrɒlədʒɪst", "vi": "bác sĩ tiêu hóa" },
+        { "en": "gastroenterology", "ipa": "ˌɡæstroʊˌentəˈrɑːlədʒi", "ipa_gb": "ˌɡæstrəʊˌentəˈrɒlədʒi", "vi": "khoa tiêu hóa" },
+        { "en": "gastroenterologist", "ipa": "ˌɡæstroʊˌentəˈrɑːlədʒɪst", "ipa_gb": "ˌɡæstrəʊˌentəˈrɒlədʒɪst", "vi": "bác sĩ tiêu hóa" },
         { "en": "digestive", "ipa": "daɪˈdʒestɪv", "vi": "tiêu hóa" },
-        { "en": "endoscopy", "ipa": "enˈdɒskəpi", "vi": "nội soi" },
-        { "en": "colonoscopy", "ipa": "ˌkəʊləˈnɒskəpi", "vi": "nội soi đại tràng" }
+        { "en": "endoscopy", "ipa": "enˈdɑːskəpi", "ipa_gb": "enˈdɒskəpi", "vi": "nội soi" },
+        { "en": "colonoscopy", "ipa": "ˌkoʊləˈnɑːskəpi", "ipa_gb": "ˌkəʊləˈnɒskəpi", "vi": "nội soi đại tràng" }
       ],
       "pq_en": "A 'gastroenterologist' specialises in the…",
       "pq_vi": "'Gastroenterologist' chuyên về…",

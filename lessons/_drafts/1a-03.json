@@ -41,14 +41,14 @@
       "phrases": [
         { "en": "-ectomy means surgical removal.", "vi": "-ectomy nghĩa là cắt bỏ (phẫu thuật).", "gl": { "removal": "cắt bỏ" } },
         { "en": "An appendectomy removes the appendix.", "vi": "Appendectomy là cắt ruột thừa.", "gl": { "appendix": "ruột thừa" } },
-        { "en": "The surgeon will perform the removal under anaesthesia.", "vi": "Bác sĩ sẽ thực hiện ca cắt bỏ dưới gây mê.", "gl": { "perform": "thực hiện", "anaesthesia": "gây mê" } }
+        { "en": "The surgeon will perform the removal under anesthesia.", "vi": "Bác sĩ sẽ thực hiện ca cắt bỏ dưới gây mê.", "gl": { "perform": "thực hiện", "anesthesia": "gây mê" } }
       ],
       "vocab": [
         { "en": "-ectomy", "ipa": "ektəmi", "vi": "cắt bỏ (phẫu thuật)" },
         { "en": "appendectomy", "ipa": "ˌæpənˈdektəmi", "vi": "cắt ruột thừa" },
-        { "en": "tonsillectomy", "ipa": "ˌtɒnsɪˈlektəmi", "vi": "cắt amidan" },
-        { "en": "surgeon", "ipa": "ˈsɜːdʒən", "vi": "bác sĩ phẫu thuật" },
-        { "en": "perform", "ipa": "pəˈfɔːm", "vi": "thực hiện" }
+        { "en": "tonsillectomy", "ipa": "ˌtɑːnsɪˈlektəmi", "ipa_gb": "ˌtɒnsɪˈlektəmi", "vi": "cắt amidan" },
+        { "en": "surgeon", "ipa": "ˈsɝːdʒən", "ipa_gb": "ˈsɜːdʒən", "vi": "bác sĩ phẫu thuật" },
+        { "en": "perform", "ipa": "pɚˈfɔːrm", "ipa_gb": "pəˈfɔːm", "vi": "thực hiện" }
       ],
       "pq_en": "A 'gastrectomy' is a procedure that…",
       "pq_vi": "'Gastrectomy' là thủ thuật…",
@@ -73,10 +73,10 @@
         { "en": "A colostomy creates an opening from the colon.", "vi": "Colostomy tạo lỗ thông từ đại tràng.", "gl": { "colon": "đại tràng" } }
       ],
       "vocab": [
-        { "en": "-otomy", "ipa": "ɒtəmi", "vi": "rạch, mở" },
-        { "en": "-ostomy", "ipa": "ɒstəmi", "vi": "tạo lỗ thông" },
-        { "en": "tracheotomy", "ipa": "ˌtreɪkiˈɒtəmi", "vi": "mở khí quản" },
-        { "en": "colostomy", "ipa": "kəˈlɒstəmi", "vi": "mở thông đại tràng" },
+        { "en": "-otomy", "ipa": "ɑːtəmi", "ipa_gb": "ɒtəmi", "vi": "rạch, mở" },
+        { "en": "-ostomy", "ipa": "ɑːstəmi", "ipa_gb": "ɒstəmi", "vi": "tạo lỗ thông" },
+        { "en": "tracheotomy", "ipa": "ˌtreɪkiˈɑːtəmi", "ipa_gb": "ˌtreɪkiˈɒtəmi", "vi": "mở khí quản" },
+        { "en": "colostomy", "ipa": "kəˈlɑːstəmi", "ipa_gb": "kəˈlɒstəmi", "vi": "mở thông đại tràng" },
         { "en": "incision", "ipa": "ɪnˈsɪʒən", "vi": "vết rạch" }
       ],
       "pq_en": "Which suffix means 'make a new lasting opening'?",
@@ -103,10 +103,10 @@
       ],
       "vocab": [
         { "en": "-plasty", "ipa": "plæsti", "vi": "tạo hình (phẫu thuật)" },
-        { "en": "angioplasty", "ipa": "ˈændʒiəʊˌplæsti", "vi": "nong mạch" },
+        { "en": "angioplasty", "ipa": "ˈændʒioʊˌplæsti", "ipa_gb": "ˈændʒiəʊˌplæsti", "vi": "nong mạch" },
         { "en": "vessel", "ipa": "ˈvesəl", "vi": "mạch máu" },
-        { "en": "repair", "ipa": "rɪˈpeə", "vi": "sửa chữa" },
-        { "en": "restore", "ipa": "rɪˈstɔː", "vi": "phục hồi" }
+        { "en": "repair", "ipa": "rɪˈper", "ipa_gb": "rɪˈpeə", "vi": "sửa chữa" },
+        { "en": "restore", "ipa": "rɪˈstɔːr", "ipa_gb": "rɪˈstɔː", "vi": "phục hồi" }
       ],
       "pq_en": "'-plasty' tells you the procedure will…",
       "pq_vi": "'-plasty' cho biết thủ thuật sẽ…",
@@ -133,9 +133,9 @@
       "vocab": [
         { "en": "-scopy", "ipa": "skəpi", "vi": "nội soi" },
         { "en": "-gram", "ipa": "ɡræm", "vi": "bản ghi, hình ảnh" },
-        { "en": "endoscopy", "ipa": "enˈdɒskəpi", "vi": "nội soi" },
-        { "en": "colonoscopy", "ipa": "ˌkəʊləˈnɒskəpi", "vi": "nội soi đại tràng" },
-        { "en": "electrocardiogram", "ipa": "ɪˌlektrəʊˈkɑːdiəɡræm", "vi": "điện tâm đồ" }
+        { "en": "endoscopy", "ipa": "enˈdɑːskəpi", "ipa_gb": "enˈdɒskəpi", "vi": "nội soi" },
+        { "en": "colonoscopy", "ipa": "ˌkoʊləˈnɑːskəpi", "ipa_gb": "ˌkəʊləˈnɒskəpi", "vi": "nội soi đại tràng" },
+        { "en": "electrocardiogram", "ipa": "ɪˌlektroʊˈkɑːrdiəɡræm", "ipa_gb": "ɪˌlektrəʊˈkɑːdiəɡræm", "vi": "điện tâm đồ" }
       ],
       "pq_en": "Your patient needs a picture of the heart's rhythm. Which word fits?",
       "pq_vi": "Bệnh nhân cần bản ghi nhịp tim. Từ nào đúng?",

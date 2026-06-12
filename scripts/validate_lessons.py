@@ -23,10 +23,18 @@ def check_opts(opts, where, bag):
             err(None, f"{where}.opt[{i}] ('{str(o.get('t'))[:24]}'): missing 'gl'", bag)
 
 def check_ipa(vocab, where, bag):
+    # ipa = US (primary). ipa_gb / en_gb = optional GB variants for the accent toggle (D33).
     for i, v in enumerate(vocab or []):
-        ipa = v.get("ipa", "")
-        if "/" in ipa:
-            err(None, f"{where}.vocab[{i}] ('{v.get('en')}'): IPA contains slash", bag)
+        for field in ("ipa", "ipa_gb"):
+            val = v.get(field)
+            if val is None:
+                continue
+            if not isinstance(val, str) or not val.strip():
+                err(None, f"{where}.vocab[{i}] ('{v.get('en')}'): {field} must be a non-empty string", bag)
+            elif "/" in val:
+                err(None, f"{where}.vocab[{i}] ('{v.get('en')}'): {field} contains slash", bag)
+        if "en_gb" in v and (not isinstance(v["en_gb"], str) or not v["en_gb"].strip()):
+            err(None, f"{where}.vocab[{i}] ('{v.get('en')}'): en_gb must be a non-empty string", bag)
 
 def validate(path):
     bag = []
