@@ -56,8 +56,8 @@ def build_clips_from_lesson(lesson_id: str, situations: list, quiz: list) -> lis
     """
     clips = []
 
-    for sit in situations:
-        sid   = sit["id"]                          # 1, 2, 3, 4
+    for sidx, sit in enumerate(situations):
+        sid   = sidx + 1                           # 1-based; matches engine clipPath (S.si+1)
         sec   = f"{lesson_id}_s{sid}"              # seed key
         voice = voice_for(sec)
 
