@@ -175,142 +175,142 @@
     "path": "audio/pb1/pb1_s3_v5.mp3"
   },
   "pb1_s4_pt": {
-    "voice": "en-US-GuyNeural",
+    "voice": "en-CA-LiamNeural",
     "text": "What is this medication for?",
     "path": "audio/pb1/pb1_s4_pt.mp3"
   },
   "pb1_s4_p0": {
-    "voice": "en-US-GuyNeural",
+    "voice": "en-CA-LiamNeural",
     "text": "Let me find the pharmacist for you.",
     "path": "audio/pb1/pb1_s4_p0.mp3"
   },
   "pb1_s4_p1": {
-    "voice": "en-US-GuyNeural",
+    "voice": "en-CA-LiamNeural",
     "text": "I'd suggest asking the doctor directly.",
     "path": "audio/pb1/pb1_s4_p1.mp3"
   },
   "pb1_s4_p2": {
-    "voice": "en-US-GuyNeural",
+    "voice": "en-CA-LiamNeural",
     "text": "Let me check your records.",
     "path": "audio/pb1/pb1_s4_p2.mp3"
   },
   "pb1_s4_p3": {
-    "voice": "en-US-GuyNeural",
+    "voice": "en-CA-LiamNeural",
     "text": "Your appointment is on Monday — let me confirm.",
     "path": "audio/pb1/pb1_s4_p3.mp3"
   },
   "pb1_s4_v0": {
-    "voice": "en-US-GuyNeural",
+    "voice": "en-CA-LiamNeural",
     "text": "prescription",
     "path": "audio/pb1/pb1_s4_v0.mp3"
   },
   "pb1_s4_v1": {
-    "voice": "en-US-GuyNeural",
+    "voice": "en-CA-LiamNeural",
     "text": "dosage",
     "path": "audio/pb1/pb1_s4_v1.mp3"
   },
   "pb1_s4_v2": {
-    "voice": "en-US-GuyNeural",
+    "voice": "en-CA-LiamNeural",
     "text": "pharmacist",
     "path": "audio/pb1/pb1_s4_v2.mp3"
   },
   "pb1_s4_v3": {
-    "voice": "en-US-GuyNeural",
+    "voice": "en-CA-LiamNeural",
     "text": "refill",
     "path": "audio/pb1/pb1_s4_v3.mp3"
   },
   "pb1_s4_v4": {
-    "voice": "en-US-GuyNeural",
+    "voice": "en-CA-LiamNeural",
     "text": "follow-up",
     "path": "audio/pb1/pb1_s4_v4.mp3"
   },
   "pb1_s4_v5": {
-    "voice": "en-US-GuyNeural",
+    "voice": "en-CA-LiamNeural",
     "text": "discharge",
     "path": "audio/pb1/pb1_s4_v5.mp3"
   },
   "pb1_q0": {
-    "voice": "en-CA-LiamNeural",
+    "voice": "en-US-GuyNeural",
     "text": "Patient: \"Where is the elevator?\" — Best response:",
     "path": "audio/pb1/pb1_q0.mp3"
   },
   "pb1_q1": {
-    "voice": "en-CA-LiamNeural",
+    "voice": "en-US-GuyNeural",
     "text": "\"We're running a little behind schedule today\" means:",
     "path": "audio/pb1/pb1_q1.mp3"
   },
   "pb1_q2": {
-    "voice": "en-CA-LiamNeural",
+    "voice": "en-US-GuyNeural",
     "text": "You see a patient in the hallway, looking worried. What should you say first?",
     "path": "audio/pb1/pb1_q2.mp3"
   },
   "pb1_q3": {
-    "voice": "en-CA-LiamNeural",
+    "voice": "en-US-GuyNeural",
     "text": "Patient asks about their appointment but you're not managing their case. What do you say?",
     "path": "audio/pb1/pb1_q3.mp3"
   },
   "pb1_q4": {
-    "voice": "en-CA-LiamNeural",
+    "voice": "en-US-GuyNeural",
     "text": "Which phrase do you use when you physically walk WITH the patient to show them the way?",
     "path": "audio/pb1/pb1_q4.mp3"
   },
   "pb2_s1_pt": {
-    "voice": "en-US-JennyNeural",
+    "voice": "en-CA-LiamNeural",
     "text": "\"Gastritis\" — what does this actually mean?",
     "path": "audio/pb2/pb2_s1_pt.mp3"
   },
   "pb2_s1_p0": {
-    "voice": "en-US-JennyNeural",
+    "voice": "en-CA-LiamNeural",
     "text": "The suffix \"-itis\" means inflammation.",
     "path": "audio/pb2/pb2_s1_p0.mp3"
   },
   "pb2_s1_p1": {
-    "voice": "en-US-JennyNeural",
+    "voice": "en-CA-LiamNeural",
     "text": "Gastritis means inflammation of the stomach.",
     "path": "audio/pb2/pb2_s1_p1.mp3"
   },
   "pb2_s1_p2": {
-    "voice": "en-US-JennyNeural",
+    "voice": "en-CA-LiamNeural",
     "text": "You may have heard of hepatitis — that's inflammation of the liver.",
     "path": "audio/pb2/pb2_s1_p2.mp3"
   },
   "pb2_s1_p3": {
-    "voice": "en-US-JennyNeural",
+    "voice": "en-CA-LiamNeural",
     "text": "Any word ending in \"-itis\" describes a type of inflammation.",
     "path": "audio/pb2/pb2_s1_p3.mp3"
   },
   "pb2_s1_v0": {
-    "voice": "en-US-JennyNeural",
+    "voice": "en-CA-LiamNeural",
     "text": "gastritis",
     "path": "audio/pb2/pb2_s1_v0.mp3"
   },
   "pb2_s1_v1": {
-    "voice": "en-US-JennyNeural",
+    "voice": "en-CA-LiamNeural",
     "text": "appendicitis",
     "path": "audio/pb2/pb2_s1_v1.mp3"
   },
   "pb2_s1_v2": {
-    "voice": "en-US-JennyNeural",
+    "voice": "en-CA-LiamNeural",
     "text": "hepatitis",
     "path": "audio/pb2/pb2_s1_v2.mp3"
   },
   "pb2_s1_v3": {
-    "voice": "en-US-JennyNeural",
+    "voice": "en-CA-LiamNeural",
     "text": "bronchitis",
     "path": "audio/pb2/pb2_s1_v3.mp3"
   },
   "pb2_s1_v4": {
-    "voice": "en-US-JennyNeural",
+    "voice": "en-CA-LiamNeural",
     "text": "arthritis",
     "path": "audio/pb2/pb2_s1_v4.mp3"
   },
   "pb2_s1_v5": {
-    "voice": "en-US-JennyNeural",
+    "voice": "en-CA-LiamNeural",
     "text": "dermatitis",
     "path": "audio/pb2/pb2_s1_v5.mp3"
   },
   "pb2_s1_v6": {
-    "voice": "en-US-JennyNeural",
+    "voice": "en-CA-LiamNeural",
     "text": "tonsillitis",
     "path": "audio/pb2/pb2_s1_v6.mp3"
   },
@@ -375,62 +375,62 @@
     "path": "audio/pb2/pb2_s2_v6.mp3"
   },
   "pb2_s3_pt": {
-    "voice": "en-US-GuyNeural",
+    "voice": "en-CA-LiamNeural",
     "text": "\"Appendectomy\" — can you tell what will happen just from the name?",
     "path": "audio/pb2/pb2_s3_pt.mp3"
   },
   "pb2_s3_p0": {
-    "voice": "en-US-GuyNeural",
+    "voice": "en-CA-LiamNeural",
     "text": "The suffix \"-ectomy\" means surgical removal.",
     "path": "audio/pb2/pb2_s3_p0.mp3"
   },
   "pb2_s3_p1": {
-    "voice": "en-US-GuyNeural",
+    "voice": "en-CA-LiamNeural",
     "text": "An appendectomy is the removal of the appendix.",
     "path": "audio/pb2/pb2_s3_p1.mp3"
   },
   "pb2_s3_p2": {
-    "voice": "en-US-GuyNeural",
+    "voice": "en-CA-LiamNeural",
     "text": "A cholecystectomy removes the gallbladder — \"chole\" = bile, \"cyst\" = sac.",
     "path": "audio/pb2/pb2_s3_p2.mp3"
   },
   "pb2_s3_p3": {
-    "voice": "en-US-GuyNeural",
+    "voice": "en-CA-LiamNeural",
     "text": "Know the root, and you know exactly what is being removed.",
     "path": "audio/pb2/pb2_s3_p3.mp3"
   },
   "pb2_s3_v0": {
-    "voice": "en-US-GuyNeural",
+    "voice": "en-CA-LiamNeural",
     "text": "appendectomy",
     "path": "audio/pb2/pb2_s3_v0.mp3"
   },
   "pb2_s3_v1": {
-    "voice": "en-US-GuyNeural",
+    "voice": "en-CA-LiamNeural",
     "text": "cholecystectomy",
     "path": "audio/pb2/pb2_s3_v1.mp3"
   },
   "pb2_s3_v2": {
-    "voice": "en-US-GuyNeural",
+    "voice": "en-CA-LiamNeural",
     "text": "mastectomy",
     "path": "audio/pb2/pb2_s3_v2.mp3"
   },
   "pb2_s3_v3": {
-    "voice": "en-US-GuyNeural",
+    "voice": "en-CA-LiamNeural",
     "text": "tonsillectomy",
     "path": "audio/pb2/pb2_s3_v3.mp3"
   },
   "pb2_s3_v4": {
-    "voice": "en-US-GuyNeural",
+    "voice": "en-CA-LiamNeural",
     "text": "hysterectomy",
     "path": "audio/pb2/pb2_s3_v4.mp3"
   },
   "pb2_s3_v5": {
-    "voice": "en-US-GuyNeural",
+    "voice": "en-CA-LiamNeural",
     "text": "nephrectomy",
     "path": "audio/pb2/pb2_s3_v5.mp3"
   },
   "pb2_s3_v6": {
-    "voice": "en-US-GuyNeural",
+    "voice": "en-CA-LiamNeural",
     "text": "gastrectomy",
     "path": "audio/pb2/pb2_s3_v6.mp3"
   },
@@ -520,212 +520,212 @@
     "path": "audio/pb2/pb2_q4.mp3"
   },
   "pb3_s1_p0": {
-    "voice": "en-CA-LiamNeural",
+    "voice": "en-US-JennyNeural",
     "text": "Hello, I'm Dr. Minh. I'll be taking care of you today.",
     "path": "audio/pb3/pb3_s1_p0.mp3"
   },
   "pb3_s1_p1": {
-    "voice": "en-CA-LiamNeural",
+    "voice": "en-US-JennyNeural",
     "text": "Good morning — my name is Dr. Lan from the internal medicine department.",
     "path": "audio/pb3/pb3_s1_p1.mp3"
   },
   "pb3_s1_p2": {
-    "voice": "en-CA-LiamNeural",
+    "voice": "en-US-JennyNeural",
     "text": "Hi, I'm Dr. Nam, the resident on duty this morning. Nice to meet you.",
     "path": "audio/pb3/pb3_s1_p2.mp3"
   },
   "pb3_s1_p3": {
-    "voice": "en-CA-LiamNeural",
+    "voice": "en-US-JennyNeural",
     "text": "Please don't worry — I'm Dr. Pham, and I'm here to help.",
     "path": "audio/pb3/pb3_s1_p3.mp3"
   },
   "pb3_s1_v0": {
-    "voice": "en-CA-LiamNeural",
+    "voice": "en-US-JennyNeural",
     "text": "introduction",
     "path": "audio/pb3/pb3_s1_v0.mp3"
   },
   "pb3_s1_v1": {
-    "voice": "en-CA-LiamNeural",
+    "voice": "en-US-JennyNeural",
     "text": "encounter",
     "path": "audio/pb3/pb3_s1_v1.mp3"
   },
   "pb3_s1_v2": {
-    "voice": "en-CA-LiamNeural",
+    "voice": "en-US-JennyNeural",
     "text": "department",
     "path": "audio/pb3/pb3_s1_v2.mp3"
   },
   "pb3_s1_v3": {
-    "voice": "en-CA-LiamNeural",
+    "voice": "en-US-JennyNeural",
     "text": "internal medicine",
     "path": "audio/pb3/pb3_s1_v3.mp3"
   },
   "pb3_s1_v4": {
-    "voice": "en-CA-LiamNeural",
+    "voice": "en-US-JennyNeural",
     "text": "resident",
     "path": "audio/pb3/pb3_s1_v4.mp3"
   },
   "pb3_s1_v5": {
-    "voice": "en-CA-LiamNeural",
+    "voice": "en-US-JennyNeural",
     "text": "on duty",
     "path": "audio/pb3/pb3_s1_v5.mp3"
   },
   "pb3_s2_pt": {
-    "voice": "en-US-GuyNeural",
+    "voice": "en-US-MichelleNeural",
     "text": "Well... I've been having some problems. I'm not really sure where to start.",
     "path": "audio/pb3/pb3_s2_pt.mp3"
   },
   "pb3_s2_p0": {
-    "voice": "en-US-GuyNeural",
+    "voice": "en-US-MichelleNeural",
     "text": "What brings you in today?",
     "path": "audio/pb3/pb3_s2_p0.mp3"
   },
   "pb3_s2_p1": {
-    "voice": "en-US-GuyNeural",
+    "voice": "en-US-MichelleNeural",
     "text": "How can I help you today?",
     "path": "audio/pb3/pb3_s2_p1.mp3"
   },
   "pb3_s2_p2": {
-    "voice": "en-US-GuyNeural",
+    "voice": "en-US-MichelleNeural",
     "text": "Take your time — what's been going on?",
     "path": "audio/pb3/pb3_s2_p2.mp3"
   },
   "pb3_s2_p3": {
-    "voice": "en-US-GuyNeural",
+    "voice": "en-US-MichelleNeural",
     "text": "What seems to be bothering you?",
     "path": "audio/pb3/pb3_s2_p3.mp3"
   },
   "pb3_s2_v0": {
-    "voice": "en-US-GuyNeural",
+    "voice": "en-US-MichelleNeural",
     "text": "chief complaint",
     "path": "audio/pb3/pb3_s2_v0.mp3"
   },
   "pb3_s2_v1": {
-    "voice": "en-US-GuyNeural",
+    "voice": "en-US-MichelleNeural",
     "text": "concern",
     "path": "audio/pb3/pb3_s2_v1.mp3"
   },
   "pb3_s2_v2": {
-    "voice": "en-US-GuyNeural",
+    "voice": "en-US-MichelleNeural",
     "text": "presenting problem",
     "path": "audio/pb3/pb3_s2_v2.mp3"
   },
   "pb3_s2_v3": {
-    "voice": "en-US-GuyNeural",
+    "voice": "en-US-MichelleNeural",
     "text": "open question",
     "path": "audio/pb3/pb3_s2_v3.mp3"
   },
   "pb3_s2_v4": {
-    "voice": "en-US-GuyNeural",
+    "voice": "en-US-MichelleNeural",
     "text": "consult",
     "path": "audio/pb3/pb3_s2_v4.mp3"
   },
   "pb3_s3_pt": {
-    "voice": "en-CA-LiamNeural",
+    "voice": "en-US-MichelleNeural",
     "text": "The pain started about three days ago. It sort of comes and goes... it's hard to describe, really.",
     "path": "audio/pb3/pb3_s3_pt.mp3"
   },
   "pb3_s3_p0": {
-    "voice": "en-CA-LiamNeural",
+    "voice": "en-US-MichelleNeural",
     "text": "Can you tell me more about that?",
     "path": "audio/pb3/pb3_s3_p0.mp3"
   },
   "pb3_s3_p1": {
-    "voice": "en-CA-LiamNeural",
+    "voice": "en-US-MichelleNeural",
     "text": "I see — and where exactly is the pain?",
     "path": "audio/pb3/pb3_s3_p1.mp3"
   },
   "pb3_s3_p2": {
-    "voice": "en-CA-LiamNeural",
+    "voice": "en-US-MichelleNeural",
     "text": "Go on — I'm listening.",
     "path": "audio/pb3/pb3_s3_p2.mp3"
   },
   "pb3_s3_p3": {
-    "voice": "en-CA-LiamNeural",
+    "voice": "en-US-MichelleNeural",
     "text": "When you say 'comes and goes' — how often does that happen?",
     "path": "audio/pb3/pb3_s3_p3.mp3"
   },
   "pb3_s3_v0": {
-    "voice": "en-CA-LiamNeural",
+    "voice": "en-US-MichelleNeural",
     "text": "symptom",
     "path": "audio/pb3/pb3_s3_v0.mp3"
   },
   "pb3_s3_v1": {
-    "voice": "en-CA-LiamNeural",
+    "voice": "en-US-MichelleNeural",
     "text": "onset",
     "path": "audio/pb3/pb3_s3_v1.mp3"
   },
   "pb3_s3_v2": {
-    "voice": "en-CA-LiamNeural",
+    "voice": "en-US-MichelleNeural",
     "text": "intermittent",
     "path": "audio/pb3/pb3_s3_v2.mp3"
   },
   "pb3_s3_v3": {
-    "voice": "en-CA-LiamNeural",
+    "voice": "en-US-MichelleNeural",
     "text": "describe",
     "path": "audio/pb3/pb3_s3_v3.mp3"
   },
   "pb3_s3_v4": {
-    "voice": "en-CA-LiamNeural",
+    "voice": "en-US-MichelleNeural",
     "text": "duration",
     "path": "audio/pb3/pb3_s3_v4.mp3"
   },
   "pb3_s3_v5": {
-    "voice": "en-CA-LiamNeural",
+    "voice": "en-US-MichelleNeural",
     "text": "elaborate",
     "path": "audio/pb3/pb3_s3_v5.mp3"
   },
   "pb3_s4_pt": {
-    "voice": "en-US-MichelleNeural",
+    "voice": "en-CA-LiamNeural",
     "text": "So... what are you going to do now? Is everything okay?",
     "path": "audio/pb3/pb3_s4_pt.mp3"
   },
   "pb3_s4_p0": {
-    "voice": "en-US-MichelleNeural",
+    "voice": "en-CA-LiamNeural",
     "text": "I'm going to examine you now. Is that okay?",
     "path": "audio/pb3/pb3_s4_p0.mp3"
   },
   "pb3_s4_p1": {
-    "voice": "en-US-MichelleNeural",
+    "voice": "en-CA-LiamNeural",
     "text": "First, I'll ask a few more questions, then do a physical exam.",
     "path": "audio/pb3/pb3_s4_p1.mp3"
   },
   "pb3_s4_p2": {
-    "voice": "en-US-MichelleNeural",
+    "voice": "en-CA-LiamNeural",
     "text": "Let's take it one step at a time — I'll check a few things first.",
     "path": "audio/pb3/pb3_s4_p2.mp3"
   },
   "pb3_s4_p3": {
-    "voice": "en-US-MichelleNeural",
+    "voice": "en-CA-LiamNeural",
     "text": "After the exam, we'll talk about what I found and the next steps.",
     "path": "audio/pb3/pb3_s4_p3.mp3"
   },
   "pb3_s4_v0": {
-    "voice": "en-US-MichelleNeural",
+    "voice": "en-CA-LiamNeural",
     "text": "physical examination",
     "path": "audio/pb3/pb3_s4_v0.mp3"
   },
   "pb3_s4_v1": {
-    "voice": "en-US-MichelleNeural",
+    "voice": "en-CA-LiamNeural",
     "text": "examine",
     "path": "audio/pb3/pb3_s4_v1.mp3"
   },
   "pb3_s4_v2": {
-    "voice": "en-US-MichelleNeural",
+    "voice": "en-CA-LiamNeural",
     "text": "assess",
     "path": "audio/pb3/pb3_s4_v2.mp3"
   },
   "pb3_s4_v3": {
-    "voice": "en-US-MichelleNeural",
+    "voice": "en-CA-LiamNeural",
     "text": "next steps",
     "path": "audio/pb3/pb3_s4_v3.mp3"
   },
   "pb3_s4_v4": {
-    "voice": "en-US-MichelleNeural",
+    "voice": "en-CA-LiamNeural",
     "text": "findings",
     "path": "audio/pb3/pb3_s4_v4.mp3"
   },
   "pb3_s4_v5": {
-    "voice": "en-US-MichelleNeural",
+    "voice": "en-CA-LiamNeural",
     "text": "explain",
     "path": "audio/pb3/pb3_s4_v5.mp3"
   },
@@ -755,172 +755,172 @@
     "path": "audio/pb3/pb3_q4.mp3"
   },
   "pb4_s1_pt": {
-    "voice": "en-CA-LiamNeural",
+    "voice": "en-US-GuyNeural",
     "text": "So... what's my blood pressure?",
     "path": "audio/pb4/pb4_s1_pt.mp3"
   },
   "pb4_s1_p0": {
-    "voice": "en-CA-LiamNeural",
+    "voice": "en-US-GuyNeural",
     "text": "Your blood pressure is 120 over 80.",
     "path": "audio/pb4/pb4_s1_p0.mp3"
   },
   "pb4_s1_p1": {
-    "voice": "en-CA-LiamNeural",
+    "voice": "en-US-GuyNeural",
     "text": "That's within the normal range — nothing to worry about.",
     "path": "audio/pb4/pb4_s1_p1.mp3"
   },
   "pb4_s1_p2": {
-    "voice": "en-CA-LiamNeural",
+    "voice": "en-US-GuyNeural",
     "text": "The top number is your systolic pressure, and the bottom is diastolic.",
     "path": "audio/pb4/pb4_s1_p2.mp3"
   },
   "pb4_s1_p3": {
-    "voice": "en-CA-LiamNeural",
+    "voice": "en-US-GuyNeural",
     "text": "Your BP is a little high — I'll check it again in a few minutes.",
     "path": "audio/pb4/pb4_s1_p3.mp3"
   },
   "pb4_s1_v0": {
-    "voice": "en-CA-LiamNeural",
+    "voice": "en-US-GuyNeural",
     "text": "blood pressure",
     "path": "audio/pb4/pb4_s1_v0.mp3"
   },
   "pb4_s1_v1": {
-    "voice": "en-CA-LiamNeural",
+    "voice": "en-US-GuyNeural",
     "text": "systolic",
     "path": "audio/pb4/pb4_s1_v1.mp3"
   },
   "pb4_s1_v2": {
-    "voice": "en-CA-LiamNeural",
+    "voice": "en-US-GuyNeural",
     "text": "diastolic",
     "path": "audio/pb4/pb4_s1_v2.mp3"
   },
   "pb4_s1_v3": {
-    "voice": "en-CA-LiamNeural",
+    "voice": "en-US-GuyNeural",
     "text": "mmHg",
     "path": "audio/pb4/pb4_s1_v3.mp3"
   },
   "pb4_s1_v4": {
-    "voice": "en-CA-LiamNeural",
+    "voice": "en-US-GuyNeural",
     "text": "normal range",
     "path": "audio/pb4/pb4_s1_v4.mp3"
   },
   "pb4_s1_v5": {
-    "voice": "en-CA-LiamNeural",
+    "voice": "en-US-GuyNeural",
     "text": "reading",
     "path": "audio/pb4/pb4_s1_v5.mp3"
   },
   "pb4_s2_pt": {
-    "voice": "en-US-JennyNeural",
+    "voice": "en-US-MichelleNeural",
     "text": "Can you give me a quick update on the vitals?",
     "path": "audio/pb4/pb4_s2_pt.mp3"
   },
   "pb4_s2_p0": {
-    "voice": "en-US-JennyNeural",
+    "voice": "en-US-MichelleNeural",
     "text": "BP is 130 over 85, HR 88 beats per minute.",
     "path": "audio/pb4/pb4_s2_p0.mp3"
   },
   "pb4_s2_p1": {
-    "voice": "en-US-JennyNeural",
+    "voice": "en-US-MichelleNeural",
     "text": "Respiratory rate is 18 breaths per minute, temperature 37.0 degrees Celsius.",
     "path": "audio/pb4/pb4_s2_p1.mp3"
   },
   "pb4_s2_p2": {
-    "voice": "en-US-JennyNeural",
+    "voice": "en-US-MichelleNeural",
     "text": "SpO2 is 97 percent on room air.",
     "path": "audio/pb4/pb4_s2_p2.mp3"
   },
   "pb4_s2_p3": {
-    "voice": "en-US-JennyNeural",
+    "voice": "en-US-MichelleNeural",
     "text": "All vitals are stable — no acute concerns.",
     "path": "audio/pb4/pb4_s2_p3.mp3"
   },
   "pb4_s2_v0": {
-    "voice": "en-US-JennyNeural",
+    "voice": "en-US-MichelleNeural",
     "text": "vital signs",
     "path": "audio/pb4/pb4_s2_v0.mp3"
   },
   "pb4_s2_v1": {
-    "voice": "en-US-JennyNeural",
+    "voice": "en-US-MichelleNeural",
     "text": "heart rate",
     "path": "audio/pb4/pb4_s2_v1.mp3"
   },
   "pb4_s2_v2": {
-    "voice": "en-US-JennyNeural",
+    "voice": "en-US-MichelleNeural",
     "text": "respiratory rate",
     "path": "audio/pb4/pb4_s2_v2.mp3"
   },
   "pb4_s2_v3": {
-    "voice": "en-US-JennyNeural",
+    "voice": "en-US-MichelleNeural",
     "text": "beats per minute",
     "path": "audio/pb4/pb4_s2_v3.mp3"
   },
   "pb4_s2_v4": {
-    "voice": "en-US-JennyNeural",
+    "voice": "en-US-MichelleNeural",
     "text": "breaths per minute",
     "path": "audio/pb4/pb4_s2_v4.mp3"
   },
   "pb4_s2_v5": {
-    "voice": "en-US-JennyNeural",
+    "voice": "en-US-MichelleNeural",
     "text": "stable",
     "path": "audio/pb4/pb4_s2_v5.mp3"
   },
   "pb4_s2_v6": {
-    "voice": "en-US-JennyNeural",
+    "voice": "en-US-MichelleNeural",
     "text": "handover",
     "path": "audio/pb4/pb4_s2_v6.mp3"
   },
   "pb4_s3_pt": {
-    "voice": "en-CA-LiamNeural",
+    "voice": "en-US-JennyNeural",
     "text": "Are those numbers okay? What do they mean?",
     "path": "audio/pb4/pb4_s3_pt.mp3"
   },
   "pb4_s3_p0": {
-    "voice": "en-CA-LiamNeural",
+    "voice": "en-US-JennyNeural",
     "text": "Your oxygen saturation is 98 percent on room air — that's very good.",
     "path": "audio/pb4/pb4_s3_p0.mp3"
   },
   "pb4_s3_p1": {
-    "voice": "en-CA-LiamNeural",
+    "voice": "en-US-JennyNeural",
     "text": "Your temperature is 37.0 degrees Celsius — perfectly normal.",
     "path": "audio/pb4/pb4_s3_p1.mp3"
   },
   "pb4_s3_p2": {
-    "voice": "en-CA-LiamNeural",
+    "voice": "en-US-JennyNeural",
     "text": "SpO2 above 95 percent is what we want to see — yours is fine.",
     "path": "audio/pb4/pb4_s3_p2.mp3"
   },
   "pb4_s3_p3": {
-    "voice": "en-CA-LiamNeural",
+    "voice": "en-US-JennyNeural",
     "text": "The temperature is slightly elevated at 38.1 — I'll keep monitoring.",
     "path": "audio/pb4/pb4_s3_p3.mp3"
   },
   "pb4_s3_v0": {
-    "voice": "en-CA-LiamNeural",
+    "voice": "en-US-JennyNeural",
     "text": "oxygen saturation",
     "path": "audio/pb4/pb4_s3_v0.mp3"
   },
   "pb4_s3_v1": {
-    "voice": "en-CA-LiamNeural",
+    "voice": "en-US-JennyNeural",
     "text": "SpO2",
     "path": "audio/pb4/pb4_s3_v1.mp3"
   },
   "pb4_s3_v2": {
-    "voice": "en-CA-LiamNeural",
+    "voice": "en-US-JennyNeural",
     "text": "temperature",
     "path": "audio/pb4/pb4_s3_v2.mp3"
   },
   "pb4_s3_v3": {
-    "voice": "en-CA-LiamNeural",
+    "voice": "en-US-JennyNeural",
     "text": "degrees Celsius",
     "path": "audio/pb4/pb4_s3_v3.mp3"
   },
   "pb4_s3_v4": {
-    "voice": "en-CA-LiamNeural",
+    "voice": "en-US-JennyNeural",
     "text": "slightly elevated",
     "path": "audio/pb4/pb4_s3_v4.mp3"
   },
   "pb4_s3_v5": {
-    "voice": "en-CA-LiamNeural",
+    "voice": "en-US-JennyNeural",
     "text": "within normal limits",
     "path": "audio/pb4/pb4_s3_v5.mp3"
   },
@@ -980,28 +980,1908 @@
     "path": "audio/pb4/pb4_s4_v5.mp3"
   },
   "pb4_q0": {
-    "voice": "en-US-JennyNeural",
+    "voice": "en-CA-LiamNeural",
     "text": "How do you correctly read '132/84 mmHg' aloud in clinical English?",
     "path": "audio/pb4/pb4_q0.mp3"
   },
   "pb4_q1": {
-    "voice": "en-US-JennyNeural",
+    "voice": "en-CA-LiamNeural",
     "text": "SpO2 is 93% on room air. Which response is most appropriate?",
     "path": "audio/pb4/pb4_q1.mp3"
   },
   "pb4_q2": {
-    "voice": "en-US-JennyNeural",
+    "voice": "en-CA-LiamNeural",
     "text": "A nurse says: 'RR is 22.' What does this mean?",
     "path": "audio/pb4/pb4_q2.mp3"
   },
   "pb4_q3": {
-    "voice": "en-US-JennyNeural",
+    "voice": "en-CA-LiamNeural",
     "text": "Which sentence uses the most appropriate register when explaining a normal temperature to a patient?",
     "path": "audio/pb4/pb4_q3.mp3"
   },
   "pb4_q4": {
-    "voice": "en-US-JennyNeural",
+    "voice": "en-CA-LiamNeural",
     "text": "A patient asks why you keep checking their blood pressure. What is the best explanation?",
     "path": "audio/pb4/pb4_q4.mp3"
+  },
+  "1a-01_s1_p0": {
+    "voice": "en-US-JennyNeural",
+    "text": "The root 'cardi' means heart.",
+    "path": "audio/1a-01/1a-01_s1_p0.mp3"
+  },
+  "1a-01_s1_p1": {
+    "voice": "en-US-JennyNeural",
+    "text": "Every word in this family is about the heart.",
+    "path": "audio/1a-01/1a-01_s1_p1.mp3"
+  },
+  "1a-01_s1_p2": {
+    "voice": "en-US-JennyNeural",
+    "text": "Find the root first, then decode the rest.",
+    "path": "audio/1a-01/1a-01_s1_p2.mp3"
+  },
+  "1a-01_s1_v0": {
+    "voice": "en-US-JennyNeural",
+    "text": "cardi/o",
+    "path": "audio/1a-01/1a-01_s1_v0.mp3"
+  },
+  "1a-01_s1_v1": {
+    "voice": "en-US-JennyNeural",
+    "text": "gastr/o",
+    "path": "audio/1a-01/1a-01_s1_v1.mp3"
+  },
+  "1a-01_s1_v2": {
+    "voice": "en-US-JennyNeural",
+    "text": "hepat/o",
+    "path": "audio/1a-01/1a-01_s1_v2.mp3"
+  },
+  "1a-01_s1_v3": {
+    "voice": "en-US-JennyNeural",
+    "text": "neur/o",
+    "path": "audio/1a-01/1a-01_s1_v3.mp3"
+  },
+  "1a-01_s1_v4": {
+    "voice": "en-US-JennyNeural",
+    "text": "oste/o",
+    "path": "audio/1a-01/1a-01_s1_v4.mp3"
+  },
+  "1a-01_s1_v5": {
+    "voice": "en-US-JennyNeural",
+    "text": "root",
+    "path": "audio/1a-01/1a-01_s1_v5.mp3"
+  },
+  "1a-01_s2_p0": {
+    "voice": "en-US-MichelleNeural",
+    "text": "-logy means 'the study of'.",
+    "path": "audio/1a-01/1a-01_s2_p0.mp3"
+  },
+  "1a-01_s2_p1": {
+    "voice": "en-US-MichelleNeural",
+    "text": "-itis means inflammation.",
+    "path": "audio/1a-01/1a-01_s2_p1.mp3"
+  },
+  "1a-01_s2_p2": {
+    "voice": "en-US-MichelleNeural",
+    "text": "The suffix tells you what is happening to that body part.",
+    "path": "audio/1a-01/1a-01_s2_p2.mp3"
+  },
+  "1a-01_s2_v0": {
+    "voice": "en-US-MichelleNeural",
+    "text": "-logy",
+    "path": "audio/1a-01/1a-01_s2_v0.mp3"
+  },
+  "1a-01_s2_v1": {
+    "voice": "en-US-MichelleNeural",
+    "text": "-logist",
+    "path": "audio/1a-01/1a-01_s2_v1.mp3"
+  },
+  "1a-01_s2_v2": {
+    "voice": "en-US-MichelleNeural",
+    "text": "-itis",
+    "path": "audio/1a-01/1a-01_s2_v2.mp3"
+  },
+  "1a-01_s2_v3": {
+    "voice": "en-US-MichelleNeural",
+    "text": "-ic / -ac",
+    "path": "audio/1a-01/1a-01_s2_v3.mp3"
+  },
+  "1a-01_s2_v4": {
+    "voice": "en-US-MichelleNeural",
+    "text": "suffix",
+    "path": "audio/1a-01/1a-01_s2_v4.mp3"
+  },
+  "1a-01_s3_p0": {
+    "voice": "en-US-GuyNeural",
+    "text": "Use the combining vowel when the suffix starts with a consonant.",
+    "path": "audio/1a-01/1a-01_s3_p0.mp3"
+  },
+  "1a-01_s3_p1": {
+    "voice": "en-US-GuyNeural",
+    "text": "Drop it when the suffix starts with a vowel.",
+    "path": "audio/1a-01/1a-01_s3_p1.mp3"
+  },
+  "1a-01_s3_p2": {
+    "voice": "en-US-GuyNeural",
+    "text": "cardi + o + logy, but cardi + itis.",
+    "path": "audio/1a-01/1a-01_s3_p2.mp3"
+  },
+  "1a-01_s3_v0": {
+    "voice": "en-US-GuyNeural",
+    "text": "combining vowel",
+    "path": "audio/1a-01/1a-01_s3_v0.mp3"
+  },
+  "1a-01_s3_v1": {
+    "voice": "en-US-GuyNeural",
+    "text": "consonant",
+    "path": "audio/1a-01/1a-01_s3_v1.mp3"
+  },
+  "1a-01_s3_v2": {
+    "voice": "en-US-GuyNeural",
+    "text": "vowel",
+    "path": "audio/1a-01/1a-01_s3_v2.mp3"
+  },
+  "1a-01_s3_v3": {
+    "voice": "en-US-GuyNeural",
+    "text": "cardiology",
+    "path": "audio/1a-01/1a-01_s3_v3.mp3"
+  },
+  "1a-01_s3_v4": {
+    "voice": "en-US-GuyNeural",
+    "text": "carditis",
+    "path": "audio/1a-01/1a-01_s3_v4.mp3"
+  },
+  "1a-01_s4_p0": {
+    "voice": "en-US-JennyNeural",
+    "text": "Read the suffix first, then the root.",
+    "path": "audio/1a-01/1a-01_s4_p0.mp3"
+  },
+  "1a-01_s4_p1": {
+    "voice": "en-US-JennyNeural",
+    "text": "Hepatitis means inflammation of the liver.",
+    "path": "audio/1a-01/1a-01_s4_p1.mp3"
+  },
+  "1a-01_s4_p2": {
+    "voice": "en-US-JennyNeural",
+    "text": "A neurologist is a doctor who studies the nervous system.",
+    "path": "audio/1a-01/1a-01_s4_p2.mp3"
+  },
+  "1a-01_s4_v0": {
+    "voice": "en-US-JennyNeural",
+    "text": "hepatitis",
+    "path": "audio/1a-01/1a-01_s4_v0.mp3"
+  },
+  "1a-01_s4_v1": {
+    "voice": "en-US-JennyNeural",
+    "text": "neurology",
+    "path": "audio/1a-01/1a-01_s4_v1.mp3"
+  },
+  "1a-01_s4_v2": {
+    "voice": "en-US-JennyNeural",
+    "text": "gastritis",
+    "path": "audio/1a-01/1a-01_s4_v2.mp3"
+  },
+  "1a-01_s4_v3": {
+    "voice": "en-US-JennyNeural",
+    "text": "osteology",
+    "path": "audio/1a-01/1a-01_s4_v3.mp3"
+  },
+  "1a-01_s4_v4": {
+    "voice": "en-US-JennyNeural",
+    "text": "cardiologist",
+    "path": "audio/1a-01/1a-01_s4_v4.mp3"
+  },
+  "1a-01_q0": {
+    "voice": "en-US-GuyNeural",
+    "text": "Which three pieces build most medical words?",
+    "path": "audio/1a-01/1a-01_q0.mp3"
+  },
+  "1a-01_q1": {
+    "voice": "en-US-GuyNeural",
+    "text": "In 'hepatology', what does the root 'hepat' mean?",
+    "path": "audio/1a-01/1a-01_q1.mp3"
+  },
+  "1a-01_q2": {
+    "voice": "en-US-GuyNeural",
+    "text": "Why is there no 'o' in 'gastritis'?",
+    "path": "audio/1a-01/1a-01_q2.mp3"
+  },
+  "1a-01_q3": {
+    "voice": "en-US-GuyNeural",
+    "text": "A 'neurologist' is…",
+    "path": "audio/1a-01/1a-01_q3.mp3"
+  },
+  "1a-01_q4": {
+    "voice": "en-US-GuyNeural",
+    "text": "Decode a NEW word: 'osteology' means…",
+    "path": "audio/1a-01/1a-01_q4.mp3"
+  },
+  "1a-02_s1_pt": {
+    "voice": "en-US-MichelleNeural",
+    "text": "\"My throat has been burning for two days, doctor.\"",
+    "path": "audio/1a-02/1a-02_s1_pt.mp3"
+  },
+  "1a-02_s1_p0": {
+    "voice": "en-US-MichelleNeural",
+    "text": "The suffix -itis means inflammation.",
+    "path": "audio/1a-02/1a-02_s1_p0.mp3"
+  },
+  "1a-02_s1_p1": {
+    "voice": "en-US-MichelleNeural",
+    "text": "Gastritis is inflammation of the stomach.",
+    "path": "audio/1a-02/1a-02_s1_p1.mp3"
+  },
+  "1a-02_s1_p2": {
+    "voice": "en-US-MichelleNeural",
+    "text": "Inflamed tissue is usually red, hot, swollen and painful.",
+    "path": "audio/1a-02/1a-02_s1_p2.mp3"
+  },
+  "1a-02_s1_v0": {
+    "voice": "en-US-MichelleNeural",
+    "text": "-itis",
+    "path": "audio/1a-02/1a-02_s1_v0.mp3"
+  },
+  "1a-02_s1_v1": {
+    "voice": "en-US-MichelleNeural",
+    "text": "gastritis",
+    "path": "audio/1a-02/1a-02_s1_v1.mp3"
+  },
+  "1a-02_s1_v2": {
+    "voice": "en-US-MichelleNeural",
+    "text": "hepatitis",
+    "path": "audio/1a-02/1a-02_s1_v2.mp3"
+  },
+  "1a-02_s1_v3": {
+    "voice": "en-US-MichelleNeural",
+    "text": "arthritis",
+    "path": "audio/1a-02/1a-02_s1_v3.mp3"
+  },
+  "1a-02_s1_v4": {
+    "voice": "en-US-MichelleNeural",
+    "text": "dermatitis",
+    "path": "audio/1a-02/1a-02_s1_v4.mp3"
+  },
+  "1a-02_s1_v5": {
+    "voice": "en-US-MichelleNeural",
+    "text": "inflammation",
+    "path": "audio/1a-02/1a-02_s1_v5.mp3"
+  },
+  "1a-02_s2_p0": {
+    "voice": "en-US-GuyNeural",
+    "text": "-osis means an abnormal condition.",
+    "path": "audio/1a-02/1a-02_s2_p0.mp3"
+  },
+  "1a-02_s2_p1": {
+    "voice": "en-US-GuyNeural",
+    "text": "It is usually not an inflammation.",
+    "path": "audio/1a-02/1a-02_s2_p1.mp3"
+  },
+  "1a-02_s2_p2": {
+    "voice": "en-US-GuyNeural",
+    "text": "Osteoporosis is a condition of porous, fragile bone.",
+    "path": "audio/1a-02/1a-02_s2_p2.mp3"
+  },
+  "1a-02_s2_v0": {
+    "voice": "en-US-GuyNeural",
+    "text": "-osis",
+    "path": "audio/1a-02/1a-02_s2_v0.mp3"
+  },
+  "1a-02_s2_v1": {
+    "voice": "en-US-GuyNeural",
+    "text": "osteoporosis",
+    "path": "audio/1a-02/1a-02_s2_v1.mp3"
+  },
+  "1a-02_s2_v2": {
+    "voice": "en-US-GuyNeural",
+    "text": "fibrosis",
+    "path": "audio/1a-02/1a-02_s2_v2.mp3"
+  },
+  "1a-02_s2_v3": {
+    "voice": "en-US-GuyNeural",
+    "text": "necrosis",
+    "path": "audio/1a-02/1a-02_s2_v3.mp3"
+  },
+  "1a-02_s2_v4": {
+    "voice": "en-US-GuyNeural",
+    "text": "condition",
+    "path": "audio/1a-02/1a-02_s2_v4.mp3"
+  },
+  "1a-02_s3_pt": {
+    "voice": "en-CA-LiamNeural",
+    "text": "\"The blood test shows you have anemia — that's why you feel tired.\"",
+    "path": "audio/1a-02/1a-02_s3_pt.mp3"
+  },
+  "1a-02_s3_p0": {
+    "voice": "en-CA-LiamNeural",
+    "text": "-emia points to the blood.",
+    "path": "audio/1a-02/1a-02_s3_p0.mp3"
+  },
+  "1a-02_s3_p1": {
+    "voice": "en-CA-LiamNeural",
+    "text": "Anemia means the blood lacks healthy red cells.",
+    "path": "audio/1a-02/1a-02_s3_p1.mp3"
+  },
+  "1a-02_s3_p2": {
+    "voice": "en-CA-LiamNeural",
+    "text": "Notice the prefix: an- means without.",
+    "path": "audio/1a-02/1a-02_s3_p2.mp3"
+  },
+  "1a-02_s3_v0": {
+    "voice": "en-CA-LiamNeural",
+    "text": "-emia",
+    "path": "audio/1a-02/1a-02_s3_v0.mp3"
+  },
+  "1a-02_s3_v1": {
+    "voice": "en-CA-LiamNeural",
+    "text": "anemia",
+    "path": "audio/1a-02/1a-02_s3_v1.mp3"
+  },
+  "1a-02_s3_v2": {
+    "voice": "en-CA-LiamNeural",
+    "text": "leukemia",
+    "path": "audio/1a-02/1a-02_s3_v2.mp3"
+  },
+  "1a-02_s3_v3": {
+    "voice": "en-CA-LiamNeural",
+    "text": "blood test",
+    "path": "audio/1a-02/1a-02_s3_v3.mp3"
+  },
+  "1a-02_s3_v4": {
+    "voice": "en-CA-LiamNeural",
+    "text": "red blood cell",
+    "path": "audio/1a-02/1a-02_s3_v4.mp3"
+  },
+  "1a-02_s4_pt": {
+    "voice": "en-US-JennyNeural",
+    "text": "\"I have this aching pain in my muscles all over, doctor.\"",
+    "path": "audio/1a-02/1a-02_s4_pt.mp3"
+  },
+  "1a-02_s4_p0": {
+    "voice": "en-US-JennyNeural",
+    "text": "-algia means pain.",
+    "path": "audio/1a-02/1a-02_s4_p0.mp3"
+  },
+  "1a-02_s4_p1": {
+    "voice": "en-US-JennyNeural",
+    "text": "Myalgia is muscle pain.",
+    "path": "audio/1a-02/1a-02_s4_p1.mp3"
+  },
+  "1a-02_s4_p2": {
+    "voice": "en-US-JennyNeural",
+    "text": "Hepatomegaly means the liver is enlarged.",
+    "path": "audio/1a-02/1a-02_s4_p2.mp3"
+  },
+  "1a-02_s4_v0": {
+    "voice": "en-US-JennyNeural",
+    "text": "-algia",
+    "path": "audio/1a-02/1a-02_s4_v0.mp3"
+  },
+  "1a-02_s4_v1": {
+    "voice": "en-US-JennyNeural",
+    "text": "myalgia",
+    "path": "audio/1a-02/1a-02_s4_v1.mp3"
+  },
+  "1a-02_s4_v2": {
+    "voice": "en-US-JennyNeural",
+    "text": "neuralgia",
+    "path": "audio/1a-02/1a-02_s4_v2.mp3"
+  },
+  "1a-02_s4_v3": {
+    "voice": "en-US-JennyNeural",
+    "text": "-megaly",
+    "path": "audio/1a-02/1a-02_s4_v3.mp3"
+  },
+  "1a-02_s4_v4": {
+    "voice": "en-US-JennyNeural",
+    "text": "hepatomegaly",
+    "path": "audio/1a-02/1a-02_s4_v4.mp3"
+  },
+  "1a-02_s4_v5": {
+    "voice": "en-US-JennyNeural",
+    "text": "enlargement",
+    "path": "audio/1a-02/1a-02_s4_v5.mp3"
+  },
+  "1a-02_q0": {
+    "voice": "en-US-JennyNeural",
+    "text": "Which suffix means inflammation?",
+    "path": "audio/1a-02/1a-02_q0.mp3"
+  },
+  "1a-02_q1": {
+    "voice": "en-US-JennyNeural",
+    "text": "'Fibrosis' describes…",
+    "path": "audio/1a-02/1a-02_q1.mp3"
+  },
+  "1a-02_q2": {
+    "voice": "en-US-JennyNeural",
+    "text": "A tired patient's test shows 'anemia'. The suffix tells you the problem is in…",
+    "path": "audio/1a-02/1a-02_q2.mp3"
+  },
+  "1a-02_q3": {
+    "voice": "en-US-JennyNeural",
+    "text": "'Neuralgia' means…",
+    "path": "audio/1a-02/1a-02_q3.mp3"
+  },
+  "1a-02_q4": {
+    "voice": "en-US-JennyNeural",
+    "text": "You palpate an enlarged spleen (splen = spleen). The term is…",
+    "path": "audio/1a-02/1a-02_q4.mp3"
+  },
+  "1a-03_s1_p0": {
+    "voice": "en-CA-LiamNeural",
+    "text": "-ectomy means surgical removal.",
+    "path": "audio/1a-03/1a-03_s1_p0.mp3"
+  },
+  "1a-03_s1_p1": {
+    "voice": "en-CA-LiamNeural",
+    "text": "An appendectomy removes the appendix.",
+    "path": "audio/1a-03/1a-03_s1_p1.mp3"
+  },
+  "1a-03_s1_p2": {
+    "voice": "en-CA-LiamNeural",
+    "text": "The surgeon will perform the removal under anesthesia.",
+    "path": "audio/1a-03/1a-03_s1_p2.mp3"
+  },
+  "1a-03_s1_v0": {
+    "voice": "en-CA-LiamNeural",
+    "text": "-ectomy",
+    "path": "audio/1a-03/1a-03_s1_v0.mp3"
+  },
+  "1a-03_s1_v1": {
+    "voice": "en-CA-LiamNeural",
+    "text": "appendectomy",
+    "path": "audio/1a-03/1a-03_s1_v1.mp3"
+  },
+  "1a-03_s1_v2": {
+    "voice": "en-CA-LiamNeural",
+    "text": "tonsillectomy",
+    "path": "audio/1a-03/1a-03_s1_v2.mp3"
+  },
+  "1a-03_s1_v3": {
+    "voice": "en-CA-LiamNeural",
+    "text": "surgeon",
+    "path": "audio/1a-03/1a-03_s1_v3.mp3"
+  },
+  "1a-03_s1_v4": {
+    "voice": "en-CA-LiamNeural",
+    "text": "perform",
+    "path": "audio/1a-03/1a-03_s1_v4.mp3"
+  },
+  "1a-03_s2_p0": {
+    "voice": "en-US-GuyNeural",
+    "text": "-otomy is a cut; -ostomy is a new opening.",
+    "path": "audio/1a-03/1a-03_s2_p0.mp3"
+  },
+  "1a-03_s2_p1": {
+    "voice": "en-US-GuyNeural",
+    "text": "A tracheotomy is an incision into the windpipe.",
+    "path": "audio/1a-03/1a-03_s2_p1.mp3"
+  },
+  "1a-03_s2_p2": {
+    "voice": "en-US-GuyNeural",
+    "text": "A colostomy creates an opening from the colon.",
+    "path": "audio/1a-03/1a-03_s2_p2.mp3"
+  },
+  "1a-03_s2_v0": {
+    "voice": "en-US-GuyNeural",
+    "text": "-otomy",
+    "path": "audio/1a-03/1a-03_s2_v0.mp3"
+  },
+  "1a-03_s2_v1": {
+    "voice": "en-US-GuyNeural",
+    "text": "-ostomy",
+    "path": "audio/1a-03/1a-03_s2_v1.mp3"
+  },
+  "1a-03_s2_v2": {
+    "voice": "en-US-GuyNeural",
+    "text": "tracheotomy",
+    "path": "audio/1a-03/1a-03_s2_v2.mp3"
+  },
+  "1a-03_s2_v3": {
+    "voice": "en-US-GuyNeural",
+    "text": "colostomy",
+    "path": "audio/1a-03/1a-03_s2_v3.mp3"
+  },
+  "1a-03_s2_v4": {
+    "voice": "en-US-GuyNeural",
+    "text": "incision",
+    "path": "audio/1a-03/1a-03_s2_v4.mp3"
+  },
+  "1a-03_s3_p0": {
+    "voice": "en-CA-LiamNeural",
+    "text": "-plasty means surgical repair or reshaping.",
+    "path": "audio/1a-03/1a-03_s3_p0.mp3"
+  },
+  "1a-03_s3_p1": {
+    "voice": "en-CA-LiamNeural",
+    "text": "Angioplasty widens a narrowed vessel.",
+    "path": "audio/1a-03/1a-03_s3_p1.mp3"
+  },
+  "1a-03_s3_p2": {
+    "voice": "en-CA-LiamNeural",
+    "text": "It restores normal blood flow.",
+    "path": "audio/1a-03/1a-03_s3_p2.mp3"
+  },
+  "1a-03_s3_v0": {
+    "voice": "en-CA-LiamNeural",
+    "text": "-plasty",
+    "path": "audio/1a-03/1a-03_s3_v0.mp3"
+  },
+  "1a-03_s3_v1": {
+    "voice": "en-CA-LiamNeural",
+    "text": "angioplasty",
+    "path": "audio/1a-03/1a-03_s3_v1.mp3"
+  },
+  "1a-03_s3_v2": {
+    "voice": "en-CA-LiamNeural",
+    "text": "vessel",
+    "path": "audio/1a-03/1a-03_s3_v2.mp3"
+  },
+  "1a-03_s3_v3": {
+    "voice": "en-CA-LiamNeural",
+    "text": "repair",
+    "path": "audio/1a-03/1a-03_s3_v3.mp3"
+  },
+  "1a-03_s3_v4": {
+    "voice": "en-CA-LiamNeural",
+    "text": "restore",
+    "path": "audio/1a-03/1a-03_s3_v4.mp3"
+  },
+  "1a-03_s4_p0": {
+    "voice": "en-US-GuyNeural",
+    "text": "-scopy means looking inside with a camera.",
+    "path": "audio/1a-03/1a-03_s4_p0.mp3"
+  },
+  "1a-03_s4_p1": {
+    "voice": "en-US-GuyNeural",
+    "text": "-gram is the image or recording you get.",
+    "path": "audio/1a-03/1a-03_s4_p1.mp3"
+  },
+  "1a-03_s4_p2": {
+    "voice": "en-US-GuyNeural",
+    "text": "A colonoscopy examines the colon.",
+    "path": "audio/1a-03/1a-03_s4_p2.mp3"
+  },
+  "1a-03_s4_v0": {
+    "voice": "en-US-GuyNeural",
+    "text": "-scopy",
+    "path": "audio/1a-03/1a-03_s4_v0.mp3"
+  },
+  "1a-03_s4_v1": {
+    "voice": "en-US-GuyNeural",
+    "text": "-gram",
+    "path": "audio/1a-03/1a-03_s4_v1.mp3"
+  },
+  "1a-03_s4_v2": {
+    "voice": "en-US-GuyNeural",
+    "text": "endoscopy",
+    "path": "audio/1a-03/1a-03_s4_v2.mp3"
+  },
+  "1a-03_s4_v3": {
+    "voice": "en-US-GuyNeural",
+    "text": "colonoscopy",
+    "path": "audio/1a-03/1a-03_s4_v3.mp3"
+  },
+  "1a-03_s4_v4": {
+    "voice": "en-US-GuyNeural",
+    "text": "electrocardiogram",
+    "path": "audio/1a-03/1a-03_s4_v4.mp3"
+  },
+  "1a-03_q0": {
+    "voice": "en-US-GuyNeural",
+    "text": "Which suffix means 'surgical removal'?",
+    "path": "audio/1a-03/1a-03_q0.mp3"
+  },
+  "1a-03_q1": {
+    "voice": "en-US-GuyNeural",
+    "text": "A 'tracheotomy' is…",
+    "path": "audio/1a-03/1a-03_q1.mp3"
+  },
+  "1a-03_q2": {
+    "voice": "en-US-GuyNeural",
+    "text": "Which pair is matched correctly?",
+    "path": "audio/1a-03/1a-03_q2.mp3"
+  },
+  "1a-03_q3": {
+    "voice": "en-US-GuyNeural",
+    "text": "'-plasty' tells you the surgeon will…",
+    "path": "audio/1a-03/1a-03_q3.mp3"
+  },
+  "1a-03_q4": {
+    "voice": "en-US-GuyNeural",
+    "text": "Decode a NEW word: 'nephrectomy' means…",
+    "path": "audio/1a-03/1a-03_q4.mp3"
+  },
+  "1a-04_s1_p0": {
+    "voice": "en-US-MichelleNeural",
+    "text": "hyper- means above or excessive.",
+    "path": "audio/1a-04/1a-04_s1_p0.mp3"
+  },
+  "1a-04_s1_p1": {
+    "voice": "en-US-MichelleNeural",
+    "text": "hypo- means below or deficient.",
+    "path": "audio/1a-04/1a-04_s1_p1.mp3"
+  },
+  "1a-04_s1_p2": {
+    "voice": "en-US-MichelleNeural",
+    "text": "Hypertension is high blood pressure.",
+    "path": "audio/1a-04/1a-04_s1_p2.mp3"
+  },
+  "1a-04_s1_v0": {
+    "voice": "en-US-MichelleNeural",
+    "text": "hyper-",
+    "path": "audio/1a-04/1a-04_s1_v0.mp3"
+  },
+  "1a-04_s1_v1": {
+    "voice": "en-US-MichelleNeural",
+    "text": "hypo-",
+    "path": "audio/1a-04/1a-04_s1_v1.mp3"
+  },
+  "1a-04_s1_v2": {
+    "voice": "en-US-MichelleNeural",
+    "text": "hypertension",
+    "path": "audio/1a-04/1a-04_s1_v2.mp3"
+  },
+  "1a-04_s1_v3": {
+    "voice": "en-US-MichelleNeural",
+    "text": "hypotension",
+    "path": "audio/1a-04/1a-04_s1_v3.mp3"
+  },
+  "1a-04_s1_v4": {
+    "voice": "en-US-MichelleNeural",
+    "text": "hyperglycemia",
+    "path": "audio/1a-04/1a-04_s1_v4.mp3"
+  },
+  "1a-04_s2_p0": {
+    "voice": "en-US-JennyNeural",
+    "text": "peri- means around.",
+    "path": "audio/1a-04/1a-04_s2_p0.mp3"
+  },
+  "1a-04_s2_p1": {
+    "voice": "en-US-JennyNeural",
+    "text": "endo- means within or inner.",
+    "path": "audio/1a-04/1a-04_s2_p1.mp3"
+  },
+  "1a-04_s2_p2": {
+    "voice": "en-US-JennyNeural",
+    "text": "The pericardium surrounds the heart.",
+    "path": "audio/1a-04/1a-04_s2_p2.mp3"
+  },
+  "1a-04_s2_v0": {
+    "voice": "en-US-JennyNeural",
+    "text": "peri-",
+    "path": "audio/1a-04/1a-04_s2_v0.mp3"
+  },
+  "1a-04_s2_v1": {
+    "voice": "en-US-JennyNeural",
+    "text": "endo-",
+    "path": "audio/1a-04/1a-04_s2_v1.mp3"
+  },
+  "1a-04_s2_v2": {
+    "voice": "en-US-JennyNeural",
+    "text": "pericardium",
+    "path": "audio/1a-04/1a-04_s2_v2.mp3"
+  },
+  "1a-04_s2_v3": {
+    "voice": "en-US-JennyNeural",
+    "text": "endocardium",
+    "path": "audio/1a-04/1a-04_s2_v3.mp3"
+  },
+  "1a-04_s2_v4": {
+    "voice": "en-US-JennyNeural",
+    "text": "endoscopy",
+    "path": "audio/1a-04/1a-04_s2_v4.mp3"
+  },
+  "1a-04_s3_p0": {
+    "voice": "en-CA-LiamNeural",
+    "text": "epi- means upon or on top of.",
+    "path": "audio/1a-04/1a-04_s3_p0.mp3"
+  },
+  "1a-04_s3_p1": {
+    "voice": "en-CA-LiamNeural",
+    "text": "sub- means under or below.",
+    "path": "audio/1a-04/1a-04_s3_p1.mp3"
+  },
+  "1a-04_s3_p2": {
+    "voice": "en-CA-LiamNeural",
+    "text": "A subcutaneous injection goes under the skin.",
+    "path": "audio/1a-04/1a-04_s3_p2.mp3"
+  },
+  "1a-04_s3_v0": {
+    "voice": "en-CA-LiamNeural",
+    "text": "epi-",
+    "path": "audio/1a-04/1a-04_s3_v0.mp3"
+  },
+  "1a-04_s3_v1": {
+    "voice": "en-CA-LiamNeural",
+    "text": "sub-",
+    "path": "audio/1a-04/1a-04_s3_v1.mp3"
+  },
+  "1a-04_s3_v2": {
+    "voice": "en-CA-LiamNeural",
+    "text": "epidermis",
+    "path": "audio/1a-04/1a-04_s3_v2.mp3"
+  },
+  "1a-04_s3_v3": {
+    "voice": "en-CA-LiamNeural",
+    "text": "subcutaneous",
+    "path": "audio/1a-04/1a-04_s3_v3.mp3"
+  },
+  "1a-04_s3_v4": {
+    "voice": "en-CA-LiamNeural",
+    "text": "injection",
+    "path": "audio/1a-04/1a-04_s3_v4.mp3"
+  },
+  "1a-04_s4_p0": {
+    "voice": "en-US-GuyNeural",
+    "text": "intra- means within.",
+    "path": "audio/1a-04/1a-04_s4_p0.mp3"
+  },
+  "1a-04_s4_p1": {
+    "voice": "en-US-GuyNeural",
+    "text": "inter- means between.",
+    "path": "audio/1a-04/1a-04_s4_p1.mp3"
+  },
+  "1a-04_s4_p2": {
+    "voice": "en-US-GuyNeural",
+    "text": "An intravenous drip goes within a vein.",
+    "path": "audio/1a-04/1a-04_s4_p2.mp3"
+  },
+  "1a-04_s4_v0": {
+    "voice": "en-US-GuyNeural",
+    "text": "intra-",
+    "path": "audio/1a-04/1a-04_s4_v0.mp3"
+  },
+  "1a-04_s4_v1": {
+    "voice": "en-US-GuyNeural",
+    "text": "inter-",
+    "path": "audio/1a-04/1a-04_s4_v1.mp3"
+  },
+  "1a-04_s4_v2": {
+    "voice": "en-US-GuyNeural",
+    "text": "intravenous",
+    "path": "audio/1a-04/1a-04_s4_v2.mp3"
+  },
+  "1a-04_s4_v3": {
+    "voice": "en-US-GuyNeural",
+    "text": "intercostal",
+    "path": "audio/1a-04/1a-04_s4_v3.mp3"
+  },
+  "1a-04_s4_v4": {
+    "voice": "en-US-GuyNeural",
+    "text": "vein",
+    "path": "audio/1a-04/1a-04_s4_v4.mp3"
+  },
+  "1a-04_q0": {
+    "voice": "en-US-GuyNeural",
+    "text": "'hypo-' means…",
+    "path": "audio/1a-04/1a-04_q0.mp3"
+  },
+  "1a-04_q1": {
+    "voice": "en-US-GuyNeural",
+    "text": "The sac AROUND the heart is the…",
+    "path": "audio/1a-04/1a-04_q1.mp3"
+  },
+  "1a-04_q2": {
+    "voice": "en-US-GuyNeural",
+    "text": "A 'subcutaneous' injection goes…",
+    "path": "audio/1a-04/1a-04_q2.mp3"
+  },
+  "1a-04_q3": {
+    "voice": "en-US-GuyNeural",
+    "text": "'Intravenous' means within a…",
+    "path": "audio/1a-04/1a-04_q3.mp3"
+  },
+  "1a-04_q4": {
+    "voice": "en-US-GuyNeural",
+    "text": "Decode: muscles BETWEEN the ribs are…",
+    "path": "audio/1a-04/1a-04_q4.mp3"
+  },
+  "1a-05_s1_p0": {
+    "voice": "en-US-GuyNeural",
+    "text": "tachy- means fast.",
+    "path": "audio/1a-05/1a-05_s1_p0.mp3"
+  },
+  "1a-05_s1_p1": {
+    "voice": "en-US-GuyNeural",
+    "text": "brady- means slow.",
+    "path": "audio/1a-05/1a-05_s1_p1.mp3"
+  },
+  "1a-05_s1_p2": {
+    "voice": "en-US-GuyNeural",
+    "text": "Tachycardia is a rapid heart rate.",
+    "path": "audio/1a-05/1a-05_s1_p2.mp3"
+  },
+  "1a-05_s1_v0": {
+    "voice": "en-US-GuyNeural",
+    "text": "tachy-",
+    "path": "audio/1a-05/1a-05_s1_v0.mp3"
+  },
+  "1a-05_s1_v1": {
+    "voice": "en-US-GuyNeural",
+    "text": "brady-",
+    "path": "audio/1a-05/1a-05_s1_v1.mp3"
+  },
+  "1a-05_s1_v2": {
+    "voice": "en-US-GuyNeural",
+    "text": "tachycardia",
+    "path": "audio/1a-05/1a-05_s1_v2.mp3"
+  },
+  "1a-05_s1_v3": {
+    "voice": "en-US-GuyNeural",
+    "text": "bradycardia",
+    "path": "audio/1a-05/1a-05_s1_v3.mp3"
+  },
+  "1a-05_s1_v4": {
+    "voice": "en-US-GuyNeural",
+    "text": "heart rate",
+    "path": "audio/1a-05/1a-05_s1_v4.mp3"
+  },
+  "1a-05_s2_p0": {
+    "voice": "en-US-GuyNeural",
+    "text": "poly- means many or much.",
+    "path": "audio/1a-05/1a-05_s2_p0.mp3"
+  },
+  "1a-05_s2_p1": {
+    "voice": "en-US-GuyNeural",
+    "text": "Polyuria means passing a lot of urine.",
+    "path": "audio/1a-05/1a-05_s2_p1.mp3"
+  },
+  "1a-05_s2_p2": {
+    "voice": "en-US-GuyNeural",
+    "text": "Polypharmacy is the use of many medicines.",
+    "path": "audio/1a-05/1a-05_s2_p2.mp3"
+  },
+  "1a-05_s2_v0": {
+    "voice": "en-US-GuyNeural",
+    "text": "poly-",
+    "path": "audio/1a-05/1a-05_s2_v0.mp3"
+  },
+  "1a-05_s2_v1": {
+    "voice": "en-US-GuyNeural",
+    "text": "polyuria",
+    "path": "audio/1a-05/1a-05_s2_v1.mp3"
+  },
+  "1a-05_s2_v2": {
+    "voice": "en-US-GuyNeural",
+    "text": "polypharmacy",
+    "path": "audio/1a-05/1a-05_s2_v2.mp3"
+  },
+  "1a-05_s2_v3": {
+    "voice": "en-US-GuyNeural",
+    "text": "urine",
+    "path": "audio/1a-05/1a-05_s2_v3.mp3"
+  },
+  "1a-05_s2_v4": {
+    "voice": "en-US-GuyNeural",
+    "text": "much",
+    "path": "audio/1a-05/1a-05_s2_v4.mp3"
+  },
+  "1a-05_s3_p0": {
+    "voice": "en-US-GuyNeural",
+    "text": "a-/an- means without or absence of.",
+    "path": "audio/1a-05/1a-05_s3_p0.mp3"
+  },
+  "1a-05_s3_p1": {
+    "voice": "en-US-GuyNeural",
+    "text": "Apnea is the absence of breathing.",
+    "path": "audio/1a-05/1a-05_s3_p1.mp3"
+  },
+  "1a-05_s3_p2": {
+    "voice": "en-US-GuyNeural",
+    "text": "Use 'an-' before a vowel.",
+    "path": "audio/1a-05/1a-05_s3_p2.mp3"
+  },
+  "1a-05_s3_v0": {
+    "voice": "en-US-GuyNeural",
+    "text": "a- / an-",
+    "path": "audio/1a-05/1a-05_s3_v0.mp3"
+  },
+  "1a-05_s3_v1": {
+    "voice": "en-US-GuyNeural",
+    "text": "apnea",
+    "path": "audio/1a-05/1a-05_s3_v1.mp3"
+  },
+  "1a-05_s3_v2": {
+    "voice": "en-US-GuyNeural",
+    "text": "anemia",
+    "path": "audio/1a-05/1a-05_s3_v2.mp3"
+  },
+  "1a-05_s3_v3": {
+    "voice": "en-US-GuyNeural",
+    "text": "absence",
+    "path": "audio/1a-05/1a-05_s3_v3.mp3"
+  },
+  "1a-05_s3_v4": {
+    "voice": "en-US-GuyNeural",
+    "text": "without",
+    "path": "audio/1a-05/1a-05_s3_v4.mp3"
+  },
+  "1a-05_s4_p0": {
+    "voice": "en-US-JennyNeural",
+    "text": "anti- means against.",
+    "path": "audio/1a-05/1a-05_s4_p0.mp3"
+  },
+  "1a-05_s4_p1": {
+    "voice": "en-US-JennyNeural",
+    "text": "An antibiotic fights bacteria.",
+    "path": "audio/1a-05/1a-05_s4_p1.mp3"
+  },
+  "1a-05_s4_p2": {
+    "voice": "en-US-JennyNeural",
+    "text": "An antipyretic brings down a fever.",
+    "path": "audio/1a-05/1a-05_s4_p2.mp3"
+  },
+  "1a-05_s4_v0": {
+    "voice": "en-US-JennyNeural",
+    "text": "anti-",
+    "path": "audio/1a-05/1a-05_s4_v0.mp3"
+  },
+  "1a-05_s4_v1": {
+    "voice": "en-US-JennyNeural",
+    "text": "antibiotic",
+    "path": "audio/1a-05/1a-05_s4_v1.mp3"
+  },
+  "1a-05_s4_v2": {
+    "voice": "en-US-JennyNeural",
+    "text": "antipyretic",
+    "path": "audio/1a-05/1a-05_s4_v2.mp3"
+  },
+  "1a-05_s4_v3": {
+    "voice": "en-US-JennyNeural",
+    "text": "bacteria",
+    "path": "audio/1a-05/1a-05_s4_v3.mp3"
+  },
+  "1a-05_s4_v4": {
+    "voice": "en-US-JennyNeural",
+    "text": "fever",
+    "path": "audio/1a-05/1a-05_s4_v4.mp3"
+  },
+  "1a-05_q0": {
+    "voice": "en-US-MichelleNeural",
+    "text": "'tachy-' means…",
+    "path": "audio/1a-05/1a-05_q0.mp3"
+  },
+  "1a-05_q1": {
+    "voice": "en-US-MichelleNeural",
+    "text": "'poly-' means…",
+    "path": "audio/1a-05/1a-05_q1.mp3"
+  },
+  "1a-05_q2": {
+    "voice": "en-US-MichelleNeural",
+    "text": "'Apnea' means…",
+    "path": "audio/1a-05/1a-05_q2.mp3"
+  },
+  "1a-05_q3": {
+    "voice": "en-US-MichelleNeural",
+    "text": "An 'antibiotic' works…",
+    "path": "audio/1a-05/1a-05_q3.mp3"
+  },
+  "1a-05_q4": {
+    "voice": "en-US-MichelleNeural",
+    "text": "Decode: 'bradypnea' means breathing that is…",
+    "path": "audio/1a-05/1a-05_q4.mp3"
+  },
+  "1a-06_s1_p0": {
+    "voice": "en-US-GuyNeural",
+    "text": "Cardiology is the study of the heart.",
+    "path": "audio/1a-06/1a-06_s1_p0.mp3"
+  },
+  "1a-06_s1_p1": {
+    "voice": "en-US-GuyNeural",
+    "text": "Carditis is inflammation of the heart.",
+    "path": "audio/1a-06/1a-06_s1_p1.mp3"
+  },
+  "1a-06_s1_p2": {
+    "voice": "en-US-GuyNeural",
+    "text": "Cardiomegaly is enlargement of the heart.",
+    "path": "audio/1a-06/1a-06_s1_p2.mp3"
+  },
+  "1a-06_s1_v0": {
+    "voice": "en-US-GuyNeural",
+    "text": "cardi/o",
+    "path": "audio/1a-06/1a-06_s1_v0.mp3"
+  },
+  "1a-06_s1_v1": {
+    "voice": "en-US-GuyNeural",
+    "text": "cardiology",
+    "path": "audio/1a-06/1a-06_s1_v1.mp3"
+  },
+  "1a-06_s1_v2": {
+    "voice": "en-US-GuyNeural",
+    "text": "carditis",
+    "path": "audio/1a-06/1a-06_s1_v2.mp3"
+  },
+  "1a-06_s1_v3": {
+    "voice": "en-US-GuyNeural",
+    "text": "cardiomegaly",
+    "path": "audio/1a-06/1a-06_s1_v3.mp3"
+  },
+  "1a-06_s1_v4": {
+    "voice": "en-US-GuyNeural",
+    "text": "cardiologist",
+    "path": "audio/1a-06/1a-06_s1_v4.mp3"
+  },
+  "1a-06_s2_p0": {
+    "voice": "en-US-MichelleNeural",
+    "text": "vas/o and angi/o both mean vessel.",
+    "path": "audio/1a-06/1a-06_s2_p0.mp3"
+  },
+  "1a-06_s2_p1": {
+    "voice": "en-US-MichelleNeural",
+    "text": "Vasodilation widens the vessels.",
+    "path": "audio/1a-06/1a-06_s2_p1.mp3"
+  },
+  "1a-06_s2_p2": {
+    "voice": "en-US-MichelleNeural",
+    "text": "An angiogram is an image of the vessels.",
+    "path": "audio/1a-06/1a-06_s2_p2.mp3"
+  },
+  "1a-06_s2_v0": {
+    "voice": "en-US-MichelleNeural",
+    "text": "vas/o",
+    "path": "audio/1a-06/1a-06_s2_v0.mp3"
+  },
+  "1a-06_s2_v1": {
+    "voice": "en-US-MichelleNeural",
+    "text": "angi/o",
+    "path": "audio/1a-06/1a-06_s2_v1.mp3"
+  },
+  "1a-06_s2_v2": {
+    "voice": "en-US-MichelleNeural",
+    "text": "vasodilation",
+    "path": "audio/1a-06/1a-06_s2_v2.mp3"
+  },
+  "1a-06_s2_v3": {
+    "voice": "en-US-MichelleNeural",
+    "text": "angiogram",
+    "path": "audio/1a-06/1a-06_s2_v3.mp3"
+  },
+  "1a-06_s2_v4": {
+    "voice": "en-US-MichelleNeural",
+    "text": "angioplasty",
+    "path": "audio/1a-06/1a-06_s2_v4.mp3"
+  },
+  "1a-06_s3_p0": {
+    "voice": "en-US-MichelleNeural",
+    "text": "tachy- + cardia = a fast heart rate.",
+    "path": "audio/1a-06/1a-06_s3_p0.mp3"
+  },
+  "1a-06_s3_p1": {
+    "voice": "en-US-MichelleNeural",
+    "text": "brady- + cardia = a slow heart rate.",
+    "path": "audio/1a-06/1a-06_s3_p1.mp3"
+  },
+  "1a-06_s3_p2": {
+    "voice": "en-US-MichelleNeural",
+    "text": "The prefix gives the rate, the root gives the organ.",
+    "path": "audio/1a-06/1a-06_s3_p2.mp3"
+  },
+  "1a-06_s3_v0": {
+    "voice": "en-US-MichelleNeural",
+    "text": "tachycardia",
+    "path": "audio/1a-06/1a-06_s3_v0.mp3"
+  },
+  "1a-06_s3_v1": {
+    "voice": "en-US-MichelleNeural",
+    "text": "bradycardia",
+    "path": "audio/1a-06/1a-06_s3_v1.mp3"
+  },
+  "1a-06_s3_v2": {
+    "voice": "en-US-MichelleNeural",
+    "text": "-cardia",
+    "path": "audio/1a-06/1a-06_s3_v2.mp3"
+  },
+  "1a-06_s3_v3": {
+    "voice": "en-US-MichelleNeural",
+    "text": "rhythm",
+    "path": "audio/1a-06/1a-06_s3_v3.mp3"
+  },
+  "1a-06_s3_v4": {
+    "voice": "en-US-MichelleNeural",
+    "text": "rate",
+    "path": "audio/1a-06/1a-06_s3_v4.mp3"
+  },
+  "1a-06_s4_p0": {
+    "voice": "en-US-GuyNeural",
+    "text": "Cardiovascular means heart and vessels together.",
+    "path": "audio/1a-06/1a-06_s4_p0.mp3"
+  },
+  "1a-06_s4_p1": {
+    "voice": "en-US-GuyNeural",
+    "text": "Myocardial means relating to the heart muscle.",
+    "path": "audio/1a-06/1a-06_s4_p1.mp3"
+  },
+  "1a-06_s4_p2": {
+    "voice": "en-US-GuyNeural",
+    "text": "A myocardial infarction is a heart attack.",
+    "path": "audio/1a-06/1a-06_s4_p2.mp3"
+  },
+  "1a-06_s4_v0": {
+    "voice": "en-US-GuyNeural",
+    "text": "cardiovascular",
+    "path": "audio/1a-06/1a-06_s4_v0.mp3"
+  },
+  "1a-06_s4_v1": {
+    "voice": "en-US-GuyNeural",
+    "text": "myocardial",
+    "path": "audio/1a-06/1a-06_s4_v1.mp3"
+  },
+  "1a-06_s4_v2": {
+    "voice": "en-US-GuyNeural",
+    "text": "infarction",
+    "path": "audio/1a-06/1a-06_s4_v2.mp3"
+  },
+  "1a-06_s4_v3": {
+    "voice": "en-US-GuyNeural",
+    "text": "ischemia",
+    "path": "audio/1a-06/1a-06_s4_v3.mp3"
+  },
+  "1a-06_s4_v4": {
+    "voice": "en-US-GuyNeural",
+    "text": "myocardium",
+    "path": "audio/1a-06/1a-06_s4_v4.mp3"
+  },
+  "1a-06_q0": {
+    "voice": "en-US-GuyNeural",
+    "text": "'Cardiomegaly' means…",
+    "path": "audio/1a-06/1a-06_q0.mp3"
+  },
+  "1a-06_q1": {
+    "voice": "en-US-GuyNeural",
+    "text": "Both 'vas/o' and 'angi/o' mean…",
+    "path": "audio/1a-06/1a-06_q1.mp3"
+  },
+  "1a-06_q2": {
+    "voice": "en-US-GuyNeural",
+    "text": "An 'angiogram' is…",
+    "path": "audio/1a-06/1a-06_q2.mp3"
+  },
+  "1a-06_q3": {
+    "voice": "en-US-GuyNeural",
+    "text": "Build it: a SLOW heart rate is…",
+    "path": "audio/1a-06/1a-06_q3.mp3"
+  },
+  "1a-06_q4": {
+    "voice": "en-US-GuyNeural",
+    "text": "'Myocardial' relates to the heart's…",
+    "path": "audio/1a-06/1a-06_q4.mp3"
+  },
+  "1a-07_s1_p0": {
+    "voice": "en-CA-LiamNeural",
+    "text": "pneum/o and pulmon/o both mean lung.",
+    "path": "audio/1a-07/1a-07_s1_p0.mp3"
+  },
+  "1a-07_s1_p1": {
+    "voice": "en-CA-LiamNeural",
+    "text": "Pneumonia is an infection of the lung.",
+    "path": "audio/1a-07/1a-07_s1_p1.mp3"
+  },
+  "1a-07_s1_p2": {
+    "voice": "en-CA-LiamNeural",
+    "text": "Pulmonary means relating to the lungs.",
+    "path": "audio/1a-07/1a-07_s1_p2.mp3"
+  },
+  "1a-07_s1_v0": {
+    "voice": "en-CA-LiamNeural",
+    "text": "pneum/o",
+    "path": "audio/1a-07/1a-07_s1_v0.mp3"
+  },
+  "1a-07_s1_v1": {
+    "voice": "en-CA-LiamNeural",
+    "text": "pulmon/o",
+    "path": "audio/1a-07/1a-07_s1_v1.mp3"
+  },
+  "1a-07_s1_v2": {
+    "voice": "en-CA-LiamNeural",
+    "text": "pneumonia",
+    "path": "audio/1a-07/1a-07_s1_v2.mp3"
+  },
+  "1a-07_s1_v3": {
+    "voice": "en-CA-LiamNeural",
+    "text": "pulmonary",
+    "path": "audio/1a-07/1a-07_s1_v3.mp3"
+  },
+  "1a-07_s1_v4": {
+    "voice": "en-CA-LiamNeural",
+    "text": "lung",
+    "path": "audio/1a-07/1a-07_s1_v4.mp3"
+  },
+  "1a-07_s2_p0": {
+    "voice": "en-US-GuyNeural",
+    "text": "thorac/o means chest.",
+    "path": "audio/1a-07/1a-07_s2_p0.mp3"
+  },
+  "1a-07_s2_p1": {
+    "voice": "en-US-GuyNeural",
+    "text": "A thoracotomy is an incision into the chest.",
+    "path": "audio/1a-07/1a-07_s2_p1.mp3"
+  },
+  "1a-07_s2_p2": {
+    "voice": "en-US-GuyNeural",
+    "text": "Thoracic surgery operates on the chest.",
+    "path": "audio/1a-07/1a-07_s2_p2.mp3"
+  },
+  "1a-07_s2_v0": {
+    "voice": "en-US-GuyNeural",
+    "text": "thorac/o",
+    "path": "audio/1a-07/1a-07_s2_v0.mp3"
+  },
+  "1a-07_s2_v1": {
+    "voice": "en-US-GuyNeural",
+    "text": "thoracotomy",
+    "path": "audio/1a-07/1a-07_s2_v1.mp3"
+  },
+  "1a-07_s2_v2": {
+    "voice": "en-US-GuyNeural",
+    "text": "thoracic",
+    "path": "audio/1a-07/1a-07_s2_v2.mp3"
+  },
+  "1a-07_s2_v3": {
+    "voice": "en-US-GuyNeural",
+    "text": "pneumothorax",
+    "path": "audio/1a-07/1a-07_s2_v3.mp3"
+  },
+  "1a-07_s2_v4": {
+    "voice": "en-US-GuyNeural",
+    "text": "chest",
+    "path": "audio/1a-07/1a-07_s2_v4.mp3"
+  },
+  "1a-07_s3_p0": {
+    "voice": "en-US-GuyNeural",
+    "text": "-pnea means breathing.",
+    "path": "audio/1a-07/1a-07_s3_p0.mp3"
+  },
+  "1a-07_s3_p1": {
+    "voice": "en-US-GuyNeural",
+    "text": "Dyspnea is difficult or laboured breathing.",
+    "path": "audio/1a-07/1a-07_s3_p1.mp3"
+  },
+  "1a-07_s3_p2": {
+    "voice": "en-US-GuyNeural",
+    "text": "Dyspnea is the medical word for shortness of breath.",
+    "path": "audio/1a-07/1a-07_s3_p2.mp3"
+  },
+  "1a-07_s3_v0": {
+    "voice": "en-US-GuyNeural",
+    "text": "-pnea",
+    "path": "audio/1a-07/1a-07_s3_v0.mp3"
+  },
+  "1a-07_s3_v1": {
+    "voice": "en-US-GuyNeural",
+    "text": "dyspnea",
+    "path": "audio/1a-07/1a-07_s3_v1.mp3"
+  },
+  "1a-07_s3_v2": {
+    "voice": "en-US-GuyNeural",
+    "text": "apnea",
+    "path": "audio/1a-07/1a-07_s3_v2.mp3"
+  },
+  "1a-07_s3_v3": {
+    "voice": "en-US-GuyNeural",
+    "text": "tachypnea",
+    "path": "audio/1a-07/1a-07_s3_v3.mp3"
+  },
+  "1a-07_s3_v4": {
+    "voice": "en-US-GuyNeural",
+    "text": "dys-",
+    "path": "audio/1a-07/1a-07_s3_v4.mp3"
+  },
+  "1a-07_s4_p0": {
+    "voice": "en-CA-LiamNeural",
+    "text": "bronch/o means the airway (bronchus).",
+    "path": "audio/1a-07/1a-07_s4_p0.mp3"
+  },
+  "1a-07_s4_p1": {
+    "voice": "en-CA-LiamNeural",
+    "text": "Bronchitis is inflammation of the airways.",
+    "path": "audio/1a-07/1a-07_s4_p1.mp3"
+  },
+  "1a-07_s4_p2": {
+    "voice": "en-CA-LiamNeural",
+    "text": "A bronchoscopy looks inside the airways.",
+    "path": "audio/1a-07/1a-07_s4_p2.mp3"
+  },
+  "1a-07_s4_v0": {
+    "voice": "en-CA-LiamNeural",
+    "text": "bronch/o",
+    "path": "audio/1a-07/1a-07_s4_v0.mp3"
+  },
+  "1a-07_s4_v1": {
+    "voice": "en-CA-LiamNeural",
+    "text": "bronchitis",
+    "path": "audio/1a-07/1a-07_s4_v1.mp3"
+  },
+  "1a-07_s4_v2": {
+    "voice": "en-CA-LiamNeural",
+    "text": "bronchoscopy",
+    "path": "audio/1a-07/1a-07_s4_v2.mp3"
+  },
+  "1a-07_s4_v3": {
+    "voice": "en-CA-LiamNeural",
+    "text": "respiratory",
+    "path": "audio/1a-07/1a-07_s4_v3.mp3"
+  },
+  "1a-07_s4_v4": {
+    "voice": "en-CA-LiamNeural",
+    "text": "airway",
+    "path": "audio/1a-07/1a-07_s4_v4.mp3"
+  },
+  "1a-07_q0": {
+    "voice": "en-US-GuyNeural",
+    "text": "'Pneumonia' is an infection of the…",
+    "path": "audio/1a-07/1a-07_q0.mp3"
+  },
+  "1a-07_q1": {
+    "voice": "en-US-GuyNeural",
+    "text": "'thorac/o' means…",
+    "path": "audio/1a-07/1a-07_q1.mp3"
+  },
+  "1a-07_q2": {
+    "voice": "en-US-GuyNeural",
+    "text": "'-pnea' means…",
+    "path": "audio/1a-07/1a-07_q2.mp3"
+  },
+  "1a-07_q3": {
+    "voice": "en-US-GuyNeural",
+    "text": "'Dyspnea' means breathing that is…",
+    "path": "audio/1a-07/1a-07_q3.mp3"
+  },
+  "1a-07_q4": {
+    "voice": "en-US-GuyNeural",
+    "text": "Decode: 'bronchoscopy' is…",
+    "path": "audio/1a-07/1a-07_q4.mp3"
+  },
+  "1a-08_s1_p0": {
+    "voice": "en-US-JennyNeural",
+    "text": "gastr/o means stomach.",
+    "path": "audio/1a-08/1a-08_s1_p0.mp3"
+  },
+  "1a-08_s1_p1": {
+    "voice": "en-US-JennyNeural",
+    "text": "Gastritis is inflammation of the stomach.",
+    "path": "audio/1a-08/1a-08_s1_p1.mp3"
+  },
+  "1a-08_s1_p2": {
+    "voice": "en-US-JennyNeural",
+    "text": "A gastroscopy examines the stomach lining.",
+    "path": "audio/1a-08/1a-08_s1_p2.mp3"
+  },
+  "1a-08_s1_v0": {
+    "voice": "en-US-JennyNeural",
+    "text": "gastr/o",
+    "path": "audio/1a-08/1a-08_s1_v0.mp3"
+  },
+  "1a-08_s1_v1": {
+    "voice": "en-US-JennyNeural",
+    "text": "gastritis",
+    "path": "audio/1a-08/1a-08_s1_v1.mp3"
+  },
+  "1a-08_s1_v2": {
+    "voice": "en-US-JennyNeural",
+    "text": "gastroscopy",
+    "path": "audio/1a-08/1a-08_s1_v2.mp3"
+  },
+  "1a-08_s1_v3": {
+    "voice": "en-US-JennyNeural",
+    "text": "gastrectomy",
+    "path": "audio/1a-08/1a-08_s1_v3.mp3"
+  },
+  "1a-08_s1_v4": {
+    "voice": "en-US-JennyNeural",
+    "text": "stomach",
+    "path": "audio/1a-08/1a-08_s1_v4.mp3"
+  },
+  "1a-08_s2_p0": {
+    "voice": "en-US-JennyNeural",
+    "text": "enter/o means intestine.",
+    "path": "audio/1a-08/1a-08_s2_p0.mp3"
+  },
+  "1a-08_s2_p1": {
+    "voice": "en-US-JennyNeural",
+    "text": "Gastroenteritis is inflammation of the stomach and intestine.",
+    "path": "audio/1a-08/1a-08_s2_p1.mp3"
+  },
+  "1a-08_s2_p2": {
+    "voice": "en-US-JennyNeural",
+    "text": "It often causes vomiting and diarrhea.",
+    "path": "audio/1a-08/1a-08_s2_p2.mp3"
+  },
+  "1a-08_s2_v0": {
+    "voice": "en-US-JennyNeural",
+    "text": "enter/o",
+    "path": "audio/1a-08/1a-08_s2_v0.mp3"
+  },
+  "1a-08_s2_v1": {
+    "voice": "en-US-JennyNeural",
+    "text": "enteritis",
+    "path": "audio/1a-08/1a-08_s2_v1.mp3"
+  },
+  "1a-08_s2_v2": {
+    "voice": "en-US-JennyNeural",
+    "text": "gastroenteritis",
+    "path": "audio/1a-08/1a-08_s2_v2.mp3"
+  },
+  "1a-08_s2_v3": {
+    "voice": "en-US-JennyNeural",
+    "text": "intestine",
+    "path": "audio/1a-08/1a-08_s2_v3.mp3"
+  },
+  "1a-08_s2_v4": {
+    "voice": "en-US-JennyNeural",
+    "text": "diarrhea",
+    "path": "audio/1a-08/1a-08_s2_v4.mp3"
+  },
+  "1a-08_s3_p0": {
+    "voice": "en-US-JennyNeural",
+    "text": "hepat/o means liver.",
+    "path": "audio/1a-08/1a-08_s3_p0.mp3"
+  },
+  "1a-08_s3_p1": {
+    "voice": "en-US-JennyNeural",
+    "text": "Hepatitis is inflammation of the liver.",
+    "path": "audio/1a-08/1a-08_s3_p1.mp3"
+  },
+  "1a-08_s3_p2": {
+    "voice": "en-US-JennyNeural",
+    "text": "Hepatomegaly is an enlarged liver.",
+    "path": "audio/1a-08/1a-08_s3_p2.mp3"
+  },
+  "1a-08_s3_v0": {
+    "voice": "en-US-JennyNeural",
+    "text": "hepat/o",
+    "path": "audio/1a-08/1a-08_s3_v0.mp3"
+  },
+  "1a-08_s3_v1": {
+    "voice": "en-US-JennyNeural",
+    "text": "hepatitis",
+    "path": "audio/1a-08/1a-08_s3_v1.mp3"
+  },
+  "1a-08_s3_v2": {
+    "voice": "en-US-JennyNeural",
+    "text": "hepatomegaly",
+    "path": "audio/1a-08/1a-08_s3_v2.mp3"
+  },
+  "1a-08_s3_v3": {
+    "voice": "en-US-JennyNeural",
+    "text": "hepatologist",
+    "path": "audio/1a-08/1a-08_s3_v3.mp3"
+  },
+  "1a-08_s3_v4": {
+    "voice": "en-US-JennyNeural",
+    "text": "liver",
+    "path": "audio/1a-08/1a-08_s3_v4.mp3"
+  },
+  "1a-08_s4_p0": {
+    "voice": "en-US-GuyNeural",
+    "text": "Gastroenterology studies the digestive system.",
+    "path": "audio/1a-08/1a-08_s4_p0.mp3"
+  },
+  "1a-08_s4_p1": {
+    "voice": "en-US-GuyNeural",
+    "text": "A gastroenterologist treats stomach and intestine problems.",
+    "path": "audio/1a-08/1a-08_s4_p1.mp3"
+  },
+  "1a-08_s4_p2": {
+    "voice": "en-US-GuyNeural",
+    "text": "Read it in pieces: gastr/o + enter/o + -logy.",
+    "path": "audio/1a-08/1a-08_s4_p2.mp3"
+  },
+  "1a-08_s4_v0": {
+    "voice": "en-US-GuyNeural",
+    "text": "gastroenterology",
+    "path": "audio/1a-08/1a-08_s4_v0.mp3"
+  },
+  "1a-08_s4_v1": {
+    "voice": "en-US-GuyNeural",
+    "text": "gastroenterologist",
+    "path": "audio/1a-08/1a-08_s4_v1.mp3"
+  },
+  "1a-08_s4_v2": {
+    "voice": "en-US-GuyNeural",
+    "text": "digestive",
+    "path": "audio/1a-08/1a-08_s4_v2.mp3"
+  },
+  "1a-08_s4_v3": {
+    "voice": "en-US-GuyNeural",
+    "text": "endoscopy",
+    "path": "audio/1a-08/1a-08_s4_v3.mp3"
+  },
+  "1a-08_s4_v4": {
+    "voice": "en-US-GuyNeural",
+    "text": "colonoscopy",
+    "path": "audio/1a-08/1a-08_s4_v4.mp3"
+  },
+  "1a-08_q0": {
+    "voice": "en-CA-LiamNeural",
+    "text": "'gastr/o' means…",
+    "path": "audio/1a-08/1a-08_q0.mp3"
+  },
+  "1a-08_q1": {
+    "voice": "en-CA-LiamNeural",
+    "text": "'enter/o' means…",
+    "path": "audio/1a-08/1a-08_q1.mp3"
+  },
+  "1a-08_q2": {
+    "voice": "en-CA-LiamNeural",
+    "text": "'Hepatomegaly' means the liver is…",
+    "path": "audio/1a-08/1a-08_q2.mp3"
+  },
+  "1a-08_q3": {
+    "voice": "en-CA-LiamNeural",
+    "text": "A 'gastroenterologist' treats the…",
+    "path": "audio/1a-08/1a-08_q3.mp3"
+  },
+  "1a-08_q4": {
+    "voice": "en-CA-LiamNeural",
+    "text": "Decode: 'hepatitis' is…",
+    "path": "audio/1a-08/1a-08_q4.mp3"
+  },
+  "1a-09_s1_p0": {
+    "voice": "en-US-JennyNeural",
+    "text": "neur/o means nerve.",
+    "path": "audio/1a-09/1a-09_s1_p0.mp3"
+  },
+  "1a-09_s1_p1": {
+    "voice": "en-US-JennyNeural",
+    "text": "Neuralgia is nerve pain.",
+    "path": "audio/1a-09/1a-09_s1_p1.mp3"
+  },
+  "1a-09_s1_p2": {
+    "voice": "en-US-JennyNeural",
+    "text": "Neuropathy is disease of the nerves.",
+    "path": "audio/1a-09/1a-09_s1_p2.mp3"
+  },
+  "1a-09_s1_v0": {
+    "voice": "en-US-JennyNeural",
+    "text": "neur/o",
+    "path": "audio/1a-09/1a-09_s1_v0.mp3"
+  },
+  "1a-09_s1_v1": {
+    "voice": "en-US-JennyNeural",
+    "text": "neuralgia",
+    "path": "audio/1a-09/1a-09_s1_v1.mp3"
+  },
+  "1a-09_s1_v2": {
+    "voice": "en-US-JennyNeural",
+    "text": "neuropathy",
+    "path": "audio/1a-09/1a-09_s1_v2.mp3"
+  },
+  "1a-09_s1_v3": {
+    "voice": "en-US-JennyNeural",
+    "text": "neurology",
+    "path": "audio/1a-09/1a-09_s1_v3.mp3"
+  },
+  "1a-09_s1_v4": {
+    "voice": "en-US-JennyNeural",
+    "text": "nerve",
+    "path": "audio/1a-09/1a-09_s1_v4.mp3"
+  },
+  "1a-09_s2_p0": {
+    "voice": "en-US-GuyNeural",
+    "text": "my/o means muscle.",
+    "path": "audio/1a-09/1a-09_s2_p0.mp3"
+  },
+  "1a-09_s2_p1": {
+    "voice": "en-US-GuyNeural",
+    "text": "Myalgia is muscle pain.",
+    "path": "audio/1a-09/1a-09_s2_p1.mp3"
+  },
+  "1a-09_s2_p2": {
+    "voice": "en-US-GuyNeural",
+    "text": "You already saw it in 'myocardial' — heart muscle.",
+    "path": "audio/1a-09/1a-09_s2_p2.mp3"
+  },
+  "1a-09_s2_v0": {
+    "voice": "en-US-GuyNeural",
+    "text": "my/o",
+    "path": "audio/1a-09/1a-09_s2_v0.mp3"
+  },
+  "1a-09_s2_v1": {
+    "voice": "en-US-GuyNeural",
+    "text": "myalgia",
+    "path": "audio/1a-09/1a-09_s2_v1.mp3"
+  },
+  "1a-09_s2_v2": {
+    "voice": "en-US-GuyNeural",
+    "text": "myopathy",
+    "path": "audio/1a-09/1a-09_s2_v2.mp3"
+  },
+  "1a-09_s2_v3": {
+    "voice": "en-US-GuyNeural",
+    "text": "myocardium",
+    "path": "audio/1a-09/1a-09_s2_v3.mp3"
+  },
+  "1a-09_s2_v4": {
+    "voice": "en-US-GuyNeural",
+    "text": "muscle",
+    "path": "audio/1a-09/1a-09_s2_v4.mp3"
+  },
+  "1a-09_s3_p0": {
+    "voice": "en-US-MichelleNeural",
+    "text": "oste/o means bone; arthr/o means joint.",
+    "path": "audio/1a-09/1a-09_s3_p0.mp3"
+  },
+  "1a-09_s3_p1": {
+    "voice": "en-US-MichelleNeural",
+    "text": "Arthritis is inflammation of a joint.",
+    "path": "audio/1a-09/1a-09_s3_p1.mp3"
+  },
+  "1a-09_s3_p2": {
+    "voice": "en-US-MichelleNeural",
+    "text": "Osteoporosis is an abnormal thinning of bone.",
+    "path": "audio/1a-09/1a-09_s3_p2.mp3"
+  },
+  "1a-09_s3_v0": {
+    "voice": "en-US-MichelleNeural",
+    "text": "oste/o",
+    "path": "audio/1a-09/1a-09_s3_v0.mp3"
+  },
+  "1a-09_s3_v1": {
+    "voice": "en-US-MichelleNeural",
+    "text": "arthr/o",
+    "path": "audio/1a-09/1a-09_s3_v1.mp3"
+  },
+  "1a-09_s3_v2": {
+    "voice": "en-US-MichelleNeural",
+    "text": "osteoporosis",
+    "path": "audio/1a-09/1a-09_s3_v2.mp3"
+  },
+  "1a-09_s3_v3": {
+    "voice": "en-US-MichelleNeural",
+    "text": "arthritis",
+    "path": "audio/1a-09/1a-09_s3_v3.mp3"
+  },
+  "1a-09_s3_v4": {
+    "voice": "en-US-MichelleNeural",
+    "text": "arthroscopy",
+    "path": "audio/1a-09/1a-09_s3_v4.mp3"
+  },
+  "1a-09_s4_p0": {
+    "voice": "en-US-JennyNeural",
+    "text": "An arthroscopy looks inside a joint with a camera.",
+    "path": "audio/1a-09/1a-09_s4_p0.mp3"
+  },
+  "1a-09_s4_p1": {
+    "voice": "en-US-JennyNeural",
+    "text": "Osteoarthritis is wear of bone and joint.",
+    "path": "audio/1a-09/1a-09_s4_p1.mp3"
+  },
+  "1a-09_s4_p2": {
+    "voice": "en-US-JennyNeural",
+    "text": "Read suffix first: -scopy = look, then arthr/o = joint.",
+    "path": "audio/1a-09/1a-09_s4_p2.mp3"
+  },
+  "1a-09_s4_v0": {
+    "voice": "en-US-JennyNeural",
+    "text": "arthroscopy",
+    "path": "audio/1a-09/1a-09_s4_v0.mp3"
+  },
+  "1a-09_s4_v1": {
+    "voice": "en-US-JennyNeural",
+    "text": "osteoarthritis",
+    "path": "audio/1a-09/1a-09_s4_v1.mp3"
+  },
+  "1a-09_s4_v2": {
+    "voice": "en-US-JennyNeural",
+    "text": "osteology",
+    "path": "audio/1a-09/1a-09_s4_v2.mp3"
+  },
+  "1a-09_s4_v3": {
+    "voice": "en-US-JennyNeural",
+    "text": "orthopedic",
+    "path": "audio/1a-09/1a-09_s4_v3.mp3"
+  },
+  "1a-09_s4_v4": {
+    "voice": "en-US-JennyNeural",
+    "text": "joint",
+    "path": "audio/1a-09/1a-09_s4_v4.mp3"
+  },
+  "1a-09_q0": {
+    "voice": "en-CA-LiamNeural",
+    "text": "'neur/o' means…",
+    "path": "audio/1a-09/1a-09_q0.mp3"
+  },
+  "1a-09_q1": {
+    "voice": "en-CA-LiamNeural",
+    "text": "'Myalgia' means…",
+    "path": "audio/1a-09/1a-09_q1.mp3"
+  },
+  "1a-09_q2": {
+    "voice": "en-CA-LiamNeural",
+    "text": "'Arthritis' is inflammation of a…",
+    "path": "audio/1a-09/1a-09_q2.mp3"
+  },
+  "1a-09_q3": {
+    "voice": "en-CA-LiamNeural",
+    "text": "'oste/o' means…",
+    "path": "audio/1a-09/1a-09_q3.mp3"
+  },
+  "1a-09_q4": {
+    "voice": "en-CA-LiamNeural",
+    "text": "Decode: 'arthroscopy' is…",
+    "path": "audio/1a-09/1a-09_q4.mp3"
+  },
+  "1a-10_s1_p0": {
+    "voice": "en-CA-LiamNeural",
+    "text": "anterior means front.",
+    "path": "audio/1a-10/1a-10_s1_p0.mp3"
+  },
+  "1a-10_s1_p1": {
+    "voice": "en-CA-LiamNeural",
+    "text": "posterior means back.",
+    "path": "audio/1a-10/1a-10_s1_p1.mp3"
+  },
+  "1a-10_s1_p2": {
+    "voice": "en-CA-LiamNeural",
+    "text": "The posterior chest is the back of the chest.",
+    "path": "audio/1a-10/1a-10_s1_p2.mp3"
+  },
+  "1a-10_s1_v0": {
+    "voice": "en-CA-LiamNeural",
+    "text": "anterior",
+    "path": "audio/1a-10/1a-10_s1_v0.mp3"
+  },
+  "1a-10_s1_v1": {
+    "voice": "en-CA-LiamNeural",
+    "text": "posterior",
+    "path": "audio/1a-10/1a-10_s1_v1.mp3"
+  },
+  "1a-10_s1_v2": {
+    "voice": "en-CA-LiamNeural",
+    "text": "ventral",
+    "path": "audio/1a-10/1a-10_s1_v2.mp3"
+  },
+  "1a-10_s1_v3": {
+    "voice": "en-CA-LiamNeural",
+    "text": "dorsal",
+    "path": "audio/1a-10/1a-10_s1_v3.mp3"
+  },
+  "1a-10_s1_v4": {
+    "voice": "en-CA-LiamNeural",
+    "text": "front",
+    "path": "audio/1a-10/1a-10_s1_v4.mp3"
+  },
+  "1a-10_s2_p0": {
+    "voice": "en-CA-LiamNeural",
+    "text": "superior means upper / above.",
+    "path": "audio/1a-10/1a-10_s2_p0.mp3"
+  },
+  "1a-10_s2_p1": {
+    "voice": "en-CA-LiamNeural",
+    "text": "inferior means lower / below.",
+    "path": "audio/1a-10/1a-10_s2_p1.mp3"
+  },
+  "1a-10_s2_p2": {
+    "voice": "en-CA-LiamNeural",
+    "text": "The heart is superior to the stomach.",
+    "path": "audio/1a-10/1a-10_s2_p2.mp3"
+  },
+  "1a-10_s2_v0": {
+    "voice": "en-CA-LiamNeural",
+    "text": "superior",
+    "path": "audio/1a-10/1a-10_s2_v0.mp3"
+  },
+  "1a-10_s2_v1": {
+    "voice": "en-CA-LiamNeural",
+    "text": "inferior",
+    "path": "audio/1a-10/1a-10_s2_v1.mp3"
+  },
+  "1a-10_s2_v2": {
+    "voice": "en-CA-LiamNeural",
+    "text": "superior border",
+    "path": "audio/1a-10/1a-10_s2_v2.mp3"
+  },
+  "1a-10_s2_v3": {
+    "voice": "en-CA-LiamNeural",
+    "text": "inferior border",
+    "path": "audio/1a-10/1a-10_s2_v3.mp3"
+  },
+  "1a-10_s2_v4": {
+    "voice": "en-CA-LiamNeural",
+    "text": "border",
+    "path": "audio/1a-10/1a-10_s2_v4.mp3"
+  },
+  "1a-10_s3_p0": {
+    "voice": "en-US-JennyNeural",
+    "text": "medial = toward the middle; lateral = toward the side.",
+    "path": "audio/1a-10/1a-10_s3_p0.mp3"
+  },
+  "1a-10_s3_p1": {
+    "voice": "en-US-JennyNeural",
+    "text": "proximal = nearer the body; distal = farther from it.",
+    "path": "audio/1a-10/1a-10_s3_p1.mp3"
+  },
+  "1a-10_s3_p2": {
+    "voice": "en-US-JennyNeural",
+    "text": "The fingers are distal to the wrist.",
+    "path": "audio/1a-10/1a-10_s3_p2.mp3"
+  },
+  "1a-10_s3_v0": {
+    "voice": "en-US-JennyNeural",
+    "text": "medial",
+    "path": "audio/1a-10/1a-10_s3_v0.mp3"
+  },
+  "1a-10_s3_v1": {
+    "voice": "en-US-JennyNeural",
+    "text": "lateral",
+    "path": "audio/1a-10/1a-10_s3_v1.mp3"
+  },
+  "1a-10_s3_v2": {
+    "voice": "en-US-JennyNeural",
+    "text": "proximal",
+    "path": "audio/1a-10/1a-10_s3_v2.mp3"
+  },
+  "1a-10_s3_v3": {
+    "voice": "en-US-JennyNeural",
+    "text": "distal",
+    "path": "audio/1a-10/1a-10_s3_v3.mp3"
+  },
+  "1a-10_s3_v4": {
+    "voice": "en-US-JennyNeural",
+    "text": "midline",
+    "path": "audio/1a-10/1a-10_s3_v4.mp3"
+  },
+  "1a-10_s4_p0": {
+    "voice": "en-US-MichelleNeural",
+    "text": "peri- (around) + cardi (heart) + -itis (inflammation).",
+    "path": "audio/1a-10/1a-10_s4_p0.mp3"
+  },
+  "1a-10_s4_p1": {
+    "voice": "en-US-MichelleNeural",
+    "text": "Pericarditis is inflammation of the sac around the heart.",
+    "path": "audio/1a-10/1a-10_s4_p1.mp3"
+  },
+  "1a-10_s4_p2": {
+    "voice": "en-US-MichelleNeural",
+    "text": "Three pieces, one precise diagnosis.",
+    "path": "audio/1a-10/1a-10_s4_p2.mp3"
+  },
+  "1a-10_s4_v0": {
+    "voice": "en-US-MichelleNeural",
+    "text": "pericarditis",
+    "path": "audio/1a-10/1a-10_s4_v0.mp3"
+  },
+  "1a-10_s4_v1": {
+    "voice": "en-US-MichelleNeural",
+    "text": "hypothermia",
+    "path": "audio/1a-10/1a-10_s4_v1.mp3"
+  },
+  "1a-10_s4_v2": {
+    "voice": "en-US-MichelleNeural",
+    "text": "osteoarthritis",
+    "path": "audio/1a-10/1a-10_s4_v2.mp3"
+  },
+  "1a-10_s4_v3": {
+    "voice": "en-US-MichelleNeural",
+    "text": "tachypnea",
+    "path": "audio/1a-10/1a-10_s4_v3.mp3"
+  },
+  "1a-10_s4_v4": {
+    "voice": "en-US-MichelleNeural",
+    "text": "diagnosis",
+    "path": "audio/1a-10/1a-10_s4_v4.mp3"
+  },
+  "1a-10_q0": {
+    "voice": "en-US-JennyNeural",
+    "text": "'anterior' means…",
+    "path": "audio/1a-10/1a-10_q0.mp3"
+  },
+  "1a-10_q1": {
+    "voice": "en-US-JennyNeural",
+    "text": "The wrist is ______ to the elbow.",
+    "path": "audio/1a-10/1a-10_q1.mp3"
+  },
+  "1a-10_q2": {
+    "voice": "en-US-JennyNeural",
+    "text": "'medial' means toward the…",
+    "path": "audio/1a-10/1a-10_q2.mp3"
+  },
+  "1a-10_q3": {
+    "voice": "en-US-JennyNeural",
+    "text": "Review: 'pericarditis' is…",
+    "path": "audio/1a-10/1a-10_q3.mp3"
+  },
+  "1a-10_q4": {
+    "voice": "en-US-JennyNeural",
+    "text": "Review: which word means 'slow breathing'?",
+    "path": "audio/1a-10/1a-10_q4.mp3"
   }
 }
