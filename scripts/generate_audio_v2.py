@@ -134,7 +134,7 @@ def rebuild_index(lesson_files: list):
             "tier":       "free" if d.get("config", {}).get("next", {}).get("free", True) else "paid"
         })
     index_path = os.path.join(
-        os.path.dirname(os.path.abspath(__file__)), "lessons", "index.json"
+        os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "lessons", "index.json"
     )
     with open(index_path, "w", encoding="utf-8") as f:
         json.dump(index, f, ensure_ascii=False, indent=2)
@@ -225,13 +225,17 @@ def main():
         print("  Mode: CI (non-interactive, skip-existing)")
     print("=" * 60)
 
-    # Auto-discover lesson files — no script changes needed for new lessons
+    # Auto-discover lesson files — repo-root lessons/ (this script lives in scripts/).
+    # PB stages sort before numbered stages; index.json/roadmap.json are not lessons.
     script_dir   = os.path.dirname(os.path.abspath(__file__))
-    lesson_dir   = os.path.join(script_dir, "lessons")
-    lesson_files = sorted([
-        f for f in _glob.glob(os.path.join(lesson_dir, "*.json"))
-        if os.path.basename(f) != "index.json"
-    ])
+    repo_root    = os.path.dirname(script_dir)
+    lesson_dir   = os.path.join(repo_root, "lessons")
+    _SKIP        = {"index.json", "roadmap.json"}
+    lesson_files = sorted(
+        (f for f in _glob.glob(os.path.join(lesson_dir, "*.json"))
+         if os.path.basename(f) not in _SKIP),
+        key=lambda f: (0 if os.path.basename(f).startswith("pb") else 1, os.path.basename(f))
+    )
 
     if not lesson_files:
         print("\n❌  No lesson JSON files found in lessons/")
