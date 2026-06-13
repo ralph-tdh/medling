@@ -19,9 +19,11 @@
   ✓ landing (`index.html`) · ✓ Supabase code + soft gate (`supabase/`, mocked until Gate 5)
 - **3 · Distribution** — Phase 3, untouched
 
-## Ship state (Gate 5 — Ralph)
-Built + committed locally on `master`. Not yet on GitHub. Runbook: `docs/DEPLOY.md`
-(create repo `medling` public → push → Pages → optional Supabase). Drafts ship after Gate 2.
+## Ship state — LIVE (2026-06-13)
+Public repo `github.com/ralph-tdh/medling`, branch `main`, live at https://ralph-tdh.github.io/medling/
+(Pages from main /root). Gate 2 ✅ (10× 1A signed → `lessons/`) · Gate 5 ✅ (pushed + Pages) ·
+audio CI fixed → 376 1A clips live. Local `main` is behind remote by CI commit `f1a4525` — `git pull` first.
+Optional next: Supabase project (`docs/DEPLOY.md` §D) · Cloudflare cutover · 1B→3A authoring.
 
 ## Where things live
 
