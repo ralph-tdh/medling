@@ -29,11 +29,13 @@ Optional next: Supabase project (`docs/DEPLOY.md` §D) · Cloudflare cutover · 
 
 | What | Where |
 |---|---|
+| **Full handoff (self-contained, read to resume)** | `docs/governance/PROJECT_HANDOFF.md` |
 | Build rules & gates | `CLAUDE.md` |
 | Design spec (approved) | `docs/specs/2026-06-11-medling-official-design.md` |
 | Decisions | `docs/governance/decision_log.md` |
-| Session handoff | `docs/governance/handoff.md` |
-| Wave reports | `docs/reports/` |
+| Session handoff (terse) | `docs/governance/handoff.md` |
+| Wave + ship reports | `docs/reports/` |
+| Learner outreach copy | `docs/outreach/` |
 | Agent roster | `.claude/agents/` |
 | Skills | `.claude/skills/` |
 | Strategy docs (full) | Drive folder "MedLing Strategy 2026" |
