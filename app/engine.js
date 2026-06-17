@@ -22,6 +22,12 @@ var CFG   = L.config || {};
 var WEL   = L.welcome || {};
 var DONE  = L.done || {};
 
+/* ── ANALYTICS (no-op until app/engine/analytics.js loads + a sink is set) ── */
+function track(ev, props) {
+  try { if (window.MedLing && window.MedLing.analytics) window.MedLing.analytics.track(ev, props || {}); }
+  catch (e) {}
+}
+
 /* ── CONSTANTS ────────────────────────────────────────────── */
 /* Atelier lanes (D28): moss - olive - terracotta - ochre */
 var TH = [
@@ -69,6 +75,7 @@ function clipPath(type, a, b) {
 
 /* speakWith: try pre-generated MP3, fall back to TTS. */
 function speakWith(text, clip) {
+  track('audio_play', { source: clip ? 'mp3' : 'tts' });
   if (_currentAudio) { _currentAudio.pause(); _currentAudio = null; }
   window.speechSynthesis && window.speechSynthesis.cancel();
   if (clip) {
@@ -121,6 +128,7 @@ function vEn(v)  { return (_accent === 'gb' && v.en_gb)  ? v.en_gb  : v.en;  }
 function toggleAccent() {
   _accent = _accent === 'gb' ? 'us' : 'gb';
   try { localStorage.setItem('medling.accent', _accent); } catch (e) {}
+  track('accent_toggle', { accent: _accent });
   renderApp();
 }
 function accentPillHTML() {
@@ -287,6 +295,7 @@ function renderWelcome() {
 function startLesson() {
   S.si = 0; S.phase = 'learn'; S.pqSel = null;
   S.sOpts = shuffle(SITS[0].opts);
+  track('lesson_start', { sits: SITS.length });
   goTo('sit');
 }
 
@@ -445,7 +454,7 @@ function renderSit() {
 
 function goToPractice() { S.phase='practice'; renderApp(); window.scrollTo(0,0); }
 function backToLearn()  { S.phase='learn'; S.pqSel=null; renderApp(); window.scrollTo(0,0); }
-function pqPick(i)      { if (S.pqSel!==null) return; S.pqSel=i; renderApp(); }
+function pqPick(i)      { if (S.pqSel!==null) return; S.pqSel=i; track('practice_answer', { si: S.si, correct: !!(S.sOpts[i] && S.sOpts[i].ok) }); renderApp(); }
 
 function nextSit() {
   if (S.si < SITS.length-1) {
@@ -496,6 +505,7 @@ function renderDialogueScreen() {
 function initQuiz() {
   S.allOpts = QZS.map(function(q){ return shuffle(q.opts); });
   S.qi=0; S.qSel=null; S.qDone=false; S.qScore=0;
+  track('quiz_start', { questions: QZS.length });
   goTo('quiz');
 }
 
@@ -567,6 +577,7 @@ function qPick(i) {
   if (S.qDone) return;
   S.qSel=i; S.qDone=true;
   if (S.allOpts[S.qi][i].ok) S.qScore++;
+  track('quiz_answer', { qi: S.qi, correct: !!(S.allOpts[S.qi][i] && S.allOpts[S.qi][i].ok) });
   renderApp();
 }
 
@@ -575,6 +586,7 @@ function nextQ() {
     S.qi++; S.qSel=null; S.qDone=false;
     renderApp(); window.scrollTo(0,0);
   } else {
+    track('lesson_complete', { score: S.qScore, total: QZS.length });
     goTo('done');
   }
 }
@@ -694,6 +706,7 @@ function buildAllVocab() {
 function initFlashcard() {
   S.fcDeck = shuffle(buildAllVocab());
   S.fcKnown = 0; S.fcFlipped = false;
+  track('flashcard_start', { cards: S.fcDeck.length });
   goTo('flashcard');
 }
 
@@ -803,6 +816,7 @@ function initRevQuiz() {
   S.rqItems    = buildRevisionQuiz(revisionQuizCount());
   S.rqAllOpts  = S.rqItems.map(function(q){ return q.opts; });
   S.rqIdx = 0; S.rqSel = null; S.rqDone = false; S.rqScore = 0;
+  track('revquiz_start', { questions: S.rqItems.length });
   goTo('revquiz');
 }
 

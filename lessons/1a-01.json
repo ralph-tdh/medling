@@ -171,15 +171,15 @@
       },
       {
         "id": "t2",
-        "prompt_en": "The patient relaxes and asks: 'So it's not surgery?' You say:",
-        "prompt_vi": "Bệnh nhân nhẹ nhõm, hỏi: 'Vậy không phải mổ hả bác sĩ?' Bạn nói:",
+        "prompt_en": "The patient asks: 'So it's not surgery?' The honest answer is:",
+        "prompt_vi": "Bệnh nhân hỏi: 'Vậy không phải mổ hả bác sĩ?' Câu trả lời trung thực là:",
         "choices": [
-          { "t": "No — '-logist' means a specialist who examines and advises, not surgery.", "ok": true,
-            "feedback_en": "You used the suffix itself to reassure — excellent use of word-building.",
-            "feedback_vi": "Bạn dùng chính hậu tố để trấn an — vận dụng ráp từ rất tốt.", "next": "end" },
+          { "t": "'-logist' tells you it's a specialist in that area — what they'll actually do, they'll discuss with you.", "ok": true,
+            "feedback_en": "Good — the suffix names the kind of doctor, but it doesn't tell you whether there'll be a procedure. You didn't over-promise.",
+            "feedback_vi": "Tốt — hậu tố cho biết loại bác sĩ, nhưng không cho biết có thủ thuật hay không. Bạn không hứa quá lời.", "next": "end" },
           { "t": "Maybe. We will see.", "ok": false,
-            "feedback_en": "Vague answers increase anxiety. The suffix gives you a precise, reassuring answer.",
-            "feedback_vi": "Trả lời mơ hồ làm tăng lo lắng. Hậu tố cho bạn câu trả lời chính xác để trấn an.", "next": "end" }
+            "feedback_en": "Too vague — explain what '-logist' means (a specialist), but don't guess about surgery either way.",
+            "feedback_vi": "Quá mơ hồ — hãy giải nghĩa '-logist' (bác sĩ chuyên khoa), nhưng cũng đừng đoán về chuyện mổ xẻ.", "next": "end" }
         ]
       }
     ],

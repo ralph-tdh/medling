@@ -169,11 +169,11 @@
       },
       {
         "id": "t2",
-        "prompt_en": "Patient: 'Will they need to open me up?' Use a suffix to reassure:",
-        "prompt_vi": "Bệnh nhân: 'Có phải mổ không?' Dùng hậu tố để trấn an:",
+        "prompt_en": "Patient: 'Will they need to open me up?' Explain the word — without promising anything clinical:",
+        "prompt_vi": "Bệnh nhân: 'Có phải mổ không?' Giải thích nghĩa của từ — đừng hứa điều gì về mặt lâm sàng:",
         "choices": [
-          { "t": "Likely just an angiogram first — '-gram' means an image, not surgery.", "ok": true,
-            "feedback_en": "Great reuse of -gram (image) to calm the patient before any procedure.", "feedback_vi": "Vận dụng tốt -gram (hình ảnh) để trấn an trước mọi thủ thuật.", "next": "end" },
+          { "t": "An 'angiogram' is an image of the vessels — '-gram' means a picture. Whether it's invasive and what it involves, the cardiologist will explain.", "ok": true,
+            "feedback_en": "Good — you gave the word's meaning (-gram = image) but left how invasive it is and the risks to the specialist. A suffix tells you the meaning, not whether a procedure is invasive.", "feedback_vi": "Tốt — bạn cho nghĩa của từ (-gram = hình ảnh) nhưng để mức xâm lấn & rủi ro cho bác sĩ chuyên khoa. Hậu tố cho biết nghĩa, không cho biết thủ thuật có xâm lấn hay không.", "next": "end" },
           { "t": "Yes, an angiogram cuts the vessel open.", "ok": false,
             "feedback_en": "-gram is imaging. Cutting/repair would be -otomy/-plasty.", "feedback_vi": "-gram là chụp hình. Cắt/sửa mới là -otomy/-plasty.", "next": "end" }
         ]

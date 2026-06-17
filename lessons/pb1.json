@@ -501,7 +501,7 @@
       "pq_vi": "Bệnh nhân hỏi: \"What is this pill for?\" — Bạn không chắc. Phản ứng đúng nhất là gì?",
       "opts": [
         {
-          "t": "It's for pain. (đoán đại)",
+          "t": "It's for pain.",
           "ok": false,
           "gl": {}
         },
@@ -627,7 +627,7 @@
       "vi": "Bệnh nhân hỏi về lịch hẹn nhưng bạn không phụ trách ca bệnh này. Nên nói gì?",
       "opts": [
         {
-          "t": "Your appointment is next week. (đoán)",
+          "t": "Your appointment is next week.",
           "ok": false,
           "gl": {}
         },
