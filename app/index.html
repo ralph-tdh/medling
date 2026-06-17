@@ -13,6 +13,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../brand/tokens.css">
+  <!-- Analytics: privacy-light funnel telemetry; no-op until window.MEDLING_ANALYTICS is set.
+       Loaded synchronously (not deferred) so it is ready before the inline boot script
+       fires the first deep-link 'lesson_open' event. Tiny, dependency-free, local. -->
+  <script src="engine/analytics.js"></script>
   <!-- Backend adapter: degrades to local-only mode until window.MEDLING_SUPABASE is set
        (see supabase/README.md). Optional Supabase JS CDN loads only when configured. -->
   <script defer src="engine/auth.js"></script>
@@ -113,6 +117,11 @@
     '5A':'#283A2F','5B':'#283A2F'
   };
 
+  function track(ev, props) {
+    try { if (window.MedLing && window.MedLing.analytics) window.MedLing.analytics.track(ev, props || {}); }
+    catch (e) {}
+  }
+
   function boot(lesson) {
     window.LESSON = lesson;
     var s = document.createElement('script');
@@ -200,6 +209,7 @@
   }
 
   window.loadLesson = function(id) {
+    track('lesson_open', { lesson: id, from: 'picker' });
     document.getElementById('app').innerHTML =
       '<div style="max-width:460px;margin:60px auto;text-align:center;font-family:sans-serif;color:var(--ml-earth)">'
       +'<img src="../brand/logo/ml-heartbeat-vine.svg" alt="" style="width:110px;margin-bottom:12px">'
@@ -223,6 +233,7 @@
   var params = new URLSearchParams(window.location.search);
   var id = params.get('lesson');
   if (id) {
+    track('lesson_open', { lesson: id, from: 'link' });
     fetch('../lessons/' + id + '.json')
       .then(function(r){ if(!r.ok) throw new Error('HTTP '+r.status); return r.json(); })
       .then(function(data){ boot(data); })
@@ -235,7 +246,7 @@
     fetch('../lessons/index.json').then(function(r){ if(!r.ok) throw new Error('HTTP '+r.status); return r.json(); }),
     fetch('../lessons/roadmap.json').then(function(r){ return r.ok ? r.json() : null; }).catch(function(){ return null; })
   ])
-    .then(function(res){ renderPicker(res[0], res[1]); })
+    .then(function(res){ track('picker_view', { count: (res[0]||[]).length }); renderPicker(res[0], res[1]); })
     .catch(function(){
       // index.json not found — fallback: redirect to pb1
       loadLesson('pb1');
