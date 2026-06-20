@@ -484,6 +484,11 @@
           "gl": {
             "a little fast": "hơi nhanh",
             "monitor closely": "theo dõi chặt"
+          },
+          "t_role": {
+            "nurse": "Your heart rate is a little fast, but I'm going to monitor you closely and let the doctor know.",
+            "doctor": "Your heart rate is a little fast, but I'm going to monitor you closely and reassess.",
+            "student": "Your heart rate is a little fast. I'm going to keep an eye on it and let the doctor know."
           }
         },
         {

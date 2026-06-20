@@ -138,11 +138,26 @@
       ],
       "pq_en": "A patient sits down and waits. You are their doctor. What should you say first?",
       "pq_vi": "Bệnh nhân ngồi xuống và chờ. Bạn là bác sĩ của họ. Bạn nên nói gì trước?",
+      "pq_en_role": {
+        "doctor": "A patient sits down and waits. You are their doctor. What should you say first?",
+        "nurse": "A patient sits down and waits. You are the nurse looking after them. What should you say first?",
+        "student": "A patient sits down and waits. You are the medical student meeting them. What should you say first?"
+      },
+      "pq_vi_role": {
+        "doctor": "Bệnh nhân ngồi xuống và chờ. Bạn là bác sĩ của họ. Bạn nên nói gì trước?",
+        "nurse": "Bệnh nhân ngồi xuống và chờ. Bạn là điều dưỡng chăm sóc họ. Bạn nên nói gì trước?",
+        "student": "Bệnh nhân ngồi xuống và chờ. Bạn là sinh viên y khoa đang gặp họ. Bạn nên nói gì trước?"
+      },
       "opts": [
         {
           "t": "Hello, I'm Dr. [name]. I'll be taking care of you today.",
           "ok": true,
-          "gl": { "taking care of": "chăm sóc cho" }
+          "gl": { "taking care of": "chăm sóc cho" },
+          "t_role": {
+            "doctor": "Hello, I'm Dr. [name]. I'll be taking care of you today.",
+            "nurse": "Hi, I'm [name], one of the nurses looking after you today.",
+            "student": "Hello, I'm [name], a medical student working with your doctor today."
+          }
         },
         {
           "t": "What do you need?",
@@ -354,7 +369,12 @@
         {
           "t": "I'd like to examine you first, then we can discuss the next steps.",
           "ok": true,
-          "gl": { "examine": "khám" }
+          "gl": { "examine": "khám" },
+          "t_role": {
+            "doctor": "I'd like to examine you first, then we can discuss the next steps.",
+            "nurse": "I'd like to take some observations first, then the doctor will examine you.",
+            "student": "I'd like to check a few things, and the doctor will examine you shortly."
+          }
         },
         {
           "t": "You should have come in sooner.",
@@ -374,6 +394,16 @@
       ],
       "tip_en": "Setting expectations ('I'll examine you, then we'll talk') reduces patient anxiety — this is the 'E' (Explanation) in the AIDET communication framework.",
       "tip_vi": "Đặt kỳ vọng rõ ràng ('Tôi sẽ khám, rồi chúng ta nói chuyện') làm giảm lo lắng — đây là chữ 'E' (Explanation) trong khung giao tiếp AIDET.",
+      "tip_en_role": {
+        "doctor": "Setting expectations ('I'll examine you, then we'll talk') reduces patient anxiety — this is the 'E' (Explanation) in the AIDET communication framework.",
+        "nurse": "Setting expectations ('I'll take some observations, then the doctor will examine you') reduces patient anxiety — this is the 'E' (Explanation) in the AIDET communication framework. Stay within your scope: observations and updates, not the medical exam.",
+        "student": "Setting expectations ('I'll check a few things, and the doctor will examine you shortly') reduces patient anxiety — this is the 'E' (Explanation) in the AIDET communication framework. As a student, name your role and defer the exam to the doctor."
+      },
+      "tip_vi_role": {
+        "doctor": "Đặt kỳ vọng rõ ràng ('Tôi sẽ khám, rồi chúng ta nói chuyện') làm giảm lo lắng — đây là chữ 'E' (Explanation) trong khung giao tiếp AIDET.",
+        "nurse": "Đặt kỳ vọng rõ ràng ('Tôi sẽ đo một vài chỉ số, rồi bác sĩ sẽ khám cho bạn') làm giảm lo lắng — đây là chữ 'E' (Explanation) trong khung giao tiếp AIDET. Hãy giữ đúng phạm vi: đo chỉ số và cập nhật, không phải khám bệnh.",
+        "student": "Đặt kỳ vọng rõ ràng ('Tôi sẽ kiểm tra vài thứ, và bác sĩ sẽ khám cho bạn ngay') làm giảm lo lắng — đây là chữ 'E' (Explanation) trong khung giao tiếp AIDET. Là sinh viên, hãy nêu rõ vai trò và nhường việc khám cho bác sĩ."
+      },
       "role": "Doctor / Any HCW",
       "instruction": "Which is the best response?",
       "instruction_vi": "Câu trả lời tốt nhất là gì?"
