@@ -1,7 +1,7 @@
 {
   "_comment": "Coming-soon stages shown by the picker (merged with live index.json). Curated by hand from docs/curriculum/stage-map-1a-3a.md — CI does not touch this file.",
   "stages": [
-    { "stage": "1A", "name_en": "Medical Vocabulary Foundations", "name_vi": "Nền tảng từ vựng y khoa", "lessons": 10, "cefr": "A2+", "tier": "free", "status": "building", "emoji": "🌱" },
+    { "stage": "1A", "name_en": "Medical Term Decoder", "name_vi": "Giải mã thuật ngữ y khoa", "lessons": 10, "cefr": "A2+", "tier": "free", "status": "building", "emoji": "🌱" },
     { "stage": "1B", "name_en": "Basic Clinical Communication", "name_vi": "Giao tiếp lâm sàng cơ bản", "lessons": 10, "cefr": "B1", "tier": "premium", "status": "planned", "emoji": "🗣️" },
     { "stage": "2A", "name_en": "Body Systems & Pathology Language", "name_vi": "Ngôn ngữ hệ cơ quan & bệnh học", "lessons": 12, "cefr": "B1+", "tier": "premium", "status": "planned", "emoji": "🫀" },
     { "stage": "2B", "name_en": "Clinical Documentation Basics", "name_vi": "Hồ sơ bệnh án cơ bản", "lessons": 12, "cefr": "B2", "tier": "premium", "status": "planned", "emoji": "📋" },

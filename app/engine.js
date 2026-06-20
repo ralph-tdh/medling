@@ -28,6 +28,18 @@ function track(ev, props) {
   catch (e) {}
 }
 
+/* Starter Pack state (set by engine/survey.js) — drives the post-test hand-off. */
+function _packState() {
+  try { return JSON.parse(localStorage.getItem('medling.pack') || 'null'); }
+  catch (e) { return null; }
+}
+
+/* Role-mode (D-role): learner role drives optional DISPLAY-only variants.
+   rv(base, map) returns map[role] when present, else falls back to base — so
+   lessons without *_role sibling maps are completely unaffected. */
+function _learnerRole(){ var p=_packState(); return (p && p.role) || null; } // 'doctor'|'nurse'|'student'|'other'
+function rv(base, map){ var r=_learnerRole(); return (r && map && map[r]) ? map[r] : base; }
+
 /* ── CONSTANTS ────────────────────────────────────────────── */
 /* Atelier lanes (D28): moss - olive - terracotta - ochre */
 var TH = [
@@ -93,6 +105,29 @@ function speakWith(text, clip) {
 /* Legacy wrapper — used by inline onclick="speak(...)" calls that
    haven't been migrated (e.g. revision quiz).  */
 function speak(text) { _speakTTS(text); }
+
+/* morphExplain: open the Greek/Latin morpheme breakdown for a vocab chip.
+   Driven by the visible 🧩 button. Guarded at render time so it only appears
+   when the morph module is present (standalone build hides it). */
+function morphExplain(btn) {
+  if (!(window.MedLing && window.MedLing.morph)) return;
+  var d = btn.dataset;
+  track('morph_open', { en: d.en || '' });
+  var p = window.MedLing.morph.explain(d.en || '', d.ipa || '', d.vi || '', btn.getBoundingClientRect());
+  /* explain() resolves false when the word has no Greek/Latin morphemes (e.g. plain
+     PB vocab like "elevator") — give brief feedback instead of a dead tap. */
+  if (p && p.then) p.then(function (shown) { if (!shown) _morphToast(); });
+}
+function _morphToast() {
+  var t = document.createElement('div');
+  t.textContent = 'Từ thông thường — no Greek/Latin roots to break down';
+  t.style.cssText = 'position:fixed;left:50%;bottom:24px;transform:translateX(-50%);max-width:90%;'
+    + 'background:#1E2B23;color:#FBF9F4;padding:9px 16px;border-radius:20px;font-size:12px;'
+    + 'z-index:1100;box-shadow:0 4px 16px rgba(30,43,35,.25);opacity:0;transition:opacity .2s;text-align:center';
+  document.body.appendChild(t);
+  requestAnimationFrame(function () { t.style.opacity = '1'; });
+  setTimeout(function () { t.style.opacity = '0'; setTimeout(function () { t.remove(); }, 260); }, 1800);
+}
 
 function _speakTTS(text) {
   if (!_ttsSupported) return;
@@ -222,6 +257,7 @@ function renderApp() {
   else if (S.screen === 'dialogue')  html = renderDialogueScreen();
   else if (S.screen === 'quiz')      html = renderQuiz();
   else if (S.screen === 'flashcard') html = renderFlashcard();
+  else if (S.screen === 'review')    html = renderReview();
   else if (S.screen === 'revquiz')   html = renderRevQuiz();
   else if (S.screen === 'rqdone')    html = renderRqDone();
   else if (S.screen === 'complete')  html = renderComplete();
@@ -356,19 +392,28 @@ function renderSit() {
       +'</div>';
     }).join('');
 
+    var hasMorph = !!(window.MedLing && window.MedLing.morph);
     var chips = s.vocab.map(function(v,i){
       var cp = clipPath('v', S.si, i);
-      return '<button onclick="speakWith(this.dataset.w,this.dataset.clip)" data-w="'+esc(v.en)+'" data-clip="'+esc(cp)+'" '
-        +'style="display:inline-flex;flex-direction:column;align-items:center;padding:7px 12px;border-radius:14px;border:1px solid '+th.c+'70;background:'+th.c+'14;gap:1px;cursor:pointer;-webkit-appearance:none;appearance:none;box-shadow:none;transition:transform .1s,box-shadow .1s;text-align:center" '
-        +'onmousedown="this.style.transform=\'translate(1px,1px)\';this.style.boxShadow=\'none\'" '
-        +'onmouseup="this.style.transform=\'\';this.style.boxShadow=\'none\'" '
-        +'ontouchstart="this.style.transform=\'translate(1px,1px)\';this.style.boxShadow=\'none\'" '
-        +'ontouchend="this.style.transform=\'\';this.style.boxShadow=\'none\'">'
-        +'<span style="font-size:8.5px;color:#7A7461;font-family:var(--ml-font-mono);line-height:1.2">/'+esc(vIpa(v))+'/</span>'
-        +'<span style="font-size:12px;font-weight:600;color:'+th.c+';line-height:1.3">'+esc(vEn(v))+'</span>'
-        +'<span style="font-size:10px;color:'+th.c+'CC;font-weight:600;line-height:1.2;font-style:italic">'+esc(v.vi)+'</span>'
-        +'<span style="font-size:9px;margin-top:3px;line-height:1;color:'+th.c+'99">🔊</span>'
-      +'</button>';
+      var morphBtn = hasMorph
+        ? '<button onclick="morphExplain(this)" data-en="'+esc(vEn(v))+'" data-ipa="'+esc(vIpa(v))+'" data-vi="'+esc(v.vi)+'" '
+          +'aria-label="Break down word — Bóc tách gốc từ" title="Break down — Bóc tách gốc từ" '
+          +'style="position:absolute;top:-7px;right:-7px;width:24px;height:24px;border-radius:50%;border:1px solid '+th.c+'70;background:#fff;color:'+th.c+';font-size:12px;line-height:1;cursor:pointer;-webkit-appearance:none;appearance:none;box-shadow:none;display:inline-flex;align-items:center;justify-content:center;padding:0">🧩</button>'
+        : '';
+      return '<span style="position:relative;display:inline-flex">'
+        +'<button onclick="speakWith(this.dataset.w,this.dataset.clip)" data-w="'+esc(v.en)+'" data-clip="'+esc(cp)+'" '
+          +'style="display:inline-flex;flex-direction:column;align-items:center;padding:7px 12px;border-radius:14px;border:1px solid '+th.c+'70;background:'+th.c+'14;gap:1px;cursor:pointer;-webkit-appearance:none;appearance:none;box-shadow:none;transition:transform .1s,box-shadow .1s;text-align:center" '
+          +'onmousedown="this.style.transform=\'translate(1px,1px)\';this.style.boxShadow=\'none\'" '
+          +'onmouseup="this.style.transform=\'\';this.style.boxShadow=\'none\'" '
+          +'ontouchstart="this.style.transform=\'translate(1px,1px)\';this.style.boxShadow=\'none\'" '
+          +'ontouchend="this.style.transform=\'\';this.style.boxShadow=\'none\'">'
+          +'<span style="font-size:8.5px;color:#7A7461;font-family:var(--ml-font-mono);line-height:1.2">/'+esc(vIpa(v))+'/</span>'
+          +'<span style="font-size:12px;font-weight:600;color:'+th.c+';line-height:1.3">'+esc(vEn(v))+'</span>'
+          +'<span style="font-size:10px;color:'+th.c+'CC;font-weight:600;line-height:1.2;font-style:italic">'+esc(v.vi)+'</span>'
+          +'<span style="font-size:9px;margin-top:3px;line-height:1;color:'+th.c+'99">🔊</span>'
+        +'</button>'
+        +morphBtn
+      +'</span>';
     }).join('');
 
     content = '<div class="su">'
@@ -404,7 +449,8 @@ function renderSit() {
       var cls = 'opt' + (answered ? ' locked' : '') + (answered&&isOk ? ' ok' : answered&&isMe ? ' no' : '') + (answered&&!isOk&&!isMe ? ' dim' : '');
       var bState = !answered ? 'u' : isOk ? 'ok' : isMe ? 'no' : 'dim';
       var onclick = answered ? '' : 'onclick="pqPick('+i+')"';
-      var textContent = answered && isOk ? annHTML(op.t, op.gl||{}) : esc(op.t);
+      var ot = rv(op.t, op.t_role);
+      var textContent = answered && isOk ? annHTML(ot, op.gl||{}) : esc(ot);
       return '<button class="'+cls+'" '+onclick+'>'
         +badge(ALPHA[i], bState)
         +'<span style="line-height:'+(answered&&isOk?'2.1':'1.5')+'">'+textContent+'</span>'
@@ -413,8 +459,8 @@ function renderSit() {
 
     var tipBox = answered
       ? '<div class="pop" style="background:#F5EEDD;border:1px solid #A8854B;border-radius:13px;padding:11px 14px;margin-top:8px;box-shadow:none">'
-          +'<div style="font-size:13px;color:#6E5326;font-weight:600;line-height:1.7;margin-bottom:3px">💡 '+esc(s.tip_en)+'</div>'
-          +'<div style="font-size:12px;color:#8A6F3C;font-style:italic;line-height:1.6">'+esc(s.tip_vi)+'</div>'
+          +'<div style="font-size:13px;color:#6E5326;font-weight:600;line-height:1.7;margin-bottom:3px">💡 '+esc(rv(s.tip_en, s.tip_en_role))+'</div>'
+          +'<div style="font-size:12px;color:#8A6F3C;font-style:italic;line-height:1.6">'+esc(rv(s.tip_vi, s.tip_vi_role))+'</div>'
         +'</div>'
       : '';
 
@@ -434,8 +480,8 @@ function renderSit() {
           +(s.instruction
             ? '<div style="font-size:11px;font-weight:600;color:'+th.c+';letter-spacing:.04em;margin-bottom:6px;text-transform:uppercase">'+esc(s.instruction)+'</div>'
             : '')
-          +'<div style="font-size:14px;font-weight:600;color:#1E2B23;line-height:1.6;margin-bottom:3px">'+esc(s.pq_en)+'</div>'
-          +'<div style="font-size:12px;color:#7A7461;font-style:italic;line-height:1.55">'+esc(s.pq_vi)+'</div>'
+          +'<div style="font-size:14px;font-weight:600;color:#1E2B23;line-height:1.6;margin-bottom:3px">'+esc(rv(s.pq_en, s.pq_en_role))+'</div>'
+          +'<div style="font-size:12px;color:#7A7461;font-style:italic;line-height:1.55">'+esc(rv(s.pq_vi, s.pq_vi_role))+'</div>'
         +'</div>'
         +optButtons
         +tipBox
@@ -613,8 +659,38 @@ function renderDone() {
   var vocabCount = buildAllVocab().length;
   var revCount = revisionQuizCount();
 
+  /* FSRS review entry — only when the spaced-repetition module is present. */
+  var fsrsBtn = (window.MedLing && window.MedLing.fsrs)
+    ? '<button onclick="initReview();goTo(\'review\')" class="mbtn" style="background:#ECEFEA;color:#33473A;border-color:#5E7268;box-shadow:none;margin-bottom:10px;text-align:left;padding:13px 16px">'
+        +'<div style="display:flex;align-items:center;justify-content:space-between;gap:10px">'
+          +'<div>'
+            +'<div style="font-size:15px;font-weight:600;margin-bottom:2px">📒 Review saved terms (FSRS)</div>'
+            +'<div style="font-size:11px;font-weight:600;color:#5E7268;opacity:.85">Spaced repetition · Lặp lại ngắt quãng</div>'
+            +'<div style="font-size:10px;color:#7A7461;font-style:italic;margin-top:1px">Ôn thẻ đã lưu</div>'
+          +'</div>'
+          +'<span style="font-size:22px;flex-shrink:0">→</span>'
+        +'</div>'
+      +'</button>'
+    : '';
+
   var nextBtn = '';
-  if (CFG.next && CFG.next.url) {
+  if (_packState() && _packState().phase === 'lessons') {
+    /* In a Starter Pack run, ALWAYS hand back to the pack with &micro=<lesson id>
+       (this MUST take priority over config.next so PB1-3 collect micro-feedback too,
+       not just PB4). The survey module shows per-lesson feedback, then advances to the
+       next PB or the post-test. */
+    var _pkid = _packState().id || 'starter';
+    var _microUrl = '?pack=' + _pkid + '&micro=' + (META.id || '');
+    nextBtn = '<button onclick="window.location.href=\''+_microUrl+'\'" class="mbtn" style="background:#33473A;color:#FBF9F4;margin-bottom:10px;text-align:left;padding:13px 16px">'
+      +'<div style="display:flex;align-items:center;justify-content:space-between;gap:10px">'
+        +'<div>'
+          +'<div style="font-size:15px;font-weight:600;margin-bottom:2px">Continue → Tiếp tục</div>'
+          +'<div style="font-size:10px;color:#C9C2AE;font-style:italic;margin-top:1px">Quick feedback, then next — Phản hồi nhanh rồi học tiếp</div>'
+        +'</div>'
+        +'<span style="font-size:22px;flex-shrink:0;color:#8DA088">→</span>'
+      +'</div>'
+    +'</button>';
+  } else if (CFG.next && CFG.next.url) {
     nextBtn = '<button onclick="window.location.href=window.LESSON.config.next.url" class="mbtn" style="background:#33473A;color:#FBF9F4;margin-bottom:10px;text-align:left;padding:13px 16px">'
       +'<div style="display:flex;align-items:center;justify-content:space-between;gap:10px">'
         +'<div>'
@@ -672,6 +748,7 @@ function renderDone() {
         +'<span style="font-size:22px;flex-shrink:0">→</span>'
       +'</div>'
     +'</button>'
+    +fsrsBtn
     +nextBtn
     +'<button class="obtn" onclick="restartLesson()">← Try again — Học lại</button>'
   +'</div>';
@@ -685,7 +762,8 @@ function restartLesson() {
     screen:'welcome', si:0, phase:'learn', pqSel:null, sOpts:null,
     qi:0, allOpts:[], qSel:null, qDone:false, qScore:0,
     fcDeck:[], fcKnown:0, fcFlipped:false,
-    rqItems:[], rqAllOpts:[], rqIdx:0, rqSel:null, rqDone:false, rqScore:0
+    rqItems:[], rqAllOpts:[], rqIdx:0, rqSel:null, rqDone:false, rqScore:0,
+    revDue:null, revIdx:0, revFlipped:false, revDone:false
   };
   goTo('welcome');
 }
@@ -915,6 +993,118 @@ function renderRqDone() {
     +'<button onclick="goTo(\'done\')" class="mbtn" style="background:#5E7268;color:#fff;margin-bottom:10px">← Back to summary — Về tóm tắt</button>'
     +'<button onclick="initRevQuiz()" class="obtn">↺ Try quiz again — Làm lại</button>'
   +'</div>';
+}
+
+/* ── FSRS REVIEW SCREEN ───────────────────────────────────────
+   Pulls due cards (saved via the 🧩 breakdown → Notebook), shows one at a
+   time (term front; tap reveals ipa+vi), rates Again/Hard/Good/Easy through
+   ML.fsrs.review(id, 1|2|3|4). Visual style mirrors renderFlashcard. */
+function initReview() {
+  S.revDue = null; S.revIdx = 0; S.revFlipped = false; S.revDone = false;
+  if (window.MedLing && window.MedLing.fsrs && window.MedLing.notebook) {
+    window.MedLing.fsrs.due().then(function(cards) {
+      S.revDue = cards || [];
+      track('review_start', { due: S.revDue.length });
+      if (S.screen === 'review') renderApp();
+    });
+  } else {
+    S.revDue = [];
+  }
+}
+
+function revFlip() { S.revFlipped = true; renderApp(); }
+
+function revRate(rating) {
+  var deck = S.revDue || [];
+  var card = deck[S.revIdx];
+  if (!card) return;
+  if (window.MedLing && window.MedLing.fsrs) {
+    window.MedLing.fsrs.review(card.id, rating);
+  }
+  track('review_rate', { rating: rating });
+  S.revIdx++;
+  S.revFlipped = false;
+  if (S.revIdx >= deck.length) S.revDone = true;
+  renderApp(); window.scrollTo(0,0);
+}
+
+function renderReview() {
+  var moduleOk = !!(window.MedLing && window.MedLing.fsrs && window.MedLing.notebook);
+  var deck = S.revDue;
+
+  /* Still loading the due list (async) → light placeholder, will re-render. */
+  if (moduleOk && deck === null) {
+    return '<div style="max-width:460px;margin:0 auto;padding:48px 16px;text-align:center;color:#7A7461" class="pop">'
+      +'<div style="font-size:13px">Loading… — Đang tải…</div>'
+    +'</div>';
+  }
+
+  /* Empty state: module absent OR no due cards. */
+  if (!moduleOk || !deck || !deck.length) {
+    return '<div style="max-width:460px;margin:0 auto;padding:28px 16px" class="pop">'
+      +'<div style="text-align:center;margin-bottom:22px">'
+        +'<div style="font-size:64px;margin-bottom:10px">📒</div>'
+        +'<h2 class="hf" style="font-size:22px;font-weight:600;color:#1E2B23;margin-bottom:4px">No cards yet</h2>'
+        +'<div style="font-size:13px;color:#7A7461;font-style:italic;line-height:1.6">save terms with 🧩<br>Chưa có thẻ — lưu từ bằng 🧩</div>'
+      +'</div>'
+      +'<button onclick="goTo(\'done\')" class="mbtn" style="background:#5E7268;color:#fff">← Back to summary — Về tóm tắt</button>'
+    +'</div>';
+  }
+
+  /* Done state. */
+  if (S.revDone || S.revIdx >= deck.length) {
+    return '<div style="max-width:460px;margin:0 auto;padding:28px 16px" class="pop">'
+      +'<div style="text-align:center;margin-bottom:22px">'
+        +'<div style="font-size:64px;margin-bottom:10px">🎉</div>'
+        +'<h2 class="hf" style="font-size:22px;font-weight:600;color:#1E2B23;margin-bottom:4px">All caught up!</h2>'
+        +'<div style="font-size:13px;color:#7A7461;font-style:italic;margin-bottom:16px">Đã ôn xong các thẻ đến hạn!</div>'
+        +'<div style="display:inline-block;padding:14px 32px;background:#ECEFEA;border:1px solid #5E7268;border-radius:18px;box-shadow:none">'
+          +'<div class="hf" style="font-size:48px;font-weight:600;color:#33473A">'+deck.length+'</div>'
+          +'<div style="font-size:12px;font-weight:600;color:#5E7268">cards reviewed — thẻ đã ôn</div>'
+        +'</div>'
+      +'</div>'
+      +'<button onclick="goTo(\'done\')" class="mbtn" style="background:#5E7268;color:#fff">← Back to summary — Về tóm tắt</button>'
+    +'</div>';
+  }
+
+  var c     = deck[S.revIdx];
+  var total = deck.length;
+  var done  = S.revIdx;
+  var pct   = Math.round(done / total * 100);
+
+  var cardHtml = S.revFlipped
+    ? '<div class="pop" style="background:#ECEFEA;border-radius:20px;border:1px solid #5E7268;box-shadow:none;padding:32px 20px;text-align:center;margin-bottom:12px">'
+        +(c.ipa ? '<div style="font-size:13px;font-family:var(--ml-font-mono);color:#5E7268;font-weight:600;margin-bottom:6px">/'+esc(c.ipa)+'/</div>' : '')
+        +'<div class="hf" style="font-size:30px;font-weight:600;color:#1E2B23;margin-bottom:10px">'+esc(c.en)+'</div>'
+        +'<div style="height:1.5px;background:#5E726830;margin-bottom:12px"></div>'
+        +'<div style="font-size:22px;font-weight:600;color:#4F6B57">'+esc(c.vi||'')+'</div>'
+      +'</div>'
+      +'<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px" class="pop">'
+        +'<button onclick="revRate(1)" class="mbtn" style="background:#F6EAE4;color:#7A3B27;border-color:#A3563C;box-shadow:none">Again — Lại</button>'
+        +'<button onclick="revRate(2)" class="mbtn" style="background:#F5EEDD;color:#7A5E2E;border-color:#A8854B;box-shadow:none">Hard — Khó</button>'
+        +'<button onclick="revRate(3)" class="mbtn" style="background:#EEF2EA;color:#4F6B57;border-color:#74906F;box-shadow:none">Good — Tốt</button>'
+        +'<button onclick="revRate(4)" class="mbtn" style="background:#EBF0E7;color:#33473A;border-color:#4F6B57;box-shadow:none">Easy — Dễ</button>'
+      +'</div>'
+    : '<button onclick="revFlip()" style="width:100%;background:#fff;border-radius:20px;border:1px solid #1E2B23;box-shadow:none;padding:52px 20px;text-align:center;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;margin-bottom:12px;-webkit-appearance:none;appearance:none;transition:transform .1s,box-shadow .1s" '
+        +'onmousedown="this.style.transform=\'translate(2px,2px)\';this.style.boxShadow=\'none\'" '
+        +'onmouseup="this.style.transform=\'\';this.style.boxShadow=\'none\'" '
+        +'ontouchstart="this.style.transform=\'translate(2px,2px)\';this.style.boxShadow=\'none\'" '
+        +'ontouchend="this.style.transform=\'\';this.style.boxShadow=\'none\'">'
+        +'<div style="font-size:9px;text-transform:uppercase;letter-spacing:.12em;color:#C9C2AE;font-weight:600;margin-bottom:16px">What does this mean? — Nghĩa là gì?</div>'
+        +'<div class="hf" style="font-size:34px;font-weight:600;color:#1E2B23;line-height:1.2">'+esc(c.en)+'</div>'
+        +'<div style="font-size:11px;color:#C9C2AE;margin-top:18px">Tap to reveal — Nhấn để xem nghĩa</div>'
+      +'</button>';
+
+  return '<div style="height:8px;background:#F2EDE1;position:sticky;top:0;z-index:20;border-bottom:1px solid #1E2B23">'
+      +'<div style="height:100%;width:'+pct+'%;background:linear-gradient(90deg,#8DA088,#4F6B57);transition:width .4s ease;'+(pct>2?'border-right:3px solid #1E2B23':'')+';"></div>'
+    +'</div>'
+    +'<div class="su" style="max-width:460px;margin:0 auto;padding:16px 16px 28px">'
+      +'<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px">'
+        +'<span style="padding:3px 12px;border-radius:20px;border:1px solid #5E7268;background:#ECEFEA;color:#5E7268;font-size:11px;font-weight:600">📒 Review · '+(done+1)+' / '+total+'</span>'
+        +'<button onclick="goTo(\'done\')" style="font-size:12px;font-weight:600;color:#7A7461;background:none;border:none;cursor:pointer;padding:4px 8px;-webkit-appearance:none">✕ Exit</button>'
+      +'</div>'
+      +cardHtml
+    +'</div>';
 }
 
 /* ── COMPLETE ──────────────────────────────────────────────── */

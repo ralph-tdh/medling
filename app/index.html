@@ -17,6 +17,8 @@
        Loaded synchronously (not deferred) so it is ready before the inline boot script
        fires the first deep-link 'lesson_open' event. Tiny, dependency-free, local. -->
   <script src="engine/analytics.js"></script>
+  <!-- Starter Pack survey/diagnostic engine — sync so ?pack routing is ready at boot. -->
+  <script src="engine/survey.js"></script>
   <!-- Backend adapter: degrades to local-only mode until window.MEDLING_SUPABASE is set
        (see supabase/README.md). Optional Supabase JS CDN loads only when configured. -->
   <script defer src="engine/auth.js"></script>
@@ -231,6 +233,15 @@
 
   // 2) Direct link with ?lesson=id
   var params = new URLSearchParams(window.location.search);
+
+  // Starter Pack flow: ?pack=<id> (survey + diagnostic wrapper around the lessons)
+  var packId = params.get('pack');
+  if (packId) {
+    if (window.MedLing && window.MedLing.pack) window.MedLing.pack.route(packId);
+    else fail('Pack module not loaded — engine/survey.js');
+    return;
+  }
+
   var id = params.get('lesson');
   if (id) {
     track('lesson_open', { lesson: id, from: 'link' });
