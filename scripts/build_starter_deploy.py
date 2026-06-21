@@ -79,15 +79,25 @@ def build_index():
 
 
 def copy_landing():
-    """Copy root landing index.html, rewriting its CTAs to enter the Starter funnel.
-    Rewrite happens ONLY in the dist copy; the source file is untouched."""
+    """Copy root landing index.html, ensuring its CTAs enter the Starter funnel.
+    Idempotent: rewrites any bare href="app/" CTA, and accepts CTAs the source already
+    points at app/?pack=starter (e.g. after commit e1262ea). Rewrite happens ONLY in the
+    dist copy; the source file is untouched. Fails only if NO app/ CTA exists at all."""
     with open(rel("index.html"), encoding="utf-8") as f:
         html = f.read()
-    n = html.count('href="app/"')
-    html = html.replace('href="app/"', 'href="app/?pack=starter"')
+    n_bare = html.count('href="app/"')
+    n_ready = html.count('href="app/?pack=starter"')
+    if n_bare == 0 and n_ready == 0:
+        raise SystemExit(
+            "FAIL — copy_landing found no app/ CTA in index.html "
+            "(neither 'href=\"app/\"' nor 'href=\"app/?pack=starter\"'); "
+            "the landing markup changed and the Starter funnel CTA would ship unrewritten."
+        )
+    if n_bare:
+        html = html.replace('href="app/"', 'href="app/?pack=starter"')
     with open(dst("index.html"), "w", encoding="utf-8") as f:
         f.write(html)
-    print(f"  file  index.html (rewrote {n} CTA -> app/?pack=starter)")
+    print(f"  file  index.html ({n_bare} bare CTA rewritten; {n_ready} already -> app/?pack=starter)")
 
 
 def assert_clean():
