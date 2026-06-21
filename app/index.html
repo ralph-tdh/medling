@@ -259,10 +259,11 @@
   //    Starter Pack cohort (localStorage['medling.pack'] present) sees ONLY the 4 PB lessons —
   //    no 1A/roadmap spoiler (Q1); everyone else sees the full journey.
   var STARTER = ['pb1','pb2','pb3','pb4'];
-  var inStarter = false;
-  // [P1-1] Filter to PB-only ONLY while the pack is in progress; after it's 'done' the full journey returns
-  // (no spoiler during the funnel, no permanent lock after finishing).
-  try { var _pk = JSON.parse(localStorage.getItem('medling.pack')||'null'); inStarter = !!(_pk && _pk.phase && _pk.phase !== 'done'); } catch(e){}
+  // The public site IS the Starter Pack: ALWAYS show only the 4 PB lessons — never spoil Stage 1A
+  // in the picker, regardless of pack state or entry path (Q1 = "chỉ hiện 4 bài PB thôi").
+  // (This supersedes the earlier P1-1 "show full after done" behaviour, which conflicted with Q1.)
+  // To re-expose the full journey later (when 1A is validated/ready), flip this to false.
+  var inStarter = true;
   Promise.all([
     fetch('../lessons/index.json').then(function(r){ if(!r.ok) throw new Error('HTTP '+r.status); return r.json(); }),
     inStarter ? Promise.resolve(null)
