@@ -104,11 +104,31 @@
         {
           "en": "Hello, I'm Dr. Minh. I'll be taking care of you today.",
           "vi": "Xin chào, tôi là Bác sĩ Minh. Tôi sẽ chăm sóc cho bạn hôm nay.",
+          "en_role": {
+            "doctor": "Hello, I'm Dr. Minh. I'll be taking care of you today.",
+            "nurse": "Hi, I'm Minh, one of the nurses looking after you today.",
+            "student": "Hello, I'm Minh, a medical student working with your doctor today."
+          },
+          "vi_role": {
+            "doctor": "Xin chào, tôi là Bác sĩ Minh. Tôi sẽ chăm sóc cho bạn hôm nay.",
+            "nurse": "Xin chào, tôi là Minh, một trong những điều dưỡng chăm sóc bạn hôm nay.",
+            "student": "Xin chào, tôi là Minh, sinh viên y khoa làm việc cùng bác sĩ của bạn hôm nay."
+          },
           "gl": { "taking care of": "chăm sóc cho" }
         },
         {
           "en": "Good morning — my name is Dr. Lan from the internal medicine department.",
           "vi": "Chào buổi sáng — tôi là Bác sĩ Lan, khoa nội.",
+          "en_role": {
+            "doctor": "Good morning — my name is Dr. Lan from the internal medicine department.",
+            "nurse": "Good morning — my name is Lan, a nurse on the internal medicine ward.",
+            "student": "Good morning — my name is Lan, a medical student on the internal medicine team."
+          },
+          "vi_role": {
+            "doctor": "Chào buổi sáng — tôi là Bác sĩ Lan, khoa nội.",
+            "nurse": "Chào buổi sáng — tôi là Lan, điều dưỡng khoa nội.",
+            "student": "Chào buổi sáng — tôi là Lan, sinh viên y khoa trong nhóm khoa nội."
+          },
           "gl": {
             "internal medicine": "nội khoa",
             "department": "khoa"
@@ -117,6 +137,16 @@
         {
           "en": "Hi, I'm Dr. Nam, the resident on duty this morning. Nice to meet you.",
           "vi": "Xin chào, tôi là Bác sĩ Nam, bác sĩ nội trú trực hôm nay. Rất vui được gặp bạn.",
+          "en_role": {
+            "doctor": "Hi, I'm Dr. Nam, the resident on duty this morning. Nice to meet you.",
+            "nurse": "Hi, I'm Nam, the nurse on duty this morning. Nice to meet you.",
+            "student": "Hi, I'm Nam, a medical student on the team this morning. Nice to meet you."
+          },
+          "vi_role": {
+            "doctor": "Xin chào, tôi là Bác sĩ Nam, bác sĩ nội trú trực hôm nay. Rất vui được gặp bạn.",
+            "nurse": "Xin chào, tôi là Nam, điều dưỡng trực sáng nay. Rất vui được gặp bạn.",
+            "student": "Xin chào, tôi là Nam, sinh viên y khoa trong nhóm sáng nay. Rất vui được gặp bạn."
+          },
           "gl": {
             "resident": "bác sĩ nội trú",
             "on duty": "đang trực"
@@ -125,6 +155,16 @@
         {
           "en": "Please don't worry — I'm Dr. Pham, and I'm here to help.",
           "vi": "Đừng lo lắng — tôi là Bác sĩ Phạm, và tôi ở đây để giúp bạn.",
+          "en_role": {
+            "doctor": "Please don't worry — I'm Dr. Pham, and I'm here to help.",
+            "nurse": "Please don't worry — I'm Pham, your nurse, and I'm here to help.",
+            "student": "Please don't worry — I'm Pham, a medical student, and I'm here to help."
+          },
+          "vi_role": {
+            "doctor": "Đừng lo lắng — tôi là Bác sĩ Phạm, và tôi ở đây để giúp bạn.",
+            "nurse": "Đừng lo lắng — tôi là Phạm, điều dưỡng của bạn, và tôi ở đây để giúp.",
+            "student": "Đừng lo lắng — tôi là Phạm, sinh viên y khoa, và tôi ở đây để giúp."
+          },
           "gl": {}
         }
       ],
@@ -337,21 +377,61 @@
         {
           "en": "I'm going to examine you now. Is that okay?",
           "vi": "Bây giờ tôi sẽ khám cho bạn. Bạn có đồng ý không?",
+          "en_role": {
+            "doctor": "I'm going to examine you now. Is that okay?",
+            "nurse": "I'm going to take some observations now, then the doctor will examine you. Is that okay?",
+            "student": "I'm going to check a few things now, and the doctor will examine you shortly. Is that okay?"
+          },
+          "vi_role": {
+            "doctor": "Bây giờ tôi sẽ khám cho bạn. Bạn có đồng ý không?",
+            "nurse": "Bây giờ tôi sẽ đo một vài chỉ số, rồi bác sĩ sẽ khám cho bạn. Bạn có đồng ý không?",
+            "student": "Bây giờ tôi sẽ kiểm tra vài thứ, và bác sĩ sẽ khám cho bạn ngay. Bạn có đồng ý không?"
+          },
           "gl": { "examine": "khám" }
         },
         {
           "en": "First, I'll ask a few more questions, then do a physical exam.",
           "vi": "Trước tiên tôi sẽ hỏi thêm một vài câu, rồi tiến hành khám lâm sàng.",
+          "en_role": {
+            "doctor": "First, I'll ask a few more questions, then do a physical exam.",
+            "nurse": "First, I'll ask a few more questions and take your observations, then the doctor will do the exam.",
+            "student": "First, I'll ask a few more questions, then the doctor will do the physical exam."
+          },
+          "vi_role": {
+            "doctor": "Trước tiên tôi sẽ hỏi thêm một vài câu, rồi tiến hành khám lâm sàng.",
+            "nurse": "Trước tiên tôi sẽ hỏi thêm vài câu và đo chỉ số, rồi bác sĩ sẽ khám.",
+            "student": "Trước tiên tôi sẽ hỏi thêm vài câu, rồi bác sĩ sẽ khám lâm sàng."
+          },
           "gl": { "physical exam": "khám lâm sàng" }
         },
         {
           "en": "Let's take it one step at a time — I'll check a few things first.",
           "vi": "Chúng ta sẽ đi từng bước một — trước tiên tôi sẽ kiểm tra một số thứ.",
+          "en_role": {
+            "doctor": "Let's take it one step at a time — I'll check a few things first.",
+            "nurse": "Let's take it one step at a time — I'll take your observations first.",
+            "student": "Let's take it one step at a time — I'll check a few things, then the doctor will see you."
+          },
+          "vi_role": {
+            "doctor": "Chúng ta sẽ đi từng bước một — trước tiên tôi sẽ kiểm tra một số thứ.",
+            "nurse": "Chúng ta đi từng bước — trước tiên tôi sẽ đo các chỉ số cho bạn.",
+            "student": "Chúng ta đi từng bước — tôi kiểm tra vài thứ, rồi bác sĩ sẽ gặp bạn."
+          },
           "gl": { "one step at a time": "từng bước một" }
         },
         {
           "en": "After the exam, we'll talk about what I found and the next steps.",
           "vi": "Sau khi khám xong, tôi sẽ nói chuyện với bạn về kết quả và các bước tiếp theo.",
+          "en_role": {
+            "doctor": "After the exam, we'll talk about what I found and the next steps.",
+            "nurse": "After the doctor's exam, we'll talk about what was found and the next steps.",
+            "student": "After the doctor's exam, the team will talk with you about what was found and the next steps."
+          },
+          "vi_role": {
+            "doctor": "Sau khi khám xong, tôi sẽ nói chuyện với bạn về kết quả và các bước tiếp theo.",
+            "nurse": "Sau khi bác sĩ khám, chúng ta sẽ trao đổi về kết quả và các bước tiếp theo.",
+            "student": "Sau khi bác sĩ khám, nhóm sẽ trao đổi với bạn về kết quả và các bước tiếp theo."
+          },
           "gl": {}
         }
       ],
@@ -414,7 +494,10 @@
       "en": "Which phrase correctly introduces yourself to a patient for the first time?",
       "vi": "Câu nào đúng khi tự giới thiệu với bệnh nhân lần đầu gặp?",
       "opts": [
-        { "t": "Hello, I'm Dr. [name]. I'll be taking care of you today.", "ok": true, "gl": {} },
+        { "t": "Hello, I'm Dr. [name]. I'll be taking care of you today.", "ok": true, "gl": {}, "t_role": {
+          "doctor": "Hello, I'm Dr. [name]. I'll be taking care of you today.",
+          "nurse": "Hi, I'm [name], one of the nurses looking after you today.",
+          "student": "Hello, I'm [name], a medical student working with your doctor today." } },
         { "t": "You can just call me Doctor.", "ok": false, "gl": {} },
         { "t": "I'm busy right now — the nurse will see you first.", "ok": false, "gl": {} },
         { "t": "Good morning. Please sit down and wait.", "ok": false, "gl": {} }
@@ -450,7 +533,10 @@
       "en": "After taking a history, the patient asks: 'What happens now?' Which reply is most appropriate?",
       "vi": "Sau khi hỏi bệnh sử, bệnh nhân hỏi: 'Tiếp theo sẽ như thế nào?' Câu trả lời nào phù hợp nhất?",
       "opts": [
-        { "t": "I'd like to examine you now, then we'll talk about the next steps.", "ok": true, "gl": {} },
+        { "t": "I'd like to examine you now, then we'll talk about the next steps.", "ok": true, "gl": {}, "t_role": {
+          "doctor": "I'd like to examine you now, then we'll talk about the next steps.",
+          "nurse": "I'd like to take some observations now, then the doctor will examine you.",
+          "student": "I'd like to check a few things, and the doctor will examine you shortly." } },
         { "t": "Everything looks fine — nothing to worry about.", "ok": false, "gl": {} },
         { "t": "I'll prescribe medication based on what you've told me.", "ok": false, "gl": {} },
         { "t": "Please go back to the waiting room.", "ok": false, "gl": {} }

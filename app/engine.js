@@ -24,8 +24,13 @@ var DONE  = L.done || {};
 
 /* ── ANALYTICS (no-op until app/engine/analytics.js loads + a sink is set) ── */
 function track(ev, props) {
-  try { if (window.MedLing && window.MedLing.analytics) window.MedLing.analytics.track(ev, props || {}); }
-  catch (e) {}
+  try {
+    var p = props || {};
+    /* [P1-8] tag lesson/engine events with pack + role so they join the Starter funnel (cohort context). */
+    var pk = _packState();
+    if (pk && pk.id) { p = Object.assign({}, p); if (!('pack' in p)) p.pack = pk.id; if (pk.role && !('role' in p)) p.role = pk.role; }
+    if (window.MedLing && window.MedLing.analytics) window.MedLing.analytics.track(ev, p);
+  } catch (e) {}
 }
 
 /* Starter Pack state (set by engine/survey.js) — drives the post-test hand-off. */
@@ -36,9 +41,53 @@ function _packState() {
 
 /* Role-mode (D-role): learner role drives optional DISPLAY-only variants.
    rv(base, map) returns map[role] when present, else falls back to base — so
-   lessons without *_role sibling maps are completely unaffected. */
-function _learnerRole(){ var p=_packState(); return (p && p.role) || null; } // 'doctor'|'nurse'|'student'|'other'
+   lessons without *_role sibling maps are completely unaffected.
+   Precedence: in-lesson toggle (medling.roleview) > survey/cohort role (medling.pack.role). */
+function _learnerRole(){
+  try { var rvw = localStorage.getItem('medling.roleview'); if (rvw) return rvw; } catch(e){}
+  var p=_packState(); return (p && p.role) || null;
+} // 'doctor'|'nurse'|'student'|'other'
 function rv(base, map){ var r=_learnerRole(); return (r && map && map[r]) ? map[r] : base; }
+
+/* In-lesson role toggle (Q3): switch the role VIEW without touching the survey/cohort role.
+   Stored in a dedicated key so it never corrupts localStorage['medling.pack'].role (cohort + Q1 picker). */
+function setLearnerRole(r){
+  try { localStorage.setItem('medling.roleview', r); } catch(e){}
+  track('role_view', { role:r, lesson:(window.LESSON && window.LESSON.meta && window.LESSON.meta.id) || '' });
+  if (typeof renderApp === 'function') renderApp();
+  try { var el=document.getElementById('ml-role-pill'); if (el && el.focus) el.focus(); } catch(e){} /* keep keyboard focus on the toggle (a11y P1-2) */
+}
+function _hasRoleVariants(){
+  try {
+    var sits = (window.LESSON && window.LESSON.situations) || [];
+    for (var i=0;i<sits.length;i++){
+      var s = sits[i];
+      for (var k in s){ if (s.hasOwnProperty(k) && /_role$/.test(k)) return true; }
+      var opts = s.opts || [];
+      for (var j=0;j<opts.length;j++){ var o=opts[j]; for (var k2 in o){ if (o.hasOwnProperty(k2) && /_role$/.test(k2)) return true; } }
+    }
+  } catch(e){}
+  return false;
+}
+function rolePillHTML(){
+  if (!_hasRoleVariants()) return '';
+  var cur = _learnerRole() || 'doctor';
+  var seg = function(role, label){
+    var on = cur === role;
+    /* real <button> = native keyboard support; aria-pressed reflects the active role (a11y P1-2). */
+    return '<button type="button" onclick="setLearnerRole(\''+role+'\')" aria-pressed="'+(on?'true':'false')+'" '
+      +'style="border:none;font:inherit;padding:3px 10px;cursor:pointer;background:'+(on?'#5E7268':'transparent')+';color:'+(on?'#fff':'#7A7461')+'">'+label+'</button>';
+  };
+  return '<div id="ml-role-pill" tabindex="-1" role="group" aria-label="Choose your role — Chọn vai trò" style="display:flex;align-items:center;gap:7px;margin-top:11px;flex-wrap:wrap;outline:none">'
+    +'<span style="font-size:11px;font-weight:600;color:#7A7461">Vai trò · Role</span>'
+    +'<span style="display:inline-flex;border:1px solid #C9C2AE;border-radius:20px;overflow:hidden;font-size:11px;font-weight:600;user-select:none;-webkit-user-select:none">'
+    + seg('doctor','Doctor') + seg('nurse','Nurse') + seg('student','Student')
+    +'</span></div>';
+}
+
+/* [P1-3] Clear a stale in-lesson role override when this lesson has no role variants, so a role
+   chosen elsewhere can't silently apply where there is no toggle to change it back. */
+try { if (!_hasRoleVariants()) localStorage.removeItem('medling.roleview'); } catch(e){}
 
 /* ── CONSTANTS ────────────────────────────────────────────── */
 /* Atelier lanes (D28): moss - olive - terracotta - ochre */
@@ -165,15 +214,16 @@ function toggleAccent() {
   try { localStorage.setItem('medling.accent', _accent); } catch (e) {}
   track('accent_toggle', { accent: _accent });
   renderApp();
+  try { var el=document.getElementById('ml-accent-pill'); if (el && el.focus) el.focus(); } catch(e){} /* keyboard focus (a11y P1-2) */
 }
 function accentPillHTML() {
   var us = _accent === 'us';
   var seg = function(on, label){
     return '<span style="padding:3px 9px;background:'+(on?'#5E7268':'transparent')+';color:'+(on?'#fff':'#7A7461')+'">'+label+'</span>';
   };
-  return '<span onclick="toggleAccent()" role="button" aria-label="Toggle US or GB accent" title="US / GB" '
-    +'style="display:inline-flex;border:1px solid #C9C2AE;border-radius:20px;overflow:hidden;font-size:11px;font-weight:600;cursor:pointer;user-select:none;-webkit-user-select:none">'
-    +seg(us,'US')+seg(!us,'GB')+'</span>';
+  return '<button type="button" id="ml-accent-pill" onclick="toggleAccent()" aria-label="Toggle US or GB accent — current: '+(us?'US':'GB')+'" title="US / GB" '
+    +'style="display:inline-flex;border:1px solid #C9C2AE;border-radius:20px;overflow:hidden;font:inherit;font-size:11px;font-weight:600;cursor:pointer;padding:0;background:none;user-select:none;-webkit-user-select:none">'
+    +seg(us,'US')+seg(!us,'GB')+'</button>';
 }
 
 /* ── STATE ────────────────────────────────────────────────── */
@@ -370,6 +420,7 @@ function renderSit() {
         +'<div style="font-size:12px;color:#7A7461;font-style:italic">'+esc(s.vi)+'</div>'
       +'</div>'
     +'</div>'
+    + rolePillHTML()
   +'</div>';
 
   var content = '';
@@ -378,16 +429,18 @@ function renderSit() {
     var phrases = s.phrases.map(function(p,i){
       var border = i < s.phrases.length-1 ? 'margin-bottom:14px;padding-bottom:14px;border-bottom:1px dashed #F2EDE1' : '';
       var cp = clipPath('p', S.si, i);
+      var pen = rv(p.en, p.en_role), pvi = rv(p.vi, p.vi_role);
+      var pclip = (pen === p.en) ? cp : ''; /* role variants have no pre-gen audio → live TTS of the shown text (Mức C) */
       return '<div style="'+border+';display:flex;align-items:flex-start;gap:9px">'
-        +'<button onclick="speakWith(this.dataset.w,this.dataset.clip)" data-w="'+esc(p.en)+'" data-clip="'+esc(cp)+'" '
+        +'<button onclick="speakWith(this.dataset.w,this.dataset.clip)" data-w="'+esc(pen)+'" data-clip="'+esc(pclip)+'" '
           +'style="flex-shrink:0;margin-top:5px;padding:4px 8px;border-radius:8px;border:1px solid '+th.c+'55;background:'+th.c+'12;color:'+th.c+';font-size:12px;font-weight:600;cursor:pointer;-webkit-appearance:none;appearance:none;line-height:1;box-shadow:none;transition:transform .1s,box-shadow .1s" '
           +'onmousedown="this.style.transform=\'translate(1px,1px)\';this.style.boxShadow=\'none\'" '
           +'onmouseup="this.style.transform=\'\';this.style.boxShadow=\'none\'" '
           +'ontouchstart="this.style.transform=\'translate(1px,1px)\';this.style.boxShadow=\'none\'" '
           +'ontouchend="this.style.transform=\'\';this.style.boxShadow=\'none\'">🔊</button>'
         +'<div style="flex:1">'
-          +'<div style="font-size:14px;font-weight:600;color:'+th.c+';line-height:2.1;margin-bottom:2px">'+annHTML(p.en,p.gl)+'</div>'
-          +'<div style="font-size:12px;color:#7A7461;font-style:italic">'+esc(p.vi)+'</div>'
+          +'<div style="font-size:14px;font-weight:600;color:'+th.c+';line-height:2.1;margin-bottom:2px">'+annHTML(pen,p.gl)+'</div>'
+          +'<div style="font-size:12px;color:#7A7461;font-style:italic">'+esc(pvi)+'</div>'
         +'</div>'
       +'</div>';
     }).join('');
@@ -570,7 +623,8 @@ function renderQuiz() {
     var cls = 'opt' + (answered ? ' locked' : '') + (answered&&isOk ? ' ok' : answered&&isMe ? ' no' : '') + (answered&&!isOk&&!isMe ? ' dim' : '');
     var bState = !answered ? 'u' : isOk ? 'ok' : isMe ? 'no' : 'dim';
     var onclick = answered ? '' : 'onclick="qPick('+i+')"';
-    var textContent = answered && isOk ? annHTML(op.t, op.gl||{}) : esc(op.t);
+    var ot = rv(op.t, op.t_role); /* Mức C: quiz options role-aware */
+    var textContent = answered && isOk ? annHTML(ot, op.gl||{}) : esc(ot);
     return '<button class="'+cls+'" '+onclick+'>'
       +badge(ALPHA[i], bState)
       +'<span style="line-height:'+(answered&&isOk?'2.1':'1.5')+'">'+textContent+'</span>'
@@ -874,16 +928,15 @@ function buildRevisionQuiz(n) {
   return pool.slice(0, n).map(function(v) {
     var wrongs = shuffle(all.filter(function(x){ return x.en !== v.en; })).slice(0, 3);
     var en = vEn(v), ipa = vIpa(v);
+    /* [P1-4] guard: only add as many distractors as exist — never read .vi on undefined
+       (lessons with <4 distinct vocab previously crashed the revision quiz). */
+    var opts = [{t: v.vi, ok: true}];
+    for (var w = 0; w < wrongs.length; w++) opts.push({t: wrongs[w].vi, ok: false});
     return {
       q_en: 'What does "' + en + '" mean?',
       q_vi: '"' + en + '" nghĩa là gì?',
       word: en, ipa: ipa,
-      opts: shuffle([
-        {t: v.vi,         ok: true  },
-        {t: wrongs[0].vi, ok: false },
-        {t: wrongs[1].vi, ok: false },
-        {t: wrongs[2].vi, ok: false }
-      ]),
+      opts: shuffle(opts),
       exp_en: '"' + en + '" /' + ipa + '/ = ' + v.vi,
       exp_vi: 'Phát âm: /' + ipa + '/'
     };

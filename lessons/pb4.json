@@ -378,6 +378,11 @@
           "gl": {
             "a bit low": "hơi thấp",
             "get some oxygen": "cho thở oxy"
+          },
+          "t_role": {
+            "doctor": "94 percent — that's a bit low. I'm going to get some oxygen for you right away.",
+            "nurse": "94 percent — that's a bit low. I'm going to get some oxygen for you right away.",
+            "student": "94 percent — that's a bit low. I'll let the nurse know right away so we can get you some oxygen."
           }
         },
         {
@@ -393,6 +398,16 @@
       ],
       "tip_en": "SpO2 ≥95% on room air is normal in healthy adults. At 94%, the clinical standard is to act, not reassure. The correct answer shows both clear communication AND appropriate clinical response.",
       "tip_vi": "SpO2 ≥95% khi thở khí phòng là bình thường ở người lớn khoẻ mạnh. Ở 94%, cần hành động, không được trấn an bệnh nhân. Câu đúng thể hiện cả giao tiếp rõ ràng lẫn phản ứng lâm sàng phù hợp.",
+      "tip_en_role": {
+        "doctor": "SpO2 ≥95% on room air is normal in healthy adults. At 94%, the standard is to act, not reassure — clear communication plus the right clinical response.",
+        "nurse": "SpO2 ≥95% on room air is normal in healthy adults. At 94%, act — don't reassure. You can start oxygen per protocol and inform the doctor.",
+        "student": "SpO2 ≥95% on room air is normal in healthy adults. At 94%, act — don't reassure. As a student, escalate to the nurse or doctor rather than starting oxygen yourself."
+      },
+      "tip_vi_role": {
+        "doctor": "SpO2 ≥95% khi thở khí phòng là bình thường ở người lớn khoẻ mạnh. Ở 94%, cần hành động chứ không trấn an — giao tiếp rõ kèm xử lý lâm sàng đúng.",
+        "nurse": "SpO2 ≥95% là bình thường ở người lớn khoẻ mạnh. Ở 94%, hãy hành động — đừng trấn an. Bạn có thể cho thở oxy theo phác đồ và báo bác sĩ.",
+        "student": "SpO2 ≥95% là bình thường ở người lớn khoẻ mạnh. Ở 94%, hãy hành động — đừng trấn an. Là sinh viên, hãy báo điều dưỡng/bác sĩ thay vì tự cho thở oxy."
+      },
       "role": "Any HCW",
       "instruction": "Which is the best response?",
       "instruction_vi": "Câu trả lời tốt nhất là gì?"
@@ -555,7 +570,7 @@
           "gl": {}
         },
         {
-          "t": "Oxygen saturation is 93 percent — that's a bit low. I'm going to give you some supplemental oxygen.",
+          "t": "Oxygen saturation is 93 percent — that's a bit low. We'll get you some supplemental oxygen.",
           "ok": true,
           "gl": {
             "supplemental oxygen": "oxy bổ sung"

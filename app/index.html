@@ -177,7 +177,7 @@
     +'</div>';
   }
 
-  function renderPicker(lessons, roadmap) {
+  function renderPicker(lessons, roadmap, note) {
     var app = document.getElementById('app');
     /* Group by stage so the journey reads top-down: PB → 1A → … */
     var order = ['PB','1A','1B','2A','2B','3A','3B','4A','4B','5A','5B'];
@@ -209,6 +209,7 @@
           +'<div style="font-size:12px;color:var(--ml-sage);margin-top:4px">Chọn bài để bắt đầu</div>'
         +'</div>'
         + body
+        + (note || '')
       +'</div>';
   }
 
@@ -254,12 +255,31 @@
     return;
   }
 
-  // 3) No param → show lesson picker (live lessons + coming-soon roadmap stages)
+  // 3) No param → show lesson picker (live lessons + coming-soon roadmap stages).
+  //    Starter Pack cohort (localStorage['medling.pack'] present) sees ONLY the 4 PB lessons —
+  //    no 1A/roadmap spoiler (Q1); everyone else sees the full journey.
+  var STARTER = ['pb1','pb2','pb3','pb4'];
+  var inStarter = false;
+  // [P1-1] Filter to PB-only ONLY while the pack is in progress; after it's 'done' the full journey returns
+  // (no spoiler during the funnel, no permanent lock after finishing).
+  try { var _pk = JSON.parse(localStorage.getItem('medling.pack')||'null'); inStarter = !!(_pk && _pk.phase && _pk.phase !== 'done'); } catch(e){}
   Promise.all([
     fetch('../lessons/index.json').then(function(r){ if(!r.ok) throw new Error('HTTP '+r.status); return r.json(); }),
-    fetch('../lessons/roadmap.json').then(function(r){ return r.ok ? r.json() : null; }).catch(function(){ return null; })
+    inStarter ? Promise.resolve(null)
+              : fetch('../lessons/roadmap.json').then(function(r){ return r.ok ? r.json() : null; }).catch(function(){ return null; })
   ])
-    .then(function(res){ track('picker_view', { count: (res[0]||[]).length }); renderPicker(res[0], res[1]); })
+    .then(function(res){
+      var lessons = res[0] || [];
+      if (inStarter) lessons = lessons.filter(function(l){ return STARTER.indexOf(l.id) > -1; });
+      track('picker_view', { count: lessons.length, scope: inStarter ? 'starter' : 'full' });
+      var note = inStarter
+        ? '<div class="pk-stage-lab">Tiếp theo — What\'s next</div>'
+          + '<div style="font-size:13px;color:var(--ml-earth);line-height:1.6;padding:2px 2px 10px">'
+          + 'Các track khác (giải mã thuật ngữ, đọc guideline, giao tiếp lâm sàng…) sẽ mở sau khi bạn hoàn thành Starter Pack.<br>'
+          + '<span style="font-style:italic;color:var(--ml-sage)">Other tracks unlock after you finish the Starter Pack.</span></div>'
+        : '';
+      renderPicker(lessons, res[1], note);
+    })
     .catch(function(){
       // index.json not found — fallback: redirect to pb1
       loadLesson('pb1');

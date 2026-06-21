@@ -7,3 +7,4 @@ Thumbs.db
 .env.*
 supabase/.temp/
 *.standalone.html
+dist-starter/

@@ -19,6 +19,15 @@ window.MedLing = window.MedLing || {};
   function save(s){ try { localStorage.setItem(KEY, JSON.stringify(s)); } catch(e){} }
   function reset(){ try { localStorage.removeItem(KEY); } catch(e){} }
 
+  /* ── lesson progress (Q5/Q6): per-lesson record drives resume + post-test gate ──
+     ORDER = the 4 Starter Pack lessons; nextIncomplete() = first one not yet done. */
+  var ORDER = ['pb1','pb2','pb3','pb4'];
+  function nextIncomplete(s){
+    var done = (s && s.lessons) || {};
+    for (var i=0;i<ORDER.length;i++){ if (!done[ORDER[i]]) return ORDER[i]; }
+    return null;
+  }
+
   /* ── cohort context: merged into EVERY track payload ───────
      role-mode contract: app/engine.js reads localStorage['medling.pack'].role */
   function cohort(){
@@ -87,33 +96,36 @@ window.MedLing = window.MedLing || {};
     { id:'note', type:'text', en:'One thing you liked or disliked? (optional)', vi:'Một điều bạn thích hoặc không thích ở bài này? (không bắt buộc)' }
   ];
 
+  /* Diagnostics = 4 language-only items, ONE per PB lesson (Q4); rewritten for measurement validity (audit P0-4):
+     d1→pb1 give a SPECIFIC direction · d2→pb2 decode a suffix · d3→pb3 self-introduction · d4→pb4 read a value aloud.
+     Pre (A) and post (B) test the SAME construct per lesson (different wording). Distractors are length- and
+     register-matched, with a polite-but-wrong option, so the correct answer is never simply the longest/most-polite
+     one — this removes the cue-leak that previously let test-wise learners pass without knowledge. */
   var DIAG_A = [
-    { id:'d1', en:"The suffix '-itis' means…", vi:"Hậu tố '-itis' nghĩa là…", opts:[
-      {t:'Inflammation — Viêm', ok:true},{t:'Removal — Cắt bỏ'},{t:'Study of — Ngành học'} ] },
-    { id:'d2', en:"In 'cardiology', the root 'cardi' means…", vi:"Trong 'cardiology', gốc 'cardi' nghĩa là…", opts:[
-      {t:'Heart — Tim', ok:true},{t:'Liver — Gan'},{t:'Lung — Phổi'} ] },
-    { id:'d3', en:"How do you read a blood pressure of 120/80 aloud?", vi:"Đọc huyết áp 120/80 thành lời thế nào?", opts:[
-      {t:'120 over 80', ok:true},{t:'120 slash 80'},{t:'one-two-zero, eight-zero'} ] },
-    { id:'d4', en:"A patient asks what a pill is for and you're not sure. Best response?", vi:"BN hỏi thuốc để làm gì, bạn không chắc. Trả lời tốt nhất?", opts:[
-      {t:'Let me find the pharmacist for you.', ok:true},{t:"It's for pain."},{t:"Read the label."} ] },
-    { id:'d5', en:"A 'dermatologist' treats problems of the…", vi:"'Dermatologist' chữa vấn đề về…", opts:[
-      {t:'Skin — Da', ok:true},{t:'Heart — Tim'},{t:'Bones — Xương'} ] },
-    { id:'d6', en:"'gastritis' means…", vi:"'gastritis' nghĩa là…", opts:[
-      {t:'Inflammation of the stomach — Viêm dạ dày', ok:true},{t:'Removal of the stomach — Cắt dạ dày'},{t:'A stomach doctor — Bác sĩ dạ dày'} ] }
+    { id:'d1', en:"A patient asks where the X-ray room is. Best reply?", vi:"BN hỏi phòng X-quang ở đâu. Trả lời tốt nhất?", opts:[
+      {t:"It's on the second floor, turn left. — Ở tầng hai, rẽ trái.", ok:true},{t:"It's somewhere over there, I think. — Hình như đâu đó phía kia."},{t:"I'm not sure — try asking reception. — Tôi không chắc, hỏi lễ tân xem."} ] },
+    { id:'d2', en:"The suffix '-itis' means…", vi:"Hậu tố '-itis' nghĩa là…", opts:[
+      {t:'Inflammation — Viêm', ok:true},{t:'Removal — Cắt bỏ'},{t:'Enlargement — To ra'} ] },
+    { id:'d3', en:"You meet a new patient for the first time. Best way to begin?", vi:"Bạn gặp một BN mới lần đầu. Cách mở đầu tốt nhất?", opts:[
+      {t:"Hello, I'm Dr. Nam — I'll be seeing you today. — Chào, tôi là BS Nam, sẽ khám cho bạn hôm nay.", ok:true, t_role:{
+        doctor:"Hello, I'm Dr. Nam — I'll be seeing you today. — Chào, tôi là BS Nam, sẽ khám cho bạn hôm nay.",
+        nurse:"Hi, I'm Nam — one of the nurses looking after you today. — Chào, tôi là Nam, điều dưỡng chăm sóc bạn hôm nay.",
+        student:"Hello, I'm Nam — a medical student working with your doctor. — Chào, tôi là Nam, sinh viên y khoa làm việc cùng bác sĩ của bạn." }},{t:"Could you tell me your symptoms first? — Cho tôi biết triệu chứng trước nhé?"},{t:"Please wait here, I'll be with you shortly. — Vui lòng chờ đây, tôi tới ngay."} ] },
+    { id:'d4', en:"How do you read a blood pressure of 120/80 aloud?", vi:"Đọc huyết áp 120/80 thành lời thế nào?", opts:[
+      {t:'120 over 80', ok:true},{t:'120 slash 80'},{t:'120 and 80'} ] }
   ];
   var DIAG_B = [
-    { id:'d1', en:"The suffix '-megaly' means…", vi:"Hậu tố '-megaly' nghĩa là…", opts:[
-      {t:'Enlargement — Phì đại', ok:true},{t:'Pain — Đau'},{t:'Inflammation — Viêm'} ] },
-    { id:'d2', en:"In 'neurology', the root 'neur' means…", vi:"Trong 'neurology', gốc 'neur' nghĩa là…", opts:[
-      {t:'Nerve — Thần kinh', ok:true},{t:'Muscle — Cơ'},{t:'Bone — Xương'} ] },
-    { id:'d3', en:"How do you say an oxygen saturation of 98% aloud?", vi:"Đọc SpO2 98% thành lời thế nào?", opts:[
-      {t:'Oxygen saturation is 98 percent', ok:true},{t:'Oxygen is 98 Celsius'},{t:'SpO2 nine eight'} ] },
-    { id:'d4', en:"You see a patient alone in the hallway, looking distressed. Best first words?", vi:"Thấy BN một mình ở hành lang, trông lo lắng. Câu đầu tiên tốt nhất?", opts:[
-      {t:'Excuse me, are you okay?', ok:true},{t:'What do you want?'},{t:'Please wait.'} ] },
-    { id:'d5', en:"A 'pulmonologist' treats problems of the…", vi:"'Pulmonologist' chữa vấn đề về…", opts:[
-      {t:'Lungs — Phổi', ok:true},{t:'Kidneys — Thận'},{t:'Skin — Da'} ] },
-    { id:'d6', en:"'hepatitis' means…", vi:"'hepatitis' nghĩa là…", opts:[
-      {t:'Inflammation of the liver — Viêm gan', ok:true},{t:'Enlargement of the liver — Gan to'},{t:'A liver operation — Mổ gan'} ] }
+    { id:'d1', en:"A patient asks where the pharmacy is. Best reply?", vi:"BN hỏi quầy thuốc ở đâu. Trả lời tốt nhất?", opts:[
+      {t:"It's on the ground floor, near the entrance. — Ở tầng trệt, gần lối vào.", ok:true},{t:"It's around here somewhere, I think. — Hình như quanh đây thôi."},{t:"I don't know — try asking reception. — Tôi không biết, hỏi lễ tân xem."} ] },
+    { id:'d2', en:"The suffix '-ectomy' means…", vi:"Hậu tố '-ectomy' nghĩa là…", opts:[
+      {t:'Removal — Cắt bỏ', ok:true},{t:'Inflammation — Viêm'},{t:'Enlargement — To ra'} ] },
+    { id:'d3', en:"A new patient enters and sits down. Your first words?", vi:"BN mới bước vào và ngồi xuống. Câu đầu tiên?", opts:[
+      {t:"Good morning, I'm Dr. Lan — your doctor today. — Chào buổi sáng, tôi là BS Lan, bác sĩ của bạn hôm nay.", ok:true, t_role:{
+        doctor:"Good morning, I'm Dr. Lan — your doctor today. — Chào buổi sáng, tôi là BS Lan, bác sĩ của bạn hôm nay.",
+        nurse:"Good morning, I'm Lan — your nurse today. — Chào buổi sáng, tôi là Lan, điều dưỡng của bạn hôm nay.",
+        student:"Good morning, I'm Lan — a medical student on the team. — Chào buổi sáng, tôi là Lan, sinh viên y khoa trong nhóm." }},{t:"Have you been waiting here very long? — Bạn chờ ở đây lâu chưa?"},{t:"Do you have your appointment card ready? — Bạn có sẵn thẻ hẹn chưa?"} ] },
+    { id:'d4', en:"How do you read an oxygen saturation of 98% aloud?", vi:"Đọc SpO2 98% thành lời thế nào?", opts:[
+      {t:'98 percent', ok:true},{t:'98 per hundred'},{t:'9, 8 percent'} ] }
   ];
 
   /* §8 Post-pack survey Q1–Q8 */
@@ -144,7 +156,11 @@ window.MedLing = window.MedLing || {};
     { id:'pay_intent', type:'single', en:'What might you pay for in the future?', vi:'Bạn có sẵn sàng trả tiền cho phần nào trong tương lai?', opts:[
       {t:'Không, chỉ muốn dùng miễn phí'},{t:'Có thể trả cho thuật ngữ/chuyên khoa'},
       {t:'Có thể trả cho đọc guideline/paper'},{t:'Có thể trả cho case presentation/hội nghị'},
-      {t:'Có thể trả cho speaking/AI roleplay'},{t:'Có thể trả nếu có lộ trình/chứng nhận rõ'},{t:'Chưa chắc'} ] }
+      {t:'Có thể trả cho speaking/AI roleplay'},{t:'Có thể trả nếu có lộ trình/chứng nhận rõ'},{t:'Chưa chắc'} ] },
+    /* price-band signal (audit P0-3): stated-preference, no commitment — lets the founder anchor a price. */
+    { id:'price_band', type:'single', en:'If you were to pay, what monthly price would feel fair?', vi:'Nếu trả phí, mức giá theo tháng nào bạn thấy hợp lý?', opts:[
+      {t:'Dưới 99k / tháng — Under 99k'},{t:'99–199k / tháng'},{t:'200–399k / tháng'},
+      {t:'400k+ / tháng'},{t:'Mình sẽ không trả — Would not pay'} ] }
   ];
 
   /* §11 direction buckets A–H → track labels for the routing screen */
@@ -168,6 +184,15 @@ window.MedLing = window.MedLing || {};
     return '<div style="margin-bottom:16px">'
       +'<div style="font-size:14px;font-weight:600;color:#1E2B23;line-height:1.5">'+esc(en)+'</div>'
       +(vi?'<div style="font-size:12px;color:#7A7461;font-style:italic;line-height:1.5">'+esc(vi)+'</div>':'')+'</div>';
+  }
+
+  /* role-aware option text (role review A): show o.t_role[role] when present, else base o.t — so a
+     single-choice item's correct answer matches the learner's role (e.g. d3 self-introduction).
+     Scoring is unaffected: the `ok` flag lives on the option, not the role variant. */
+  function roleOpt(o){
+    try { var r = localStorage.getItem('medling.roleview') || ((load() || {}).role);
+      if (r && o.t_role && o.t_role[r]) return o.t_role[r]; } catch(e){}
+    return o.t;
   }
 
   /* runSeq: step through a list of question items, collecting answers, then onDone(answers).
@@ -200,7 +225,7 @@ window.MedLing = window.MedLing || {};
           +'<button class="obtn" id="sv-skip">Skip — Bỏ qua</button>';
       } else { /* single */
         body = head(q.en,q.vi) + q.opts.map(function(o,oi){
-          return '<button class="opt" data-i="'+oi+'">'+esc(o.t)+'</button>';
+          return '<button class="opt" data-i="'+oi+'">'+esc(roleOpt(o))+'</button>';
         }).join('');
       }
       app().innerHTML = shell(prog + body); go();
@@ -270,6 +295,20 @@ window.MedLing = window.MedLing || {};
     return { score: correct, total: items.length, items: detail };
   }
 
+  /* PII safety (audit P0-2): before answers leave the device, replace every free-text (type:'text')
+     value with a boolean "answered" flag. The raw text stays only in localStorage (on-device); it is
+     never sent to the analytics sink. Non-text answers (options/buckets) pass through unchanged. */
+  function scrubText(items, answers){
+    var textIds = {};
+    (items || []).forEach(function(q){ if (q.type === 'text') textIds[q.id] = 1; });
+    var out = {};
+    for (var k in answers){
+      if (!answers.hasOwnProperty(k)) continue;
+      out[k] = textIds[k] ? !!(answers[k] && String(answers[k]).trim()) : answers[k];
+    }
+    return out;
+  }
+
   /* ── screens ─────────────────────────────────────────────── */
   /* §5 Required UI copy for Starter intro (diagnostic-onboarding framing) */
   function intro(onStart){
@@ -284,6 +323,7 @@ window.MedLing = window.MedLing || {};
       +'<div style="background:#F2EDE1;border-radius:12px;padding:12px 14px;text-align:left;font-size:12px;color:#5E7268;line-height:1.7;margin-bottom:18px">'
         +'1. Vài câu về bạn · A few questions<br>2. Mini-test trước · Quick pre-test<br>3. 4 bài học + feedback nhanh · 4 lessons<br>4. Mini-test sau, kết quả & định hướng · Post-test, score & your next track</div>'
       +'</div>'
+      +'<div style="font-size:11px;color:#7A7461;text-align:center;line-height:1.6;margin-bottom:14px">Nền tảng học ngôn ngữ — không phải tư vấn y khoa · Language learning, not medical advice.<br>MedLing thu thập dữ liệu học tập ẩn danh để cải thiện sản phẩm · Anonymous learning data is collected to improve MedLing.</div>'
       +'<button class="mbtn" style="background:#33473A;color:#FBF9F4" id="pk-go">🚀 Bắt đầu — Start</button>'
       +'<button class="obtn" id="pk-back" onclick="window.location.href=window.location.pathname">← Bài khác — All lessons</button>'
     ); go();
@@ -291,7 +331,7 @@ window.MedLing = window.MedLing || {};
   }
 
   function results(s, onNext){
-    var pre = s.pre||{score:0,total:6}, post = s.post||{score:0,total:6};
+    var pre = s.pre||{score:0,total:4}, post = s.post||{score:0,total:4};
     var gain = post.score - pre.score;
     var msg = gain>0 ? {ic:'📈',en:'You improved!',vi:'Bạn tiến bộ rồi!'} : {ic:'🌱',en:'Good start!',vi:'Khởi đầu tốt!'};
     app().innerHTML = shell(
@@ -348,12 +388,15 @@ window.MedLing = window.MedLing || {};
       var c = document.getElementById('rt-consent');
       var consent = !!(c && c.checked);
       var contact = (t && consent) ? t : '';
-      track('route', { pack:packId, directions:picks, contact:contact, contact_consent:consent });
+      /* [P1-6] only log consent alongside an actual contact — don't record a bare refusal. */
+      var payload = { pack:packId, directions:picks, contact:contact };
+      if (contact) payload.contact_consent = consent;
+      track('route', payload);
       onDone();
     }
     document.getElementById('rt-submit').onclick = commit;
     document.getElementById('rt-skip').onclick = function(){
-      track('route', { pack:packId, directions:picks, contact:'', contact_consent:false });
+      track('route', { pack:packId, directions:picks, contact:'' });
       onDone();
     };
   }
@@ -381,11 +424,26 @@ window.MedLing = window.MedLing || {};
   function microFlow(packId, lessonId){
     track('pack_micro_open', { pack:packId, lesson:lessonId });
     runSeq(MICRO, 'Phản hồi nhanh — Quick feedback', function(ans){
-      track('micro', { pack:packId, lesson:lessonId, answers:ans });
-      /* [CONTRACT-MICRO] advance PB1→PB4, else back to pack (triggers post-diagnostic) */
-      var order=['pb1','pb2','pb3','pb4']; var i=order.indexOf(lessonId);
-      if (i>=0 && i<3) window.location.href='?lesson='+order[i+1];
-      else window.location.href='?pack='+packId;
+      track('micro', { pack:packId, lesson:lessonId, answers:scrubText(MICRO, ans) });
+      /* [CONTRACT-MICRO] mark this lesson done, then advance to the next INCOMPLETE lesson
+         (resume-safe + order-proof). When all 4 are done, hand back to the pack → post-test. */
+      var s = load() || {};
+      s.lessons = s.lessons || {};
+      if (ORDER.indexOf(lessonId) >= 0) s.lessons[lessonId] = true;
+      save(s);
+      var nxt = nextIncomplete(s);
+      window.location.href = nxt ? ('?lesson='+nxt) : ('?pack='+packId);
+    });
+  }
+
+  /* Resume-safe pre-test (audit P0-1): shared by fresh-start AND the profiling-resume branch, so a learner
+     who closes after the profile but before finishing the pre-test resumes cleanly instead of dead-ending. */
+  function runPreTest(st, packId){
+    runSeq(DIAG_A, 'Pre-test', function(pre){
+      var ps = scoreDiag(DIAG_A, pre);
+      track('diagnostic', { form:'A', pack:packId, score:ps.score, total:ps.total, items:ps.items });
+      st.phase = 'lessons'; st.pre = ps; st.lessons = st.lessons || {}; save(st);
+      window.location.href = '?lesson=' + ORDER[0];
     });
   }
 
@@ -406,24 +464,29 @@ window.MedLing = window.MedLing || {};
         runSeq(PROFILE, 'Về bạn — About you', function(profile){
           // derive + save normalized role + cohort fields BEFORE tracking so payload carries them
           var role = deriveRole(profile.group);
-          var primaryGoal = (Array.isArray(profile.goal) && profile.goal.length) ? profile.goal[0] : '';
+          try { localStorage.removeItem('medling.roleview'); } catch(e){} /* survey role is authoritative on a fresh run; in-lesson toggle can still override later */
+          var primaryGoal = Array.isArray(profile.goal) ? profile.goal : (profile.goal ? [profile.goal] : []); /* [P1-7] keep all goal picks, not just the first */
           var st = { id:packId, phase:'profiling', role:role,
             year_group:(profile.group||''), english_level:(profile.english_level||''),
             primary_goal:primaryGoal, profile:profile };
           save(st); // so cohort() picks up fields for the track call below
-          track('survey', { phase:'profile', pack:packId, answers:profile });
-          runSeq(DIAG_A, 'Pre-test', function(pre){
-            var ps = scoreDiag(DIAG_A, pre);
-            track('diagnostic', { form:'A', pack:packId, score:ps.score, total:ps.total, items:ps.items });
-            st.phase = 'lessons'; st.pre = ps; save(st);
-            window.location.href = '?lesson=pb1';
-          });
+          track('survey', { phase:'profile', pack:packId, answers:scrubText(PROFILE, profile) });
+          runPreTest(st, packId);
         });
       });
       return;
     }
+    if (s.phase === 'profiling'){
+      // profile saved but pre-test not finished (closed mid-funnel) → resume at the pre-test, keep profile data
+      runPreTest(s, packId);
+      return;
+    }
     if (s.phase === 'lessons'){
-      // returning after PB4 (no micro) → post-diagnostic → results → post-survey → direction routing → done
+      // Resume-safe (Q5/Q6): if any lesson is still unfinished, send the learner there —
+      // handles close-and-reopen mid-pack and out-of-order entry. Post-test runs only once all 4 done.
+      var nxtLesson = nextIncomplete(s);
+      if (nxtLesson){ window.location.href = '?lesson=' + nxtLesson; return; }
+      // all 4 lessons done → post-diagnostic → results → post-survey → direction routing → done
       runSeq(DIAG_B, 'Post-test', function(post){
         var qs = scoreDiag(DIAG_B, post);
         track('diagnostic', { form:'B', pack:packId, score:qs.score, total:qs.total, items:qs.items });
@@ -431,7 +494,7 @@ window.MedLing = window.MedLing || {};
         results(s, function(){
           runSeq(POST, 'Feedback', function(ans){
             var buckets = ans.direction_buckets || [];
-            track('survey', { phase:'post', pack:packId, answers:ans,
+            track('survey', { phase:'post', pack:packId, answers:scrubText(POST, ans),
               gain: (s.post.score - (s.pre?s.pre.score:0)) });
             s.postsurvey = ans; s.phase = 'route'; save(s);
             routeScreen(packId, { direction_buckets: buckets }, function(){
