@@ -48,8 +48,8 @@
         "vi": "Giải thích tiền tố tim mạch: tachy-, brady-, cardio-"
       },
       {
-        "en": "Understand exactly what any \"-ectomy\" procedure removes",
-        "vi": "Biết \"-ectomy\" là phẫu thuật cắt bỏ cơ quan nào"
+        "en": "Recognise that \"-ectomy\" often means surgical removal of an organ",
+        "vi": "Nhận ra \"-ectomy\" thường nghĩa là phẫu thuật cắt bỏ một cơ quan"
       },
       {
         "en": "Identify a specialist from their title alone (-ologist)",
@@ -111,8 +111,8 @@
       },
       {
         "emoji": "🔪",
-        "en": "Understand exactly what any \"-ectomy\" removes",
-        "vi": "Hiểu \"-ectomy\" là cắt bỏ cơ quan nào"
+        "en": "Recognise that \"-ectomy\" often means surgical removal",
+        "vi": "Nhận ra \"-ectomy\" thường nghĩa là phẫu thuật cắt bỏ"
       },
       {
         "emoji": "🩺",
@@ -159,8 +159,8 @@
           }
         },
         {
-          "en": "Any word ending in \"-itis\" describes a type of inflammation.",
-          "vi": "Bất kỳ từ nào kết thúc bằng \"-itis\" đều mô tả một loại viêm.",
+          "en": "\"-itis\" often signals inflammation in many common terms — context confirms it.",
+          "vi": "\"-itis\" thường báo hiệu tình trạng viêm trong nhiều thuật ngữ thông dụng — ngữ cảnh sẽ xác nhận.",
           "gl": {}
         }
       ],
@@ -382,8 +382,8 @@
           }
         },
         {
-          "en": "Know the root, and you know exactly what is being removed.",
-          "vi": "Biết gốc từ là biết chính xác cơ quan nào sẽ bị cắt bỏ.",
+          "en": "The root gives a strong first guess about what is being removed; context confirms it.",
+          "vi": "Gốc từ cho bạn một dự đoán đầu tiên về cơ quan bị cắt bỏ; ngữ cảnh sẽ xác nhận.",
           "gl": {}
         }
       ],
@@ -448,8 +448,8 @@
           "gl": {}
         }
       ],
-      "tip_en": "\"Nephro-\" = kidney (Greek). Nephrectomy = kidney removal. Nephrology = kidney specialty. One root, many clinical words.",
-      "tip_vi": "\"Nephro-\" = thận (Hy Lạp). Nephrectomy = cắt thận. Nephrology = thận học. Một gốc từ, nhiều từ lâm sàng.",
+      "tip_en": "\"Nephro-\" = kidney (Greek). Nephrectomy = kidney removal. Nephrology = kidney specialty. One root, many clinical words. Word parts are clues, not a clinical decision tool.",
+      "tip_vi": "\"Nephro-\" = thận (Hy Lạp). Nephrectomy = cắt thận. Nephrology = thận học. Một gốc từ, nhiều từ lâm sàng. Gốc từ/hậu tố là gợi ý ngôn ngữ, không phải công cụ tự quyết định chẩn đoán hay điều trị.",
       "role": "Any HCW",
       "instruction": "Which is the best response?",
       "instruction_vi": "Câu trả lời tốt nhất là gì?"
@@ -491,8 +491,8 @@
           }
         },
         {
-          "en": "Know the root, and you know exactly which organ that specialist treats.",
-          "vi": "Biết gốc từ là biết chính xác chuyên khoa đó điều trị cơ quan nào.",
+          "en": "The root gives a strong first guess about which organ that specialist treats; context confirms it.",
+          "vi": "Gốc từ cho bạn một dự đoán đầu tiên về cơ quan mà chuyên khoa đó điều trị; ngữ cảnh sẽ xác nhận.",
           "gl": {}
         }
       ],

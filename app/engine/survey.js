@@ -22,6 +22,10 @@ window.MedLing = window.MedLing || {};
   /* ── lesson progress (Q5/Q6): per-lesson record drives resume + post-test gate ──
      ORDER = the 4 Starter Pack lessons; nextIncomplete() = first one not yet done. */
   var ORDER = ['pb1','pb2','pb3','pb4'];
+  /* [P2-5] Allowlist of valid pack ids. URL params (?pack / ?micro) are untrusted, so we
+     validate against ORDER (micro) and PACKS (pack) BEFORE rendering UI or firing analytics,
+     so junk ids can't drive the funnel or inflate telemetry. */
+  var PACKS = ['starter'];
   function nextIncomplete(s){
     var done = (s && s.lessons) || {};
     for (var i=0;i<ORDER.length;i++){ if (!done[ORDER[i]]) return ORDER[i]; }
@@ -451,9 +455,22 @@ window.MedLing = window.MedLing || {};
   function route(packId){
     packId = packId || 'starter';
 
+    /* [P2-5] reject unknown pack ids before any UI render or analytics fire */
+    if (PACKS.indexOf(packId) < 0){
+      window.location.replace(window.location.pathname);
+      return;
+    }
+
     /* micro-feedback branch: ?pack=<id>&micro=<lessonId> */
     var micro = getParam('micro');
-    if (micro){ microFlow(packId, micro); return; }
+    if (micro){
+      /* [P2-5] only route to micro-feedback for a known lesson id; ignore junk */
+      if (ORDER.indexOf(micro) < 0){
+        window.location.replace(window.location.pathname);
+        return;
+      }
+      microFlow(packId, micro); return;
+    }
 
     var s = load();
     if (!s || s.id !== packId || !s.phase){
