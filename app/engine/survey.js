@@ -531,8 +531,9 @@ window.MedLing = window.MedLing || {};
       });
       return;
     }
-    // phase 'done' → just show thanks
-    thanks();
+    // phase 'done' → already completed the funnel. Don't dead-end at the thank-you screen on re-entry
+    // (e.g. clicking "Học thử" again) — send them to the lessons (the 4-PB picker) instead.
+    window.location.replace(window.location.pathname);
   }
 
   ML.pack = { route: route, reset: reset, state: load };
