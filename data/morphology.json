@@ -49,7 +49,15 @@
     "rhin":    { "gloss_en": "nose",             "gloss_vi": "mũi",            "origin": "Gk", "example": "rhinitis" },
     "pulmon":  { "gloss_en": "lung",             "gloss_vi": "phổi",           "origin": "La", "example": "pulmonary" },
     "thorac":  { "gloss_en": "chest",            "gloss_vi": "ngực",           "origin": "Gk", "example": "thoracic" },
-    "abdomin": { "gloss_en": "abdomen",          "gloss_vi": "bụng",           "origin": "La", "example": "abdominal" }
+    "abdomin": { "gloss_en": "abdomen",          "gloss_vi": "bụng",           "origin": "La", "example": "abdominal" },
+    "append":   { "gloss_en": "appendix",        "gloss_vi": "ruột thừa",      "origin": "La", "example": "appendectomy" },
+    "bronch":   { "gloss_en": "bronchus, airway","gloss_vi": "phế quản",       "origin": "Gk", "example": "bronchitis" },
+    "tonsill":  { "gloss_en": "tonsil",          "gloss_vi": "amidan",         "origin": "La", "example": "tonsillitis" },
+    "mast":     { "gloss_en": "breast",          "gloss_vi": "vú, tuyến vú",   "origin": "Gk", "example": "mastectomy" },
+    "hyster":   { "gloss_en": "uterus, womb",    "gloss_vi": "tử cung",        "origin": "Gk", "example": "hysterectomy" },
+    "onc":      { "gloss_en": "tumor, mass",     "gloss_vi": "khối u, ung thư","origin": "Gk", "example": "oncologist" },
+    "cholecyst":{ "gloss_en": "gallbladder",     "gloss_vi": "túi mật",        "origin": "Gk", "example": "cholecystectomy" },
+    "palpit":   { "gloss_en": "throb, flutter",  "gloss_vi": "đập, rung",      "origin": "La", "example": "palpitation" }
   },
   "suffixes": {
     "itis":    { "gloss_en": "inflammation",              "gloss_vi": "viêm",                  "origin": "Gk", "example": "arthritis" },
@@ -73,6 +81,9 @@
     "penia":   { "gloss_en": "deficiency",                "gloss_vi": "giảm, thiếu",           "origin": "Gk", "example": "leukopenia" },
     "plasty":  { "gloss_en": "surgical repair",           "gloss_vi": "tạo hình",              "origin": "Gk", "example": "angioplasty" },
     "rrhea":   { "gloss_en": "flow, discharge",           "gloss_vi": "chảy, tiết",            "origin": "Gk", "example": "diarrhea" },
-    "tension": { "gloss_en": "pressure",                  "gloss_vi": "áp lực",                "origin": "La", "example": "hypertension" }
+    "tension": { "gloss_en": "pressure",                  "gloss_vi": "áp lực",                "origin": "La", "example": "hypertension" },
+    "ac":      { "gloss_en": "pertaining to",             "gloss_vi": "thuộc về",              "origin": "La", "example": "cardiac" },
+    "al":      { "gloss_en": "pertaining to",             "gloss_vi": "thuộc về",              "origin": "La", "example": "myocardial" },
+    "ation":   { "gloss_en": "process, condition",        "gloss_vi": "quá trình, tình trạng", "origin": "La", "example": "palpitation" }
   }
 }

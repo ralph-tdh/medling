@@ -19,37 +19,48 @@ window.MedLing = window.MedLing || {};
     return loading;
   }
 
-  /* Greedy decomposition: strip a known suffix, then a known prefix, then match
-     the remaining stem (with combining-vowel 'o' tolerance) against roots.
-     Returns [] when the word isn't built from known morphemes. */
+  /* Decomposition: strip a known suffix, optionally a known prefix, then consume
+     one or more known roots left-to-right (combining-vowel 'o' tolerated between
+     morphemes). Returns [] when the word isn't built from known morphemes. */
   function decompose(wordRaw) {
     if (!DB) return [];
     var w = String(wordRaw).toLowerCase().replace(/[^a-z]/g, '');
     if (w.length < 4) return [];
-    var parts = [];
 
     var sfx = longestKey(DB.suffixes, w, 'end');
-    var core = w;
-    if (sfx) core = w.slice(0, w.length - sfx.length);
+    var stem = sfx ? w.slice(0, w.length - sfx.length) : w;
 
-    var pfx = longestKey(DB.prefixes, core, 'start');
-    if (pfx) core = core.slice(pfx.length);
+    /* Prefix: commit only if a root still matches afterwards. Otherwise the
+       greedy single-letter prefix 'a'/'an' would eat the first letter of a root
+       (e.g. arthritis -> arthr) and break an otherwise-valid decomposition. */
+    var pfx = longestKey(DB.prefixes, stem, 'start');
+    var roots = consumeRoots(pfx ? stem.slice(pfx.length) : stem);
+    if (!roots.length && pfx) { pfx = null; roots = consumeRoots(stem); }
 
-    core = core.replace(/o$/, ''); /* drop combining vowel: cardio -> cardi */
+    /* Need a real root AND something to teach (a prefix, a suffix, or a second
+       root) — never surface a lone bare root with no affix. */
+    if (!roots.length || (!pfx && !sfx && roots.length < 2)) return [];
 
-    var root = null;
-    if (core) {
-      if (DB.roots[core]) root = core;
-      else root = longestKey(DB.roots, core, 'exact-ish');
-    }
-
-    /* Need at least a root + (prefix or suffix), else it's not a real medical build */
-    if (!root || (!pfx && !sfx)) return [];
-
-    if (pfx)  parts.push(seg('prefix', pfx, DB.prefixes[pfx]));
-    parts.push(seg('root', root, DB.roots[root]));
-    if (sfx)  parts.push(seg('suffix', sfx, DB.suffixes[sfx]));
+    var parts = [];
+    if (pfx) parts.push(seg('prefix', pfx, DB.prefixes[pfx]));
+    roots.forEach(function (r) { parts.push(seg('root', r, DB.roots[r])); });
+    if (sfx) parts.push(seg('suffix', sfx, DB.suffixes[sfx]));
     return parts;
+  }
+
+  /* Greedily consume known roots from the start of `core`, tolerating the
+     combining vowel 'o' between morphemes (cardi-o-megaly -> cardi). Supports
+     compound terms (myocardial -> my + cardi, gastroenter -> gastr + enter). */
+  function consumeRoots(core) {
+    var roots = [];
+    core = core.replace(/o$/, '');
+    while (core.length) {
+      var r = DB.roots[core] ? core : longestKey(DB.roots, core, 'start');
+      if (!r) break;
+      roots.push(r);
+      core = core.slice(r.length).replace(/^o/, '');
+    }
+    return roots;
   }
 
   function longestKey(map, str, mode) {
