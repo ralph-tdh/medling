@@ -162,9 +162,10 @@ window.MedLing = window.MedLing || {};
       {t:'Có thể trả cho đọc guideline/paper'},{t:'Có thể trả cho case presentation/hội nghị'},
       {t:'Có thể trả cho speaking/AI roleplay'},{t:'Có thể trả nếu có lộ trình/chứng nhận rõ'},{t:'Chưa chắc'} ] },
     /* price-band signal (audit P0-3): stated-preference, no commitment — lets the founder anchor a price. */
-    { id:'price_band', type:'single', en:'If you were to pay, what monthly price would feel fair?', vi:'Nếu trả phí, mức giá theo tháng nào bạn thấy hợp lý?', opts:[
-      {t:'Dưới 99k / tháng — Under 99k'},{t:'99–199k / tháng'},{t:'200–399k / tháng'},
-      {t:'400k+ / tháng'},{t:'Mình sẽ không trả — Would not pay'} ] }
+    { id:'price_band', type:'single', en:'If you paid to learn Medical English, which price feels fair?', vi:'Nếu trả phí để học tiếng Anh Y khoa, mức giá nào bạn thấy hợp lý?', opts:[
+      {t:'Dưới 99k / tháng — Under 99k/mo'},{t:'99–199k / tháng'},{t:'200–399k / tháng'},{t:'400k+ / tháng'},
+      {t:'Trả theo từng bài — Pay per lesson'},{t:'Mua trọn gói một lần — One-time bundle'},
+      {t:'Mình sẽ không trả — Would not pay'} ] }
   ];
 
   /* §11 direction buckets A–H → track labels for the routing screen */
