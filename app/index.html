@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="theme-color" content="#FBF9F4">
+  <title>MedLing · Lessons</title>
+  <link rel="icon" href="../brand/logo/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../brand/tokens.css">
+  <!-- Funnel telemetry sink: Apps Script -> Google Sheet (set by Ralph, Gate 5). -->
+  <script>window.MEDLING_ANALYTICS = { mode:'beacon', endpoint:'https://script.google.com/macros/s/AKfycbyKW2r8dfPFawA814LUoqqZVTEJ9c8VCezn48Pd8aeOep7sjDu72ingAK73Jw97KuY/exec' };</script>
+  <!-- Analytics: privacy-light funnel telemetry; no-op until window.MEDLING_ANALYTICS is set.
+       Loaded synchronously (not deferred) so it is ready before the inline boot script
+       fires the first deep-link 'lesson_open' event. Tiny, dependency-free, local. -->
+  <script src="engine/analytics.js"></script>
+  <!-- Starter Pack survey/diagnostic engine — sync so ?pack routing is ready at boot. -->
+  <script src="engine/survey.js"></script>
+  <!-- Backend adapter: degrades to local-only mode until window.MEDLING_SUPABASE is set
+       (see supabase/README.md). Optional Supabase JS CDN loads only when configured. -->
+  <script defer src="engine/auth.js"></script>
+  <!-- Novel-feature modules (progressive enhancement; attach to window.MedLing) -->
+  <script defer src="engine/notebook.js"></script>
+  <script defer src="engine/fsrs.js"></script>
+  <script defer src="engine/morphology.js"></script>
+  <script defer src="engine/dialogue.js"></script>
+  <script defer src="engine/softgate.js"></script>
+  <script defer src="engine/roleplay.js"></script>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html,body{background:var(--ml-cream);-webkit-text-size-adjust:100%;min-height:100vh}
+    body,button{font-family:var(--ml-font-body)}
+    h1,h2,.hf{font-family:var(--ml-font-display);font-weight:500;letter-spacing:-.01em}
+    @keyframes popIn{from{transform:translateY(6px);opacity:0}to{transform:translateY(0);opacity:1}}
+    @keyframes slideU{from{transform:translateY(10px);opacity:0}to{transform:translateY(0);opacity:1}}
+    .pop{animation:popIn var(--ml-dur) var(--ml-ease) both}
+    .su{animation:slideU var(--ml-dur-slow) var(--ml-ease) both}
+    .wobble{animation:none}
+    .mbtn{
+      width:100%;padding:14px 16px;border:none;border-radius:var(--ml-radius-md);
+      font-family:var(--ml-font-body);font-size:15px;font-weight:600;
+      cursor:pointer;-webkit-appearance:none;appearance:none;display:block;text-align:center;
+      transition:opacity var(--ml-dur-fast) var(--ml-ease),transform var(--ml-dur-fast) var(--ml-ease);
+    }
+    .mbtn:active{transform:translateY(1px);opacity:.92}
+    .obtn{
+      width:100%;padding:12px;border:1px solid var(--ml-stone);border-radius:var(--ml-radius-md);
+      font-family:var(--ml-font-body);font-size:14px;font-weight:500;
+      cursor:pointer;background:transparent;color:var(--ml-earth);margin-top:9px;
+      -webkit-appearance:none;appearance:none;
+      transition:border-color var(--ml-dur-fast) var(--ml-ease);
+    }
+    .obtn:active{border-color:var(--ml-moss);color:var(--ml-forest)}
+    .opt{
+      width:100%;text-align:left;padding:13px 15px;
+      border:1px solid var(--ml-stone);border-radius:var(--ml-radius-md);background:var(--ml-paper);
+      cursor:pointer;font-family:var(--ml-font-body);font-size:14px;font-weight:500;color:var(--ml-ink);
+      box-shadow:var(--ml-shadow-soft);display:flex;align-items:center;gap:10px;
+      margin-bottom:9px;line-height:1.5;-webkit-appearance:none;appearance:none;
+      transition:border-color var(--ml-dur-fast) var(--ml-ease);
+    }
+    .opt:not(.locked):hover{border-color:var(--ml-moss)}
+    .opt:not(.locked):active{transform:translateY(1px)}
+    .opt.ok{border:1.5px solid var(--ml-ok)!important;background:var(--ml-ok-bg)!important;color:var(--ml-forest)!important;box-shadow:none!important}
+    .opt.no{border:1.5px solid var(--ml-err)!important;background:var(--ml-err-bg)!important;color:var(--ml-err)!important;box-shadow:none!important}
+    .opt.locked{cursor:default}
+    .opt.dim{opacity:.45}
+    ::-webkit-scrollbar{width:4px}
+    ::-webkit-scrollbar-thumb{background:var(--ml-stone);border-radius:4px}
+    #app{min-height:100vh;background:var(--ml-cream)}
+
+    /* ── PICKER ── */
+    .pk-wrap{max-width:460px;margin:0 auto;padding:32px 16px}
+    .pk-header{text-align:center;margin-bottom:28px}
+    .pk-logo{width:64px;height:64px;margin:0 auto 14px;display:flex;align-items:center;justify-content:center}
+    .pk-logo img{width:100%;height:100%}
+    .pk-card{
+      display:flex;align-items:center;gap:14px;
+      background:var(--ml-paper);border:1px solid var(--ml-line);border-radius:var(--ml-radius-lg);
+      padding:15px 16px;margin-bottom:10px;cursor:pointer;
+      box-shadow:var(--ml-shadow-soft);text-align:left;width:100%;
+      -webkit-appearance:none;appearance:none;font-family:var(--ml-font-body);
+      transition:border-color var(--ml-dur-fast) var(--ml-ease);
+    }
+    .pk-card:not(.pk-coming):hover{border-color:var(--ml-moss)}
+    .pk-card:not(.pk-coming):active{transform:translateY(1px)}
+    .pk-emoji{width:48px;height:48px;border-radius:var(--ml-radius-md);display:flex;align-items:center;
+      justify-content:center;font-size:24px;flex-shrink:0;border:1px solid}
+    .pk-meta{flex:1;min-width:0}
+    .pk-title{font-size:14px;font-weight:600;color:var(--ml-ink);line-height:1.35;margin-bottom:2px}
+    .pk-vi{font-size:11.5px;color:var(--ml-earth);font-style:italic;margin-bottom:7px}
+    .pk-badges{display:flex;gap:5px;flex-wrap:wrap}
+    .pk-pill{font-size:10px;font-weight:500;padding:3px 9px;border-radius:var(--ml-radius-pill);border:1px solid;white-space:nowrap;font-family:var(--ml-font-body)}
+    .pk-arrow{font-size:18px;color:var(--ml-sage);flex-shrink:0}
+    .pk-coming{opacity:.55;cursor:default;border-style:dashed}
+    .pk-stage-lab{font:500 11px/1 var(--ml-font-body);letter-spacing:var(--ml-tracking-wide);
+      text-transform:uppercase;color:var(--ml-sage);margin:22px 0 10px}
+  </style>
+</head>
+<body>
+<div id="app"></div>
+
+<script>
+(function () {
+  /* ── Tier pills ── */
+  var TIERS = {
+    free:    { c:'var(--ml-moss)',  bg:'var(--ml-ok-bg)',   label:'Free' },
+    premium: { c:'var(--ml-warn)',  bg:'var(--ml-warn-bg)', label:'Premium' },
+    soon:    { c:'var(--ml-stone)', bg:'var(--ml-linen)',   label:'Soon' }
+  };
+  /* Learner journey ramp (Atelier) — stage → color */
+  var STAGE_COLORS = {
+    'PB':'#B5A98E',
+    '1A':'#9AA989','1B':'#8DA088','2A':'#74906F','2B':'#5E7D60',
+    '3A':'#4F6B57','3B':'#41594A','4A':'#33473A','4B':'#33473A',
+    '5A':'#283A2F','5B':'#283A2F'
+  };
+
+  function track(ev, props) {
+    try { if (window.MedLing && window.MedLing.analytics) window.MedLing.analytics.track(ev, props || {}); }
+    catch (e) {}
+  }
+
+  function boot(lesson) {
+    window.LESSON = lesson;
+    var s = document.createElement('script');
+    s.src = 'engine.js';
+    document.body.appendChild(s);
+  }
+
+  function fail(msg) {
+    document.getElementById('app').innerHTML =
+      '<div style="max-width:460px;margin:40px auto;padding:24px;font-family:sans-serif;color:#A3563C;line-height:1.6">'
+      + '<b>Could not load lesson.</b><br>' + msg + '</div>';
+  }
+
+  function lessonCard(l) {
+    var th   = TIERS[l.tier] || TIERS.free;
+    var sc   = STAGE_COLORS[l.stage] || 'var(--ml-moss)';
+    var coming = l.tier === 'soon';
+    return '<button class="pk-card'+(coming?' pk-coming':'')+'" '
+      + (coming ? '' : 'onclick="loadLesson(\''+l.id+'\')"') + '>'
+      +'<div class="pk-emoji" style="background:'+sc+'14;border-color:'+sc+'50">'+l.emoji+'</div>'
+      +'<div class="pk-meta">'
+        +'<div class="pk-title">'+l.title_en+'</div>'
+        +'<div class="pk-vi">'+l.title_vi+'</div>'
+        +'<div class="pk-badges">'
+          +'<span class="pk-pill" style="color:'+sc+';border-color:'+sc+'60;background:'+sc+'10">'+l.stage+' · '+l.cefr+'</span>'
+          +'<span class="pk-pill" style="color:var(--ml-earth);border-color:var(--ml-line);background:transparent">'+l.duration+'</span>'
+          +'<span class="pk-pill" style="color:'+th.c+';border-color:'+th.c+'50;background:'+th.bg+'">'
+            +(coming ? '🔒 ' : '')+th.label+'</span>'
+        +'</div>'
+      +'</div>'
+      +'<div class="pk-arrow">'+(coming ? '🔒' : '→')+'</div>'
+    +'</button>';
+  }
+
+  function stageCard(s) {
+    var sc = STAGE_COLORS[s.stage] || 'var(--ml-moss)';
+    var building = s.status === 'building';
+    return '<div class="pk-card pk-coming" style="border-style:dashed">'
+      +'<div class="pk-emoji" style="background:'+sc+'14;border-color:'+sc+'50">'+s.emoji+'</div>'
+      +'<div class="pk-meta">'
+        +'<div class="pk-title">Stage '+s.stage+' — '+s.name_en+'</div>'
+        +'<div class="pk-vi">'+s.name_vi+'</div>'
+        +'<div class="pk-badges">'
+          +'<span class="pk-pill" style="color:'+sc+';border-color:'+sc+'60;background:'+sc+'10">'+s.lessons+' bài · '+s.cefr+'</span>'
+          +'<span class="pk-pill" style="color:'+(building?'var(--ml-warn)':'var(--ml-earth)')+';border-color:var(--ml-line);background:transparent">'
+            +(building ? '🔨 Đang xây' : '🔒 ' + (s.tier === 'premium' ? 'Premium · Sắp ra mắt' : 'Sắp ra mắt'))+'</span>'
+        +'</div>'
+      +'</div>'
+    +'</div>';
+  }
+
+  function renderPicker(lessons, roadmap, note) {
+    var app = document.getElementById('app');
+    /* Group by stage so the journey reads top-down: PB → 1A → … */
+    var order = ['PB','1A','1B','2A','2B','3A','3B','4A','4B','5A','5B'];
+    var groups = {};
+    lessons.forEach(function(l){ (groups[l.stage] = groups[l.stage] || []).push(l); });
+
+    var body = order.filter(function(st){ return groups[st]; }).map(function(st){
+      var lab = st === 'PB' ? 'Pre-Beginner · Free demo' : 'Stage ' + st;
+      return '<div class="pk-stage-lab">'+lab+'</div>' + groups[st].map(lessonCard).join('');
+    }).join('');
+    /* Lessons without a known stage fall through at the end */
+    var rest = lessons.filter(function(l){ return order.indexOf(l.stage) === -1; });
+    if (rest.length) body += '<div class="pk-stage-lab">More</div>' + rest.map(lessonCard).join('');
+    /* Coming-soon stages from roadmap.json (journey to 3A — D32) */
+    if (roadmap && roadmap.stages) {
+      var coming = roadmap.stages.filter(function(s){ return !groups[s.stage]; });
+      if (coming.length) {
+        body += '<div class="pk-stage-lab">Lộ trình — The road to L3</div>'
+          + coming.map(stageCard).join('');
+      }
+    }
+
+    app.innerHTML = '<div style="height:4px;background:linear-gradient(90deg,#B5A98E,#8DA088,#4F6B57,#33473A)"></div>'
+      +'<div class="pk-wrap su">'
+        +'<div class="pk-header">'
+          +'<div class="pk-logo"><img src="../brand/logo/ml-ligature.svg" alt="MedLing"></div>'
+          +'<h1 style="font-size:26px;color:var(--ml-forest);margin-bottom:4px">MedLing</h1>'
+          +'<div style="font-size:13px;color:var(--ml-earth);font-style:italic">Rooted in medicine. Growing in English.</div>'
+          +'<div style="font-size:12px;color:var(--ml-sage);margin-top:4px">Chọn bài để bắt đầu</div>'
+        +'</div>'
+        + body
+        + (note || '')
+      +'</div>';
+  }
+
+  window.loadLesson = function(id) {
+    track('lesson_open', { lesson: id, from: 'picker' });
+    document.getElementById('app').innerHTML =
+      '<div style="max-width:460px;margin:60px auto;text-align:center;font-family:sans-serif;color:var(--ml-earth)">'
+      +'<img src="../brand/logo/ml-heartbeat-vine.svg" alt="" style="width:110px;margin-bottom:12px">'
+      +'<div style="font-size:14px">Đang tải bài học…</div></div>';
+    fetch('../lessons/' + id + '.json')
+      .then(function(r){ if(!r.ok) throw new Error('HTTP '+r.status); return r.json(); })
+      .then(function(data){ boot(data); })
+      .catch(function(e){ fail('lessons/'+id+'.json — '+e.message); });
+  };
+
+  /* ── Boot logic ── */
+
+  // 1) Standalone: JSON already inlined
+  var inline = document.getElementById('lesson-data');
+  if (inline) {
+    try { boot(JSON.parse(inline.textContent)); return; }
+    catch (e) { fail('Inline JSON invalid: ' + e.message); return; }
+  }
+
+  // 2) Direct link with ?lesson=id
+  var params = new URLSearchParams(window.location.search);
+
+  // Starter Pack flow: ?pack=<id> (survey + diagnostic wrapper around the lessons)
+  var packId = params.get('pack');
+  if (packId) {
+    if (window.MedLing && window.MedLing.pack) window.MedLing.pack.route(packId);
+    else fail('Pack module not loaded — engine/survey.js');
+    return;
+  }
+
+  var id = params.get('lesson');
+  if (id) {
+    track('lesson_open', { lesson: id, from: 'link' });
+    fetch('../lessons/' + id + '.json')
+      .then(function(r){ if(!r.ok) throw new Error('HTTP '+r.status); return r.json(); })
+      .then(function(data){ boot(data); })
+      .catch(function(e){ fail('lessons/'+id+'.json — '+e.message); });
+    return;
+  }
+
+  // 3) No param → show lesson picker (live lessons + coming-soon roadmap stages).
+  //    Starter Pack cohort (localStorage['medling.pack'] present) sees ONLY the 4 PB lessons —
+  //    no 1A/roadmap spoiler (Q1); everyone else sees the full journey.
+  var STARTER = ['pb1','pb2','pb3','pb4'];
+  // The public site IS the Starter Pack: ALWAYS show only the 4 PB lessons — never spoil Stage 1A
+  // in the picker, regardless of pack state or entry path (Q1 = "chỉ hiện 4 bài PB thôi").
+  // (This supersedes the earlier P1-1 "show full after done" behaviour, which conflicted with Q1.)
+  // To re-expose the full journey later (when 1A is validated/ready), flip this to false.
+  var inStarter = true;
+  Promise.all([
+    fetch('../lessons/index.json').then(function(r){ if(!r.ok) throw new Error('HTTP '+r.status); return r.json(); }),
+    inStarter ? Promise.resolve(null)
+              : fetch('../lessons/roadmap.json').then(function(r){ return r.ok ? r.json() : null; }).catch(function(){ return null; })
+  ])
+    .then(function(res){
+      var lessons = res[0] || [];
+      if (inStarter) lessons = lessons.filter(function(l){ return STARTER.indexOf(l.id) > -1; });
+      track('picker_view', { count: lessons.length, scope: inStarter ? 'starter' : 'full' });
+      var note = inStarter
+        ? '<div class="pk-stage-lab">Tiếp theo — What\'s next</div>'
+          + '<div style="font-size:13px;color:var(--ml-earth);line-height:1.6;padding:2px 2px 10px">'
+          + 'Các track khác (giải mã thuật ngữ, đọc guideline, giao tiếp lâm sàng…) sẽ mở sau khi bạn hoàn thành Starter Pack.<br>'
+          + '<span style="font-style:italic;color:var(--ml-sage)">Other tracks unlock after you finish the Starter Pack.</span></div>'
+        : '';
+      renderPicker(lessons, res[1], note);
+    })
+    .catch(function(){
+      // index.json not found — fallback: redirect to pb1
+      loadLesson('pb1');
+    });
+
+  // 4) PWA service worker (hosted mode only)
+  if ('serviceWorker' in navigator && location.protocol !== 'file:') {
+    navigator.serviceWorker.register('sw.js').catch(function(){ /* non-fatal */ });
+  }
+})();
+</script>
+</body>
+</html>

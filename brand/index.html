@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MedLing — Brand Sheet (Atelier)</title>
+<link rel="icon" href="logo/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="tokens.css">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--ml-cream); color: var(--ml-ink);
+         font: 400 var(--ml-text-md)/var(--ml-leading) var(--ml-font-body);
+         padding: var(--ml-sp-7) var(--ml-sp-4); }
+  .wrap { max-width: 860px; margin: 0 auto; }
+  h1 { font: 500 var(--ml-text-2xl)/1.2 var(--ml-font-display); color: var(--ml-forest); }
+  h2 { font: 500 var(--ml-text-lg)/1.3 var(--ml-font-display); color: var(--ml-forest);
+       margin: var(--ml-sp-7) 0 var(--ml-sp-4); }
+  .sub { color: var(--ml-earth); margin-top: 6px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: var(--ml-sp-3); }
+  .sw { border-radius: var(--ml-radius-md); border: var(--ml-border); overflow: hidden; }
+  .sw .chip { height: 56px; }
+  .sw .lbl { padding: 8px 10px; background: var(--ml-paper); }
+  .sw .lbl b { display: block; font-size: var(--ml-text-sm); font-weight: 500; color: var(--ml-ink); }
+  .sw .lbl span { font: 400 var(--ml-text-xs)/1.4 var(--ml-font-mono); color: var(--ml-earth); }
+  .logos { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: var(--ml-sp-3); }
+  .logo-card { background: var(--ml-paper); border: var(--ml-border); border-radius: var(--ml-radius-lg);
+               padding: var(--ml-sp-5); text-align: center; }
+  .logo-card img { height: 84px; }
+  .logo-card.dark { background: var(--ml-forest); }
+  .logo-card p { margin-top: var(--ml-sp-3); font-size: var(--ml-text-sm); color: var(--ml-earth); }
+  .logo-card.dark p { color: var(--ml-sage); }
+  .ramp { display: flex; border-radius: var(--ml-radius-md); overflow: hidden; height: 44px; }
+  .ramp div { flex: 1; display: flex; align-items: flex-end; justify-content: center;
+              font: 500 10px/2 var(--ml-font-mono); color: rgba(251,249,244,.85); }
+  .type-row { background: var(--ml-paper); border: var(--ml-border); border-radius: var(--ml-radius-lg);
+              padding: var(--ml-sp-5); margin-bottom: var(--ml-sp-3); }
+  .type-row .ml-eyebrow { display: block; margin-bottom: 8px; }
+  .demo { display: flex; gap: var(--ml-sp-3); flex-wrap: wrap; align-items: center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <span class="ml-eyebrow">MedLing · Brand · Atelier · D28</span>
+  <h1 style="margin-top:8px">Rooted in medicine. Growing in English.</h1>
+  <p class="sub">Khám phá tiếng Anh y khoa từ gốc rễ — Explorer · Caregiver · Sage.</p>
+
+  <h2>Logos</h2>
+  <div class="logos">
+    <div class="logo-card"><img src="logo/ml-ligature.svg" alt="Ligature M-L"><p>Primary — ligature M·L</p></div>
+    <div class="logo-card"><img src="logo/ml-root-canopy.svg" alt="Root canopy M"><p>Hero — root &amp; canopy</p></div>
+    <div class="logo-card"><img src="logo/ml-heartbeat-vine.svg" alt="Heartbeat vine"><p>Motion — heartbeat vine</p></div>
+    <div class="logo-card dark"><img src="logo/app-icon.svg" alt="App icon"><p>App icon / favicon</p></div>
+  </div>
+
+  <h2>Core palette</h2>
+  <div class="grid">
+    <div class="sw"><div class="chip" style="background:#FBF9F4"></div><div class="lbl"><b>cream</b><span>#FBF9F4 · page bg</span></div></div>
+    <div class="sw"><div class="chip" style="background:#EAE4D6"></div><div class="lbl"><b>line</b><span>#EAE4D6 · hairlines</span></div></div>
+    <div class="sw"><div class="chip" style="background:#C9C2AE"></div><div class="lbl"><b>stone</b><span>#C9C2AE · muted</span></div></div>
+    <div class="sw"><div class="chip" style="background:#7A7461"></div><div class="lbl"><b>earth</b><span>#7A7461 · text-2</span></div></div>
+    <div class="sw"><div class="chip" style="background:#8DA088"></div><div class="lbl"><b>sage</b><span>#8DA088 · accent</span></div></div>
+    <div class="sw"><div class="chip" style="background:#4F6B57"></div><div class="lbl"><b>moss</b><span>#4F6B57 · primary</span></div></div>
+    <div class="sw"><div class="chip" style="background:#33473A"></div><div class="lbl"><b>forest</b><span>#33473A · strong</span></div></div>
+    <div class="sw"><div class="chip" style="background:#1E2B23"></div><div class="lbl"><b>ink</b><span>#1E2B23 · text</span></div></div>
+  </div>
+
+  <h2>Learner journey ramp — earthy → forest</h2>
+  <div class="ramp">
+    <div style="background:#B5A98E">PB</div><div style="background:#9AA989">1A</div>
+    <div style="background:#8DA088">1B</div><div style="background:#74906F">2A</div>
+    <div style="background:#5E7D60">2B</div><div style="background:#4F6B57">3A</div>
+    <div style="background:#41594A">3B</div><div style="background:#33473A">L4</div>
+    <div style="background:#283A2F">L5</div>
+  </div>
+
+  <h2>Typography</h2>
+  <div class="type-row">
+    <span class="ml-eyebrow">Display · Newsreader 500</span>
+    <div style="font:500 28px/1.25 var(--ml-font-display);color:var(--ml-forest)">First Clinical Encounter</div>
+  </div>
+  <div class="type-row">
+    <span class="ml-eyebrow">Body · Inter 400/500</span>
+    <div>The nurse takes the patient's vital signs every four hours. — <i style="color:var(--ml-earth)">Y tá đo sinh hiệu mỗi bốn giờ.</i></div>
+  </div>
+  <div class="type-row">
+    <span class="ml-eyebrow">Mono · JetBrains Mono · IPA</span>
+    <div class="ml-ipa">cardiology · ˌkɑːdiˈɒlədʒi · khoa tim mạch</div>
+  </div>
+
+  <h2>Components</h2>
+  <div class="demo">
+    <button class="ml-btn-primary">Bắt đầu học →</button>
+    <button class="ml-btn-ghost">Chọn bài khác</button>
+    <span class="ml-pill">1A · A1</span>
+    <span class="ml-pill ml-pill--tier" style="background:var(--ml-tier-3a)">3A · B1</span>
+    <span class="ml-vocab-chip">cardio- <span class="ml-ipa">tim</span></span>
+  </div>
+  <div style="margin-top:var(--ml-sp-4);max-width:420px">
+    <div class="ml-opt ok">✓ Good morning, doctor. <span style="margin-left:auto;font-size:11px">chính xác</span></div>
+    <div class="ml-opt no">✗ Hello bro! <span style="margin-left:auto;font-size:11px">sai ngữ cảnh</span></div>
+  </div>
+</div>
+</body>
+</html>

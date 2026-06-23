@@ -1,0 +1,560 @@
+{
+  "meta": {
+    "id": "pb3",
+    "version": 1,
+    "title_en": "First Clinical Encounter",
+    "title_vi": "Cuộc gặp gỡ lâm sàng đầu tiên",
+    "level": 1,
+    "stage": "PB",
+    "cefr": "< A2",
+    "topic_tag": "clinical-encounter",
+    "hero_emoji": "🩺",
+    "complete_en": "Lesson 3 complete!",
+    "complete_vi": "Bài 3 hoàn thành!",
+    "theme_color": "#854F0B",
+    "theme_light": "#FAEEDA",
+    "theme_shadow": "#5A3208"
+  },
+  "config": {
+    "next": {
+      "url": "?lesson=pb4",
+      "label": "Lesson 4 — Vital Signs & Numbers 📊",
+      "label_vi": "Bài 4 — Các chỉ số sinh tồn & con số",
+      "free": true
+    }
+  },
+  "welcome": {
+    "scenario": [
+      {
+        "en": "A new patient walks into your examination room.",
+        "vi": "Một bệnh nhân mới bước vào phòng khám của bạn."
+      },
+      {
+        "en": "They don't know you. They don't know what happens next.",
+        "vi": "Họ chưa biết bạn. Họ không biết điều gì sẽ xảy ra tiếp theo."
+      },
+      {
+        "en": "Your first words will shape the entire encounter.",
+        "vi": "Những câu nói đầu tiên của bạn sẽ định hình toàn bộ cuộc khám.",
+        "bold": true
+      }
+    ],
+    "can_do": [
+      {
+        "en": "Introduce yourself clearly at the start of any clinical encounter",
+        "vi": "Tự giới thiệu rõ ràng khi bắt đầu bất kỳ cuộc khám nào"
+      },
+      {
+        "en": "Open with the right question: 'What brings you in today?'",
+        "vi": "Mở đầu bằng câu hỏi đúng: 'What brings you in today?'"
+      },
+      {
+        "en": "Use active-listening phrases to keep patients talking",
+        "vi": "Dùng câu lắng nghe tích cực để khuyến khích bệnh nhân tiếp tục kể"
+      },
+      {
+        "en": "Set expectations by explaining what you'll do next",
+        "vi": "Giải thích bước tiếp theo để bệnh nhân biết điều gì sẽ xảy ra"
+      }
+    ],
+    "badges": [
+      { "icon": "⏱️", "label": "~15 min" },
+      { "icon": "🎯", "label": "4 situations" },
+      { "icon": "📝", "label": "5-Q quiz" },
+      { "icon": "🆓", "label": "Free" }
+    ]
+  },
+  "done": {
+    "achievements": [
+      {
+        "emoji": "🩺",
+        "en": "Introduce yourself by name in any clinical setting",
+        "vi": "Tự giới thiệu bằng tên trong bất kỳ cơ sở y tế nào"
+      },
+      {
+        "emoji": "🎯",
+        "en": "Open an encounter with 'What brings you in today?'",
+        "vi": "Mở đầu cuộc khám với 'What brings you in today?'"
+      },
+      {
+        "emoji": "👂",
+        "en": "Keep a patient talking with active-listening responses",
+        "vi": "Giữ cho bệnh nhân tiếp tục kể bằng câu phản hồi tích cực"
+      },
+      {
+        "emoji": "📋",
+        "en": "Tell a patient clearly what you will do next",
+        "vi": "Nói rõ cho bệnh nhân biết bạn sẽ làm gì tiếp theo"
+      }
+    ]
+  },
+  "situations": [
+    {
+      "id": 1,
+      "emoji": "👋",
+      "tag": "Situation 1 / 4",
+      "en_tag": "Introduction",
+      "en": "Introducing yourself",
+      "vi": "Tự giới thiệu",
+      "ctx_en": "A patient enters your exam room for the first time. They sit down and wait, unsure who you are.",
+      "ctx_vi": "Bệnh nhân bước vào phòng khám lần đầu. Họ ngồi xuống chờ đợi, chưa biết bạn là ai.",
+      "pt": "(The patient sits down and looks at you expectantly, waiting for you to speak first.)",
+      "pt_vi": "(Bệnh nhân ngồi xuống và nhìn bạn chờ đợi, muốn bạn nói trước.)",
+      "phrases": [
+        {
+          "en": "Hello, I'm Dr. Minh. I'll be taking care of you today.",
+          "vi": "Xin chào, tôi là Bác sĩ Minh. Tôi sẽ chăm sóc cho bạn hôm nay.",
+          "en_role": {
+            "doctor": "Hello, I'm Dr. Minh. I'll be taking care of you today.",
+            "nurse": "Hi, I'm Minh, one of the nurses looking after you today.",
+            "student": "Hello, I'm Minh, a medical student working with your doctor today."
+          },
+          "vi_role": {
+            "doctor": "Xin chào, tôi là Bác sĩ Minh. Tôi sẽ chăm sóc cho bạn hôm nay.",
+            "nurse": "Xin chào, tôi là Minh, một trong những điều dưỡng chăm sóc bạn hôm nay.",
+            "student": "Xin chào, tôi là Minh, sinh viên y khoa làm việc cùng bác sĩ của bạn hôm nay."
+          },
+          "gl": { "taking care of": "chăm sóc cho" }
+        },
+        {
+          "en": "Good morning — my name is Dr. Lan from the internal medicine department.",
+          "vi": "Chào buổi sáng — tôi là Bác sĩ Lan, khoa nội.",
+          "en_role": {
+            "doctor": "Good morning — my name is Dr. Lan from the internal medicine department.",
+            "nurse": "Good morning — my name is Lan, a nurse on the internal medicine ward.",
+            "student": "Good morning — my name is Lan, a medical student on the internal medicine team."
+          },
+          "vi_role": {
+            "doctor": "Chào buổi sáng — tôi là Bác sĩ Lan, khoa nội.",
+            "nurse": "Chào buổi sáng — tôi là Lan, điều dưỡng khoa nội.",
+            "student": "Chào buổi sáng — tôi là Lan, sinh viên y khoa trong nhóm khoa nội."
+          },
+          "gl": {
+            "internal medicine": "nội khoa",
+            "department": "khoa"
+          }
+        },
+        {
+          "en": "Hi, I'm Dr. Nam, the resident on duty this morning. Nice to meet you.",
+          "vi": "Xin chào, tôi là Bác sĩ Nam, bác sĩ nội trú trực hôm nay. Rất vui được gặp bạn.",
+          "en_role": {
+            "doctor": "Hi, I'm Dr. Nam, the resident on duty this morning. Nice to meet you.",
+            "nurse": "Hi, I'm Nam, the nurse on duty this morning. Nice to meet you.",
+            "student": "Hi, I'm Nam, a medical student on the team this morning. Nice to meet you."
+          },
+          "vi_role": {
+            "doctor": "Xin chào, tôi là Bác sĩ Nam, bác sĩ nội trú trực hôm nay. Rất vui được gặp bạn.",
+            "nurse": "Xin chào, tôi là Nam, điều dưỡng trực sáng nay. Rất vui được gặp bạn.",
+            "student": "Xin chào, tôi là Nam, sinh viên y khoa trong nhóm sáng nay. Rất vui được gặp bạn."
+          },
+          "gl": {
+            "resident": "bác sĩ nội trú",
+            "on duty": "đang trực"
+          }
+        },
+        {
+          "en": "Please don't worry — I'm Dr. Pham, and I'm here to help.",
+          "vi": "Đừng lo lắng — tôi là Bác sĩ Phạm, và tôi ở đây để giúp bạn.",
+          "en_role": {
+            "doctor": "Please don't worry — I'm Dr. Pham, and I'm here to help.",
+            "nurse": "Please don't worry — I'm Pham, your nurse, and I'm here to help.",
+            "student": "Please don't worry — I'm Pham, a medical student, and I'm here to help."
+          },
+          "vi_role": {
+            "doctor": "Đừng lo lắng — tôi là Bác sĩ Phạm, và tôi ở đây để giúp bạn.",
+            "nurse": "Đừng lo lắng — tôi là Phạm, điều dưỡng của bạn, và tôi ở đây để giúp.",
+            "student": "Đừng lo lắng — tôi là Phạm, sinh viên y khoa, và tôi ở đây để giúp."
+          },
+          "gl": {}
+        }
+      ],
+      "vocab": [
+        { "en": "introduction", "ipa": "ˌɪntrəˈdʌkʃən", "vi": "sự giới thiệu" },
+        { "en": "encounter", "ipa": "ɪnˈkaʊntər", "vi": "cuộc gặp (lâm sàng)" },
+        { "en": "department", "ipa": "dɪˈpɑːtmənt", "vi": "khoa / phòng ban" },
+        { "en": "internal medicine", "ipa": "ɪnˈtɜːnəl ˈmedɪsɪn", "vi": "nội khoa" },
+        { "en": "resident", "ipa": "ˈrezɪdənt", "vi": "bác sĩ nội trú" },
+        { "en": "on duty", "ipa": "ɒn ˈdjuːti", "vi": "đang trực / đang làm việc" }
+      ],
+      "pq_en": "A patient sits down and waits. You are their doctor. What should you say first?",
+      "pq_vi": "Bệnh nhân ngồi xuống và chờ. Bạn là bác sĩ của họ. Bạn nên nói gì trước?",
+      "pq_en_role": {
+        "doctor": "A patient sits down and waits. You are their doctor. What should you say first?",
+        "nurse": "A patient sits down and waits. You are the nurse looking after them. What should you say first?",
+        "student": "A patient sits down and waits. You are the medical student meeting them. What should you say first?"
+      },
+      "pq_vi_role": {
+        "doctor": "Bệnh nhân ngồi xuống và chờ. Bạn là bác sĩ của họ. Bạn nên nói gì trước?",
+        "nurse": "Bệnh nhân ngồi xuống và chờ. Bạn là điều dưỡng chăm sóc họ. Bạn nên nói gì trước?",
+        "student": "Bệnh nhân ngồi xuống và chờ. Bạn là sinh viên y khoa đang gặp họ. Bạn nên nói gì trước?"
+      },
+      "opts": [
+        {
+          "t": "Hello, I'm Dr. [name]. I'll be taking care of you today.",
+          "ok": true,
+          "gl": { "taking care of": "chăm sóc cho" },
+          "t_role": {
+            "doctor": "Hello, I'm Dr. [name]. I'll be taking care of you today.",
+            "nurse": "Hi, I'm [name], one of the nurses looking after you today.",
+            "student": "Hello, I'm [name], a medical student working with your doctor today."
+          }
+        },
+        {
+          "t": "What do you need?",
+          "ok": false,
+          "gl": {}
+        },
+        {
+          "t": "Please wait — I need to review your file first.",
+          "ok": false,
+          "gl": {}
+        },
+        {
+          "t": "Did you bring your appointment slip?",
+          "ok": false,
+          "gl": {}
+        }
+      ],
+      "tip_en": "Your name and role are the first things a patient needs to know — always introduce yourself before asking any questions.",
+      "tip_vi": "Tên và vai trò của bạn là điều đầu tiên bệnh nhân cần biết — luôn tự giới thiệu trước khi hỏi bất cứ điều gì.",
+      "role": "Doctor / Any HCW",
+      "instruction": "Which is the best response?",
+      "instruction_vi": "Câu trả lời tốt nhất là gì?"
+    },
+    {
+      "id": 2,
+      "emoji": "💬",
+      "tag": "Situation 2 / 4",
+      "en_tag": "Opening Question",
+      "en": "Opening the encounter",
+      "vi": "Mở đầu cuộc khám",
+      "ctx_en": "You've introduced yourself. The patient is ready. Now find out why they came today.",
+      "ctx_vi": "Bạn đã tự giới thiệu xong. Bệnh nhân đã sẵn sàng. Bây giờ cần tìm hiểu lý do họ đến hôm nay.",
+      "pt": "Well... I've been having some problems. I'm not really sure where to start.",
+      "pt_vi": "Ừm... tôi đang có một số vấn đề. Tôi thực sự không biết bắt đầu từ đâu nữa.",
+      "phrases": [
+        {
+          "en": "What brings you in today?",
+          "vi": "Hôm nay bạn đến với vấn đề gì vậy?",
+          "gl": { "What brings you in": "Điều gì đưa bạn đến đây" }
+        },
+        {
+          "en": "How can I help you today?",
+          "vi": "Hôm nay tôi có thể giúp gì cho bạn?",
+          "gl": {}
+        },
+        {
+          "en": "Take your time — what's been going on?",
+          "vi": "Bạn cứ từ từ — chuyện gì đang xảy ra vậy?",
+          "gl": { "Take your time": "Cứ từ từ" }
+        },
+        {
+          "en": "What seems to be bothering you?",
+          "vi": "Điều gì đang làm bạn khó chịu?",
+          "gl": {}
+        }
+      ],
+      "vocab": [
+        { "en": "chief complaint", "ipa": "tʃiːf kəmˈpleɪnt", "vi": "lý do vào viện / triệu chứng chính" },
+        { "en": "concern", "ipa": "kənˈsɜːn", "vi": "mối lo / vấn đề lo ngại" },
+        { "en": "presenting problem", "ipa": "prɪˈzentɪŋ ˈprɒbləm", "vi": "vấn đề hiện tại" },
+        { "en": "open question", "ipa": "ˈəʊpən ˈkwestʃən", "vi": "câu hỏi mở" },
+        { "en": "consult", "ipa": "kənˈsʌlt", "vi": "khám tư vấn / hội chẩn" }
+      ],
+      "pq_en": "Your patient says: 'I don't know where to start.' What is the best opening question?",
+      "pq_vi": "Bệnh nhân nói: 'Tôi không biết bắt đầu từ đâu.' Câu hỏi mở đầu tốt nhất là gì?",
+      "opts": [
+        {
+          "t": "What brings you in today?",
+          "ok": true,
+          "gl": { "What brings you in": "Điều gì đưa bạn đến đây" }
+        },
+        {
+          "t": "Have you had any tests done recently?",
+          "ok": false,
+          "gl": {}
+        },
+        {
+          "t": "Your chart says you have high blood pressure — is that still the issue?",
+          "ok": false,
+          "gl": {}
+        },
+        {
+          "t": "I have five minutes, so please be brief.",
+          "ok": false,
+          "gl": {}
+        }
+      ],
+      "tip_en": "'What brings you in today?' is an open question — it lets the patient tell their story in their own words, giving you the richest clinical information.",
+      "tip_vi": "'What brings you in today?' là câu hỏi mở — cho phép bệnh nhân kể câu chuyện theo cách riêng, giúp thu thập thông tin lâm sàng phong phú nhất.",
+      "role": "Doctor / Any HCW",
+      "instruction": "Which is the best response?",
+      "instruction_vi": "Câu trả lời tốt nhất là gì?"
+    },
+    {
+      "id": 3,
+      "emoji": "👂",
+      "tag": "Situation 3 / 4",
+      "en_tag": "Active Listening",
+      "en": "Keeping the patient talking",
+      "vi": "Khuyến khích bệnh nhân kể tiếp",
+      "ctx_en": "The patient has started describing their symptoms. Show you are listening and encourage them to continue.",
+      "ctx_vi": "Bệnh nhân đã bắt đầu mô tả triệu chứng. Bạn muốn cho thấy bạn đang lắng nghe và khuyến khích họ tiếp tục.",
+      "pt": "The pain started about three days ago. It sort of comes and goes... it's hard to describe, really.",
+      "pt_vi": "Cơn đau bắt đầu khoảng ba ngày trước. Nó kiểu như lúc có lúc không... thực sự khó mô tả lắm.",
+      "phrases": [
+        {
+          "en": "Can you tell me more about that?",
+          "vi": "Bạn có thể kể thêm về điều đó không?",
+          "gl": {}
+        },
+        {
+          "en": "I see — and where exactly is the pain?",
+          "vi": "Tôi hiểu — và cơn đau ở chỗ nào vậy?",
+          "gl": {}
+        },
+        {
+          "en": "Go on — I'm listening.",
+          "vi": "Bạn cứ kể tiếp — tôi đang nghe.",
+          "gl": { "Go on": "Kể tiếp đi" }
+        },
+        {
+          "en": "When you say 'comes and goes' — how often does that happen?",
+          "vi": "Khi bạn nói 'lúc có lúc không' — nó xảy ra thường xuyên như thế nào?",
+          "gl": { "comes and goes": "lúc có lúc không (không liên tục)" }
+        }
+      ],
+      "vocab": [
+        { "en": "symptom", "ipa": "ˈsɪmptəm", "vi": "triệu chứng" },
+        { "en": "onset", "ipa": "ˈɒnset", "vi": "khởi phát (bắt đầu)" },
+        { "en": "intermittent", "ipa": "ˌɪntəˈmɪtənt", "vi": "không liên tục / từng cơn" },
+        { "en": "describe", "ipa": "dɪˈskraɪb", "vi": "mô tả" },
+        { "en": "duration", "ipa": "djʊˈreɪʃən", "vi": "thời gian kéo dài" },
+        { "en": "elaborate", "ipa": "ɪˈlæbəreɪt", "vi": "giải thích chi tiết hơn" }
+      ],
+      "pq_en": "The patient pauses after describing vague pain. You want to hear more. What do you say?",
+      "pq_vi": "Bệnh nhân dừng lại sau khi mô tả cơn đau mơ hồ. Bạn muốn nghe thêm. Bạn nói gì?",
+      "opts": [
+        {
+          "t": "Can you tell me more about that?",
+          "ok": true,
+          "gl": {}
+        },
+        {
+          "t": "That doesn't sound very serious.",
+          "ok": false,
+          "gl": {}
+        },
+        {
+          "t": "I'll need to order some tests.",
+          "ok": false,
+          "gl": {}
+        },
+        {
+          "t": "Why didn't you come in sooner?",
+          "ok": false,
+          "gl": {}
+        }
+      ],
+      "tip_en": "'Can you tell me more about that?' invites the patient to continue without steering the story — simple, open, and always appropriate.",
+      "tip_vi": "'Can you tell me more about that?' mời bệnh nhân tiếp tục mà không định hướng câu chuyện — đơn giản, mở, và luôn phù hợp.",
+      "role": "Doctor / Any HCW",
+      "instruction": "Which is the best response?",
+      "instruction_vi": "Câu trả lời tốt nhất là gì?"
+    },
+    {
+      "id": 4,
+      "emoji": "📋",
+      "tag": "Situation 4 / 4",
+      "en_tag": "Next Steps",
+      "en": "Explaining what happens next",
+      "vi": "Giải thích bước tiếp theo",
+      "ctx_en": "You have listened to the patient's concerns. Now explain what you are going to do.",
+      "ctx_vi": "Bạn đã lắng nghe mối lo của bệnh nhân. Bây giờ cần giải thích bạn sẽ làm gì tiếp theo.",
+      "pt": "So... what are you going to do now? Is everything okay?",
+      "pt_vi": "Vậy... tiếp theo bạn sẽ làm gì? Có vấn đề gì không?",
+      "phrases": [
+        {
+          "en": "I'm going to examine you now. Is that okay?",
+          "vi": "Bây giờ tôi sẽ khám cho bạn. Bạn có đồng ý không?",
+          "en_role": {
+            "doctor": "I'm going to examine you now. Is that okay?",
+            "nurse": "I'm going to take some observations now, then the doctor will examine you. Is that okay?",
+            "student": "With your permission, I'd like to examine you now — the doctor will also check afterwards. Is that okay?"
+          },
+          "vi_role": {
+            "doctor": "Bây giờ tôi sẽ khám cho bạn. Bạn có đồng ý không?",
+            "nurse": "Bây giờ tôi sẽ đo một vài chỉ số, rồi bác sĩ sẽ khám cho bạn. Bạn có đồng ý không?",
+            "student": "Nếu bạn đồng ý, tôi xin được khám cho bạn bây giờ — bác sĩ cũng sẽ khám lại sau. Bạn có đồng ý không?"
+          },
+          "gl": { "examine": "khám" }
+        },
+        {
+          "en": "First, I'll ask a few more questions, then do a physical exam.",
+          "vi": "Trước tiên tôi sẽ hỏi thêm một vài câu, rồi tiến hành khám lâm sàng.",
+          "en_role": {
+            "doctor": "First, I'll ask a few more questions, then do a physical exam.",
+            "nurse": "First, I'll ask a few more questions and take your observations, then the doctor will do the exam.",
+            "student": "First, I'll ask a few more questions, then examine you — the doctor will review the findings afterwards."
+          },
+          "vi_role": {
+            "doctor": "Trước tiên tôi sẽ hỏi thêm một vài câu, rồi tiến hành khám lâm sàng.",
+            "nurse": "Trước tiên tôi sẽ hỏi thêm vài câu và đo chỉ số, rồi bác sĩ sẽ khám.",
+            "student": "Trước tiên tôi sẽ hỏi thêm vài câu, rồi khám cho bạn — sau đó bác sĩ sẽ xem lại kết quả."
+          },
+          "gl": { "physical exam": "khám lâm sàng" }
+        },
+        {
+          "en": "Let's take it one step at a time — I'll check a few things first.",
+          "vi": "Chúng ta sẽ đi từng bước một — trước tiên tôi sẽ kiểm tra một số thứ.",
+          "en_role": {
+            "doctor": "Let's take it one step at a time — I'll check a few things first.",
+            "nurse": "Let's take it one step at a time — I'll take your observations first.",
+            "student": "Let's take it one step at a time — with your permission I'll examine you first, then the doctor will see you too."
+          },
+          "vi_role": {
+            "doctor": "Chúng ta sẽ đi từng bước một — trước tiên tôi sẽ kiểm tra một số thứ.",
+            "nurse": "Chúng ta đi từng bước — trước tiên tôi sẽ đo các chỉ số cho bạn.",
+            "student": "Chúng ta đi từng bước — nếu bạn đồng ý, tôi sẽ khám trước, rồi bác sĩ cũng sẽ gặp bạn."
+          },
+          "gl": { "one step at a time": "từng bước một" }
+        },
+        {
+          "en": "After the exam, we'll talk about what I found and the next steps.",
+          "vi": "Sau khi khám xong, tôi sẽ nói chuyện với bạn về kết quả và các bước tiếp theo.",
+          "en_role": {
+            "doctor": "After the exam, we'll talk about what I found and the next steps.",
+            "nurse": "After the doctor's exam, we'll talk about what was found and the next steps.",
+            "student": "After I examine you and the doctor reviews, we'll talk about what we found and the next steps."
+          },
+          "vi_role": {
+            "doctor": "Sau khi khám xong, tôi sẽ nói chuyện với bạn về kết quả và các bước tiếp theo.",
+            "nurse": "Sau khi bác sĩ khám, chúng ta sẽ trao đổi về kết quả và các bước tiếp theo.",
+            "student": "Sau khi tôi khám và bác sĩ xem lại, chúng ta sẽ trao đổi về kết quả và các bước tiếp theo."
+          },
+          "gl": {}
+        }
+      ],
+      "vocab": [
+        { "en": "physical examination", "ipa": "ˈfɪzɪkəl ɪɡˌzæmɪˈneɪʃən", "vi": "khám lâm sàng" },
+        { "en": "examine", "ipa": "ɪɡˈzæmɪn", "vi": "khám / kiểm tra" },
+        { "en": "assess", "ipa": "əˈses", "vi": "đánh giá" },
+        { "en": "next steps", "ipa": "nekst steps", "vi": "các bước tiếp theo" },
+        { "en": "findings", "ipa": "ˈfaɪndɪŋz", "vi": "kết quả / phát hiện khi khám" },
+        { "en": "explain", "ipa": "ɪkˈspleɪn", "vi": "giải thích" }
+      ],
+      "pq_en": "After hearing the patient's complaint, they ask: 'What happens now?' — Best response?",
+      "pq_vi": "Sau khi nghe bệnh nhân trình bày, họ hỏi: 'Tiếp theo sẽ như thế nào?' — Câu trả lời tốt nhất?",
+      "opts": [
+        {
+          "t": "I'd like to examine you first, then we can discuss the next steps.",
+          "ok": true,
+          "gl": { "examine": "khám" },
+          "t_role": {
+            "doctor": "I'd like to examine you first, then we can discuss the next steps.",
+            "nurse": "I'd like to take some observations first, then the doctor will examine you.",
+            "student": "With your permission, I'd like to examine you first — the doctor will check again afterwards."
+          }
+        },
+        {
+          "t": "You should have come in sooner.",
+          "ok": false,
+          "gl": {}
+        },
+        {
+          "t": "I'll prescribe something for the pain right away.",
+          "ok": false,
+          "gl": {}
+        },
+        {
+          "t": "The nurse will explain everything.",
+          "ok": false,
+          "gl": {}
+        }
+      ],
+      "tip_en": "Setting expectations ('I'll examine you, then we'll talk') reduces patient anxiety — this is the 'E' (Explanation) in the AIDET communication framework.",
+      "tip_vi": "Đặt kỳ vọng rõ ràng ('Tôi sẽ khám, rồi chúng ta nói chuyện') làm giảm lo lắng — đây là chữ 'E' (Explanation) trong khung giao tiếp AIDET.",
+      "tip_en_role": {
+        "doctor": "Setting expectations ('I'll examine you, then we'll talk') reduces patient anxiety — this is the 'E' (Explanation) in the AIDET communication framework.",
+        "nurse": "Setting expectations ('I'll take some observations, then the doctor will examine you') reduces patient anxiety — this is the 'E' (Explanation) in the AIDET communication framework. Stay within your scope: observations and updates, not the medical exam.",
+        "student": "Setting expectations ('With your permission, I'll examine you, and the doctor will check again') reduces patient anxiety — the 'E' (Explanation) in AIDET. As a student, examine politely and with the patient's consent; the supervising doctor re-examines afterwards."
+      },
+      "tip_vi_role": {
+        "doctor": "Đặt kỳ vọng rõ ràng ('Tôi sẽ khám, rồi chúng ta nói chuyện') làm giảm lo lắng — đây là chữ 'E' (Explanation) trong khung giao tiếp AIDET.",
+        "nurse": "Đặt kỳ vọng rõ ràng ('Tôi sẽ đo một vài chỉ số, rồi bác sĩ sẽ khám cho bạn') làm giảm lo lắng — đây là chữ 'E' (Explanation) trong khung giao tiếp AIDET. Hãy giữ đúng phạm vi: đo chỉ số và cập nhật, không phải khám bệnh.",
+        "student": "Đặt kỳ vọng rõ ràng ('Nếu bạn đồng ý, tôi sẽ khám, và bác sĩ sẽ khám lại') làm giảm lo lắng — chữ 'E' (Explanation) trong khung AIDET. Là sinh viên, hãy khám một cách lễ phép và xin phép bệnh nhân; bác sĩ phụ trách sẽ khám lại sau."
+      },
+      "role": "Doctor / Any HCW",
+      "instruction": "Which is the best response?",
+      "instruction_vi": "Câu trả lời tốt nhất là gì?"
+    }
+  ],
+  "quiz": [
+    {
+      "en": "Which phrase correctly introduces yourself to a patient for the first time?",
+      "vi": "Câu nào đúng khi tự giới thiệu với bệnh nhân lần đầu gặp?",
+      "opts": [
+        { "t": "Hello, I'm Dr. [name]. I'll be taking care of you today.", "ok": true, "gl": {}, "t_role": {
+          "doctor": "Hello, I'm Dr. [name]. I'll be taking care of you today.",
+          "nurse": "Hi, I'm [name], one of the nurses looking after you today.",
+          "student": "Hello, I'm [name], a medical student working with your doctor today." } },
+        { "t": "You can just call me Doctor.", "ok": false, "gl": {} },
+        { "t": "I'm busy right now — the nurse will see you first.", "ok": false, "gl": {} },
+        { "t": "Good morning. Please sit down and wait.", "ok": false, "gl": {} }
+      ],
+      "exp_en": "Giving your full name and role immediately builds trust and sets a professional tone. Patients need to know who is responsible for their care.",
+      "exp_vi": "Xưng tên đầy đủ và vai trò ngay lập tức xây dựng niềm tin và thiết lập giọng điệu chuyên nghiệp. Bệnh nhân cần biết ai đang chịu trách nhiệm chăm sóc họ."
+    },
+    {
+      "en": "Why is 'What brings you in today?' better than 'Do you have chest pain?'",
+      "vi": "Tại sao 'What brings you in today?' tốt hơn 'Do you have chest pain?'",
+      "opts": [
+        { "t": "It is an open question — it lets the patient describe their problem freely.", "ok": true, "gl": {} },
+        { "t": "It is more polite and formal.", "ok": false, "gl": {} },
+        { "t": "'Do you have chest pain?' should never be used.", "ok": false, "gl": {} },
+        { "t": "It is shorter and saves clinical time.", "ok": false, "gl": {} }
+      ],
+      "exp_en": "'Do you have chest pain?' is a closed question — the answer is just yes or no. 'What brings you in?' opens the conversation and captures the full picture without bias.",
+      "exp_vi": "'Do you have chest pain?' là câu hỏi đóng — chỉ có thể trả lời có hoặc không. 'What brings you in?' mở ra cuộc trò chuyện và nắm bắt toàn bộ bức tranh mà không định kiến."
+    },
+    {
+      "en": "A patient stops talking mid-sentence, looking uncertain. Which response is best?",
+      "vi": "Bệnh nhân dừng lại giữa câu, trông không chắc chắn. Câu phản hồi nào tốt nhất?",
+      "opts": [
+        { "t": "Go on — I'm listening.", "ok": true, "gl": {} },
+        { "t": "That's enough information for now.", "ok": false, "gl": {} },
+        { "t": "Let me guess what the problem is.", "ok": false, "gl": {} },
+        { "t": "We need to move on — I have other patients.", "ok": false, "gl": {} }
+      ],
+      "exp_en": "'Go on — I'm listening' signals full attention and gives the patient permission to continue at their own pace. It is the core of active listening.",
+      "exp_vi": "'Go on — I'm listening' cho thấy bạn đang chú ý hoàn toàn và cho phép bệnh nhân tiếp tục theo tốc độ riêng. Đây chính là cốt lõi của lắng nghe tích cực."
+    },
+    {
+      "en": "After taking a history, the patient asks: 'What happens now?' Which reply is most appropriate?",
+      "vi": "Sau khi hỏi bệnh sử, bệnh nhân hỏi: 'Tiếp theo sẽ như thế nào?' Câu trả lời nào phù hợp nhất?",
+      "opts": [
+        { "t": "I'd like to examine you now, then we'll talk about the next steps.", "ok": true, "gl": {}, "t_role": {
+          "doctor": "I'd like to examine you now, then we'll talk about the next steps.",
+          "nurse": "I'd like to take some observations now, then the doctor will examine you.",
+          "student": "With your permission, I'd like to examine you first — the doctor will check again afterwards." } },
+        { "t": "Everything looks fine — nothing to worry about.", "ok": false, "gl": {} },
+        { "t": "I'll prescribe medication based on what you've told me.", "ok": false, "gl": {} },
+        { "t": "Please go back to the waiting room.", "ok": false, "gl": {} }
+      ],
+      "exp_en": "Telling a patient what comes next reduces anxiety. Reassuring without examining is premature; prescribing before examining is clinically unsafe.",
+      "exp_vi": "Thông báo bước tiếp theo làm giảm lo lắng. Trấn an mà chưa khám là còn quá sớm; kê đơn trước khi khám là không an toàn về mặt lâm sàng."
+    },
+    {
+      "en": "What is the clinical term for the main reason a patient visits a doctor today?",
+      "vi": "Thuật ngữ lâm sàng nào chỉ lý do chính bệnh nhân đến gặp bác sĩ hôm nay?",
+      "opts": [
+        { "t": "Chief complaint — Lý do vào viện chính", "ok": true, "gl": {} },
+        { "t": "Diagnosis — Chẩn đoán", "ok": false, "gl": {} },
+        { "t": "Prognosis — Tiên lượng", "ok": false, "gl": {} },
+        { "t": "History — Tiền sử", "ok": false, "gl": {} }
+      ],
+      "exp_en": "'Chief complaint' is the formal term for the main reason a patient seeks care. It anchors the entire history-taking process and appears in clinical notes.",
+      "exp_vi": "'Chief complaint' là thuật ngữ chính thức chỉ lý do chính bệnh nhân tìm kiếm chăm sóc. Đây là điểm neo của toàn bộ quá trình hỏi bệnh sử và xuất hiện trong ghi chú lâm sàng."
+    }
+  ]
+}

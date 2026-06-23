@@ -1,0 +1,125 @@
+/* MedLing Design Tokens — "Atelier" (D28, ratified 2026-06-11)
+   Quiet luxury · earthy→forest · Explorer→Caregiver→Sage
+   Vanilla CSS custom properties — no build step. Light theme primary. */
+
+:root {
+  /* ── Core palette (earthy → forest) ── */
+  --ml-cream:       #FBF9F4;  /* page background */
+  --ml-paper:       #FFFFFF;  /* raised surface */
+  --ml-linen:       #F2EDE1;  /* recessed surface / hover */
+  --ml-line:        #EAE4D6;  /* hairline borders (the Atelier signature) */
+  --ml-stone:       #C9C2AE;  /* muted borders, disabled, dividers-strong */
+  --ml-earth:       #7A7461;  /* secondary text (warm gray-brown) */
+  --ml-sage:        #8DA088;  /* light accent, ticks, eyebrow text */
+  --ml-moss:        #4F6B57;  /* PRIMARY — buttons, links, active states */
+  --ml-forest:      #33473A;  /* strong primary, headings on light */
+  --ml-ink:         #1E2B23;  /* body text (near-black forest) */
+
+  /* ── Semantic (stay inside the earthy family) ── */
+  --ml-ok:          #4F6B57;  /* correct answers — moss */
+  --ml-ok-bg:       #EBF0E7;
+  --ml-err:         #A3563C;  /* wrong answers — terracotta, not alarm-red */
+  --ml-err-bg:      #F6EAE4;
+  --ml-warn:        #A8854B;  /* ochre */
+  --ml-warn-bg:     #F5EEDD;
+  --ml-info:        #5E7268;
+  --ml-info-bg:     #ECEFEA;
+
+  /* ── Learner journey ramp (earthy roots → forest canopy) ──
+     One stop per tier/level; engine maps stage → stop. */
+  --ml-tier-pb:     #B5A98E;  /* Pre-Beginner — dry earth */
+  --ml-tier-1a:     #9AA989;
+  --ml-tier-1b:     #8DA088;
+  --ml-tier-2a:     #74906F;
+  --ml-tier-2b:     #5E7D60;
+  --ml-tier-3a:     #4F6B57;
+  --ml-tier-3b:     #41594A;
+  --ml-tier-4:      #33473A;
+  --ml-tier-5:      #283A2F;  /* deep canopy */
+
+  /* ── Typography ── */
+  --ml-font-display: 'Newsreader', Georgia, serif;       /* headings, lesson titles */
+  --ml-font-body:    'Inter', system-ui, sans-serif;     /* UI, body, buttons */
+  --ml-font-mono:    'JetBrains Mono', ui-monospace, monospace;  /* IPA, code, tags */
+
+  --ml-text-xs: 11px;  --ml-text-sm: 13px;  --ml-text-md: 15px;
+  --ml-text-lg: 18px;  --ml-text-xl: 24px;  --ml-text-2xl: 30px;
+  --ml-leading: 1.6;
+  --ml-tracking-wide: .14em;   /* uppercase eyebrows: "SITUATION 01" */
+
+  /* ── Shape & depth (hairlines over shadows — quiet luxury) ── */
+  --ml-radius-sm: 6px;  --ml-radius-md: 10px;  --ml-radius-lg: 14px;  --ml-radius-pill: 999px;
+  --ml-border: 1px solid var(--ml-line);
+  --ml-border-strong: 1px solid var(--ml-stone);
+  --ml-border-primary: 1.5px solid var(--ml-moss);
+  --ml-shadow-soft: 0 1px 2px rgba(30, 43, 35, .05);          /* barely-there */
+  --ml-shadow-lift: 0 6px 24px -8px rgba(30, 43, 35, .12);    /* modals/popovers only */
+
+  /* ── Motion (calm, never bouncy) ── */
+  --ml-ease: cubic-bezier(.25, .46, .45, .94);
+  --ml-dur-fast: 140ms;  --ml-dur: 220ms;  --ml-dur-slow: 360ms;
+
+  /* ── Spacing scale ── */
+  --ml-sp-1: 4px; --ml-sp-2: 8px; --ml-sp-3: 12px; --ml-sp-4: 16px;
+  --ml-sp-5: 22px; --ml-sp-6: 28px; --ml-sp-7: 40px; --ml-sp-8: 56px;
+}
+
+/* ── Component recipes (reference, used by app + landing) ── */
+
+.ml-btn-primary {
+  font: 500 var(--ml-text-sm)/1 var(--ml-font-body);
+  letter-spacing: .02em; color: var(--ml-cream);
+  background: var(--ml-forest); border: none;
+  border-radius: var(--ml-radius-md); padding: 13px 22px;
+  cursor: pointer; transition: background var(--ml-dur) var(--ml-ease);
+}
+.ml-btn-primary:hover { background: var(--ml-moss); }
+.ml-btn-primary:active { transform: translateY(1px); }
+
+.ml-btn-ghost {
+  font: 500 var(--ml-text-sm)/1 var(--ml-font-body);
+  color: var(--ml-forest); background: transparent;
+  border: var(--ml-border-primary); border-radius: var(--ml-radius-md);
+  padding: 12px 22px; cursor: pointer;
+  transition: background var(--ml-dur) var(--ml-ease);
+}
+.ml-btn-ghost:hover { background: var(--ml-ok-bg); }
+
+.ml-card {
+  background: var(--ml-paper); border: var(--ml-border);
+  border-radius: var(--ml-radius-lg); padding: var(--ml-sp-5);
+  box-shadow: var(--ml-shadow-soft);
+}
+
+.ml-eyebrow {
+  font: 500 var(--ml-text-xs)/1 var(--ml-font-body);
+  letter-spacing: var(--ml-tracking-wide); text-transform: uppercase;
+  color: var(--ml-sage);
+}
+
+.ml-pill {
+  font: 500 var(--ml-text-xs)/1 var(--ml-font-body);
+  padding: 5px 12px; border-radius: var(--ml-radius-pill);
+  border: var(--ml-border-strong); color: var(--ml-earth); background: transparent;
+}
+.ml-pill--tier { color: var(--ml-cream); border: none; }
+
+.ml-ipa { font: 400 var(--ml-text-sm)/1.4 var(--ml-font-mono); color: var(--ml-earth); }
+
+.ml-vocab-chip {
+  display: inline-flex; align-items: baseline; gap: 8px;
+  border-bottom: 2px solid var(--ml-sage); padding-bottom: 2px;
+  font: 600 var(--ml-text-sm)/1.4 var(--ml-font-body); color: var(--ml-forest);
+  cursor: pointer;
+}
+
+.ml-opt {
+  display: flex; align-items: center; gap: 10px; width: 100%; text-align: left;
+  font: 500 var(--ml-text-sm)/1.5 var(--ml-font-body); color: var(--ml-ink);
+  background: var(--ml-paper); border: var(--ml-border-strong);
+  border-radius: var(--ml-radius-md); padding: 13px 15px; margin-bottom: 9px;
+  cursor: pointer; transition: border-color var(--ml-dur-fast) var(--ml-ease);
+}
+.ml-opt:hover { border-color: var(--ml-moss); }
+.ml-opt.ok { border: 1.5px solid var(--ml-ok); background: var(--ml-ok-bg); color: var(--ml-forest); }
+.ml-opt.no { border: 1.5px solid var(--ml-err); background: var(--ml-err-bg); color: var(--ml-err); }

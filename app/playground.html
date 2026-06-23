@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MedLing · Feature Playground</title>
+<!-- Dev harness to verify novel-feature modules in isolation (not shipped to learners).
+     Lets QA exercise branching dialogue, morpheme breakdown, notebook, FSRS, roleplay
+     without touching the locked lesson engine. -->
+<link rel="stylesheet" href="../brand/tokens.css">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  body{background:var(--ml-cream);font-family:var(--ml-font-body);color:var(--ml-ink);margin:0;padding:24px 16px}
+  .wrap{max-width:460px;margin:0 auto}
+  h1{font-family:var(--ml-font-display);font-weight:500;color:var(--ml-forest);font-size:24px;margin:0 0 4px}
+  .sec{margin-top:28px}
+  .ml-eyebrow{display:block;margin-bottom:10px}
+  .chips{display:flex;flex-wrap:wrap;gap:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Feature Playground</h1>
+  <div style="font-size:13px;color:var(--ml-earth)">Dev harness · verify tier 1–2 modules</div>
+
+  <div class="sec">
+    <span class="ml-eyebrow">1 · Morpheme breakdown (long-press / right-click)</span>
+    <div class="chips" id="morph-chips"></div>
+  </div>
+
+  <div class="sec">
+    <span class="ml-eyebrow">2 · Branching dialogue</span>
+    <div id="dlg"></div>
+  </div>
+
+  <div class="sec">
+    <span class="ml-eyebrow">3 · Notebook + FSRS</span>
+    <button class="ml-btn-ghost" id="show-nb" style="font-size:13px;padding:9px 14px">Xem sổ tay + thẻ ôn (console)</button>
+    <div id="nb-out" style="font:400 12px/1.5 var(--ml-font-mono);color:var(--ml-earth);margin-top:10px;white-space:pre-wrap"></div>
+  </div>
+
+  <div class="sec">
+    <span class="ml-eyebrow">4 · Soft freemium gate (D32)</span>
+    <button class="ml-btn-ghost" id="show-gate" style="font-size:13px;padding:9px 14px">Mở cổng mềm 1A-06</button>
+  </div>
+
+  <div class="sec">
+    <span class="ml-eyebrow">5 · AI Roleplay scaffold (must show LOCKED)</span>
+    <div id="rp"></div>
+  </div>
+</div>
+
+<script defer src="engine/auth.js"></script>
+<script defer src="engine/notebook.js"></script>
+<script defer src="engine/fsrs.js"></script>
+<script defer src="engine/morphology.js"></script>
+<script defer src="engine/dialogue.js"></script>
+<script defer src="engine/softgate.js"></script>
+<script defer src="engine/roleplay.js"></script>
+<script>
+window.addEventListener('load', function () {
+  var ML = window.MedLing;
+  console.log('auth mode:', ML.auth && ML.auth.mode());
+
+  // 1) morpheme chips
+  var words = [
+    { en: 'cardiology', ipa: 'ˌkɑːdiˈɒlədʒi', vi: 'khoa tim mạch' },
+    { en: 'hepatitis', ipa: 'ˌhepəˈtaɪtɪs', vi: 'viêm gan' },
+    { en: 'tachycardia', ipa: 'ˌtækiˈkɑːdiə', vi: 'nhịp tim nhanh' },
+    { en: 'appendectomy', ipa: 'ˌæpənˈdektəmi', vi: 'cắt ruột thừa' }
+  ];
+  document.getElementById('morph-chips').innerHTML = words.map(function (w) {
+    return '<button class="ml-vocab-chip" data-w="' + w.en + '">' + w.en
+      + ' <span class="ml-ipa">' + w.ipa + '</span></button>';
+  }).join('');
+  // playground convenience: plain click also opens breakdown
+  document.getElementById('morph-chips').addEventListener('click', function (e) {
+    var b = e.target.closest('[data-w]'); if (!b) return;
+    var w = words.find(function (x) { return x.en === b.dataset.w; });
+    ML.morph.explain(w.en, w.ipa, w.vi);
+  });
+
+  // 2) dialogue
+  var demo = {
+    speaker: 'Patient', speaker_emoji: '🧑',
+    open: { en: "Excuse me, doctor… where is the X-ray room?", vi: "Xin lỗi bác sĩ… phòng chụp X-quang ở đâu ạ?" },
+    turns: [
+      { id: 't1', prompt_en: 'How do you respond?', prompt_vi: 'Bạn đáp lại thế nào?',
+        choices: [
+          { t: "It's on the second floor, just past the lift.", ok: true,
+            feedback_en: "Clear and polite — gives a landmark ('past the lift').", feedback_vi: "Rõ ràng, lịch sự, có mốc định hướng.", next: 't2' },
+          { t: "Go there.", ok: false,
+            feedback_en: "Too abrupt for a patient. Add directions and a polite tone.", feedback_vi: "Quá cộc. Cần chỉ đường và lịch sự hơn.", next: 't2' }
+        ] },
+      { id: 't2', prompt_en: 'The patient looks unsure. Add:', prompt_vi: 'Bệnh nhân có vẻ chưa rõ. Nói thêm:',
+        choices: [
+          { t: "Would you like me to walk you there?", ok: true,
+            feedback_en: "Excellent bedside manner — offers help.", feedback_vi: "Thái độ ân cần, chủ động giúp.", next: 'end' },
+          { t: "Just follow the signs.", ok: false,
+            feedback_en: "Dismissive. A distressed patient needs reassurance.", feedback_vi: "Hơi phủi. Bệnh nhân cần được trấn an.", next: 'end' }
+        ] }
+    ],
+    close: { en: "You guided the patient clearly and kindly.", vi: "Bạn đã hướng dẫn rõ ràng và ân cần." }
+  };
+  ML.dialogue.render(demo, document.getElementById('dlg'), {
+    onDone: function (r) { console.log('dialogue done', r); }
+  });
+
+  // 3) notebook + fsrs
+  document.getElementById('show-nb').onclick = function () {
+    Promise.all([ML.notebook.list(), ML.fsrs.due(Date.now() + 999 * 86400000)]).then(function (res) {
+      var out = 'Notebook (' + res[0].length + '):\n' + res[0].map(function (x) { return ' • ' + x.en + ' — ' + x.vi; }).join('\n')
+        + '\n\nFSRS cards (' + res[1].length + '):\n' + res[1].map(function (c) { return ' • ' + c.en + '  due+' + c.interval + 'd  reps:' + c.reps; }).join('\n');
+      document.getElementById('nb-out').textContent = out || '(trống — hãy lưu một từ ở mục 1)';
+    });
+  };
+
+  // 4) soft gate
+  document.getElementById('show-gate').onclick = function () {
+    ML.softgate.show({ gateId: '1A-06-softgate', onContinue: function () { console.log('gate: continue'); } });
+  };
+
+  // 5) roleplay must render LOCKED
+  ML.roleplay.mount(document.getElementById('rp'), { title_en: 'Triage intake' });
+  console.log('roleplay enabled?', ML.roleplay.isEnabled());
+});
+</script>
+</body>
+</html>

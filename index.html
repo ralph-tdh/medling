@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#FBF9F4">
+<meta name="description" content="MedLing — Tiếng Anh Y khoa cho hội nhập y tế quốc tế. Giúp người học và nhân viên y tế Việt Nam giải mã thuật ngữ, đọc tài liệu chuyên môn, giao tiếp lâm sàng và trình bày học thuật. Do bác sĩ thiết kế, bám nguồn textbook, thuật toán ghi nhớ FSRS.">
+<title>MedLing — Medical English for International Healthcare Integration</title>
+<link rel="icon" href="brand/logo/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="brand/tokens.css">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--ml-cream);color:var(--ml-ink);font-family:var(--ml-font-body);
+       line-height:var(--ml-leading);-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+  h1,h2,h3,.disp{font-family:var(--ml-font-display);font-weight:500;letter-spacing:-.01em;color:var(--ml-forest)}
+  a{color:var(--ml-moss);text-decoration:none}
+  section{padding:64px 0;border-top:1px solid var(--ml-line)}
+  .eyebrow{font:500 11px/1 var(--ml-font-body);letter-spacing:var(--ml-tracking-wide);
+           text-transform:uppercase;color:var(--ml-sage);margin-bottom:14px}
+  /* ── nav ── */
+  nav{position:sticky;top:0;z-index:50;background:rgba(251,249,244,.86);backdrop-filter:blur(8px);
+      border-bottom:1px solid var(--ml-line)}
+  .nav-in{display:flex;align-items:center;justify-content:space-between;height:60px}
+  .brand{display:flex;align-items:center;gap:9px;font-family:var(--ml-font-display);font-weight:600;
+         font-size:19px;color:var(--ml-forest)}
+  .brand img{width:30px;height:30px}
+  .nav-links{display:flex;gap:24px;align-items:center}
+  .nav-links a{font-size:14px;color:var(--ml-earth);font-weight:500}
+  .nav-links a:hover{color:var(--ml-forest)}
+  .nav-cta{background:var(--ml-forest);color:var(--ml-cream)!important;padding:9px 18px;
+           border-radius:var(--ml-radius-md);font-size:14px}
+  @media(max-width:680px){.nav-links a:not(.nav-cta){display:none}}
+  /* ── hero ── */
+  .hero{padding:80px 0 64px;border-top:none;text-align:center}
+  .hero-mark{width:96px;height:96px;margin:0 auto 24px}
+  .hero h1{font-size:clamp(30px,6vw,46px);line-height:1.12;max-width:16ch;margin:0 auto 18px}
+  .hero .lead{font-size:clamp(15px,2.4vw,18px);color:var(--ml-earth);max-width:54ch;margin:0 auto 14px}
+  .hero .vi{font-size:14px;color:var(--ml-sage);font-style:italic;margin-bottom:30px}
+  .cta-row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+  .btn-primary{background:var(--ml-forest);color:var(--ml-cream);padding:14px 26px;
+               border-radius:var(--ml-radius-md);font-weight:500;font-size:15px;transition:background var(--ml-dur) var(--ml-ease)}
+  .btn-primary:hover{background:var(--ml-moss)}
+  .btn-ghost{border:1.5px solid var(--ml-moss);color:var(--ml-forest);padding:13px 24px;
+             border-radius:var(--ml-radius-md);font-weight:500;font-size:15px}
+  .status-strip{display:inline-flex;align-items:center;gap:8px;margin-top:28px;padding:7px 16px;
+                border:1px solid var(--ml-line);border-radius:var(--ml-radius-pill);
+                font:500 12px/1 var(--ml-font-mono);color:var(--ml-earth);background:var(--ml-paper)}
+  .dot{width:7px;height:7px;border-radius:50%;background:var(--ml-sage);
+       box-shadow:0 0 0 3px var(--ml-ok-bg)}
+  /* ── pillars ── */
+  .grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+  .pillar{background:var(--ml-paper);border:1px solid var(--ml-line);border-radius:var(--ml-radius-lg);padding:26px}
+  .pillar .ic{font-size:26px;margin-bottom:14px}
+  .pillar h3{font-size:19px;margin-bottom:8px}
+  .pillar p{font-size:14px;color:var(--ml-earth)}
+  .pillar .vi{font-size:13px;color:var(--ml-sage);font-style:italic;margin-top:6px}
+  /* ── progress tree ── */
+  .branch{background:var(--ml-paper);border:1px solid var(--ml-line);border-radius:var(--ml-radius-lg);
+          padding:20px 22px;margin-bottom:12px;display:grid;grid-template-columns:auto 1fr auto;gap:18px;align-items:start}
+  .branch .bnum{font:500 13px/1 var(--ml-font-mono);color:var(--ml-stone);padding-top:3px}
+  .branch h3{font-size:16px;margin-bottom:5px}
+  .branch p{font-size:13px;color:var(--ml-earth)}
+  .st{font:500 11px/1.3 var(--ml-font-body);padding:5px 11px;border-radius:var(--ml-radius-pill);white-space:nowrap;text-align:center}
+  .st-done{background:var(--ml-ok-bg);color:var(--ml-forest)}
+  .st-now{background:var(--ml-warn-bg);color:var(--ml-warn)}
+  .st-todo{background:var(--ml-linen);color:var(--ml-earth)}
+  /* ── ladder ── */
+  .ladder{display:grid;gap:14px}
+  .rung{display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:start;
+        background:var(--ml-paper);border:1px solid var(--ml-line);border-radius:var(--ml-radius-lg);padding:22px}
+  .rung .n{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;
+           font:500 16px/1 var(--ml-font-display);color:var(--ml-cream)}
+  .rung h3{font-size:17px;margin-bottom:4px}
+  .rung p{font-size:14px;color:var(--ml-earth)}
+  .rung .tag{font:500 10px/1 var(--ml-font-body);letter-spacing:.08em;text-transform:uppercase;margin-top:8px;display:inline-block}
+  /* ── roadmap ── */
+  .phases{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px}
+  .phase{border:1px solid var(--ml-line);border-radius:var(--ml-radius-md);padding:18px;background:var(--ml-paper)}
+  .phase .ph{font:500 11px/1 var(--ml-font-mono);color:var(--ml-sage);margin-bottom:8px}
+  .phase h3{font-size:15px;margin-bottom:6px}
+  .phase p{font-size:13px;color:var(--ml-earth)}
+  /* ── tech ── */
+  .tech-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+  .tech{border-left:2px solid var(--ml-sage);padding:4px 0 4px 16px}
+  .tech h3{font-size:14px;margin-bottom:4px;color:var(--ml-ink);font-family:var(--ml-font-body);font-weight:600}
+  .tech p{font-size:13px;color:var(--ml-earth)}
+  /* ── footer ── */
+  footer{padding:48px 0;border-top:1px solid var(--ml-line);text-align:center}
+  .foot-cta{font-size:clamp(20px,3.5vw,28px);max-width:24ch;margin:0 auto 24px}
+  .legal{font-size:12px;color:var(--ml-stone);margin-top:28px;line-height:1.7}
+  .sec-head{margin-bottom:30px;max-width:60ch}
+  .sec-head h2{font-size:clamp(22px,4vw,30px);margin-bottom:8px}
+  .sec-head p{font-size:15px;color:var(--ml-earth)}
+</style>
+</head>
+<body>
+
+<nav><div class="wrap nav-in">
+  <a class="brand" href="#top"><img src="brand/logo/ml-ligature.svg" alt="">MedLing</a>
+  <div class="nav-links">
+    <a href="#pillars">Triết lý</a>
+    <a href="#progress">Tiến độ</a>
+    <a href="#features">Tính năng</a>
+    <a href="#roadmap">Lộ trình</a>
+    <a class="nav-cta" href="app/?pack=starter">Học thử →</a>
+  </div>
+</div></nav>
+
+<header class="hero wrap" id="top">
+  <img class="hero-mark" src="brand/logo/ml-root-canopy.svg" alt="MedLing">
+  <h1>Tiếng Anh Y khoa cho hội nhập y tế quốc tế.</h1>
+  <p class="lead">Nền tảng do bác sĩ thiết kế, giúp người học và nhân viên y tế Việt Nam giải mã thuật ngữ, đọc hiểu tài liệu chuyên môn, giao tiếp lâm sàng và trình bày học thuật — bám sát textbook, ghi nhớ bằng thuật toán FSRS.</p>
+  <p class="vi">Thuật ngữ là nền móng · Ngữ cảnh lâm sàng là cây cầu · Hội nhập y tế quốc tế là đích đến.</p>
+  <div class="cta-row">
+    <a class="btn-primary" href="app/?pack=starter">Trải nghiệm 4 bài Pre-Beginner (Free)</a>
+    <a class="btn-ghost" href="#features">Xem tính năng</a>
+  </div>
+  <div class="status-strip"><span class="dot"></span> PHASE 1 · ĐANG XÂY DỰNG CÔNG KHAI</div>
+</header>
+
+<section id="pillars" class="wrap">
+  <div class="sec-head">
+    <div class="eyebrow">Ba chân kiềng</div>
+    <h2>Vì sao MedLing khác</h2>
+    <p>Không chạy theo AI rỗng. Đi từ gốc rễ học thuật, sư phạm ESP, và khoa học ghi nhớ.</p>
+  </div>
+  <div class="grid3">
+    <div class="pillar">
+      <div class="ic">🎯</div>
+      <h3>Accuracy First</h3>
+      <p>Nội dung trích & tổng hợp từ textbook chuẩn (Chabner, Glendinning, Sổ Tay…), qua cổng kiểm trung thành nguồn trước khi xuất bản.</p>
+      <div class="vi">Bám nguồn — không để AI bịa kiến thức y khoa.</div>
+    </div>
+    <div class="pillar">
+      <div class="ic">🩺</div>
+      <h3>Context-Driven</h3>
+      <p>Học qua kịch bản lâm sàng thật và hội thoại phân nhánh — tương tác như roleplay nhưng tất định, $0, không hallucination.</p>
+      <div class="vi">Dùng được ngay trong hành lang, buồng bệnh, điện thoại hội chẩn.</div>
+    </div>
+    <div class="pillar">
+      <div class="ic">🌱</div>
+      <h3>Made to Stick</h3>
+      <p>Medical Term Decoder: bóc tách gốc Hy–La (cardio-, -itis, -ectomy) để giải mã thuật ngữ lạ thành ý nghĩa lâm sàng, cộng lịch ôn tập FSRS tối ưu trí nhớ dài hạn.</p>
+      <div class="vi">Giải mã một gốc, mở khóa cả họ từ.</div>
+    </div>
+  </div>
+</section>
+
+<section id="progress" class="wrap">
+  <div class="sec-head">
+    <div class="eyebrow">Build in public</div>
+    <h2>Cây tiến độ dự án</h2>
+    <p>Minh bạch từng nhánh — đúng tinh thần một sản phẩm do bác sĩ tự xây và công khai quá trình.</p>
+  </div>
+  <div class="branch">
+    <span class="bnum">01</span>
+    <div><h3>Content Engine — học thuật</h3><p>Trích xuất 5+ textbook lõi → Material DB → Master Curriculum (L1–L3, 72 bài). PB1–PB4 hoàn tất.</p></div>
+    <span class="st st-now">◐ Đang xây 1A</span>
+  </div>
+  <div class="branch">
+    <span class="bnum">02</span>
+    <div><h3>Product & Tech</h3><p>Engine vanilla + JSON, audio CI tự động, branching dialogue, bóc tách gốc từ, sổ tay, FSRS, PWA. Backend Supabase + cổng mềm.</p></div>
+    <span class="st st-now">◐ Phase 1</span>
+  </div>
+  <div class="branch">
+    <span class="bnum">03</span>
+    <div><h3>Distribution — cộng đồng</h3><p>Kênh nội dung đa nền tảng, chia sẻ ESP bài bản. Tập trung sản phẩm trước.</p></div>
+    <span class="st st-todo">○ Phase 3</span>
+  </div>
+  <div class="branch">
+    <span class="bnum">04</span>
+    <div><h3>Governance — quản trị</h3><p>Roadmap, decision log, đội AI agent 3 tầng + 5 cổng QA, nguồn-sự-thật cập nhật liên tục.</p></div>
+    <span class="st st-done">✓ Vận hành</span>
+  </div>
+</section>
+
+<section id="features" class="wrap">
+  <div class="sec-head">
+    <div class="eyebrow">Thang tính năng 3 nấc</div>
+    <h2>Đi từ cấu trúc đến ngữ cảnh đến hội thoại</h2>
+    <p>Mỗi nấc vững mới lên nấc sau — context trước, AI roleplay sau.</p>
+  </div>
+  <div class="ladder">
+    <div class="rung">
+      <div class="n" style="background:var(--ml-tier-1a)">1</div>
+      <div>
+        <h3>Structured — đang vận hành</h3>
+        <p>Vocab, phrases, quiz, audio giọng bản xứ. Term Decoder bóc tách gốc từ Hy–La thành ý nghĩa lâm sàng khi chạm vào thuật ngữ.</p>
+        <span class="tag" style="color:var(--ml-moss)">🆓 Free · Live</span>
+      </div>
+    </div>
+    <div class="rung">
+      <div class="n" style="background:var(--ml-tier-2b)">2</div>
+      <div>
+        <h3>Context — hội thoại phân nhánh</h3>
+        <p>Kịch bản lâm sàng: chọn câu trả lời → phản hồi theo nhánh. Tất định, $0, không hallucination — an toàn học thuật tuyệt đối.</p>
+        <span class="tag" style="color:var(--ml-moss)">🆓 Free · Live</span>
+      </div>
+    </div>
+    <div class="rung">
+      <div class="n" style="background:var(--ml-stone)">3</div>
+      <div>
+        <h3>AI Roleplay — cao cấp</h3>
+        <p>Đóng vai bác sĩ, AI đóng vai bệnh nhân trong kịch bản đóng khung. Chỉ mở khi đã vững nấc 2 và qua kiểm định y khoa.</p>
+        <span class="tag" style="color:var(--ml-warn)">⭐ Premium · Sắp ra mắt</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="roadmap" class="wrap">
+  <div class="sec-head">
+    <div class="eyebrow">Lộ trình</div>
+    <h2>Từ demo đến L3</h2>
+  </div>
+  <div class="phases">
+    <div class="phase"><div class="ph">PHASE 0 ✓</div><h3>Blueprint</h3><p>Master Curriculum khóa, 4 bài PB, kiến trúc shell + JSON.</p></div>
+    <div class="phase"><div class="ph">PHASE 1 ◐</div><h3>SL Launch</h3><p>PB1–PB4, FSRS, Stage 1A — Medical Term Decoder, cổng mềm đo ý định trả phí.</p></div>
+    <div class="phase"><div class="ph">PHASE 2 ○</div><h3>L1 → L3</h3><p>Stage 1B–3A, thanh toán, gate server-side Supabase RLS.</p></div>
+    <div class="phase"><div class="ph">PHASE 3 ○</div><h3>Social</h3><p>Kênh cộng đồng, nội dung ESP, lan tỏa.</p></div>
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="sec-head">
+    <div class="eyebrow">Minh bạch hạ tầng</div>
+    <h2>Công nghệ bền vững, tài sản tự sở hữu</h2>
+  </div>
+  <div class="tech-grid">
+    <div class="tech"><h3>Frontend</h3><p>Vanilla + JSON, PWA chạy Win/Mac/Android/iOS. Cloudflare Pages — độ trễ thấp tại VN.</p></div>
+    <div class="tech"><h3>Backend</h3><p>Supabase Postgres + Auth + RLS. Nội dung trả phí phục vụ server-side, không lộ.</p></div>
+    <div class="tech"><h3>Audio</h3><p>edge-tts giọng bản xứ, tự sinh qua GitHub Actions CI. MP3 là tài sản giữ được.</p></div>
+    <div class="tech"><h3>Build</h3><p>Codebase tự sở hữu hoàn toàn, không lock-in no-code. Mở rộng không giới hạn.</p></div>
+  </div>
+</section>
+
+<footer class="wrap">
+  <h2 class="foot-cta disp">Sẵn sàng tiếp cận Tiếng Anh Y khoa chuẩn mực nhất?</h2>
+  <div class="cta-row">
+    <a class="btn-primary" href="app/?pack=starter">Bắt đầu học thử miễn phí</a>
+  </div>
+  <div class="legal">
+    MedLing · Medical English for Vietnamese healthcare professionals.<br>
+    Nền tảng giáo dục ngôn ngữ — không phải tư vấn y khoa. · Language education, not medical advice.
+  </div>
+</footer>
+
+</body>
+</html>
