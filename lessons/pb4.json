@@ -373,16 +373,17 @@
           "gl": {}
         },
         {
-          "t": "94 percent — that's a bit low. I'm going to get some oxygen for you right away.",
+          "t": "94 percent — that's a bit low. I'll let the doctor know straight away.",
           "ok": true,
           "gl": {
             "a bit low": "hơi thấp",
-            "get some oxygen": "cho thở oxy"
+            "let the doctor know": "báo bác sĩ",
+            "monitor": "theo dõi"
           },
           "t_role": {
-            "doctor": "94 percent — that's a bit low. I'm going to get some oxygen for you right away.",
-            "nurse": "94 percent — that's a bit low. I'm going to get some oxygen for you right away.",
-            "student": "94 percent — that's a bit low. I'll let the nurse know right away so we can get you some oxygen."
+            "doctor": "94 percent — that's a bit low. I'll assess you now and arrange oxygen if needed.",
+            "nurse": "94 percent — that's a bit low. I'll monitor you closely and inform the doctor.",
+            "student": "94 percent — that's a bit low. I'll tell the doctor or nurse right away."
           }
         },
         {
@@ -400,12 +401,12 @@
       "tip_vi": "SpO2 ≥95% khi thở khí phòng là bình thường ở người lớn khoẻ mạnh. Ở 94%, cần hành động, không được trấn an bệnh nhân. Câu đúng thể hiện cả giao tiếp rõ ràng lẫn phản ứng lâm sàng phù hợp.",
       "tip_en_role": {
         "doctor": "SpO2 ≥95% on room air is normal in healthy adults. At 94%, the standard is to act, not reassure — clear communication plus the right clinical response.",
-        "nurse": "SpO2 ≥95% on room air is normal in healthy adults. At 94%, act — don't reassure. You can start oxygen per protocol and inform the doctor.",
+        "nurse": "SpO2 ≥95% on room air is normal in healthy adults. At 94%, act — don't reassure. Monitor closely and inform the doctor; give oxygen only if it's indicated per protocol.",
         "student": "SpO2 ≥95% on room air is normal in healthy adults. At 94%, act — don't reassure. As a student, escalate to the nurse or doctor rather than starting oxygen yourself."
       },
       "tip_vi_role": {
         "doctor": "SpO2 ≥95% khi thở khí phòng là bình thường ở người lớn khoẻ mạnh. Ở 94%, cần hành động chứ không trấn an — giao tiếp rõ kèm xử lý lâm sàng đúng.",
-        "nurse": "SpO2 ≥95% là bình thường ở người lớn khoẻ mạnh. Ở 94%, hãy hành động — đừng trấn an. Bạn có thể cho thở oxy theo phác đồ và báo bác sĩ.",
+        "nurse": "SpO2 ≥95% là bình thường ở người lớn khoẻ mạnh. Ở 94%, hãy hành động — đừng trấn an. Theo dõi sát và báo bác sĩ; chỉ cho thở oxy nếu có chỉ định theo phác đồ.",
         "student": "SpO2 ≥95% là bình thường ở người lớn khoẻ mạnh. Ở 94%, hãy hành động — đừng trấn an. Là sinh viên, hãy báo điều dưỡng/bác sĩ thay vì tự cho thở oxy."
       },
       "role": "Any HCW",
