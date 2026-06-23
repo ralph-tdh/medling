@@ -49,6 +49,13 @@ multipliers, not colleagues — they propose, Ralph decides.
 - File discipline: content/material files split at ~150 lines / 8k chars at unit boundaries;
   strategy docs cap ~300–400 lines.
 
+## Working flow & deliverables (Ralph's standing requirements, added 2026-06-22)
+- Every non-trivial task follows: **plan + anticipate contingencies → review the plan & execute → review & revise → hand out & report.** Ralph is a perfectionist and cautious: work must be thorough, meticulous, complete, and factually/scientifically accurate — **never fabricate or guess**. Verify claims against source/code/live before asserting (no success claim without evidence).
+- **Reports (`.md`) → `docs/`** in this repo, as before. **Only steps that need Ralph's review** additionally get a **visual HTML (interactive inputs + export-to-MD)** saved to `C:\Users\nguye\Downloads\Projects\MedLing\HTMLs review`.
+- Learner-facing changes are staged for Ralph's review before deploy (Gate 2 + Gate 5 stay Ralph-only).
+- **"Không bịa" (no fabrication) — scope:** never invent facts that are untrue or unscientific. This does NOT restrict brainstorming or proposing new ideas / innovations to make MedLing better and more advanced — those are encouraged, but each must be evidence-grounded, flagged as a proposal, rigorously controlled, and compliant with medical ethics + professional standards (Ralph signs off before anything learner-facing ships).
+- **File deletion = forbidden zone:** any delete / remove / destructive-overwrite / move-or-rename-that-removes-the-original (`rm`, `Remove-Item`, `mv` over an existing file, emptying a directory) MUST be raised with Ralph FIRST with a thorough explanation of what and why; **Ralph makes the final decision.** Never delete or move-destroy a file unilaterally.
+
 ## Agent team & skills
 - Agent roster + responsibilities: `.claude/agents/` (pipeline tree v2 — 3 tiers, 5 gates).
 - Operational skills: `.claude/skills/medling-*`. Lesson authoring, audio, fidelity QA, branching
