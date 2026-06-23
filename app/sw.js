@@ -5,7 +5,7 @@
    Bump CACHE_VERSION when shell/brand files change shape. */
 'use strict';
 
-var CACHE_VERSION = 'medling-v4';
+var CACHE_VERSION = 'medling-v5';
 var SHELL = [
   './',
   'engine.js',
