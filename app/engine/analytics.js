@@ -48,6 +48,17 @@ window.MedLing = window.MedLing || {};
     } catch (e) { return 'nostorage'; }
   }
 
+  /* stable, non-PII install id (never rotates) — lets pre(form A)/post(form B) and cross-session
+     events be joined per-learner for gain/drop-off analysis. Pseudonymous, no name/contact. */
+  function installId() {
+    var k = 'medling.aid';
+    try {
+      var id = localStorage.getItem(k);
+      if (!id) { id = (crypto.randomUUID ? crypto.randomUUID() : String(Date.now()) + Math.random().toString(16).slice(2)); localStorage.setItem(k, id); }
+      return id;
+    } catch (e) { return 'nostorage'; }
+  }
+
   function lessonId() {
     try { return (window.LESSON && window.LESSON.meta && window.LESSON.meta.id) || null; }
     catch (e) { return null; }
@@ -88,7 +99,7 @@ window.MedLing = window.MedLing || {};
   /* Public: ML.analytics.track('lesson_start', { … }) */
   function track(event, props) {
     if (!event) return;
-    var rec = { e: event, lesson: lessonId(), accent: accent(), sid: sessionId(), t: Date.now() };
+    var rec = { e: event, lesson: lessonId(), accent: accent(), aid: installId(), sid: sessionId(), t: Date.now() };
     if (props) for (var k in props) if (Object.prototype.hasOwnProperty.call(props, k)) rec[k] = props[k];
 
     var dbg = debugOn();

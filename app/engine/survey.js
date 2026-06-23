@@ -107,30 +107,43 @@ window.MedLing = window.MedLing || {};
      one — this removes the cue-leak that previously let test-wise learners pass without knowledge. */
   var DIAG_A = [
     { id:'d1', en:"A patient asks where the X-ray room is. Best reply?", vi:"BN hỏi phòng X-quang ở đâu. Trả lời tốt nhất?", opts:[
-      {t:"It's on the second floor, turn left. — Ở tầng hai, rẽ trái.", ok:true},{t:"It's somewhere over there, I think. — Hình như đâu đó phía kia."},{t:"I'm not sure — try asking reception. — Tôi không chắc, hỏi lễ tân xem."} ] },
+      {t:"It's on the second floor, turn left. — Ở tầng hai, rẽ trái.", ok:true},{t:"It's somewhere over there, I think. — Hình như đâu đó phía kia."},{t:"I'm not sure — try asking reception. — Tôi không chắc, hỏi lễ tân xem."},{t:"It shouldn't be too hard to find. — Chắc không khó tìm đâu."} ] },
     { id:'d2', en:"The suffix '-itis' means…", vi:"Hậu tố '-itis' nghĩa là…", opts:[
-      {t:'Inflammation — Viêm', ok:true},{t:'Removal — Cắt bỏ'},{t:'Enlargement — To ra'} ] },
+      {t:'Inflammation — Viêm', ok:true},{t:'Removal — Cắt bỏ'},{t:'Enlargement — To ra'},{t:'Bleeding — Chảy máu'} ] },
     { id:'d3', en:"You meet a new patient for the first time. Best way to begin?", vi:"Bạn gặp một BN mới lần đầu. Cách mở đầu tốt nhất?", opts:[
       {t:"Hello, I'm Dr. Nam — I'll be seeing you today. — Chào, tôi là BS Nam, sẽ khám cho bạn hôm nay.", ok:true, t_role:{
         doctor:"Hello, I'm Dr. Nam — I'll be seeing you today. — Chào, tôi là BS Nam, sẽ khám cho bạn hôm nay.",
         nurse:"Hi, I'm Nam — one of the nurses looking after you today. — Chào, tôi là Nam, điều dưỡng chăm sóc bạn hôm nay.",
-        student:"Hello, I'm Nam — a medical student working with your doctor. — Chào, tôi là Nam, sinh viên y khoa làm việc cùng bác sĩ của bạn." }},{t:"Could you tell me your symptoms first? — Cho tôi biết triệu chứng trước nhé?"},{t:"Please wait here, I'll be with you shortly. — Vui lòng chờ đây, tôi tới ngay."} ] },
+        student:"Hello, I'm Nam — a medical student working with your doctor. — Chào, tôi là Nam, sinh viên y khoa làm việc cùng bác sĩ của bạn." }},{t:"Could you tell me your symptoms first? — Cho tôi biết triệu chứng trước nhé?"},{t:"Please wait here, I'll be with you shortly. — Vui lòng chờ đây, tôi tới ngay."},{t:"Do you have your insurance card? — Bạn có thẻ bảo hiểm không?"} ] },
     { id:'d4', en:"How do you read a blood pressure of 120/80 aloud?", vi:"Đọc huyết áp 120/80 thành lời thế nào?", opts:[
-      {t:'120 over 80', ok:true},{t:'120 slash 80'},{t:'120 and 80'} ] }
+      {t:'120 over 80', ok:true},{t:'120 slash 80'},{t:'120 and 80'},{t:'120 to 80'} ] }
   ];
   var DIAG_B = [
     { id:'d1', en:"A patient asks where the pharmacy is. Best reply?", vi:"BN hỏi quầy thuốc ở đâu. Trả lời tốt nhất?", opts:[
-      {t:"It's on the ground floor, near the entrance. — Ở tầng trệt, gần lối vào.", ok:true},{t:"It's around here somewhere, I think. — Hình như quanh đây thôi."},{t:"I don't know — try asking reception. — Tôi không biết, hỏi lễ tân xem."} ] },
+      {t:"It's on the ground floor, near the entrance. — Ở tầng trệt, gần lối vào.", ok:true},{t:"It's around here somewhere, I think. — Hình như quanh đây thôi."},{t:"I don't know — try asking reception. — Tôi không biết, hỏi lễ tân xem."},{t:"It's not far from here. — Cách đây không xa."} ] },
     { id:'d2', en:"The suffix '-ectomy' means…", vi:"Hậu tố '-ectomy' nghĩa là…", opts:[
-      {t:'Removal — Cắt bỏ', ok:true},{t:'Inflammation — Viêm'},{t:'Enlargement — To ra'} ] },
+      {t:'Removal — Cắt bỏ', ok:true},{t:'Inflammation — Viêm'},{t:'Enlargement — To ra'},{t:'Bleeding — Chảy máu'} ] },
     { id:'d3', en:"A new patient enters and sits down. Your first words?", vi:"BN mới bước vào và ngồi xuống. Câu đầu tiên?", opts:[
       {t:"Good morning, I'm Dr. Lan — your doctor today. — Chào buổi sáng, tôi là BS Lan, bác sĩ của bạn hôm nay.", ok:true, t_role:{
         doctor:"Good morning, I'm Dr. Lan — your doctor today. — Chào buổi sáng, tôi là BS Lan, bác sĩ của bạn hôm nay.",
         nurse:"Good morning, I'm Lan — your nurse today. — Chào buổi sáng, tôi là Lan, điều dưỡng của bạn hôm nay.",
-        student:"Good morning, I'm Lan — a medical student on the team. — Chào buổi sáng, tôi là Lan, sinh viên y khoa trong nhóm." }},{t:"Have you been waiting here very long? — Bạn chờ ở đây lâu chưa?"},{t:"Do you have your appointment card ready? — Bạn có sẵn thẻ hẹn chưa?"} ] },
+        student:"Good morning, I'm Lan — a medical student on the team. — Chào buổi sáng, tôi là Lan, sinh viên y khoa trong nhóm." }},{t:"Have you been waiting here very long? — Bạn chờ ở đây lâu chưa?"},{t:"Do you have your appointment card ready? — Bạn có sẵn thẻ hẹn chưa?"},{t:"Please confirm your date of birth. — Vui lòng xác nhận ngày sinh."} ] },
     { id:'d4', en:"How do you read an oxygen saturation of 98% aloud?", vi:"Đọc SpO2 98% thành lời thế nào?", opts:[
-      {t:'98 percent', ok:true},{t:'98 per hundred'},{t:'9, 8 percent'} ] }
+      {t:'98 percent', ok:true},{t:'98 per hundred'},{t:'9, 8 percent'},{t:'98 degrees'} ] }
   ];
+
+  /* counterbalance form difficulty (audit Gate-4 D1c): each learner gets a stable PRE form (A or B);
+     POST uses the other, so A↔B item-difficulty drift cancels out in the aggregate gain. Form is
+     recorded on every diagnostic event so analysis can still tell which form was pre vs post. */
+  var DIAGS = { A: DIAG_A, B: DIAG_B };
+  function preForm(){
+    try {
+      var f = localStorage.getItem('medling.preform');
+      if (f !== 'A' && f !== 'B') { f = (Math.random() < 0.5) ? 'A' : 'B'; localStorage.setItem('medling.preform', f); }
+      return f;
+    } catch (e) { return 'A'; }
+  }
+  function postForm(){ return preForm() === 'A' ? 'B' : 'A'; }
 
   /* §8 Post-pack survey Q1–Q8 */
   var POST = [
@@ -170,7 +183,7 @@ window.MedLing = window.MedLing || {};
 
   /* §11 direction buckets A–H → track labels for the routing screen */
   var BUCKETS = {
-    A: { en:'Terminology / Specialty Foundation', vi:'Thuật ngữ & chuyên khoa', track:'Stage 1A — Medical Term Decoder (open now)' },
+    A: { en:'Terminology / Specialty Foundation', vi:'Thuật ngữ & chuyên khoa', track:'Stage 1A — Medical Term Decoder (waitlist)' },
     B: { en:'Clinical Reading / Guideline / Paper', vi:'Đọc guideline / textbook / paper', track:'Layer 2A — Clinical Reading (waitlist)' },
     C: { en:'Case Presentation / Conference', vi:'Case presentation / hội nghị', track:'Layer 3 — Academic Output (waitlist)' },
     D: { en:'Clinical Communication / Roleplay', vi:'Giao tiếp lâm sàng / roleplay', track:'Layer 2B — Clinical Communication (waitlist)' },
@@ -338,7 +351,10 @@ window.MedLing = window.MedLing || {};
   function results(s, onNext){
     var pre = s.pre||{score:0,total:4}, post = s.post||{score:0,total:4};
     var gain = post.score - pre.score;
-    var msg = gain>0 ? {ic:'📈',en:'You improved!',vi:'Bạn tiến bộ rồi!'} : {ic:'🌱',en:'Good start!',vi:'Khởi đầu tốt!'};
+    /* honest banding: a 4-item test has ~1-point guessing jitter, so only call >=2 an improvement (no overclaim) */
+    var msg = gain>=2 ? {ic:'📈',en:'You improved!',vi:'Bạn tiến bộ rõ!'}
+            : gain===1 ? {ic:'🌱',en:'Slightly up',vi:'Nhích lên một chút'}
+            : {ic:'🌱',en:'Good start!',vi:'Khởi đầu tốt!'};
     app().innerHTML = shell(
       '<div style="text-align:center;margin-bottom:18px">'
       +'<div style="font-size:56px;margin-bottom:8px">'+msg.ic+'</div>'
@@ -349,6 +365,7 @@ window.MedLing = window.MedLing || {};
         +'<div style="background:#EBF0E7;border:1px solid #4F6B57;border-radius:14px;padding:12px 20px"><div style="font-size:11px;color:#33473A">After — Sau</div><div class="hf" style="font-size:30px;color:#33473A">'+post.score+'/'+post.total+'</div></div>'
       +'</div>'
       +(gain>0?'<div style="font-size:13px;color:#4F6B57;font-weight:600;margin-top:10px">+'+gain+' câu đúng sau 4 bài · +'+gain+' correct</div>':'')
+      +'<div style="font-size:11px;color:#9A8F76;margin-top:8px">Mini-test 4 câu — ước lượng nhanh, không phải điểm chính thức · a rough 4-item check</div>'
       +'</div>'
       +'<button class="mbtn" style="background:#33473A;color:#FBF9F4" id="pk-next">Tiếp — vài câu cuối →</button>'
     ); go();
@@ -444,9 +461,10 @@ window.MedLing = window.MedLing || {};
   /* Resume-safe pre-test (audit P0-1): shared by fresh-start AND the profiling-resume branch, so a learner
      who closes after the profile but before finishing the pre-test resumes cleanly instead of dead-ending. */
   function runPreTest(st, packId){
-    runSeq(DIAG_A, 'Pre-test', function(pre){
-      var ps = scoreDiag(DIAG_A, pre);
-      track('diagnostic', { form:'A', pack:packId, score:ps.score, total:ps.total, items:ps.items });
+    var pf = preForm();
+    runSeq(DIAGS[pf], 'Pre-test', function(pre){
+      var ps = scoreDiag(DIAGS[pf], pre);
+      track('diagnostic', { form:pf, pack:packId, score:ps.score, total:ps.total, items:ps.items });
       st.phase = 'lessons'; st.pre = ps; st.lessons = st.lessons || {}; save(st);
       window.location.href = '?lesson=' + ORDER[0];
     });
@@ -505,9 +523,10 @@ window.MedLing = window.MedLing || {};
       var nxtLesson = nextIncomplete(s);
       if (nxtLesson){ window.location.href = '?lesson=' + nxtLesson; return; }
       // all 4 lessons done → post-diagnostic → results → post-survey → direction routing → done
-      runSeq(DIAG_B, 'Post-test', function(post){
-        var qs = scoreDiag(DIAG_B, post);
-        track('diagnostic', { form:'B', pack:packId, score:qs.score, total:qs.total, items:qs.items });
+      var pof = postForm();
+      runSeq(DIAGS[pof], 'Post-test', function(post){
+        var qs = scoreDiag(DIAGS[pof], post);
+        track('diagnostic', { form:pof, pack:packId, score:qs.score, total:qs.total, items:qs.items });
         s.post = qs; s.phase = 'post'; save(s);
         results(s, function(){
           runSeq(POST, 'Feedback', function(ans){
@@ -529,7 +548,7 @@ window.MedLing = window.MedLing || {};
       results(s, function(){
         runSeq(POST, 'Feedback', function(ans){
           var buckets = ans.direction_buckets || [];
-          track('survey', { phase:'post', pack:packId, answers:ans,
+          track('survey', { phase:'post', pack:packId, answers:scrubText(POST, ans),
             gain: (s.post?s.post.score:0) - (s.pre?s.pre.score:0) });
           s.postsurvey = ans; s.phase = 'route'; save(s);
           routeScreen(packId, { direction_buckets: buckets }, function(){
